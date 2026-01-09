@@ -20,7 +20,7 @@
       {
         "assets": [
           {
-            "path": "*.vsix"
+            "path": "out/*.vsix"
           }
         ]
       }
