@@ -3,6 +3,7 @@ on:
     push:
         branches:
             - master
+            - bastion
     pull_request: {}
 
 env:
