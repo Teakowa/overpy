@@ -1,13 +1,13 @@
 {
-    "name": "overpy",
-    "publisher": "Zezombye",
-    "displayName": "OverPy",
+    "name": "overpy-bastion",
+    "publisher": "teakovva",
+    "displayName": "OverPy Bastion",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Zezombye/overpy"
+        "url": "https://github.com/Teakowa/overpy"
     },
     "description": "High-level language for the Overwatch Workshop, with decompilation and compilation.",
-    "version": "9.4.8",
+    "version": "9.4.9",
     "scripts": {
         "dev": "node esbuild.standalone.js --watch",
         "compile": "node esbuild.js",
@@ -22,7 +22,7 @@
         "lint": "npx eslint src --ext ts",
         "test": "node esbuild.standalone.js && node runTests.mjs",
         "prepare": "husky",
-        "publish": "del *.vsix && pnpm run package && pnpm vsce package --no-dependencies && pnpm vsce publish --no-dependencies --no-update-package-json --no-git-tag-version && python upload-to-openvsx.py"
+        "publish": "rm *.vsix && pnpm run package && pnpm vsce package --no-dependencies && pnpm vsce publish --no-dependencies --no-update-package-json --no-git-tag-version"
     },
     "readme": "README.md",
     "engines": {
