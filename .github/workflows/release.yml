@@ -1,0 +1,53 @@
+name: OverPy Release
+
+permissions:
+    contents: write
+
+on:
+    push:
+        branches:
+            - master
+            - bastion
+    workflow_dispatch:
+
+env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v6
+              with:
+                  fetch-depth: 0
+
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v6
+              with:
+                  node-version: 22.4
+                  cache: pnpm
+
+            - name: Install dependencies
+              run: |
+                  pnpm i --frozen-lockfile
+
+            - name: Run tests
+              run: |
+                  pnpm run package
+
+            - name: Semantic Release
+              uses: cycjimmy/semantic-release-action@v3
+              id: semantic
+              with:
+                  extra_plugins: |
+                      @semantic-release/changelog
+                      @semantic-release/git
+                      conventional-changelog-conventionalcommits
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  VSCE_PAT: ${{ secrets.VSCE_PAT }}
