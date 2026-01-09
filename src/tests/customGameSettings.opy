@@ -82,7 +82,11 @@ settings {
             },
             "wuyang": {
                 "damageDealt%": 120,
-                "ability1Cooldown%": 10
+                "ability1Cooldown%": 10,
+                "ability1Duration%": 120
+            },
+            "juno": {
+                "ability1Duration%": 75
             },
             "vendetta": {
                 "damageDealt%": 120,
