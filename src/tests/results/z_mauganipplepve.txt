@@ -1,126 +1,126 @@
-settings
+设置
 {
-	main
+	主程序
 	{
-		Description: "it's like rein invasion but with mauga's milkers\nDS2MD\n\nyubz made it"
-		Mode Name: "mauga n!pple pve"
+		描述: "it's like rein invasion but with mauga's milkers\nDS2MD\n\nyubz made it"
+		模式名称: "mauga n!pple pve"
 	}
-	lobby
+	大厅
 	{
-		Allow Players Who Are In Queue: Yes
-		Max Spectators: 5
-		Max Team 1 Players: 9
-		Max Team 2 Players: 0
-		Return To Lobby: Never
-		Swap Teams After Match: No
+		队列中的玩家可以加入: 是
+		观战者人数上限: 5
+		玩家上限 队伍1: 9
+		玩家上限 队伍2: 0
+		返回大厅: 从不
+		比赛结束后转换队伍: 否
 	}
-	modes
+	模式
 	{
-		Team Deathmatch
+		团队死斗
 		{
-			enabled maps
+			启用地图
 			{
-				Workshop Island Night
+				地图工坊岛屿（夜间）
 			}
 		}
-		General
+		综合
 		{
-			Enable Perks: On
-			Game Length In Minutes: 15
-			Game Mode Start: Immediately
-			Hero Limit: Off
-			Imbalanced Team Score To Win: On
-			Kill Cam: Off
+			启用威能: 开启
+			比赛时长（分钟）: 15
+			游戏模式开始: 即时
+			英雄限制: 关闭
+			双方队伍获胜得分差异: 开启
+			阵亡镜头: 关闭
 			Perk Elimination Catchup Level Amount: 100%
-			Perk Generation: 500%
-			Respawn Time Scalar: 40%
-			Self Initiated Respawn: Off
-			Tank Role Passive Health Bonus: Always Enabled
-			Team 1 Score To Win: 100
-			Team 2 Score To Win: 1
+			威能充能速度: 500%
+			复生时间: 40%
+			主动复生: 关闭
+			重装职责被动生命值加成: 始终启用
+			队伍1获胜所需分数: 100
+			队伍2获胜所需分数: 1
 		}
 	}
-	heroes
+	英雄
 	{
-		Team 1
+		队伍1
 		{
-			Ability Cooldown Time: 60%
-			Ammunition Clip Size Scalar: 150%
-			Jump Vertical Speed: 121%
-			Movement Gravity: 110%
-			Movement Speed: 140%
-			Ultimate Generation: 160%
-			Cassidy
+			技能冷却时间: 60%
+			弹夹容量倍率: 150%
+			垂直跳跃速度: 121%
+			移动重力: 110%
+			移动速度: 140%
+			终极技能充能速度: 160%
+			卡西迪
 			{
-				Damage Dealt: 85%
+				伤害量: 85%
 			}
-			Doomfist
+			末日铁拳
 			{
-				Ammunition Regeneration Time Scalar: 33%
-				Power Block Cooldown Time: 50%
-				Rocket Punch Cooldown Time: 60%
-				Seismic Slam Cooldown Time: 50%
+				弹药恢复时间速率: 33%
+				悍猛格挡冷却时间: 50%
+				火箭重拳冷却时间: 60%
+				裂地重拳冷却时间: 50%
 			}
-			Echo
+			回声
 			{
-				Flight Cooldown Time: 120%
+				飞行冷却时间: 120%
 			}
-			Lúcio
+			卢西奥
 			{
-				Ammunition Clip Size Scalar: 300%
-				Damage Dealt: 150%
+				弹夹容量倍率: 300%
+				伤害量: 150%
 			}
-			Roadhog
+			路霸
 			{
-				Ultimate Generation Whole Hog: 55%
+				终极技能充能速度（鸡飞狗跳）: 55%
 			}
-			Venture
+			探奇
 			{
-				Burrow Cooldown Time: 120%
+				钻地冷却时间: 120%
 			}
-			Zarya
+			查莉娅
 			{
-				Ultimate Generation Graviton Surge: 30%
+				终极技能充能速度（重力喷涌）: 30%
 			}
 		}
-		Team 2
+		队伍2
 		{
-			Passive Health Regeneration: On
-			Lifeweaver
+			被动生命值恢复: 开启
+			生命之梭
 			{
-				Spawn With Ultimate Ready: On
+				重生时终极技能充能完毕: 开启
 			}
-			Reinhardt
+			莱因哈特
 			{
-				Health: 60%
+				生命值: 60%
 			}
-			Torbjörn
+			托比昂
 			{
-				Weapons Enabled: Forge Hammer Only
+				可用武器: 仅限锻造锤
 			}
-			Winston
+			温斯顿
 			{
-				Ammunition Clip Size Scalar: 30%
-				Health: 80%
+				弹夹容量倍率: 30%
+				生命值: 80%
 			}
-			Wrecking Ball
+			破坏球
 			{
-				Roll Always Active: On
+				动力铁球始终激活: 开启
 			}
 		}
 	}
-	extensions
+	扩展
 	{
-		Spawn More Dummy Bots
-		Projectiles
-		Beam Effects
-		Energy Explosion Effects
-		Buff Status Effects
-		Explosion Sounds
+		生成更多机器人
+		飞弹
+		光束效果
+		能量爆炸效果
+		增益状态效果
+		爆炸声音
 	}
 }
-variables {
-    global:
+变量 {
+    全局:
         0: nipman
         1: obj
         2: objDescs
@@ -169,7 +169,7 @@ variables {
         45: mobs
         46: threatFx
         47: antiCrashOn
-    player:
+    玩家:
         0: mobTarget
         1: cacheA
         2: cacheB
@@ -177,2000 +177,2000 @@ variables {
         4: botA
         5: botB
 }
-subroutines {
+子程序 {
     0: mobsInit
 }
-rule ("Initialize global variables") {
-    event {
-        Ongoing - Global;
+规则 ("Initialize global variables") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(objDescs, Array(Custom String("collect pages"), Custom String("defeat the mini maugas"), Custom String("slay enemies"), Custom String("slay the miniboss"), Custom String("capture the point")));
-        Set Global Variable(objWeights, Array(0.05, 0.2, 0.275, 0.275, 0.2));
-        Set Global Variable(threatList, Empty Array);
-        Set Global Variable(dummyThreats, Array(12, 13, 17, 4));
-        Set Global Variable(moreFunThreats, Array(2, 12, 15, 11, 13, 17));
-        Set Global Variable(threatNames, Array(Custom String("slenderman"), Custom String("more maugas"), Custom String("frosty nips"), Custom String("grabbyteats"), Custom String("niplets"), Custom String("cup fight"), Custom String("tiddy twister"), Custom String("lactose hail"), Custom String("n!pple nuke"), Custom String("dairy deaths"), Custom String("milk wall"), Custom String("mending milk"), Custom String("scalding discharge"), Custom String("s-nip-ers"), Custom String("boobsted mobs"), Custom String("booblet hell"), Custom String("gravitatas"), Custom String("sun exposure"), Custom String("lazer")));
-        Set Global Variable(threatIcons, Array(Hero Icon String(Hero(Reaper)), Ability Icon String(Hero(Mauga), Button(Ability 1)), Ability Icon String(Hero(Mei), Button(Ultimate)), Ability Icon String(Hero(Moira), Button(Secondary Fire)), Ability Icon String(Hero(Sigma), Button(Ability 1)), Ability Icon String(Hero(Mauga), Button(Ultimate)), Ability Icon String(Hero(Junker Queen), Button(Ultimate)), Ability Icon String(Hero(Hazard), Button(Ultimate)), Icon String(Radioactive), Ability Icon String(Hero(Reaper), Button(Ultimate)), Ability Icon String(Hero(Mei), Button(Ability 2)), Icon String(Plus), Ability Icon String(Hero(Torbjörn), Button(Ultimate)), Ability Icon String(Hero(Widowmaker), Button(Ultimate)), Ability Icon String(Hero(Ana), Button(Ultimate)), Ability Icon String(Hero(Pharah), Button(Ultimate)), Ability Icon String(Hero(Zarya), Button(Ultimate)), Ability Icon String(Hero(Illari), Button(Ultimate)), Ability Icon String(Hero(Echo), Button(Ability 2))));
-        Set Global Variable(isHardcore, Workshop Setting Toggle(Custom String("difficulty"), Custom String("respawn players only when round ends"), False, 0));
-        Set Global Variable(threatText, Custom String(""));
-        Set Global Variable(enemies, Array(Hero(Winston), Hero(Torbjörn), Hero(Reinhardt)));
-        Set Global Variable(mobDmg, Array(90, 155, 75));
-        Set Global Variable(weakSpots, Empty Array);
-        Set Global Variable(mobs, Empty Array);
+    动作 {
+        设置全局变量(objDescs, 数组(自定义字符串("collect pages"), 自定义字符串("defeat the mini maugas"), 自定义字符串("slay enemies"), 自定义字符串("slay the miniboss"), 自定义字符串("capture the point")));
+        设置全局变量(objWeights, 数组(0.05, 0.2, 0.275, 0.275, 0.2));
+        设置全局变量(threatList, 空数组);
+        设置全局变量(dummyThreats, 数组(12, 13, 17, 4));
+        设置全局变量(moreFunThreats, 数组(2, 12, 15, 11, 13, 17));
+        设置全局变量(threatNames, 数组(自定义字符串("slenderman"), 自定义字符串("more maugas"), 自定义字符串("frosty nips"), 自定义字符串("grabbyteats"), 自定义字符串("niplets"), 自定义字符串("cup fight"), 自定义字符串("tiddy twister"), 自定义字符串("lactose hail"), 自定义字符串("n!pple nuke"), 自定义字符串("dairy deaths"), 自定义字符串("milk wall"), 自定义字符串("mending milk"), 自定义字符串("scalding discharge"), 自定义字符串("s-nip-ers"), 自定义字符串("boobsted mobs"), 自定义字符串("booblet hell"), 自定义字符串("gravitatas"), 自定义字符串("sun exposure"), 自定义字符串("lazer")));
+        设置全局变量(threatIcons, 数组(英雄图标字符串(英雄(死神)), 技能图标字符串(英雄(毛加), 按钮(技能1)), 技能图标字符串(英雄(美), 按钮(终极技能)), 技能图标字符串(英雄(莫伊拉), 按钮(辅助攻击模式)), 技能图标字符串(英雄(西格玛), 按钮(技能1)), 技能图标字符串(英雄(毛加), 按钮(终极技能)), 技能图标字符串(英雄(渣客女王), 按钮(终极技能)), 技能图标字符串(英雄(骇灾), 按钮(终极技能)), 图标字符串(辐射), 技能图标字符串(英雄(死神), 按钮(终极技能)), 技能图标字符串(英雄(美), 按钮(技能2)), 图标字符串(加号), 技能图标字符串(英雄(托比昂), 按钮(终极技能)), 技能图标字符串(英雄(黑百合), 按钮(终极技能)), 技能图标字符串(英雄(安娜), 按钮(终极技能)), 技能图标字符串(英雄(法老之鹰), 按钮(终极技能)), 技能图标字符串(英雄(查莉娅), 按钮(终极技能)), 技能图标字符串(英雄(伊拉锐), 按钮(终极技能)), 技能图标字符串(英雄(回声), 按钮(技能2))));
+        设置全局变量(isHardcore, 地图工坊设置开关(自定义字符串("difficulty"), 自定义字符串("respawn players only when round ends"), 假, 0));
+        设置全局变量(threatText, 自定义字符串(""));
+        设置全局变量(enemies, 数组(英雄(温斯顿), 英雄(托比昂), 英雄(莱因哈特)));
+        设置全局变量(mobDmg, 数组(90, 155, 75));
+        设置全局变量(weakSpots, 空数组);
+        设置全局变量(mobs, 空数组);
     }
 }
 
-rule ("init") {
-    event {
-        Ongoing - Global;
+规则 ("init") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "print(len(getPlayers(Team.2)))\nhudText(hostPlayer, iconString(Icon.EYE), \"eye position\", localPlayer.getEyePosition(), HudPosition.LEFT, 0, Color.SKY_BLUE, Color.SKY_BLUE, Color.WHITE, HudReeval.VISIBILITY_AND_STRING, SpecVisibility.DEFAULT)"
-        Create HUD Text(All Players(All Teams), Null, Custom String("peak: {0} | average: {1}", Server Load Peak, Server Load Average), Custom String("server load: {0}\n", Server Load), Right, -2, Color(Orange), Color(Gray), Color(Gray), Visible To and String, Visible Always);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("use code DS2MD for the latest version"), Right, -1, Null, Null, Color(White), Visible To, Default Visibility);
-        Disable Inspector Recording;
-        Set Global Variable(obj, -1);
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Up, Backward);
-        Set Global Variable(nipman, Last Created Entity);
-        Start Forcing Player Position(Global.nipman, Vector(0, -19.8, 35), False);
-        Start Facing(Global.nipman, Backward, 999, To World, None);
-        Disable Movement Collision With Players(Global.nipman);
+        创建HUD文本(所有玩家(所有队伍), 空, 自定义字符串("peak: {0} | average: {1}", 服务器负载峰值, 服务器负载平均值), 自定义字符串("server load: {0}\n", 服务器负载), 右边, -2, 颜色(橙色), 颜色(灰色), 颜色(灰色), 可见和字符串, 始终可见);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("use code DS2MD for the latest version"), 右边, -1, 空, 空, 颜色(白色), 可见, 默认可见度);
+        禁用查看器录制;
+        设置全局变量(obj, -1);
+        生成机器人(英雄(毛加), 队伍2, -1, 上, 后);
+        设置全局变量(nipman, 最后创建的实体);
+        开始强制设置玩家位置(全局.nipman, 矢量(0, -19.8, 35), 假);
+        开始朝向(全局.nipman, 后, 999, 至地图, 无);
+        取消与玩家的移动碰撞(全局.nipman);
         "max size"
-        Start Scaling Player(Global.nipman, 20, False);
-        Set Global Variable(upto, Max Health(Global.nipman));
-        Wait(0.08, Ignore Condition);
-        Set Max Health(Global.nipman, Absolute Value(10000));
+        开始调整玩家大小(全局.nipman, 20, 假);
+        设置全局变量(upto, 最大生命值(全局.nipman));
+        等待(0.08, 无视条件);
+        设置最大生命值(全局.nipman, 绝对值(10000));
         "this is to fill hp and reset his pose"
-        Kill(Global.nipman, Null);
-        Set Knockback Received(Global.nipman, 0);
-        Disable Built-In Game Mode Completion;
-        Disable Built-In Game Mode Music;
-        Disable Built-In Game Mode Scoring;
-        Heal(Global.nipman, Null, 999999);
-        Wait(0.016, Ignore Condition);
-        Set Healing Received(Global.nipman, 0);
-        Wait(0.016, Ignore Condition);
-        Set Player Health(Global.nipman, 72500);
-        Set Player Variable(Global.nipman, cacheA, Vector(2.93, 8.04, 26.15));
-        Set Player Variable(Global.nipman, cacheB, Vector(-7.19, 8, 30.27));
+        击杀(全局.nipman, 空);
+        设置受到的击退(全局.nipman, 0);
+        关闭游戏预设完成条件;
+        关闭游戏预设音乐模式;
+        关闭游戏预设计分模式;
+        治疗(全局.nipman, 空, 999999);
+        等待(0.016, 无视条件);
+        设置受到治疗(全局.nipman, 0);
+        等待(0.016, 无视条件);
+        设置玩家生命值(全局.nipman, 72500);
+        设置玩家变量(全局.nipman, cacheA, 矢量(2.93, 8.04, 26.15));
+        设置玩家变量(全局.nipman, cacheB, 矢量(-7.19, 8, 30.27));
         "score huds"
-        Create HUD Text(All Players(All Teams), Ability Icon String(Hero(Lúcio), Button(Ability 2)), Custom String("time elapsed"), Custom String("{0}:{1}", Round To Integer(Divide(Total Time Elapsed, 60), Down), Modulo(Total Time Elapsed, 60)), Left, 1, Color(Sky Blue), Color(White), Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Icon String(Skull), Custom String("team deaths"), Team Score(Team 2), Left, 2, Color(Red), Color(White), Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Icon String(Flag), Custom String("rounds elapsed"), Global.roundNo, Left, 2, Color(Yellow), Color(White), Color(White), Visible To and String, Default Visibility);
+        创建HUD文本(所有玩家(所有队伍), 技能图标字符串(英雄(卢西奥), 按钮(技能2)), 自定义字符串("time elapsed"), 自定义字符串("{0}:{1}", 取整(除(总计消耗时间, 60), 下), 余数(总计消耗时间, 60)), 左边, 1, 颜色(天蓝色), 颜色(白色), 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 图标字符串(骷髅), 自定义字符串("team deaths"), 团队得分(队伍2), 左边, 2, 颜色(红色), 颜色(白色), 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 图标字符串(旗帜), 自定义字符串("rounds elapsed"), 全局.roundNo, 左边, 2, 颜色(黄色), 颜色(白色), 颜色(白色), 可见和字符串, 默认可见度);
         "hudText(getAllPlayers(), abilityIconString(Hero.CASSIDY, Button.ULTIMATE), \"total kills\", kills, HudPosition.LEFT, 2, Color.ROSE, Color.WHITE, Color.WHITE, HudReeval.VISIBILITY_AND_STRING)"
-        Create HUD Text(If-Then-Else(Global.isHardcore, All Players(All Teams), Null), Icon String(Exclamation Mark), Custom String("hardcore mode is on"), Custom String("no respawning until round ends"), Left, 3, Color(Black), Color(White), Color(White), Visible To and String, Default Visibility);
-        Create Effect(If-Then-Else(Compare(Global.obj, !=, -1), All Players(All Teams), Empty Array), Baptiste Immortality Field Protected Effect, Color(Team 2), Global.nipman, 1, Visible To Position and Radius);
+        创建HUD文本(If-Then-Else(全局.isHardcore, 所有玩家(所有队伍), 空), 图标字符串(感叹号), 自定义字符串("hardcore mode is on"), 自定义字符串("no respawning until round ends"), 左边, 3, 颜色(黑色), 颜色(白色), 颜色(白色), 可见和字符串, 默认可见度);
+        创建效果(If-Then-Else(比较(全局.obj, !=, -1), 所有玩家(所有队伍), 空数组), 巴蒂斯特维生力场保护效果, 颜色(队伍2), 全局.nipman, 1, 可见，位置和半径);
         "createEffect(getAllPlayers(), Effect.ORB, Color.WHITE, LeftNip, 1, EffectReeval.VISIBILITY)\ncreateEffect(getAllPlayers(), Effect.ORB, Color.WHITE, RightNip, 1, EffectReeval.VISIBILITY)\nobjective effects"
-        Create Effect(If-Then-Else(Compare(Global.obj, ==, 0), All Players(All Teams), Empty Array), Bad Aura, Color(Gray), Up, 50, Visible To Position and Radius);
-        For Global Variable(i, 0, 6, 1);
-            Create Effect(If-Then-Else(Compare(Global.obj, ==, 0), All Players(All Teams), Empty Array), Cloud, Color(Gray), Subtract(Multiply(Multiply(Up, Global.i), 0.1), 0.7), 50, Visible To);
-            Wait(0.016, Ignore Condition);
+        创建效果(If-Then-Else(比较(全局.obj, ==, 0), 所有玩家(所有队伍), 空数组), 有害光环, 颜色(灰色), 上, 50, 可见，位置和半径);
+        For 全局变量(i, 0, 6, 1);
+            创建效果(If-Then-Else(比较(全局.obj, ==, 0), 所有玩家(所有队伍), 空数组), 云, 颜色(灰色), 减(乘(乘(上, 全局.i), 0.1), 0.7), 50, 可见);
+            等待(0.016, 无视条件);
         End;
-        Create Effect(All Players(All Teams), Sphere, Color(White), If-Then-Else(Compare(Global.obj, ==, 0), Global.objPos, Down), 0.7, Visible To Position and Radius);
-        Create Effect(All Players(All Teams), Ring, Color(Blue), If-Then-Else(Compare(Global.obj, ==, 4), Global.objPos, Multiply(Down, Total Time Elapsed)), 12, Visible To Position and Radius);
-        Create Icon(If-Then-Else(Compare(Global.obj, ==, 4), All Players(All Teams), Empty Array), Global.objPos, Arrow: Down, Visible To and Position, Color(Team 1), True);
+        创建效果(所有玩家(所有队伍), 球体, 颜色(白色), If-Then-Else(比较(全局.obj, ==, 0), 全局.objPos, 下), 0.7, 可见，位置和半径);
+        创建效果(所有玩家(所有队伍), 环, 颜色(蓝色), If-Then-Else(比较(全局.obj, ==, 4), 全局.objPos, 乘(下, 总计消耗时间)), 12, 可见，位置和半径);
+        创建图标(If-Then-Else(比较(全局.obj, ==, 4), 所有玩家(所有队伍), 空数组), 全局.objPos, 箭头：向下, 可见和位置, 颜色(队伍1), 真);
         "createProjectileEffect(getAllPlayers() if THREATS.HEAL in threatList else [], Projectile.MOIRA_HEAL_ORB, null, RightNip, Vector.BACKWARD, 0, ProjectileEffectReeval.VISIBILITY)"
-        Wait(0.16, Ignore Condition);
+        等待(0.16, 无视条件);
         "objective huds. get max hp is ****ing broken for mauga. and tank passive bonus doesn't even let him heal to there"
-        Create Progress Bar HUD Text(If-Then-Else(Compare(Global.obj, ==, -1), All Players(All Teams), Empty Array), Divide(Multiply(100, Health(Global.nipman)), 57500), Custom String("{0} {1} / 57500 hp", Hero Icon String(Hero(Mauga)), Round To Integer(Health(Global.nipman), Up)), Top, 1, Color(Team 2), Color(White), Visible To Values and Color, Default Visibility);
-        Create Progress Bar HUD Text(If-Then-Else(Compare(Global.obj, !=, -1), All Players(All Teams), Empty Array), Multiply(Divide(Global.objProg, Global.objGoal), 100), Custom String("objective: {0}! {1} / {2}", Value In Array(Global.objDescs, Global.obj), Global.objProg, Global.objGoal), Top, 1, If-Then-Else(Compare(Global.obj, ==, 3), Color(Team 2), Color(Team 1)), Color(White), Visible To Values and Color, Default Visibility);
-        Create HUD Text(If-Then-Else(Compare(Global.obj, !=, -1), All Players(All Teams), Empty Array), Custom String("　threats: {0}　", Global.threatText), Null, Custom String(" \n "), Top, 0, Color(Orange), Color(Gray), Color(Gray), Visible To String and Color, Default Visibility);
-        Set Player Variable(Global.nipman, cacheA, Vector(2.93, 8.04, 26.15));
-        Set Player Variable(Global.nipman, cacheB, Vector(-7.19, 8, 30.27));
-        Set Match Time(5);
+        创建进度条HUD文本(If-Then-Else(比较(全局.obj, ==, -1), 所有玩家(所有队伍), 空数组), 除(乘(100, 生命值(全局.nipman)), 57500), 自定义字符串("{0} {1} / 57500 hp", 英雄图标字符串(英雄(毛加)), 取整(生命值(全局.nipman), 上)), 顶部, 1, 颜色(队伍2), 颜色(白色), 可见，值和颜色, 默认可见度);
+        创建进度条HUD文本(If-Then-Else(比较(全局.obj, !=, -1), 所有玩家(所有队伍), 空数组), 乘(除(全局.objProg, 全局.objGoal), 100), 自定义字符串("objective: {0}! {1} / {2}", 数组中的值(全局.objDescs, 全局.obj), 全局.objProg, 全局.objGoal), 顶部, 1, If-Then-Else(比较(全局.obj, ==, 3), 颜色(队伍2), 颜色(队伍1)), 颜色(白色), 可见，值和颜色, 默认可见度);
+        创建HUD文本(If-Then-Else(比较(全局.obj, !=, -1), 所有玩家(所有队伍), 空数组), 自定义字符串("　threats: {0}　", 全局.threatText), 空, 自定义字符串(" \n "), 顶部, 0, 颜色(橙色), 颜色(灰色), 颜色(灰色), 可见，字符串和颜色, 默认可见度);
+        设置玩家变量(全局.nipman, cacheA, 矢量(2.93, 8.04, 26.15));
+        设置玩家变量(全局.nipman, cacheB, 矢量(-7.19, 8, 30.27));
+        设置比赛时间(5);
     }
 }
 
-rule ("loop") {
-    event {
-        Ongoing - Global;
+规则 ("loop") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
+    条件 {
         "start game when any player spawns for the first time"
-        Is True For Any(All Players(Team 1), Has Spawned(Current Array Element)) == True;
+        对任意为“真”(所有玩家(队伍1), 已重生(当前数组元素)) == 真;
     }
-    actions {
+    动作 {
         "intermission"
-        Destroy Effect(Global.threatFx);
-        Destroy Effect(Global.moreFx);
+        消除效果(全局.threatFx);
+        消除效果(全局.moreFx);
         "destroyEffect(nipman.threatDecor)"
-        Set Global Variable(threatFx, Empty Array);
-        Set Global Variable(threatLactaters, Empty Array);
-        Set Global Variable(threatSuns, Empty Array);
-        Set Global Variable(threatSnipers, Empty Array);
-        Set Global Variable(threatNiplets, Empty Array);
+        设置全局变量(threatFx, 空数组);
+        设置全局变量(threatLactaters, 空数组);
+        设置全局变量(threatSuns, 空数组);
+        设置全局变量(threatSnipers, 空数组);
+        设置全局变量(threatNiplets, 空数组);
         "nipman.threatDecor = []"
-        Set Damage Received(Global.nipman, 60);
+        设置受到伤害(全局.nipman, 60);
         "has to be unfroze early bc his hitbox desyncs with model"
-        Clear Status(Global.nipman, Frozen);
-        Pause Match Time;
-        Stop Chasing Global Variable(area1);
-        Stop Chasing Global Variable(area2);
-        Stop Chasing Global Variable(twisterPos);
-        Stop Chasing Global Variable(missilePos);
-        Stop All Damage Modifications;
+        清除状态(全局.nipman, 冰冻);
+        比赛时间暂停;
+        停止追踪全局变量(area1);
+        停止追踪全局变量(area2);
+        停止追踪全局变量(twisterPos);
+        停止追踪全局变量(missilePos);
+        停止所有伤害调整;
         "getPlayers(Team.1).stopAcceleration()"
-        Set Gravity(All Players(Team 1), 100);
-        Set Global Variable(obj, -1);
-        Set Global Variable(objProg, 0);
-        Set Global Variable(threatList, Empty Array);
-        Set Match Time(11);
-        Unpause Match Time;
-        Wait(8, Ignore Condition);
-        Big Message(All Players(All Teams), Custom String("next objective in 3 seconds!"));
-        Wait(2.5, Ignore Condition);
-        Pause Match Time;
-        Wait(0.5, Ignore Condition);
-        Set Global Variable(mobs, Empty Array);
+        设置引力(所有玩家(队伍1), 100);
+        设置全局变量(obj, -1);
+        设置全局变量(objProg, 0);
+        设置全局变量(threatList, 空数组);
+        设置比赛时间(11);
+        比赛时间继续;
+        等待(8, 无视条件);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("next objective in 3 seconds!"));
+        等待(2.5, 无视条件);
+        比赛时间暂停;
+        等待(0.5, 无视条件);
+        设置全局变量(mobs, 空数组);
         "pick objective. using objgoal instead of obj because rules check the obj var"
-        Set Global Variable(objPos, Multiply(Down, Max Health(Global.nipman)));
+        设置全局变量(objPos, 乘(下, 最大生命值(全局.nipman)));
         "sum(weights) must be 1. obj is r here"
-        Set Global Variable(objGoal, Random Real(0, 1));
-        Set Global Variable(upto, 0);
+        设置全局变量(objGoal, 随机实数(0, 1));
+        设置全局变量(upto, 0);
         "weighted rand from stackoverflow"
-        For Global Variable(i, 0, Count Of(Global.objWeights), 1);
-            If(Compare(Add(Global.upto, Value In Array(Global.objWeights, Global.i)), >=, Global.objGoal));
-                Set Global Variable(objGoal, Global.i);
-                Break;
+        For 全局变量(i, 0, 数量(全局.objWeights), 1);
+            If(比较(加(全局.upto, 数组中的值(全局.objWeights, 全局.i)), >=, 全局.objGoal));
+                设置全局变量(objGoal, 全局.i);
+                中断;
             End;
-            Modify Global Variable(upto, Add, Value In Array(Global.objWeights, Global.i));
-            Wait(0.016, Ignore Condition);
+            修改全局变量(upto, 加, 数组中的值(全局.objWeights, 全局.i));
+            等待(0.016, 无视条件);
         End;
         "objGoal = OBJ.PAGES\nthreats"
-        Set Global Variable(threatList, Empty Array);
-        If(Compare(Global.objGoal, ==, 0));
-            Modify Global Variable(threatList, Append To Array, 0);
-        Else If(Compare(Global.objGoal, ==, 1));
-            Modify Global Variable(threatList, Append To Array, 1);
+        设置全局变量(threatList, 空数组);
+        If(比较(全局.objGoal, ==, 0));
+            修改全局变量(threatList, 添加至数组, 0);
+        Else If(比较(全局.objGoal, ==, 1));
+            修改全局变量(threatList, 添加至数组, 1);
         End;
-        Modify Global Variable(threatList, Append To Array, Random Integer(2, 18));
-        Wait(0.36, Ignore Condition);
+        修改全局变量(threatList, 添加至数组, 随机整数(2, 18));
+        等待(0.36, 无视条件);
         "attempt to add a 2nd threat"
-        If(Compare(Global.objGoal, !=, 0));
+        If(比较(全局.objGoal, !=, 0));
             "threatText is used as temp storage\nguarantee a threat that will get copied by mauga clones"
-            If(And(Compare(Global.objGoal, ==, 1), Not(Array Contains(Global.moreFunThreats, Last Of(Global.threatList)))));
-                Set Global Variable(threatText, Random Value In Array(Global.moreFunThreats));
+            If(与(比较(全局.objGoal, ==, 1), 非(数组包含(全局.moreFunThreats, 最后(全局.threatList)))));
+                设置全局变量(threatText, 数组随机取值(全局.moreFunThreats));
             Else;
-                Set Global Variable(threatText, Random Integer(2, 18));
+                设置全局变量(threatText, 随机整数(2, 18));
             End;
-            If(Not(Array Contains(Global.threatList, Global.threatText)));
-                Modify Global Variable(threatList, Append To Array, Global.threatText);
+            If(非(数组包含(全局.threatList, 全局.threatText)));
+                修改全局变量(threatList, 添加至数组, 全局.threatText);
             End;
         End;
         "prevent multiple dummy-using threats to be used, to prevent conflicts on botA and botB vars or exceeding skin limit."
-        If(Compare(Count Of(Filtered Array(Global.threatList, Array Contains(Global.dummyThreats, Current Array Element))), >=, 2));
-            Set Global Variable(threatList, Array Slice(Global.threatList, 0, Subtract(Count Of(Global.threatList), 1)));
+        If(比较(数量(已过滤的数组(全局.threatList, 数组包含(全局.dummyThreats, 当前数组元素))), >=, 2));
+            设置全局变量(threatList, 数组分割(全局.threatList, 0, 减(数量(全局.threatList), 1)));
         End;
         "threatList.append(THREATS.SUN)\nthreatList.append(THREATS.CAGE)"
-        Wait(0.016, Ignore Condition);
-        Set Global Variable(threatText, Custom String(""));
-        For Global Variable(i, 0, Count Of(Global.threatList), 1);
-            Set Global Variable(threatText, Custom String("{0}{1} {2}, ", Global.threatText, Value In Array(Global.threatIcons, Value In Array(Global.threatList, Global.i)), Value In Array(Global.threatNames, Value In Array(Global.threatList, Global.i))));
-            Wait(0.016, Ignore Condition);
+        等待(0.016, 无视条件);
+        设置全局变量(threatText, 自定义字符串(""));
+        For 全局变量(i, 0, 数量(全局.threatList), 1);
+            设置全局变量(threatText, 自定义字符串("{0}{1} {2}, ", 全局.threatText, 数组中的值(全局.threatIcons, 数组中的值(全局.threatList, 全局.i)), 数组中的值(全局.threatNames, 数组中的值(全局.threatList, 全局.i))));
+            等待(0.016, 无视条件);
         End;
-        Set Global Variable(threatText, String Slice(Global.threatText, 0, Subtract(String Length(Global.threatText), 2)));
-        Modify Global Variable(roundNo, Add, 1);
-        Wait(0.016, Ignore Condition);
-        Set Global Variable(obj, Global.objGoal);
-        Set Global Variable(objGoal, Value In Array(Array(8, 3, 60, 1, 100), Global.obj));
-        Big Message(All Players(All Teams), Custom String("round start!"));
-        Press Button(Global.nipman, Button(Ability 2));
-        Wait(0.48, Ignore Condition);
+        设置全局变量(threatText, 截取字符串(全局.threatText, 0, 减(字符串长度(全局.threatText), 2)));
+        修改全局变量(roundNo, 加, 1);
+        等待(0.016, 无视条件);
+        设置全局变量(obj, 全局.objGoal);
+        设置全局变量(objGoal, 数组中的值(数组(8, 3, 60, 1, 100), 全局.obj));
+        大字体信息(所有玩家(所有队伍), 自定义字符串("round start!"));
+        按下按键(全局.nipman, 按钮(技能2));
+        等待(0.48, 无视条件);
         "i forgot why this can't be 0. surely nothing bad happens :clueless:"
-        Set Damage Received(Global.nipman, 0.001);
+        设置受到伤害(全局.nipman, 0.001);
         "i rember now. it's to detect hook, punch, etc"
-        Set Status(Global.nipman, Null, Frozen, 99999);
-        Wait Until(Compare(Global.objProg, >=, Global.objGoal), 99999);
+        设置状态(全局.nipman, 空, 冰冻, 99999);
+        等待直到 (比较(全局.objProg, >=, 全局.objGoal), 99999);
         "for i in range(len(getPlayers(Team.2))):\nif getPlayersInSlot(i, Team.2) != nipman:\ndestroyDummy(Team.2, i)\nwait()\nnipman.setStatusEffect(null, Status.STUNNED, 0.5)"
-        Play Effect(All Players(All Teams), Sombra EMP Explosion Effect, Color(Team 1), Vector(0, 0, 18), 100);
-        Play Effect(All Players(All Teams), Ana Biotic Grenade Explosion Sound, Color(Team 1), Local Player, 200);
-        Big Message(All Players(All Teams), Custom String("objective complete! mauga is vulnerable!"));
-        Wait(0.016, Ignore Condition);
-        Respawn(All Dead Players(Team 1));
-        Loop;
+        播放效果(所有玩家(所有队伍), “黑影”电磁脉冲爆炸效果, 颜色(队伍1), 矢量(0, 0, 18), 100);
+        播放效果(所有玩家(所有队伍), 安娜生物手雷爆炸声音, 颜色(队伍1), 本地玩家, 200);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("objective complete! mauga is vulnerable!"));
+        等待(0.016, 无视条件);
+        复生(所有死亡玩家(队伍1));
+        循环;
     }
 }
 
-rule ("Subroutine mobsInit") {
-    event {
-        Subroutine;
+规则 ("Subroutine mobsInit") {
+    事件 {
+        子程序;
         mobsInit;
     }
-    actions {
-        Set Global Variable(mobs, Empty Array);
-        For Global Variable(i, 0, 10, 1);
+    动作 {
+        设置全局变量(mobs, 空数组);
+        For 全局变量(i, 0, 10, 1);
             "createDummy(enemies[i%len(enemies)], Team.2, -1, Vector.DOWN, Vector.BACKWARD)\ncan't split enemy heroes bc skin limit\ndo not put this above skybox in case enemies aren't killed"
-            Create Dummy Bot(Value In Array(Global.enemies, Modulo(Global.roundNo, Count Of(Global.enemies))), Team 2, -1, Vector(0, 40, 0), Backward);
-            Modify Global Variable(mobs, Append To Array, Last Created Entity);
-            Wait(0.112, Ignore Condition);
+            生成机器人(数组中的值(全局.enemies, 余数(全局.roundNo, 数量(全局.enemies))), 队伍2, -1, 矢量(0, 40, 0), 后);
+            修改全局变量(mobs, 添加至数组, 最后创建的实体);
+            等待(0.112, 无视条件);
             "mobs.last().startFacing(directionTowards(mobs[evalOnce(i)].getEyePosition(), mobs[evalOnce(i)].mobTarget), 500, Relativity.TO_WORLD, FacingReeval.DIRECTION_AND_TURN_RATE)"
-            If(Array Contains(Global.threatList, 14));
-                Create Effect(All Players(All Teams), Ana Nano Boosted Effect, Color(Team 2), Value In Array(Global.mobs, Evaluate Once(Global.i)), 1, Visible To Position and Radius);
-                Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+            If(数组包含(全局.threatList, 14));
+                创建效果(所有玩家(所有队伍), 安娜纳米激素强化效果, 颜色(队伍2), 数组中的值(全局.mobs, 单次赋值(全局.i)), 1, 可见，位置和半径);
+                修改全局变量(threatFx, 添加至数组, 最后创建的实体);
             End;
         End;
-        Wait(0.48, Ignore Condition);
-        Set Weapon(Players On Hero(Hero(Torbjörn), Team 2), 2);
-        Stop Holding Button(Global.mobs, Button(Primary Fire));
-        Start Forcing Throttle(Global.mobs, 1, 1, 0, 0, 0, 1);
-        Set Damage Dealt(Global.mobs, Value In Array(Global.mobDmg, Modulo(Global.roundNo, Count Of(Global.mobDmg))));
-        Set Move Speed(Global.mobs, 70);
-        Wait(0.016, Ignore Condition);
-        If(Compare(Value In Array(Global.enemies, Modulo(Global.roundNo, Count Of(Global.enemies))), ==, Hero(Torbjörn)));
-            Set Damage Received(Global.mobs, 85);
+        等待(0.48, 无视条件);
+        设置武器(选择英雄的玩家(英雄(托比昂), 队伍2), 2);
+        停止按下按钮(全局.mobs, 按钮(主要攻击模式));
+        开始限制阈值(全局.mobs, 1, 1, 0, 0, 0, 1);
+        设置造成伤害(全局.mobs, 数组中的值(全局.mobDmg, 余数(全局.roundNo, 数量(全局.mobDmg))));
+        设置移动速度(全局.mobs, 70);
+        等待(0.016, 无视条件);
+        If(比较(数组中的值(全局.enemies, 余数(全局.roundNo, 数量(全局.enemies))), ==, 英雄(托比昂)));
+            设置受到伤害(全局.mobs, 85);
         Else;
-            Set Damage Received(Global.mobs, 100);
+            设置受到伤害(全局.mobs, 100);
         End;
         "kill(mobs, null)\nmobs.resurrect()\nif obj == OBJ.KILL:\nobjProg -= len(mobs)"
-        If(Array Contains(Global.threatList, 14));
-            Start Damage Modification(All Players(Team 1), Global.mobs, 130, Receivers and Damagers);
+        If(数组包含(全局.threatList, 14));
+            开始伤害调整(所有玩家(队伍1), 全局.mobs, 130, 受伤害者和伤害者);
         End;
     }
 }
 
-rule ("summon the horde") {
-    event {
-        Ongoing - Global;
+规则 ("summon the horde") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Global.obj != 0;
-        Global.obj != 1;
+    条件 {
+        全局.obj != -1;
+        全局.obj != 0;
+        全局.obj != 1;
     }
-    actions {
-        Wait(0.64, Abort When False);
-        Disable Kill Feed(All Players(All Teams));
-        Wait(0.016, Ignore Condition);
+    动作 {
+        等待(0.64, 当为“假”时中止);
+        隐藏消灭提示(所有玩家(所有队伍));
+        等待(0.016, 无视条件);
         "destroyAllInWorldTexts() # debug"
-        Call Subroutine(mobsInit);
-        Enable Kill Feed(All Players(All Teams));
+        调用子程序(mobsInit);
+        显示消灭提示(所有玩家(所有队伍));
     }
 }
 
-rule ("slendy") {
-    event {
-        Ongoing - Global;
+规则 ("slendy") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 0;
+    条件 {
+        全局.obj == 0;
     }
-    actions {
+    动作 {
         "destroyAllInWorldTexts() # debug\nbigMessage(hostPlayer, \"slendy spawn debug\")\nfor i in range(MaxBots-4-TreeNo):"
-        Create Dummy Bot(Hero(Reaper), Team 2, -1, Vector(0, 7, 99), Backward);
-        Modify Global Variable(mobs, Append To Array, Last Created Entity);
-        Wait(0.016, Ignore Condition);
+        生成机器人(英雄(死神), 队伍2, -1, 矢量(0, 7, 99), 后);
+        修改全局变量(mobs, 添加至数组, 最后创建的实体);
+        等待(0.016, 无视条件);
         "mobs.last().startFacing(directionTowards(mobs[evalOnce(i)].getEyePosition(), mobs[evalOnce(i)].mobTarget), 500, Relativity.TO_WORLD, FacingReeval.DIRECTION_AND_TURN_RATE)"
-        Start Facing(Last Of(Global.mobs), Direction Towards(Eye Position(Last Of(Global.mobs)), (Last Of(Global.mobs)).mobTarget), 500, To World, Direction and Turn Rate);
-        Wait(0.016, Ignore Condition);
-        Create Effect(All Players(All Teams), Reaper Wraith Form Effect, Color(Team 2), Last Of(Global.mobs), 1, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        If(Array Contains(Global.threatList, 14));
-            Create Effect(All Players(All Teams), Ana Nano Boosted Effect, Color(Team 2), Last Of(Global.mobs), 1, Visible To Position and Radius);
-            Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+        开始朝向(最后(全局.mobs), 方向(眼睛位置(最后(全局.mobs)), (最后(全局.mobs)).mobTarget), 500, 至地图, 方向及角速率);
+        等待(0.016, 无视条件);
+        创建效果(所有玩家(所有队伍), “死神”幽灵形态效果, 颜色(队伍2), 最后(全局.mobs), 1, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        If(数组包含(全局.threatList, 14));
+            创建效果(所有玩家(所有队伍), 安娜纳米激素强化效果, 颜色(队伍2), 最后(全局.mobs), 1, 可见，位置和半径);
+            修改全局变量(threatFx, 添加至数组, 最后创建的实体);
         End;
-        Wait(0.48, Ignore Condition);
-        Start Forcing Throttle(Global.mobs, 1, 1, 0, 0, 0, 1);
-        Set Damage Dealt(Global.mobs, 500);
-        Set Move Speed(Global.mobs, 95);
-        Start Scaling Player(Global.mobs, 2, False);
-        Set Max Health(Global.mobs, Absolute Value(1200));
-        Disable Kill Feed(All Players(All Teams));
-        Kill(Global.mobs, Null);
-        Wait(0.016, Ignore Condition);
-        Enable Kill Feed(All Players(All Teams));
+        等待(0.48, 无视条件);
+        开始限制阈值(全局.mobs, 1, 1, 0, 0, 0, 1);
+        设置造成伤害(全局.mobs, 500);
+        设置移动速度(全局.mobs, 95);
+        开始调整玩家大小(全局.mobs, 2, 假);
+        设置最大生命值(全局.mobs, 绝对值(1200));
+        隐藏消灭提示(所有玩家(所有队伍));
+        击杀(全局.mobs, 空);
+        等待(0.016, 无视条件);
+        显示消灭提示(所有玩家(所有队伍));
         "set first page pos for clueless players"
-        Set Global Variable(objPos, Forward);
-        Resurrect(Global.mobs);
-        Start Modifying Hero Voice Lines(Global.mobs, 0.6, False);
-        Start Forcing Dummy Bot Name(Global.mobs, Custom String("slenderman"));
-        Wait(0.48, Ignore Condition);
-        Heal(Global.mobs, Null, 99999);
-        While(Compare(Global.obj, ==, 0));
-            Press Button(Global.mobs, Button(Melee));
-            Wait(1.2, Ignore Condition);
-            If(Compare(Random Real(0, 1), <, 0.05));
-                Small Message(All Players(All Teams), Custom String("remember to check inside mauga's guns for the pages."));
+        设置全局变量(objPos, 前);
+        复活(全局.mobs);
+        开始修改英雄语音(全局.mobs, 0.6, 假);
+        开始为机器人强制设置名称(全局.mobs, 自定义字符串("slenderman"));
+        等待(0.48, 无视条件);
+        治疗(全局.mobs, 空, 99999);
+        While(比较(全局.obj, ==, 0));
+            按下按键(全局.mobs, 按钮(近身攻击));
+            等待(1.2, 无视条件);
+            If(比较(随机实数(0, 1), <, 0.05));
+                小字体信息(所有玩家(所有队伍), 自定义字符串("remember to check inside mauga's guns for the pages."));
             End;
         End;
     }
 }
 
-rule ("mob respawn") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("mob respawn") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Is Dummy Bot(Event Player) == True;
-        Is Alive(Event Player) == True;
-        Array Contains(Global.mobs, Event Player) == True;
+    条件 {
+        是否是机器人(事件玩家) == 真;
+        存活(事件玩家) == 真;
+        数组包含(全局.mobs, 事件玩家) == 真;
     }
-    actions {
-        Teleport(Event Player, If-Then-Else(Compare(Random Integer(0, 1), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB));
-        Apply Impulse(Event Player, Vector(Random Real(-0.15, 0.15), Random Real(0.4, 0.66), -1), Random Real(50, 70), To World, Cancel Contrary Motion);
-        Start Facing(Event Player, Direction Towards(Eye Position(Event Player), (Event Player).mobTarget), 500, To World, Direction and Turn Rate);
-        Stop Holding Button(Event Player, Button(Primary Fire));
+    动作 {
+        传送(事件玩家, If-Then-Else(比较(随机整数(0, 1), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB));
+        施加推力(事件玩家, 矢量(随机实数(-0.15, 0.15), 随机实数(0.4, 0.66), -1), 随机实数(50, 70), 至地图, 取消相反运动);
+        开始朝向(事件玩家, 方向(眼睛位置(事件玩家), (事件玩家).mobTarget), 500, 至地图, 方向及角速率);
+        停止按下按钮(事件玩家, 按钮(主要攻击模式));
         "torb is hammer only in settings\nif obj != OBJ.PAGES:\ngetPlayersOnHero(Hero.TORBJORN, Team.2).setWeapon(2)\nmobs.startForcingButton(Button.PRIMARY_FIRE)\nwait(0.24)"
-        Set Status(Event Player, Null, Knocked Down, 5);
+        设置状态(事件玩家, 空, 击倒, 5);
     }
 }
 
-rule ("knock mobs") {
-    event {
-        Ongoing - Each Player;
-        Team 2;
-        All;
+规则 ("knock mobs") {
+    事件 {
+        持续 - 每名玩家;
+        队伍2;
+        全部;
     }
-    conditions {
-        Is Dummy Bot(Event Player) == True;
-        Y Component Of(Position Of(Event Player)) > 8.5;
-        Normalized Health(Event Player) == 1;
-        Has Status(Event Player, Knocked Down) == False;
-        Array Contains(Global.mobs, Event Player) == True;
+    条件 {
+        是否是机器人(事件玩家) == 真;
+        Y方向分量(所选位置(事件玩家)) > 8.5;
+        标准化生命值(事件玩家) == 1;
+        具有状态(事件玩家, 击倒) == 假;
+        数组包含(全局.mobs, 事件玩家) == 真;
     }
-    actions {
-        Wait(1.5, Ignore Condition);
-        Wait Until(Compare(Y Component Of(Position Of(Event Player)), <, 1.8), 7);
-        Set Status(Event Player, Null, Knocked Down, 1.6);
-        If(Compare(Global.obj, !=, 0));
-            Start Holding Button(Event Player, Button(Primary Fire));
+    动作 {
+        等待(1.5, 无视条件);
+        等待直到 (比较(Y方向分量(所选位置(事件玩家)), <, 1.8), 7);
+        设置状态(事件玩家, 空, 击倒, 1.6);
+        If(比较(全局.obj, !=, 0));
+            开始按下按钮(事件玩家, 按钮(主要攻击模式));
     }
 }
 
-rule ("mob retarget") {
-    event {
-        Ongoing - Global;
+规则 ("mob retarget") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.mobs != Empty Array;
-        Global.obj != -1;
+    条件 {
+        全局.mobs != 空数组;
+        全局.obj != -1;
     }
-    actions {
-        If(Compare(Number Of Living Players(Team 1), ==, 0));
+    动作 {
+        If(比较(存活玩家数量(队伍1), ==, 0));
             "mobs.mobTarget = null"
-            Stop Forcing Throttle(Global.mobs);
-            If(Compare(Global.obj, ==, 3));
-                Stop Forcing Throttle(Global.objPos);
+            停止限制阈值(全局.mobs);
+            If(比较(全局.obj, ==, 3));
+                停止限制阈值(全局.objPos);
             End;
         Else;
-            Start Forcing Throttle(Global.mobs, 1, 1, 0, 0, 0, 1);
-            If(Compare(Global.obj, ==, 3));
-                Start Forcing Throttle(Global.objPos, 1, 1, 0, 0, 0, 1);
+            开始限制阈值(全局.mobs, 1, 1, 0, 0, 0, 1);
+            If(比较(全局.obj, ==, 3));
+                开始限制阈值(全局.objPos, 1, 1, 0, 0, 0, 1);
             End;
-            For Global Variable(i, 0, Count Of(Global.mobs), 1);
-                Wait(0.12, Ignore Condition);
+            For 全局变量(i, 0, 数量(全局.mobs), 1);
+                等待(0.12, 无视条件);
                 "1st-3rd closest player"
-                If(Is Alive(Value In Array(Global.mobs, Global.i)));
-                    Set Player Variable(Value In Array(Global.mobs, Global.i), mobTarget, Value In Array(Sorted Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Position Of(Value In Array(Global.mobs, Global.i)))), Modulo(Random Integer(0, 2), Number Of Living Players(Team 1))));
+                If(存活(数组中的值(全局.mobs, 全局.i)));
+                    设置玩家变量(数组中的值(全局.mobs, 全局.i), mobTarget, 数组中的值(已排序的数组(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素)), 相距距离(当前数组元素, 所选位置(数组中的值(全局.mobs, 全局.i)))), 余数(随机整数(0, 2), 存活玩家数量(队伍1))));
                 End;
             End;
             "change boss target"
-            If(Compare(Global.obj, ==, 3));
-                Set Player Variable(Global.objPos, mobTarget, (First Of(Global.mobs)).mobTarget);
+            If(比较(全局.obj, ==, 3));
+                设置玩家变量(全局.objPos, mobTarget, (首个(全局.mobs)).mobTarget);
             End;
         End;
-        Wait(1.6, Ignore Condition);
-        Loop If Condition Is True;
+        等待(1.6, 无视条件);
+        如条件为“真”则循环;
     }
 }
 
-rule ("init weak spots") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Wrecking Ball;
+规则 ("init weak spots") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        破坏球;
     }
-    conditions {
-        Is Dummy Bot(Event Player) == True;
+    条件 {
+        是否是机器人(事件玩家) == 真;
     }
-    actions {
-        Start Scaling Player(Event Player, 0.8, False);
-        Start Forcing Dummy Bot Name(Event Player, Custom String("sensitive spot"));
-        Create Icon(All Players(All Teams), Event Player, Warning, Visible To and Color, Custom Color(255, Add(205, Divide(Multiply(50, Sine From Radians(Multiply(Total Time Elapsed, 4))), 2)), 0, 255), True);
-        Modify Global Variable(weakSpots, Append To Array, Event Player);
-        Wait(0.16, Ignore Condition);
-        Create Effect(All Players(All Teams), Echo Cloning Effect, Color(Team 1), Event Player, 1, Visible To);
-        Communicate(Event Player, Hello);
+    动作 {
+        开始调整玩家大小(事件玩家, 0.8, 假);
+        开始为机器人强制设置名称(事件玩家, 自定义字符串("sensitive spot"));
+        创建图标(所有玩家(所有队伍), 事件玩家, 警告, 可见和颜色, 自定义颜色(255, 加(205, 除(乘(50, 弧度的正弦值(乘(总计消耗时间, 4))), 2)), 0, 255), 真);
+        修改全局变量(weakSpots, 添加至数组, 事件玩家);
+        等待(0.16, 无视条件);
+        创建效果(所有玩家(所有队伍), “回声”复制效果, 颜色(队伍1), 事件玩家, 1, 可见);
+        交流(事件玩家, 问候);
     }
 }
 
-rule ("more maugas charge attack") {
-    event {
-        Ongoing - Global;
+规则 ("more maugas charge attack") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 1;
+    条件 {
+        全局.obj == 1;
     }
-    actions {
-        Wait(2.4, Ignore Condition);
-        While(Compare(Global.obj, ==, 1));
-            Wait(8, Ignore Condition);
-            Set Global Variable(moreFx, Empty Array);
-            Abort If(Compare(Global.obj, !=, 1));
-            Set Global Variable(attackingClone, Random Value In Array(Global.objPos));
-            For Global Variable(iMores, 0, Count Of(Global.weakSpots), 1);
-                Destroy Dummy Bot(Team 2, Slot Of(Value In Array(Global.weakSpots, Global.iMores)));
+    动作 {
+        等待(2.4, 无视条件);
+        While(比较(全局.obj, ==, 1));
+            等待(8, 无视条件);
+            设置全局变量(moreFx, 空数组);
+            根据条件中止(比较(全局.obj, !=, 1));
+            设置全局变量(attackingClone, 数组随机取值(全局.objPos));
+            For 全局变量(iMores, 0, 数量(全局.weakSpots), 1);
+                移除机器人(队伍2, 栏位(数组中的值(全局.weakSpots, 全局.iMores)));
             End;
-            Set Global Variable(weakSpots, Empty Array);
+            设置全局变量(weakSpots, 空数组);
             "createBeam(getAllPlayers(), Beam.WINSTON_TESLA_CANNON, attackingClone.smallLNip, LeftNip if attackingClone.smallLNip.x > 0 else RightNip, Color.TEAM_2, EffectReeval.VISIBILITY)"
-            Create Beam Effect(All Players(All Teams), Winston Tesla Cannon Beam, (Global.attackingClone).cacheA, (Global.nipman).cacheA, Color(Team 2), Visible To);
-            Modify Global Variable(moreFx, Append To Array, Last Created Entity);
+            创建光束效果(所有玩家(所有队伍), 温斯顿特斯拉炮光束, (全局.attackingClone).cacheA, (全局.nipman).cacheA, 颜色(队伍2), 可见);
+            修改全局变量(moreFx, 添加至数组, 最后创建的实体);
             "createBeam(getAllPlayers(), Beam.WINSTON_TESLA_CANNON, attackingClone.smallRNip, LeftNip if attackingClone.smallRNip.x > 0 else RightNip, Color.TEAM_2, EffectReeval.VISIBILITY)"
-            Create Beam Effect(All Players(All Teams), Winston Tesla Cannon Beam, (Global.attackingClone).cacheB, (Global.nipman).cacheB, Color(Team 2), Visible To);
-            Modify Global Variable(moreFx, Append To Array, Last Created Entity);
-            Big Message(All Players(All Teams), Custom String("{0} deadly attack incoming! attack the sensitive spots! {0}", Icon String(Warning)));
-            Communicate(Random Value In Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element))), Press the Attack);
+            创建光束效果(所有玩家(所有队伍), 温斯顿特斯拉炮光束, (全局.attackingClone).cacheB, (全局.nipman).cacheB, 颜色(队伍2), 可见);
+            修改全局变量(moreFx, 添加至数组, 最后创建的实体);
+            大字体信息(所有玩家(所有队伍), 自定义字符串("{0} deadly attack incoming! attack the sensitive spots! {0}", 图标字符串(警告)));
+            交流(数组随机取值(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素))), 继续攻击);
             "all hammond dummies get weak spot init"
-            Create Dummy Bot(Hero(Wrecking Ball), Team 2, -1, Up, Up);
+            生成机器人(英雄(破坏球), 队伍2, -1, 上, 上);
             "left"
-            Attach Players(Last Created Entity, Global.attackingClone, Vector(5.4, 20.1, 5.7));
-            Wait(0.016, Ignore Condition);
-            Create Dummy Bot(Hero(Wrecking Ball), Team 2, -1, Up, Up);
-            Attach Players(Last Created Entity, Global.attackingClone, Vector(-2.055, 20.1, 7.29));
-            Set Player Health(Global.weakSpots, 300);
-            Set Healing Received(Global.weakSpots, 0);
-            Wait(0.064, Ignore Condition);
-            Heal(Global.weakSpots, Null, 99999);
+            绑定玩家(最后创建的实体, 全局.attackingClone, 矢量(5.4, 20.1, 5.7));
+            等待(0.016, 无视条件);
+            生成机器人(英雄(破坏球), 队伍2, -1, 上, 上);
+            绑定玩家(最后创建的实体, 全局.attackingClone, 矢量(-2.055, 20.1, 7.29));
+            设置玩家生命值(全局.weakSpots, 300);
+            设置受到治疗(全局.weakSpots, 0);
+            等待(0.064, 无视条件);
+            治疗(全局.weakSpots, 空, 99999);
             "wait until with less checking"
-            For Global Variable(iMores, 0, 15, 1);
-                Wait(0.96, Ignore Condition);
-                Abort If(Compare(Global.obj, !=, 1));
-                If(Or(Or(Is Dead(Global.attackingClone), Compare(Global.weakSpots, ==, Empty Array)), Not(Entity Exists(Global.attackingClone))));
-                    Break;
+            For 全局变量(iMores, 0, 15, 1);
+                等待(0.96, 无视条件);
+                根据条件中止(比较(全局.obj, !=, 1));
+                If(或(或(死亡(全局.attackingClone), 比较(全局.weakSpots, ==, 空数组)), 非(实体存在(全局.attackingClone))));
+                    中断;
                 End;
-                Set Status(Global.attackingClone, Null, Burning, 1);
+                设置状态(全局.attackingClone, 空, 燃烧, 1);
             End;
-            Abort If(Compare(Global.obj, !=, 1));
-            If(Or(Or(Is Dead(Global.attackingClone), Not(Entity Exists(Global.attackingClone))), Compare(Global.weakSpots, ==, Empty Array)));
-                Clear Status(Global.attackingClone, Frozen);
-                Wait(0.112, Ignore Condition);
-                Set Status(Global.attackingClone, Null, Stunned, 1);
-                Destroy Effect(Global.moreFx);
-                Set Global Variable(moreFx, Empty Array);
-                Communicate(Random Value In Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element))), Yes);
-                Big Message(All Players(All Teams), Custom String("success! stopped the attack!"));
-                Wait(1.2, Ignore Condition);
-                Set Status(Global.attackingClone, Null, Frozen, 99999);
-                Set Global Variable(attackingClone, Null);
-                Skip(28);
+            根据条件中止(比较(全局.obj, !=, 1));
+            If(或(或(死亡(全局.attackingClone), 非(实体存在(全局.attackingClone))), 比较(全局.weakSpots, ==, 空数组)));
+                清除状态(全局.attackingClone, 冰冻);
+                等待(0.112, 无视条件);
+                设置状态(全局.attackingClone, 空, 击晕, 1);
+                消除效果(全局.moreFx);
+                设置全局变量(moreFx, 空数组);
+                交流(数组随机取值(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素))), 好的);
+                大字体信息(所有玩家(所有队伍), 自定义字符串("success! stopped the attack!"));
+                等待(1.2, 无视条件);
+                设置状态(全局.attackingClone, 空, 冰冻, 99999);
+                设置全局变量(attackingClone, 空);
+                跳过(28);
             End;
-            Big Message(All Players(All Teams), Custom String("{0} failed to stop the attack. brace for impact!", Icon String(Sad)));
-            For Global Variable(iMores, 0, Count Of(Global.weakSpots), 1);
-                Destroy Dummy Bot(Team 2, Slot Of(Value In Array(Global.weakSpots, Global.iMores)));
+            大字体信息(所有玩家(所有队伍), 自定义字符串("{0} failed to stop the attack. brace for impact!", 图标字符串(难过)));
+            For 全局变量(iMores, 0, 数量(全局.weakSpots), 1);
+                移除机器人(队伍2, 栏位(数组中的值(全局.weakSpots, 全局.iMores)));
             End;
-            Set Global Variable(weakSpots, Empty Array);
-            Communicate(Random Value In Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element))), Countdown);
-            Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Team 2), Eye Position(Global.nipman), 9999);
-            Wait(1, Ignore Condition);
-            Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Team 2), Eye Position(Global.nipman), 9999);
-            Wait(1, Ignore Condition);
-            Play Effect(All Players(All Teams), Ring Explosion Sound, Color(Team 2), Eye Position(Global.nipman), 9999);
-            Communicate(Random Value In Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element))), Incoming);
-            Wait(1, Ignore Condition);
-            Abort If(Compare(Global.obj, !=, 1));
-            Create Beam Effect(All Players(All Teams), Moira Coalescence Beam, (Global.nipman).cacheA, Vector(10, 0, Subtract(20, Multiply(22, Subtract(Total Time Elapsed, Evaluate Once(Total Time Elapsed))))), Color(Team 2), Visible To Position and Radius);
-            Modify Global Variable(moreFx, Append To Array, Last Created Entity);
-            Create Beam Effect(All Players(All Teams), Moira Coalescence Beam, (Global.nipman).cacheB, Vector(-10, 0, Subtract(20, Multiply(22, Subtract(Total Time Elapsed, Evaluate Once(Total Time Elapsed))))), Color(Team 2), Visible To Position and Radius);
-            Modify Global Variable(moreFx, Append To Array, Last Created Entity);
-            For Global Variable(iMores, 15, -17, -5);
-                Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Vector(10, 0, Global.iMores), 10);
-                Play Effect(All Players(All Teams), Bad Explosion, Color(Orange), Vector(-10, 0, Global.iMores), 10);
-                Create Projectile(Mercy Caduceus Blaster, Global.attackingClone, Vector(-10, 1, Global.iMores), Down, To World, Damage, Team 1, 300, 1, 10, DVa Self Destruct Explosion Effect, DVa Self Destruct Explosion Sound, 0, 99, 1, 20, 0, 0);
-                Create Projectile(Mercy Caduceus Blaster, Global.attackingClone, Vector(10, 1, Global.iMores), Down, To World, Damage, Team 1, 300, 1, 10, DVa Self Destruct Explosion Effect, DVa Self Destruct Explosion Sound, 0, 99, 1, 20, 0, 0);
-                Wait(0.336, Ignore Condition);
+            设置全局变量(weakSpots, 空数组);
+            交流(数组随机取值(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素))), 倒计时);
+            播放效果(所有玩家(所有队伍), 环状爆炸声音, 颜色(队伍2), 眼睛位置(全局.nipman), 9999);
+            等待(1, 无视条件);
+            播放效果(所有玩家(所有队伍), 环状爆炸声音, 颜色(队伍2), 眼睛位置(全局.nipman), 9999);
+            等待(1, 无视条件);
+            播放效果(所有玩家(所有队伍), 环状爆炸声音, 颜色(队伍2), 眼睛位置(全局.nipman), 9999);
+            交流(数组随机取值(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素))), 敌人来袭);
+            等待(1, 无视条件);
+            根据条件中止(比较(全局.obj, !=, 1));
+            创建光束效果(所有玩家(所有队伍), 莫伊拉聚合射线光束, (全局.nipman).cacheA, 矢量(10, 0, 减(20, 乘(22, 减(总计消耗时间, 单次赋值(总计消耗时间))))), 颜色(队伍2), 可见，位置和半径);
+            修改全局变量(moreFx, 添加至数组, 最后创建的实体);
+            创建光束效果(所有玩家(所有队伍), 莫伊拉聚合射线光束, (全局.nipman).cacheB, 矢量(-10, 0, 减(20, 乘(22, 减(总计消耗时间, 单次赋值(总计消耗时间))))), 颜色(队伍2), 可见，位置和半径);
+            修改全局变量(moreFx, 添加至数组, 最后创建的实体);
+            For 全局变量(iMores, 15, -17, -5);
+                播放效果(所有玩家(所有队伍), 有害爆炸, 颜色(橙色), 矢量(10, 0, 全局.iMores), 10);
+                播放效果(所有玩家(所有队伍), 有害爆炸, 颜色(橙色), 矢量(-10, 0, 全局.iMores), 10);
+                创建弹道(“天使”天使冲击枪, 全局.attackingClone, 矢量(-10, 1, 全局.iMores), 下, 至地图, 输出, 队伍1, 300, 1, 10, D.Va自毁爆炸效果, D.Va自毁爆炸声音, 0, 99, 1, 20, 0, 0);
+                创建弹道(“天使”天使冲击枪, 全局.attackingClone, 矢量(10, 1, 全局.iMores), 下, 至地图, 输出, 队伍1, 300, 1, 10, D.Va自毁爆炸效果, D.Va自毁爆炸声音, 0, 99, 1, 20, 0, 0);
+                等待(0.336, 无视条件);
             End;
-            Destroy Effect(Global.moreFx);
-            Set Global Variable(moreFx, Empty Array);
+            消除效果(全局.moreFx);
+            设置全局变量(moreFx, 空数组);
             //lbl_0:
         End;
     }
 }
 
-rule ("niplets + dupe") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
+规则 ("niplets + dupe") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 4) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 4) == 真;
         "or (eventPlayer in objPos)"
-        Event Player == Global.nipman;
+        事件玩家 == 全局.nipman;
     }
-    actions {
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Down, Facing Direction Of(Event Player));
-        Set Player Variable(Event Player, botA, Last Created Entity);
-        Modify Global Variable(threatNiplets, Append To Array, Last Created Entity);
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Down, Facing Direction Of(Event Player));
-        Set Player Variable(Event Player, botB, Last Created Entity);
-        Modify Global Variable(threatNiplets, Append To Array, Last Created Entity);
-        Wait(0.128, Ignore Condition);
+    动作 {
+        生成机器人(英雄(毛加), 队伍2, -1, 下, 面朝方向(事件玩家));
+        设置玩家变量(事件玩家, botA, 最后创建的实体);
+        修改全局变量(threatNiplets, 添加至数组, 最后创建的实体);
+        生成机器人(英雄(毛加), 队伍2, -1, 下, 面朝方向(事件玩家));
+        设置玩家变量(事件玩家, botB, 最后创建的实体);
+        修改全局变量(threatNiplets, 添加至数组, 最后创建的实体);
+        等待(0.128, 无视条件);
         "threatNiplets.setStatusEffect(null, Status.FROZEN, 99999)"
-        Set Status(Global.threatNiplets, Null, Phased Out, 99999);
-        Start Forcing Player Position((Event Player).botA, Add((Event Player).cacheA, Vector(-0.5, -3.5, -1)), False);
-        Start Forcing Player Position((Event Player).botB, Add((Event Player).cacheB, Vector(0.5, -3.5, -1)), False);
-        Start Scaling Player(Global.threatNiplets, 2, False);
-        Wait(0.24, Ignore Condition);
+        设置状态(全局.threatNiplets, 空, 相移, 99999);
+        开始强制设置玩家位置((事件玩家).botA, 加((事件玩家).cacheA, 矢量(-0.5, -3.5, -1)), 假);
+        开始强制设置玩家位置((事件玩家).botB, 加((事件玩家).cacheB, 矢量(0.5, -3.5, -1)), 假);
+        开始调整玩家大小(全局.threatNiplets, 2, 假);
+        等待(0.24, 无视条件);
         "eventPlayer.nipletsPosList.append(worldVector(vect(-0.137, 1.378, 0.466)*2, eventPlayer.botB, Transform.ROTATION_AND_TRANSLATION))"
-        Wait(0.48, Ignore Condition);
-        Create Effect(All Players(All Teams), Lúcio Sound Barrier Protected Effect, Color(Team 2), (Event Player).botA, 1, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Effect(All Players(All Teams), Lúcio Sound Barrier Protected Effect, Color(Team 2), (Event Player).botB, 1, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Start Forcing Dummy Bot Name(Global.threatNiplets, Custom String("niplet"));
-        Disable Nameplates(Global.threatNiplets, All Players(All Teams));
+        等待(0.48, 无视条件);
+        创建效果(所有玩家(所有队伍), 卢西奥音障保护效果, 颜色(队伍2), (事件玩家).botA, 1, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建效果(所有玩家(所有队伍), 卢西奥音障保护效果, 颜色(队伍2), (事件玩家).botB, 1, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        开始为机器人强制设置名称(全局.threatNiplets, 自定义字符串("niplet"));
+        隐藏姓名板(全局.threatNiplets, 所有玩家(所有队伍));
         "eventPlayer.iniplets = 0"
-        While(Compare(Global.obj, !=, -1));
-            Wait(0.24, Ignore Condition);
+        While(比较(全局.obj, !=, -1));
+            等待(0.24, 无视条件);
             "createProjectile(Projectile.BASTION_TACTICAL_GRENADE, eventPlayer.botA, eventPlayer.nipletsPosList[eventPlayer.iniplets], vect(random.uniform(0,0.7),random.uniform(-0.5,1),1), Relativity.TO_PLAYER, ModifyHealth.DAMAGE, Team.1, 80, 1, 1, DynamicEffect.SIGMA"
-            Create Projectile(Bastion A-36 Tactical Grenade, (Event Player).botA, Up, Vector(Random Real(-0.9, 0.9), Random Real(1, 2), 1), To Player, Damage, Team 1, 80, 1, 1, Sigma Hypersphere Implosion Effect, Sigma Hypersphere Implosion Sound, 0, 24, 6, 0, 15, 110);
-            Wait(0.24, Ignore Condition);
-            Create Projectile(Bastion A-36 Tactical Grenade, (Event Player).botB, Up, Vector(Random Real(-0.9, 0.9), Random Real(1, 2), 1), To Player, Damage, Team 1, 80, 1, 1, Sigma Hypersphere Implosion Effect, Sigma Hypersphere Implosion Sound, 0, 24, 6, 0, 15, 110);
+            创建弹道(“堡垒”A-36战术榴弹, (事件玩家).botA, 上, 矢量(随机实数(-0.9, 0.9), 随机实数(1, 2), 1), 至玩家, 输出, 队伍1, 80, 1, 1, “西格玛”超能之球内爆效果, “西格玛”超能之球内爆声音, 0, 24, 6, 0, 15, 110);
+            等待(0.24, 无视条件);
+            创建弹道(“堡垒”A-36战术榴弹, (事件玩家).botB, 上, 矢量(随机实数(-0.9, 0.9), 随机实数(1, 2), 1), 至玩家, 输出, 队伍1, 80, 1, 1, “西格玛”超能之球内爆效果, “西格玛”超能之球内爆声音, 0, 24, 6, 0, 15, 110);
         End;
     }
 }
 
-rule ("grab") {
-    event {
-        Ongoing - Global;
+规则 ("grab") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 3) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 3) == 真;
     }
-    actions {
-        Wait(0.096, Ignore Condition);
+    动作 {
+        等待(0.096, 无视条件);
         "grabplayer changes between player, position, list of players"
-        Create Beam Effect(All Players(All Teams), Moira Grasp Connected Beam, (Global.nipman).cacheA, Global.grabLeft, Color(Team 1), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Beam Effect(All Players(All Teams), Moira Grasp Connected Beam, (Global.nipman).cacheB, Global.grabRight, Color(Team 1), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Sigma Hypersphere, Null, Global.grabLeft, Down, 0.05, Visible To Position Direction and Size);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Sigma Hypersphere, Null, Global.grabRight, Down, 0.05, Visible To Position Direction and Size);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Effect(If-Then-Else(Compare(Z Component Of(Global.grabLeftPlayer), !=, Null), All Players(All Teams), Null), Bad Aura, Color(Team 2), Global.grabLeftPlayer, 2, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Effect(If-Then-Else(Compare(Z Component Of(Global.grabRightPlayer), !=, Null), All Players(All Teams), Null), Bad Aura, Color(Team 2), Global.grabRightPlayer, 2, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        While(Compare(Global.obj, !=, -1));
-            Set Global Variable(grabLeft, (Global.nipman).cacheA);
-            Set Global Variable(grabRight, (Global.nipman).cacheB);
+        创建光束效果(所有玩家(所有队伍), 莫伊拉生化之触连接光束, (全局.nipman).cacheA, 全局.grabLeft, 颜色(队伍1), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建光束效果(所有玩家(所有队伍), 莫伊拉生化之触连接光束, (全局.nipman).cacheB, 全局.grabRight, 颜色(队伍1), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 西格玛超能之球, 空, 全局.grabLeft, 下, 0.05, 友善，位置，方向和大小);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 西格玛超能之球, 空, 全局.grabRight, 下, 0.05, 友善，位置，方向和大小);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建效果(If-Then-Else(比较(Z方向分量(全局.grabLeftPlayer), !=, 空), 所有玩家(所有队伍), 空), 有害光环, 颜色(队伍2), 全局.grabLeftPlayer, 2, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建效果(If-Then-Else(比较(Z方向分量(全局.grabRightPlayer), !=, 空), 所有玩家(所有队伍), 空), 有害光环, 颜色(队伍2), 全局.grabRightPlayer, 2, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        While(比较(全局.obj, !=, -1));
+            设置全局变量(grabLeft, (全局.nipman).cacheA);
+            设置全局变量(grabRight, (全局.nipman).cacheB);
             "select"
-            Set Global Variable(grabLeftPlayer, Random Value In Array(Filtered Array(All Living Players(Team 1), Compare(X Component Of(Position Of(Current Array Element)), >, 0))));
-            Set Global Variable(grabRightPlayer, Random Value In Array(Filtered Array(All Living Players(Team 1), Compare(X Component Of(Position Of(Current Array Element)), <, 0))));
+            设置全局变量(grabLeftPlayer, 数组随机取值(已过滤的数组(所有存活玩家(队伍1), 比较(X方向分量(所选位置(当前数组元素)), >, 0))));
+            设置全局变量(grabRightPlayer, 数组随机取值(已过滤的数组(所有存活玩家(队伍1), 比较(X方向分量(所选位置(当前数组元素)), <, 0))));
             "attack"
-            If(Entity Exists(Global.grabLeftPlayer));
-                Set Global Variable(grabLeftPlayer, Add(Position Of(Global.grabLeftPlayer), Vector(0, 0.5, 0)));
-                Chase Global Variable Over Time(grabLeft, Global.grabLeftPlayer, 4, None);
+            If(实体存在(全局.grabLeftPlayer));
+                设置全局变量(grabLeftPlayer, 加(所选位置(全局.grabLeftPlayer), 矢量(0, 0.5, 0)));
+                持续追踪全局变量(grabLeft, 全局.grabLeftPlayer, 4, 全部禁用);
             End;
-            If(And(Entity Exists(Global.grabRightPlayer), Compare(Global.grabLeftPlayer, !=, Global.grabRightPlayer)));
-                Set Global Variable(grabRightPlayer, Add(Position Of(Global.grabRightPlayer), Vector(0, 0.5, 0)));
-                Chase Global Variable Over Time(grabRight, Global.grabRightPlayer, 4, None);
+            If(与(实体存在(全局.grabRightPlayer), 比较(全局.grabLeftPlayer, !=, 全局.grabRightPlayer)));
+                设置全局变量(grabRightPlayer, 加(所选位置(全局.grabRightPlayer), 矢量(0, 0.5, 0)));
+                持续追踪全局变量(grabRight, 全局.grabRightPlayer, 4, 全部禁用);
             End;
-            Wait(4, Ignore Condition);
-            Stop Chasing Global Variable(grabLeft);
-            Stop Chasing Global Variable(grabRight);
-            Abort If(Compare(Global.obj, ==, -1));
+            等待(4, 无视条件);
+            停止追踪全局变量(grabLeft);
+            停止追踪全局变量(grabRight);
+            根据条件中止(比较(全局.obj, ==, -1));
             "check landing"
-            Set Global Variable(grabLeftPlayer, Filtered Array(Players Within Radius(Global.grabLeft, 2, Team 1, Off), And(Is Alive(Current Array Element), Has Spawned(Current Array Element))));
-            Start Forcing Player Position(Global.grabLeftPlayer, Global.grabLeft, True);
-            Small Message(Global.grabLeftPlayer, Custom String("{0} you were grabbed!", Ability Icon String(Hero(Moira), Button(Secondary Fire))));
-            Play Effect(All Players(All Teams), Orisa Halt Implosion Sound, Color(Team 2), Global.grabLeft, 20);
-            Play Effect(All Players(All Teams), Orisa Halt Implosion Effect, Color(Team 2), Global.grabLeft, 20);
-            Set Global Variable(grabRightPlayer, Filtered Array(Players Within Radius(Global.grabRight, 2, Team 1, Off), And(Is Alive(Current Array Element), Has Spawned(Current Array Element))));
-            Start Forcing Player Position(Global.grabRightPlayer, Global.grabRight, True);
-            Small Message(Global.grabRightPlayer, Custom String("{0} you were grabbed!", Ability Icon String(Hero(Moira), Button(Secondary Fire))));
-            Play Effect(All Players(All Teams), Orisa Halt Implosion Sound, Color(Team 2), Global.grabRight, 20);
-            Play Effect(All Players(All Teams), Orisa Halt Implosion Effect, Color(Team 2), Global.grabRight, 20);
+            设置全局变量(grabLeftPlayer, 已过滤的数组(范围内玩家(全局.grabLeft, 2, 队伍1, 关闭), 与(存活(当前数组元素), 已重生(当前数组元素))));
+            开始强制设置玩家位置(全局.grabLeftPlayer, 全局.grabLeft, 真);
+            小字体信息(全局.grabLeftPlayer, 自定义字符串("{0} you were grabbed!", 技能图标字符串(英雄(莫伊拉), 按钮(辅助攻击模式))));
+            播放效果(所有玩家(所有队伍), 奥丽莎站住别动内爆声音, 颜色(队伍2), 全局.grabLeft, 20);
+            播放效果(所有玩家(所有队伍), 奥丽莎站住别动内爆效果, 颜色(队伍2), 全局.grabLeft, 20);
+            设置全局变量(grabRightPlayer, 已过滤的数组(范围内玩家(全局.grabRight, 2, 队伍1, 关闭), 与(存活(当前数组元素), 已重生(当前数组元素))));
+            开始强制设置玩家位置(全局.grabRightPlayer, 全局.grabRight, 真);
+            小字体信息(全局.grabRightPlayer, 自定义字符串("{0} you were grabbed!", 技能图标字符串(英雄(莫伊拉), 按钮(辅助攻击模式))));
+            播放效果(所有玩家(所有队伍), 奥丽莎站住别动内爆声音, 颜色(队伍2), 全局.grabRight, 20);
+            播放效果(所有玩家(所有队伍), 奥丽莎站住别动内爆效果, 颜色(队伍2), 全局.grabRight, 20);
             "playEffect(getAllPlayers(), DynamicEffect.ORISA_HALT_IMPLOSION_SOUND, Color.TEAM_2, grabRight, 20)\nplayEffect(getAllPlayers(), DynamicEffect.ORISA_HALT_IMPLOSION, Color.TEAM_2, grabRight, 1)\nelse:\ngrabRightPlayer = null\npull"
-            Chase Global Variable Over Time(grabLeft, (Global.nipman).cacheA, 1.2, None);
-            Chase Global Variable Over Time(grabRight, (Global.nipman).cacheB, 1.2, None);
-            Start Damage Over Time(Global.grabLeftPlayer, Null, 1.2, 10);
-            Start Damage Over Time(Global.grabRightPlayer, Null, 1.2, 10);
-            Wait(1.2, Ignore Condition);
-            Stop Chasing Global Variable(grabLeft);
-            Stop Chasing Global Variable(grabRight);
-            Wait(0.08, Ignore Condition);
-            Stop Forcing Player Position(Global.grabLeftPlayer);
-            Stop Forcing Player Position(Global.grabRightPlayer);
+            持续追踪全局变量(grabLeft, (全局.nipman).cacheA, 1.2, 全部禁用);
+            持续追踪全局变量(grabRight, (全局.nipman).cacheB, 1.2, 全部禁用);
+            开始持续伤害(全局.grabLeftPlayer, 空, 1.2, 10);
+            开始持续伤害(全局.grabRightPlayer, 空, 1.2, 10);
+            等待(1.2, 无视条件);
+            停止追踪全局变量(grabLeft);
+            停止追踪全局变量(grabRight);
+            等待(0.08, 无视条件);
+            停止强制设置玩家位置(全局.grabLeftPlayer);
+            停止强制设置玩家位置(全局.grabRightPlayer);
         End;
     }
 }
 
-rule ("cage") {
-    event {
-        Ongoing - Each Player;
-        Team 1;
-        All;
+规则 ("cage") {
+    事件 {
+        持续 - 每名玩家;
+        队伍1;
+        全部;
     }
-    conditions {
-        Global.obj != -1;
-        Is Dummy Bot(Event Player) == False;
-        Has Spawned(Event Player) == True;
-        Array Contains(Global.threatList, 5) == True;
+    条件 {
+        全局.obj != -1;
+        是否是机器人(事件玩家) == 假;
+        已重生(事件玩家) == 真;
+        数组包含(全局.threatList, 5) == 真;
     }
-    actions {
+    动作 {
         "threatFx.append(getLastCreatedEntity())\nwait()"
-        Wait(0.16, Ignore Condition);
-        Create Beam Effect(All Players(All Teams), Junkrat Trap Chain Beam, Evaluate Once(If-Then-Else(Compare(Modulo(Slot Of(Event Player), 2), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB)), Event Player, Color(Team 1), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Wait(Multiply(Slot Of(Event Player), 0.016), Ignore Condition);
-        While(Compare(Global.obj, !=, -1));
-            If(And(Compare(Z Component Of(Position Of(Event Player)), <, -5), Not(Is Crouching(Event Player))));
-                Apply Impulse(Event Player, Direction Towards(Position Of(Event Player), If-Then-Else(Compare(Modulo(Slot Of(Event Player), 2), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB)), 20, To World, Cancel Contrary Motion);
+        等待(0.16, 无视条件);
+        创建光束效果(所有玩家(所有队伍), “狂鼠”陷阱链光束, 单次赋值(If-Then-Else(比较(余数(栏位(事件玩家), 2), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB)), 事件玩家, 颜色(队伍1), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        等待(乘(栏位(事件玩家), 0.016), 无视条件);
+        While(比较(全局.obj, !=, -1));
+            If(与(比较(Z方向分量(所选位置(事件玩家)), <, -5), 非(正在蹲下(事件玩家))));
+                施加推力(事件玩家, 方向(所选位置(事件玩家), If-Then-Else(比较(余数(栏位(事件玩家), 2), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB)), 20, 至地图, 取消相反运动);
             End;
-            Wait(0.36, Ignore Condition);
+            等待(0.36, 无视条件);
         End;
     }
 }
 
-rule ("cage boundary") {
-    event {
-        Ongoing - Global;
+规则 ("cage boundary") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 5) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 5) == 真;
     }
-    actions {
+    动作 {
         "threatFx.append(getLastCreatedEntity())\nwait()"
-        Create Beam Effect(All Players(All Teams), Bad Beam, Vector(-20, 0.1, -5), Vector(20, 0.1, -5), Color(Rose), Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+        创建光束效果(所有玩家(所有队伍), 有害光束, 矢量(-20, 0.1, -5), 矢量(20, 0.1, -5), 颜色(玫红), 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
     }
 }
 
-rule ("milk wall + collision") {
-    event {
-        Ongoing - Global;
+规则 ("milk wall + collision") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 10) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 10) == 真;
     }
-    actions {
-        Wait(0.32, Ignore Condition);
-        Set Global Variable(wallEffects, Empty Array);
-        While(Compare(Global.obj, !=, -1));
-            Set Global Variable(wallPos, Vector(Random Real(-20, 6.8), 0, 20));
-            For Global Variable(wallI, 0, 54, 1);
-                Create Projectile(Echo Sticky Bomb, Global.nipman, If-Then-Else(Compare(Modulo(Global.wallI, 2), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB), Direction Towards(If-Then-Else(Compare(Modulo(Global.wallI, 2), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB), Add(Global.wallPos, Multiply(Vector(Modulo(Global.wallI, 6), Round To Integer(Divide(Global.wallI, 6), Down), 0), 2.2))), To World, Damage, Team 1, 0, 0, 0.1, Brigitte Repair Pack Armor Effect, Brigitte Repair Pack Armor Sound, 0.1, 50, Divide(Magnitude Of(Add(Subtract(If-Then-Else(Compare(Modulo(Global.wallI, 2), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB), Global.wallPos), Multiply(Vector(Modulo(Global.wallI, 6), Round To Integer(Divide(Global.wallI, 6), Down), 0), 2.2))), 120), 0, 0, 0);
-                Wait(0.144, Ignore Condition);
-                Create Projectile Effect(All Players(All Teams), Echo Sticky Bomb, Null, Add(Global.wallPos, Evaluate Once(Multiply(Vector(Modulo(Global.wallI, 6), Round To Integer(Divide(Global.wallI, 6), Down), 0), 2.2))), Backward, 0.1, Visible To Position Direction and Size);
-                Modify Global Variable(wallEffects, Append To Array, Last Created Entity);
+    动作 {
+        等待(0.32, 无视条件);
+        设置全局变量(wallEffects, 空数组);
+        While(比较(全局.obj, !=, -1));
+            设置全局变量(wallPos, 矢量(随机实数(-20, 6.8), 0, 20));
+            For 全局变量(wallI, 0, 54, 1);
+                创建弹道(“回声”黏性炸弹, 全局.nipman, If-Then-Else(比较(余数(全局.wallI, 2), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB), 方向(If-Then-Else(比较(余数(全局.wallI, 2), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB), 加(全局.wallPos, 乘(矢量(余数(全局.wallI, 6), 取整(除(全局.wallI, 6), 下), 0), 2.2))), 至地图, 输出, 队伍1, 0, 0, 0.1, 布丽吉塔恢复包护甲效果, 布丽吉塔恢复包护甲声音, 0.1, 50, 除(幅值(加(减(If-Then-Else(比较(余数(全局.wallI, 2), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB), 全局.wallPos), 乘(矢量(余数(全局.wallI, 6), 取整(除(全局.wallI, 6), 下), 0), 2.2))), 120), 0, 0, 0);
+                等待(0.144, 无视条件);
+                创建弹道效果(所有玩家(所有队伍), “回声”黏性炸弹, 空, 加(全局.wallPos, 单次赋值(乘(矢量(余数(全局.wallI, 6), 取整(除(全局.wallI, 6), 下), 0), 2.2))), 后, 0.1, 友善，位置，方向和大小);
+                修改全局变量(wallEffects, 添加至数组, 最后创建的实体);
             End;
-            For Global Variable(wallI, 0, 3, 1);
-                Play Effect(All Players(All Teams), Sombra Translocator Reappear Sound, Color(Team 2), Global.wallPos, 800);
-                Wait(Multiply(Subtract(3, Global.wallI), 0.16), Ignore Condition);
+            For 全局变量(wallI, 0, 3, 1);
+                播放效果(所有玩家(所有队伍), “黑影”位移传动重现声音, 颜色(队伍2), 全局.wallPos, 800);
+                等待(乘(减(3, 全局.wallI), 0.16), 无视条件);
             End;
-            Chase Global Variable Over Time(wallPos, Add(Global.wallPos, Vector(0, 0, -90)), 3.5, None);
+            持续追踪全局变量(wallPos, 加(全局.wallPos, 矢量(0, 0, -90)), 3.5, 全部禁用);
             "collision"
-            For Global Variable(wallI, 0, 25, 1);
-                Wait(0.096, Ignore Condition);
-                Set Player Variable(Global.nipman, mobTarget, Filtered Array(All Living Players(Team 1), And(And(And(Compare(Absolute Value(Subtract(Z Component Of(Position Of(Current Array Element)), Z Component Of(Global.wallPos))), <, 1.3), Compare(X Component Of(Position Of(Current Array Element)), >, X Component Of(Global.wallPos))), Compare(X Component Of(Position Of(Current Array Element)), <, Add(X Component Of(Global.wallPos), 13.2))), Compare(Y Component Of(Position Of(Current Array Element)), <=, 19.8))));
+            For 全局变量(wallI, 0, 25, 1);
+                等待(0.096, 无视条件);
+                设置玩家变量(全局.nipman, mobTarget, 已过滤的数组(所有存活玩家(队伍1), 与(与(与(比较(绝对值(减(Z方向分量(所选位置(当前数组元素)), Z方向分量(全局.wallPos))), <, 1.3), 比较(X方向分量(所选位置(当前数组元素)), >, X方向分量(全局.wallPos))), 比较(X方向分量(所选位置(当前数组元素)), <, 加(X方向分量(全局.wallPos), 13.2))), 比较(Y方向分量(所选位置(当前数组元素)), <=, 19.8))));
                 "nipman.mobTarget.applyImpulse(Vector.BACKWARD + Vector.UP * 0.1, 100, Relativity.TO_WORLD, Impulse.CANCEL_CONTRARY_MOTION)"
-                Set Status((Global.nipman).mobTarget, Null, Knocked Down, 1.5);
+                设置状态((全局.nipman).mobTarget, 空, 击倒, 1.5);
                 "multihits except when it doesn't"
-                Damage((Global.nipman).mobTarget, Null, 90);
+                伤害((全局.nipman).mobTarget, 空, 90);
             End;
             "and p.getPosition().x > wallPos.x\nand p.getPosition().x < wallPos.x + WallWidth * WallGap\nand p.getPosition().y <= 60 / WallWidth].applyImpulse(Vector.BACKWARD + Vector.UP * 0.3, 360, Relativity.TO_WORLD, Impulse.CANCEL_CONTRARY_MOTION)\nwait(1)"
-            For Global Variable(wallI, 0, Count Of(Global.wallEffects), 1);
-                Destroy Effect(Value In Array(Global.wallEffects, Global.wallI));
-                Wait(0.016, Ignore Condition);
+            For 全局变量(wallI, 0, 数量(全局.wallEffects), 1);
+                消除效果(数组中的值(全局.wallEffects, 全局.wallI));
+                等待(0.016, 无视条件);
             End;
-            Destroy Effect(Global.wallEffects);
-            Set Global Variable(wallEffects, Empty Array);
-            Stop Chasing Global Variable(wallPos);
+            消除效果(全局.wallEffects);
+            设置全局变量(wallEffects, 空数组);
+            停止追踪全局变量(wallPos);
         End;
     }
 }
 
-rule ("rain") {
-    event {
-        Ongoing - Global;
+规则 ("rain") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 7) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 7) == 真;
     }
-    actions {
-        Wait(0.224, Ignore Condition);
-        Create Effect(All Players(All Teams), Cloud, Color(Gray), Vector(0, 30, 0), 40, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        For Global Variable(rainVar, 0, 5, 1);
-            Create Effect(All Players(All Teams), Light Shaft, Color(Purple), Add(Vector(Multiply(Multiply(Sine From Radians(Divide(Total Time Elapsed, 3)), 20), Evaluate Once(Subtract(Multiply(Modulo(Global.rainVar, 2), 2), 1))), 0, Evaluate Once(Subtract(16, Multiply(8, Global.rainVar)))), Vector(0, -18, 0)), 4, Visible To Position and Radius);
-            Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-            Create Effect(All Players(All Teams), Ring, Color(Team 2), Vector(Multiply(Multiply(Sine From Radians(Divide(Total Time Elapsed, 3)), 20), Evaluate Once(Subtract(Multiply(Modulo(Global.rainVar, 2), 2), 1))), 0, Evaluate Once(Subtract(16, Multiply(8, Global.rainVar)))), 4, Visible To Position and Radius);
-            Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+    动作 {
+        等待(0.224, 无视条件);
+        创建效果(所有玩家(所有队伍), 云, 颜色(灰色), 矢量(0, 30, 0), 40, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        For 全局变量(rainVar, 0, 5, 1);
+            创建效果(所有玩家(所有队伍), 光柱, 颜色(亮紫色), 加(矢量(乘(乘(弧度的正弦值(除(总计消耗时间, 3)), 20), 单次赋值(减(乘(余数(全局.rainVar, 2), 2), 1))), 0, 单次赋值(减(16, 乘(8, 全局.rainVar)))), 矢量(0, -18, 0)), 4, 可见，位置和半径);
+            修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+            创建效果(所有玩家(所有队伍), 环, 颜色(队伍2), 矢量(乘(乘(弧度的正弦值(除(总计消耗时间, 3)), 20), 单次赋值(减(乘(余数(全局.rainVar, 2), 2), 1))), 0, 单次赋值(减(16, 乘(8, 全局.rainVar)))), 4, 可见，位置和半径);
+            修改全局变量(threatFx, 添加至数组, 最后创建的实体);
         End;
-        While(Compare(Global.obj, !=, -1));
-            For Global Variable(rainVar, 0, 5, 1);
-                Create Projectile(Echo Sticky Bomb, Null, If-Then-Else(Compare(Modulo(Global.rainVar, 2), ==, 0), (Global.nipman).cacheA, (Global.nipman).cacheB), Direction Towards(Eye Position(Global.nipman), Vector(Random Real(-10, 10), 30, Random Real(-15, 19))), To World, Damage, Team 1, 1, 1, 0, Brigitte Whip Shot Heal Area Effect, Brigitte Whip Shot Heal Area Sound, 0.05, 30, 1, 0, 0, -5);
-                Wait(0.048, Ignore Condition);
-                Create Projectile(Mei Icicle, Null, Add(Add(Vector(Multiply(Multiply(Sine From Radians(Divide(Total Time Elapsed, 3)), 20), Evaluate Once(Subtract(Multiply(Modulo(Global.rainVar, 2), 2), 1))), 0, Evaluate Once(Subtract(16, Multiply(8, Global.rainVar)))), Vector(0, 30, 0)), Vector(Random Real(-0.5, 0.5), 0, Random Real(-0.5, 0.5))), Down, To World, Damage, Team 1, 25, 1, 3.2, Brigitte Repair Pack Impact Effect, Brigitte Whip Shot Heal Area Sound, 0.07, 200, 1, 3, 0, 0);
+        While(比较(全局.obj, !=, -1));
+            For 全局变量(rainVar, 0, 5, 1);
+                创建弹道(“回声”黏性炸弹, 空, If-Then-Else(比较(余数(全局.rainVar, 2), ==, 0), (全局.nipman).cacheA, (全局.nipman).cacheB), 方向(眼睛位置(全局.nipman), 矢量(随机实数(-10, 10), 30, 随机实数(-15, 19))), 至地图, 输出, 队伍1, 1, 1, 0, 布丽吉塔流星飞锤范围治疗效果, 布丽吉塔流星飞锤范围治疗声音, 0.05, 30, 1, 0, 0, -5);
+                等待(0.048, 无视条件);
+                创建弹道(美冰锥, 空, 加(加(矢量(乘(乘(弧度的正弦值(除(总计消耗时间, 3)), 20), 单次赋值(减(乘(余数(全局.rainVar, 2), 2), 1))), 0, 单次赋值(减(16, 乘(8, 全局.rainVar)))), 矢量(0, 30, 0)), 矢量(随机实数(-0.5, 0.5), 0, 随机实数(-0.5, 0.5))), 下, 至地图, 输出, 队伍1, 25, 1, 3.2, 布丽吉塔恢复包击中效果, 布丽吉塔流星飞锤范围治疗声音, 0.07, 200, 1, 3, 0, 0);
             End;
         End;
     }
 }
 
-rule ("twister") {
-    event {
-        Ongoing - Global;
+规则 ("twister") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 6) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 6) == 真;
     }
-    actions {
-        Wait(0.192, Ignore Condition);
-        For Global Variable(twisterCache, 3, 12, 2);
+    动作 {
+        等待(0.192, 无视条件);
+        For 全局变量(twisterCache, 3, 12, 2);
             "smallMessage(getAllPlayers(), i)"
-            Create Effect(All Players(All Teams), Bad Aura, Color(Gray), Add(Multiply(Up, Evaluate Once(Subtract(Multiply(Global.twisterCache, 2.5), 6))), Global.twisterPos), Evaluate Once(Multiply(Global.twisterCache, 0.7)), Visible To Position and Radius);
-            Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-            Create Projectile Effect(All Players(All Teams), Echo Sticky Bomb, Null, Add(Global.twisterPos, Multiply(Multiply(Evaluate Once(Global.twisterCache), 0.8), Vector(Cosine From Radians(Add(Multiply(Total Time Elapsed, 7), Evaluate Once(Global.twisterCache))), Add(1, Multiply(0.4, Sine From Radians(Total Time Elapsed))), Sine From Radians(Add(Multiply(Total Time Elapsed, 7), Evaluate Once(Global.twisterCache)))))), Up, Evaluate Once(Random Real(0, 0.05)), Visible To Position Direction and Size);
-            Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-            Create Projectile Effect(All Players(All Teams), Zarya Particle Cannon, Null, Add(Global.twisterPos, Multiply(Multiply(Evaluate Once(Global.twisterCache), 0.8), Vector(Cosine From Radians(Add(Multiply(Total Time Elapsed, 9), Evaluate Once(Global.twisterCache))), Add(1.3, Multiply(0.4, Cosine From Radians(Total Time Elapsed))), Sine From Radians(Add(Multiply(Total Time Elapsed, 9), Evaluate Once(Global.twisterCache)))))), Up, Evaluate Once(Random Real(0, 0.05)), Visible To Position Direction and Size);
-            Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-            Wait(0.016, Ignore Condition);
+            创建效果(所有玩家(所有队伍), 有害光环, 颜色(灰色), 加(乘(上, 单次赋值(减(乘(全局.twisterCache, 2.5), 6))), 全局.twisterPos), 单次赋值(乘(全局.twisterCache, 0.7)), 可见，位置和半径);
+            修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+            创建弹道效果(所有玩家(所有队伍), “回声”黏性炸弹, 空, 加(全局.twisterPos, 乘(乘(单次赋值(全局.twisterCache), 0.8), 矢量(弧度的余弦值(加(乘(总计消耗时间, 7), 单次赋值(全局.twisterCache))), 加(1, 乘(0.4, 弧度的正弦值(总计消耗时间))), 弧度的正弦值(加(乘(总计消耗时间, 7), 单次赋值(全局.twisterCache)))))), 上, 单次赋值(随机实数(0, 0.05)), 友善，位置，方向和大小);
+            修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+            创建弹道效果(所有玩家(所有队伍), 查莉娅粒子炮, 空, 加(全局.twisterPos, 乘(乘(单次赋值(全局.twisterCache), 0.8), 矢量(弧度的余弦值(加(乘(总计消耗时间, 9), 单次赋值(全局.twisterCache))), 加(1.3, 乘(0.4, 弧度的余弦值(总计消耗时间))), 弧度的正弦值(加(乘(总计消耗时间, 9), 单次赋值(全局.twisterCache)))))), 上, 单次赋值(随机实数(0, 0.05)), 友善，位置，方向和大小);
+            修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+            等待(0.016, 无视条件);
         End;
-        Create Effect(All Players(All Teams), Ring, Color(Team 2), Global.twisterPos, 5, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Effect(All Players(All Teams), Cloud, Color(Gray), Add(Global.twisterPos, Vector(0, 24, 0)), 30, Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Zarya Particle Cannon, Null, Add(Global.twisterPos, Vector(0, -7, 0)), Down, 1, Visible To Position Direction and Size);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Set Global Variable(twisterPos, Multiply((Global.nipman).cacheA, Vector(1, 0, 1)));
-        Chase Global Variable At Rate(twisterPos, Multiply(Position Of(First Of(Sorted Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Global.twisterPos)))), Vector(1, 0, 1)), 1.6, Destination and Rate);
-        While(Compare(Global.obj, !=, -1));
-            Set Global Variable(twisterCache, Filtered Array(All Living Players(Team 1), And(Compare(Distance Between(Multiply(Position Of(Current Array Element), Vector(1, 0, 1)), Global.twisterPos), <, 5), Compare(Y Component Of(Position Of(Current Array Element)), <, 25))));
-            Apply Impulse(Global.twisterCache, Up, 7, To World, Incorporate Contrary Motion);
-            Damage(Global.twisterCache, Null, 35);
-            Wait(0.24, Ignore Condition);
+        创建效果(所有玩家(所有队伍), 环, 颜色(队伍2), 全局.twisterPos, 5, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建效果(所有玩家(所有队伍), 云, 颜色(灰色), 加(全局.twisterPos, 矢量(0, 24, 0)), 30, 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 查莉娅粒子炮, 空, 加(全局.twisterPos, 矢量(0, -7, 0)), 下, 1, 友善，位置，方向和大小);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        设置全局变量(twisterPos, 乘((全局.nipman).cacheA, 矢量(1, 0, 1)));
+        追踪全局变量频率(twisterPos, 乘(所选位置(首个(已排序的数组(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素)), 相距距离(当前数组元素, 全局.twisterPos)))), 矢量(1, 0, 1)), 1.6, 速率及最终值);
+        While(比较(全局.obj, !=, -1));
+            设置全局变量(twisterCache, 已过滤的数组(所有存活玩家(队伍1), 与(比较(相距距离(乘(所选位置(当前数组元素), 矢量(1, 0, 1)), 全局.twisterPos), <, 5), 比较(Y方向分量(所选位置(当前数组元素)), <, 25))));
+            施加推力(全局.twisterCache, 上, 7, 至地图, 合并相反运动);
+            伤害(全局.twisterCache, 空, 35);
+            等待(0.24, 无视条件);
         End;
     }
 }
 
-rule ("sun loop") {
-    event {
-        Ongoing - Global;
+规则 ("sun loop") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 17) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 17) == 真;
     }
-    actions {
-        While(Compare(Global.obj, !=, -1));
-            Wait(0.64, Ignore Condition);
-            Set Invisible(Global.threatSuns, Enemies);
-            Set Status(Global.threatSuns, Null, Phased Out, 99999);
-            Start Forcing Dummy Bot Name(Global.threatSuns, Custom String("sunkissed nips"));
-            Set Projectile Speed(Global.threatSuns, 30);
-            Disable Nameplates(Global.threatSuns, All Players(All Teams));
-            Set Damage Dealt(Global.threatSuns, Max(20, Divide(120, Count Of(Global.threatSuns))));
-            Start Modifying Hero Voice Lines(Global.threatSuns, 0, False);
-            Set Ultimate Charge(Global.threatSuns, 100);
-            Wait(4, Ignore Condition);
-            Press Button(Global.threatSuns, Button(Ultimate));
-            For Global Variable(isun, 0, Count Of(Global.threatSuns), 1);
-                If(Not(Entity Exists(Value In Array(Global.threatSuns, Global.isun))));
-                    Modify Global Variable(threatSuns, Remove From Array By Value, Value In Array(Global.threatSuns, Global.isun));
+    动作 {
+        While(比较(全局.obj, !=, -1));
+            等待(0.64, 无视条件);
+            设置不可见(全局.threatSuns, 敌人);
+            设置状态(全局.threatSuns, 空, 相移, 99999);
+            开始为机器人强制设置名称(全局.threatSuns, 自定义字符串("sunkissed nips"));
+            设置弹道速度(全局.threatSuns, 30);
+            隐藏姓名板(全局.threatSuns, 所有玩家(所有队伍));
+            设置造成伤害(全局.threatSuns, 较大(20, 除(120, 数量(全局.threatSuns))));
+            开始修改英雄语音(全局.threatSuns, 0, 假);
+            设置终极技能充能(全局.threatSuns, 100);
+            等待(4, 无视条件);
+            按下按键(全局.threatSuns, 按钮(终极技能));
+            For 全局变量(isun, 0, 数量(全局.threatSuns), 1);
+                If(非(实体存在(数组中的值(全局.threatSuns, 全局.isun))));
+                    修改全局变量(threatSuns, 根据值从数组中移除, 数组中的值(全局.threatSuns, 全局.isun));
                 Else;
-                    Set Facing(Value In Array(Global.threatSuns, Global.isun), Direction Towards(Eye Position(Value In Array(Global.threatSuns, Global.isun)), Position Of(Random Value In Array(All Living Players(Team 1)))), To World);
+                    设置朝向(数组中的值(全局.threatSuns, 全局.isun), 方向(眼睛位置(数组中的值(全局.threatSuns, 全局.isun)), 所选位置(数组随机取值(所有存活玩家(队伍1)))), 至地图);
                 End;
-                Wait(0.064, Ignore Condition);
+                等待(0.064, 无视条件);
             End;
             "threatSuns.slice(0,len(threatSuns)/2).setFacing(, Relativity.TO_PLAYER)\nthreatSuns.slice(len(threatSuns/2),len(threatSuns)).setFacing(directionTowards(RightNip + Vector.UP * 5, random.choice(getLivingPlayers(Team.1)).getEyePosition()), Relativity.TO_WORLD)"
-            Wait(2, Ignore Condition);
-            Press Button(Global.threatSuns, Button(Primary Fire));
+            等待(2, 无视条件);
+            按下按键(全局.threatSuns, 按钮(主要攻击模式));
         End;
     }
 }
 
-rule ("gravitatas") {
-    event {
-        Ongoing - Global;
+规则 ("gravitatas") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 16) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 16) == 真;
     }
-    actions {
-        Create Projectile Effect(All Players(All Teams), Zarya Graviton, Null, (Global.nipman).cacheA, Backward, 0.27, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Zarya Graviton, Null, (Global.nipman).cacheB, Backward, 0.27, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+    动作 {
+        创建弹道效果(所有玩家(所有队伍), 查莉娅重力喷涌, 空, (全局.nipman).cacheA, 后, 0.27, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 查莉娅重力喷涌, 空, (全局.nipman).cacheB, 后, 0.27, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
         "there was an issue with players getting stuck on the bottom rocks opposite mauga\ngetPlayers(Team.1).startAcceleration(Vector.FORWARD + 0.15 * Vector.DOWN, 80, 15, Relativity.TO_WORLD, AccelReeval.NONE)"
-        While(Compare(Global.obj, !=, -1));
-            Set Gravity(All Players(Team 1), 300);
-            Wait(6, Ignore Condition);
+        While(比较(全局.obj, !=, -1));
+            设置引力(所有玩家(队伍1), 300);
+            等待(6, 无视条件);
         End;
     }
 }
 
-rule ("boolet") {
-    event {
-        Ongoing - Global;
+规则 ("boolet") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 15) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 15) == 真;
     }
-    actions {
-        Wait(0.48, Ignore Condition);
-        While(Compare(Global.obj, !=, -1));
-            Create Projectile(Ramattra Ravenous Vortex Sphere, Null, (Global.nipman).cacheA, Vector(Multiply(Sine From Radians(Multiply(Total Time Elapsed, 2)), 0.5), Subtract(Multiply(Cosine From Radians(Total Time Elapsed), 0.1), 0.2), -1), To World, Damage, Team 1, 130, 1, 0, DVa Micro Missiles Explosion Effect, DVa Micro Missiles Explosion Sound, 0.04, 14, 4, 0, 0, 0);
-            Wait(0.08, Ignore Condition);
-            Create Projectile(Mercy Caduceus Blaster, Null, (Global.nipman).cacheB, Vector(Multiply(Sine From Radians(Multiply(Total Time Elapsed, 2)), -0.5), Subtract(Multiply(Cosine From Radians(Total Time Elapsed), -0.1), 0.2), -1), To World, Damage, Team 1, 130, 1, 0, DVa Micro Missiles Explosion Effect, DVa Micro Missiles Explosion Sound, 0.1, 14, 4, 0, 0, 0);
-            Wait(0.08, Ignore Condition);
+    动作 {
+        等待(0.48, 无视条件);
+        While(比较(全局.obj, !=, -1));
+            创建弹道(拉玛刹吞噬漩涡能量球, 空, (全局.nipman).cacheA, 矢量(乘(弧度的正弦值(乘(总计消耗时间, 2)), 0.5), 减(乘(弧度的余弦值(总计消耗时间), 0.1), 0.2), -1), 至地图, 输出, 队伍1, 130, 1, 0, D.Va微型飞弹爆炸效果, D.Va微型飞弹爆炸声音, 0.04, 14, 4, 0, 0, 0);
+            等待(0.08, 无视条件);
+            创建弹道(“天使”天使冲击枪, 空, (全局.nipman).cacheB, 矢量(乘(弧度的正弦值(乘(总计消耗时间, 2)), -0.5), 减(乘(弧度的余弦值(总计消耗时间), -0.1), 0.2), -1), 至地图, 输出, 队伍1, 130, 1, 0, D.Va微型飞弹爆炸效果, D.Va微型飞弹爆炸声音, 0.1, 14, 4, 0, 0, 0);
+            等待(0.08, 无视条件);
         End;
     }
 }
 
-rule ("laser") {
-    event {
-        Ongoing - Global;
+规则 ("laser") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 18) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 18) == 真;
     }
-    actions {
-        Wait(0.576, Ignore Condition);
-        Set Global Variable(area1, Vector(10, 0, 20));
-        Set Global Variable(area2, Vector(-10, 0, 20));
-        Create Beam Effect(All Players(All Teams), Omnic Slicer Beam, (Global.nipman).cacheA, Global.area1, Color(Team 2), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Beam Effect(All Players(All Teams), Omnic Slicer Beam, (Global.nipman).cacheB, Global.area2, Color(Team 2), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Zarya Particle Cannon, Null, Add(Global.area1, Vector(0, -4, 0)), Down, 0.55, Visible To Position Direction and Size);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Zarya Particle Cannon, Null, Add(Global.area2, Vector(0, -4, 0)), Down, 0.55, Visible To Position Direction and Size);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Chase Global Variable At Rate(area1, Multiply(Position Of(First Of(Sorted Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Global.area1)))), Vector(1, 0, 1)), 0.8, Destination and Rate);
-        Chase Global Variable At Rate(area2, Multiply(Position Of(First Of(Sorted Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Global.area2)))), Vector(1, 0, 1)), 0.8, Destination and Rate);
-        While(Compare(Global.obj, !=, -1));
-            Create Projectile(Ramattra Ravenous Vortex Sphere, Global.nipman, Add(Global.area1, Vector(0, 0.5, 0)), Down, To World, Damage, Team 1, 20, 1, 3, Zarya Particle Cannon Explosion Effect, Orisa Halt Implosion Sound, 0, Total Time Elapsed, 10, 55, 0, 0);
-            Wait(0.08, Ignore Condition);
-            Create Projectile(Ramattra Ravenous Vortex Sphere, Global.nipman, Add(Global.area2, Vector(0, 0.5, 0)), Down, To World, Damage, Team 1, 20, 1, 3, Zarya Particle Cannon Explosion Effect, Orisa Halt Implosion Sound, 0, Total Time Elapsed, 3, 55, 0, 0);
-            Wait(0.8, Ignore Condition);
+    动作 {
+        等待(0.576, 无视条件);
+        设置全局变量(area1, 矢量(10, 0, 20));
+        设置全局变量(area2, 矢量(-10, 0, 20));
+        创建光束效果(所有玩家(所有队伍), 智械切割者光束, (全局.nipman).cacheA, 全局.area1, 颜色(队伍2), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建光束效果(所有玩家(所有队伍), 智械切割者光束, (全局.nipman).cacheB, 全局.area2, 颜色(队伍2), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 查莉娅粒子炮, 空, 加(全局.area1, 矢量(0, -4, 0)), 下, 0.55, 友善，位置，方向和大小);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 查莉娅粒子炮, 空, 加(全局.area2, 矢量(0, -4, 0)), 下, 0.55, 友善，位置，方向和大小);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        追踪全局变量频率(area1, 乘(所选位置(首个(已排序的数组(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素)), 相距距离(当前数组元素, 全局.area1)))), 矢量(1, 0, 1)), 0.8, 速率及最终值);
+        追踪全局变量频率(area2, 乘(所选位置(首个(已排序的数组(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素)), 相距距离(当前数组元素, 全局.area2)))), 矢量(1, 0, 1)), 0.8, 速率及最终值);
+        While(比较(全局.obj, !=, -1));
+            创建弹道(拉玛刹吞噬漩涡能量球, 全局.nipman, 加(全局.area1, 矢量(0, 0.5, 0)), 下, 至地图, 输出, 队伍1, 20, 1, 3, 查莉娅粒子炮爆炸效果, 奥丽莎站住别动内爆声音, 0, 总计消耗时间, 10, 55, 0, 0);
+            等待(0.08, 无视条件);
+            创建弹道(拉玛刹吞噬漩涡能量球, 全局.nipman, 加(全局.area2, 矢量(0, 0.5, 0)), 下, 至地图, 输出, 队伍1, 20, 1, 3, 查莉娅粒子炮爆炸效果, 奥丽莎站住别动内爆声音, 0, 总计消耗时间, 3, 55, 0, 0);
+            等待(0.8, 无视条件);
         End;
     }
 }
 
-rule ("discharge") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
+规则 ("discharge") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Or(Compare(Event Player, ==, Global.nipman), Array Contains(Global.objPos, Event Player)) == True;
-        Global.obj != -1;
-        Array Contains(Global.threatList, 12) == True;
+    条件 {
+        或(比较(事件玩家, ==, 全局.nipman), 数组包含(全局.objPos, 事件玩家)) == 真;
+        全局.obj != -1;
+        数组包含(全局.threatList, 12) == 真;
     }
-    actions {
-        Wait(0.384, Ignore Condition);
-        Create Dummy Bot(Hero(Torbjörn), Team 2, -1, Up, Backward);
-        Set Player Variable(Event Player, botA, Last Created Entity);
-        Modify Global Variable(threatLactaters, Append To Array, Last Created Entity);
-        Start Forcing Player Position(Last Created Entity, (Event Player).cacheA, False);
-        Create Dummy Bot(Hero(Torbjörn), Team 2, -1, Up, Backward);
-        Set Player Variable(Event Player, botB, Last Created Entity);
-        Modify Global Variable(threatLactaters, Append To Array, Last Created Entity);
-        Start Forcing Player Position(Last Created Entity, (Event Player).cacheB, False);
-        Wait(0.36, Ignore Condition);
-        Set Weapon(Global.threatLactaters, 2);
-        Start Scaling Player(Global.threatLactaters, 0.3, False);
-        Set Status(Global.threatLactaters, Null, Phased Out, 9999);
-        Set Invisible(Global.threatLactaters, All);
-        Start Holding Button(Global.threatLactaters, Button(Primary Fire));
-        Start Facing((Event Player).botA, Add(Add(Multiply(Evaluate Once(Direction Towards(Multiply((Event Player).cacheA, Vector(1, 0, 1)), Vector(20, 0, 0))), Sine From Radians(Multiply(Total Time Elapsed, 33))), Multiply(Vector(0, 0.5, 0), Add(Sine From Radians(Multiply(Total Time Elapsed, 47)), 0.5))), Facing Direction Of(Event Player)), 9999, To World, Direction and Turn Rate);
-        Start Facing((Event Player).botB, Add(Add(Multiply(Evaluate Once(Direction Towards(Multiply((Event Player).cacheB, Vector(1, 0, 1)), Vector(20, 0, 0))), Sine From Radians(Multiply(Total Time Elapsed, 33))), Multiply(Vector(0, 0.5, 0), Add(Sine From Radians(Multiply(Total Time Elapsed, 47)), 0.5))), Facing Direction Of(Event Player)), 9999, To World, Direction and Turn Rate);
+    动作 {
+        等待(0.384, 无视条件);
+        生成机器人(英雄(托比昂), 队伍2, -1, 上, 后);
+        设置玩家变量(事件玩家, botA, 最后创建的实体);
+        修改全局变量(threatLactaters, 添加至数组, 最后创建的实体);
+        开始强制设置玩家位置(最后创建的实体, (事件玩家).cacheA, 假);
+        生成机器人(英雄(托比昂), 队伍2, -1, 上, 后);
+        设置玩家变量(事件玩家, botB, 最后创建的实体);
+        修改全局变量(threatLactaters, 添加至数组, 最后创建的实体);
+        开始强制设置玩家位置(最后创建的实体, (事件玩家).cacheB, 假);
+        等待(0.36, 无视条件);
+        设置武器(全局.threatLactaters, 2);
+        开始调整玩家大小(全局.threatLactaters, 0.3, 假);
+        设置状态(全局.threatLactaters, 空, 相移, 9999);
+        设置不可见(全局.threatLactaters, 全部);
+        开始按下按钮(全局.threatLactaters, 按钮(主要攻击模式));
+        开始朝向((事件玩家).botA, 加(加(乘(单次赋值(方向(乘((事件玩家).cacheA, 矢量(1, 0, 1)), 矢量(20, 0, 0))), 弧度的正弦值(乘(总计消耗时间, 33))), 乘(矢量(0, 0.5, 0), 加(弧度的正弦值(乘(总计消耗时间, 47)), 0.5))), 面朝方向(事件玩家)), 9999, 至地图, 方向及角速率);
+        开始朝向((事件玩家).botB, 加(加(乘(单次赋值(方向(乘((事件玩家).cacheB, 矢量(1, 0, 1)), 矢量(20, 0, 0))), 弧度的正弦值(乘(总计消耗时间, 33))), 乘(矢量(0, 0.5, 0), 加(弧度的正弦值(乘(总计消耗时间, 47)), 0.5))), 面朝方向(事件玩家)), 9999, 至地图, 方向及角速率);
         "eventPlayer.botB.startFacing(worldVector(vect(sin(getTotalTimeElapsed() * 33)*0.45, sin(getTotalTimeElapsed() * 47)*0.32 - 0.09, -1), eventPlayer, Transform.ROTATION) + eventPlayer.getFacingDirection() * 3, 50, Relativity.TO_WORLD, FacingReeval.DIRECTION_A"
-        Wait(0.36, Ignore Condition);
-        Start Modifying Hero Voice Lines(Global.threatLactaters, Add(1, Multiply(0.5, Sine From Radians(Multiply(Total Time Elapsed, 2)))), True);
-        Start Forcing Dummy Bot Name(Global.threatLactaters, Custom String("overheating glands"));
-        Disable Nameplates(Global.threatLactaters, All Players(All Teams));
+        等待(0.36, 无视条件);
+        开始修改英雄语音(全局.threatLactaters, 加(1, 乘(0.5, 弧度的正弦值(乘(总计消耗时间, 2)))), 真);
+        开始为机器人强制设置名称(全局.threatLactaters, 自定义字符串("overheating glands"));
+        隐藏姓名板(全局.threatLactaters, 所有玩家(所有队伍));
     }
 }
 
-rule ("everybody discharge") {
-    event {
-        Ongoing - Global;
+规则 ("everybody discharge") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 12) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 12) == 真;
     }
-    actions {
-        While(Array Contains(Global.threatList, 12));
-            Wait(10, Ignore Condition);
-            Set Ultimate Charge(Global.threatLactaters, 100);
-            Set Damage Dealt(Global.threatLactaters, Divide(80, Count Of(Global.threatLactaters)));
-            Disable Nameplates(Global.threatLactaters, All Players(All Teams));
-            Wait(0.12, Ignore Condition);
-            Press Button(Global.threatLactaters, Button(Ultimate));
+    动作 {
+        While(数组包含(全局.threatList, 12));
+            等待(10, 无视条件);
+            设置终极技能充能(全局.threatLactaters, 100);
+            设置造成伤害(全局.threatLactaters, 除(80, 数量(全局.threatLactaters)));
+            隐藏姓名板(全局.threatLactaters, 所有玩家(所有队伍));
+            等待(0.12, 无视条件);
+            按下按键(全局.threatLactaters, 按钮(终极技能));
         End;
     }
 }
 
-rule ("heal milk") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
+规则 ("heal milk") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 11) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 11) == 真;
         "sure let the niplets also do this"
-        Is Alive(Event Player) == True;
+        存活(事件玩家) == 真;
     }
-    actions {
-        Create Projectile Effect(All Players(All Teams), Moira Heal Orb, Null, (Event Player).cacheA, Facing Direction Of(Event Player), 0, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Moira Heal Orb, Null, (Event Player).cacheB, Facing Direction Of(Event Player), 0, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        While(And(Compare(Global.obj, !=, -1), Is Alive(Event Player)));
-            Wait(0.8, Ignore Condition);
-            Create Homing Projectile(Echo Sticky Bomb, Event Player, Add((Event Player).cacheA, Multiply(Facing Direction Of(Event Player), 2)), Facing Direction Of(Event Player), To World, Heal, Team 2, 20, 1, 1, Echo Sticky Bomb Explosion Effect, Baptiste Biotic Launcher Explosion Sound, 0.05, 60, 10, 0, Random Value In Array(If-Then-Else(Compare(Global.obj, ==, 1), Remove From Array(Global.objPos, Event Player), Global.mobs)), 1);
-            Create Homing Projectile(Echo Sticky Bomb, Event Player, Add((Event Player).cacheB, Multiply(Facing Direction Of(Event Player), 2)), Facing Direction Of(Event Player), To World, Heal, Team 2, 20, 1, 1, Echo Sticky Bomb Explosion Effect, Baptiste Biotic Launcher Explosion Sound, 0.05, 60, 10, 0, Random Value In Array(If-Then-Else(Compare(Global.obj, ==, 1), Remove From Array(Global.objPos, Event Player), Global.mobs)), 1);
+    动作 {
+        创建弹道效果(所有玩家(所有队伍), 莫伊拉治疗生化之球, 空, (事件玩家).cacheA, 面朝方向(事件玩家), 0, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 莫伊拉治疗生化之球, 空, (事件玩家).cacheB, 面朝方向(事件玩家), 0, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        While(与(比较(全局.obj, !=, -1), 存活(事件玩家)));
+            等待(0.8, 无视条件);
+            创建追踪弹道(“回声”黏性炸弹, 事件玩家, 加((事件玩家).cacheA, 乘(面朝方向(事件玩家), 2)), 面朝方向(事件玩家), 至地图, 治疗, 队伍2, 20, 1, 1, “回声”黏性炸弹爆炸效果, 巴蒂斯特生化榴弹枪爆炸声音, 0.05, 60, 10, 0, 数组随机取值(If-Then-Else(比较(全局.obj, ==, 1), 从数组中移除(全局.objPos, 事件玩家), 全局.mobs)), 1);
+            创建追踪弹道(“回声”黏性炸弹, 事件玩家, 加((事件玩家).cacheB, 乘(面朝方向(事件玩家), 2)), 面朝方向(事件玩家), 至地图, 治疗, 队伍2, 20, 1, 1, “回声”黏性炸弹爆炸效果, 巴蒂斯特生化榴弹枪爆炸声音, 0.05, 60, 10, 0, 数组随机取值(If-Then-Else(比较(全局.obj, ==, 1), 从数组中移除(全局.objPos, 事件玩家), 全局.mobs)), 1);
         End;
     }
 }
 
-rule ("nuke") {
-    event {
-        Ongoing - Global;
+规则 ("nuke") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 8) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 8) == 真;
     }
-    actions {
-        Wait(0.256, Ignore Condition);
+    动作 {
+        等待(0.256, 无视条件);
         "debug\ncreateEffect(getAllPlayers(), Effect.LIGHT_SHAFT, Color.ROSE, missilePos, 1, EffectReeval.VISIBILITY_POSITION_AND_RADIUS)"
-        While(Compare(Global.obj, !=, -1));
-            Set Global Variable(missileFx, Empty Array);
-            Set Global Variable(missilePos, Vector(0, 1, 20));
-            Chase Global Variable At Rate(missilePos, Add(Multiply(Position Of(First Of(Sorted Array(Filtered Array(All Living Players(Team 1), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Global.missilePos)))), Vector(1, 0, 1)), Up), 4, Destination and Rate);
+        While(比较(全局.obj, !=, -1));
+            设置全局变量(missileFx, 空数组);
+            设置全局变量(missilePos, 矢量(0, 1, 20));
+            追踪全局变量频率(missilePos, 加(乘(所选位置(首个(已排序的数组(已过滤的数组(所有存活玩家(队伍1), 已重生(当前数组元素)), 相距距离(当前数组元素, 全局.missilePos)))), 矢量(1, 0, 1)), 上), 4, 速率及最终值);
             "chaser"
-            Create Projectile Effect(All Players(All Teams), Zarya Graviton, Null, Global.missilePos, Up, 0.1, Visible To Position Direction and Size);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
-            Wait(0.016, Ignore Condition);
+            创建弹道效果(所有玩家(所有队伍), 查莉娅重力喷涌, 空, 全局.missilePos, 上, 0.1, 友善，位置，方向和大小);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
+            等待(0.016, 无视条件);
             "closest player check, can't use wait until in case rule must break"
-            While(Compare(Global.missileFx, !=, Empty Array));
-                If(Compare(Global.obj, ==, -1));
-                    For Global Variable(missileTemp, 0, Count Of(Global.missileFx), 1);
-                        Destroy Effect(Value In Array(Global.missileFx, Global.missileTemp));
+            While(比较(全局.missileFx, !=, 空数组));
+                If(比较(全局.obj, ==, -1));
+                    For 全局变量(missileTemp, 0, 数量(全局.missileFx), 1);
+                        消除效果(数组中的值(全局.missileFx, 全局.missileTemp));
                     End;
-                    Abort;
+                    中止;
                 End;
                 "probably a bit more optimal since this stops checking on the first player found, instead of checking all players in radius"
-                For Global Variable(missileTemp, 0, Number Of Living Players(Team 1), 1);
-                    If(And(Has Spawned(Value In Array(All Living Players(Team 1), Global.missileTemp)), Compare(Distance Between(Position Of(Value In Array(All Living Players(Team 1), Global.missileTemp)), Global.missilePos), <, 3)));
-                        Play Effect(All Players(All Teams), Orisa Halt Implosion Sound, Color(Team 2), Global.missilePos, 100);
-                        Destroy Effect(First Of(Global.missileFx));
-                        Set Global Variable(missileFx, Empty Array);
-                        Break;
+                For 全局变量(missileTemp, 0, 存活玩家数量(队伍1), 1);
+                    If(与(已重生(数组中的值(所有存活玩家(队伍1), 全局.missileTemp)), 比较(相距距离(所选位置(数组中的值(所有存活玩家(队伍1), 全局.missileTemp)), 全局.missilePos), <, 3)));
+                        播放效果(所有玩家(所有队伍), 奥丽莎站住别动内爆声音, 颜色(队伍2), 全局.missilePos, 100);
+                        消除效果(首个(全局.missileFx));
+                        设置全局变量(missileFx, 空数组);
+                        中断;
                     End;
                 End;
-                Wait(0.24, Ignore Condition);
+                等待(0.24, 无视条件);
             End;
-            Stop Chasing Global Variable(missilePos);
-            Modify Global Variable(missilePos, Subtract, Up);
-            Create Projectile Effect(All Players(All Teams), Zarya Graviton, Null, Add(Global.missilePos, Up), Up, Add(0.1, Multiply(0.1, Subtract(Total Time Elapsed, Global.missileTemp))), Visible To Position Direction and Size);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
-            Wait(0.016, Ignore Condition);
-            Set Global Variable(missileTemp, Total Time Elapsed);
-            Wait(3, Ignore Condition);
+            停止追踪全局变量(missilePos);
+            修改全局变量(missilePos, 减, 上);
+            创建弹道效果(所有玩家(所有队伍), 查莉娅重力喷涌, 空, 加(全局.missilePos, 上), 上, 加(0.1, 乘(0.1, 减(总计消耗时间, 全局.missileTemp))), 友善，位置，方向和大小);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
+            等待(0.016, 无视条件);
+            设置全局变量(missileTemp, 总计消耗时间);
+            等待(3, 无视条件);
             "deto"
-            If(Compare(Global.obj, ==, -1));
-                For Global Variable(missileTemp, 0, Count Of(Global.missileFx), 1);
-                    Destroy Effect(Value In Array(Global.missileFx, Global.missileTemp));
+            If(比较(全局.obj, ==, -1));
+                For 全局变量(missileTemp, 0, 数量(全局.missileFx), 1);
+                    消除效果(数组中的值(全局.missileFx, 全局.missileTemp));
                 End;
-                Abort;
+                中止;
             End;
-            Create Projectile(Pharah Rocket, Global.nipman, (Global.nipman).cacheA, Direction Towards((Global.nipman).cacheA, Add(Global.missilePos, Vector(0, 2, 0))), To World, Heal, Team 1, 0, 0, 0, DVa Self Destruct Explosion Effect, DVa Self Destruct Explosion Sound, 1, 100, 0.5, 70, 0, 0);
-            Create Projectile(Pharah Rocket, Global.nipman, (Global.nipman).cacheB, Direction Towards((Global.nipman).cacheB, Add(Global.missilePos, Vector(0, 2, 0))), To World, Heal, Team 1, 0, 0, 0, DVa Self Destruct Explosion Effect, DVa Self Destruct Explosion Sound, 1, 100, 0.5, 70, 0, 0);
-            Wait(Multiply(0.012, Distance Between((Global.nipman).cacheA, Global.missilePos)), Ignore Condition);
+            创建弹道(“法老之鹰”火箭, 全局.nipman, (全局.nipman).cacheA, 方向((全局.nipman).cacheA, 加(全局.missilePos, 矢量(0, 2, 0))), 至地图, 治疗, 队伍1, 0, 0, 0, D.Va自毁爆炸效果, D.Va自毁爆炸声音, 1, 100, 0.5, 70, 0, 0);
+            创建弹道(“法老之鹰”火箭, 全局.nipman, (全局.nipman).cacheB, 方向((全局.nipman).cacheB, 加(全局.missilePos, 矢量(0, 2, 0))), 至地图, 治疗, 队伍1, 0, 0, 0, D.Va自毁爆炸效果, D.Va自毁爆炸声音, 1, 100, 0.5, 70, 0, 0);
+            等待(乘(0.012, 相距距离((全局.nipman).cacheA, 全局.missilePos)), 无视条件);
             "playEffect(getAllPlayers(), DynamicEffect.HANZO_SONIC_ARROW_INITIAL_PULSE, Color.TEAM_2, missilePos, 1)\nplayEffect(getAllPlayers(), DynamicEffect.LUCIO_SOUND_BARRIER_CAST, Color.TEAM_2, missilePos, 1)"
-            Play Effect(All Players(All Teams), DVa Self Destruct Explosion Effect, Color(Team 2), Global.missilePos, 1);
-            Play Effect(All Players(All Teams), DVa Self Destruct Explosion Sound, Color(Team 2), Global.missilePos, 400);
-            Destroy Effect(First Of(Global.missileFx));
-            Set Global Variable(missileFx, Empty Array);
-            Set Global Variable(missileTemp, Total Time Elapsed);
-            Wait(0.016, Ignore Condition);
-            Create Projectile Effect(All Players(All Teams), Zarya Particle Cannon, Null, Add(Global.missilePos, Vector(0, -10, 0)), Up, 0.8, Visible To);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
-            Create Effect(All Players(All Teams), Ring, Color(Team 2), Global.missilePos, 9, Visible To);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
-            Create Beam Effect(All Players(All Teams), Omnic Slicer Beam, Global.missilePos, Add(Global.missilePos, Multiply(Min(16, Multiply(20, Subtract(Total Time Elapsed, Global.missileTemp))), Up)), Color(Team 2), Visible To Position and Radius);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
-            Create Beam Effect(All Players(All Teams), Omnic Slicer Beam, Add(Global.missilePos, Vector(0, 12, 0)), Add(Add(Global.missilePos, Vector(0, 12, 0)), Multiply(Min(4, Max(0.01, Multiply(20, Subtract(Subtract(Total Time Elapsed, Global.missileTemp), 0.6)))), Left)), Color(Team 2), Visible To Position and Radius);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
-            Create Beam Effect(All Players(All Teams), Omnic Slicer Beam, Add(Global.missilePos, Vector(0, 12, 0)), Add(Add(Global.missilePos, Vector(0, 12, 0)), Multiply(Min(4, Max(0.01, Multiply(20, Subtract(Subtract(Total Time Elapsed, Global.missileTemp), 0.6)))), Right)), Color(Team 2), Visible To Position and Radius);
-            Modify Global Variable(missileFx, Append To Array, Last Created Entity);
+            播放效果(所有玩家(所有队伍), D.Va自毁爆炸效果, 颜色(队伍2), 全局.missilePos, 1);
+            播放效果(所有玩家(所有队伍), D.Va自毁爆炸声音, 颜色(队伍2), 全局.missilePos, 400);
+            消除效果(首个(全局.missileFx));
+            设置全局变量(missileFx, 空数组);
+            设置全局变量(missileTemp, 总计消耗时间);
+            等待(0.016, 无视条件);
+            创建弹道效果(所有玩家(所有队伍), 查莉娅粒子炮, 空, 加(全局.missilePos, 矢量(0, -10, 0)), 上, 0.8, 可见);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
+            创建效果(所有玩家(所有队伍), 环, 颜色(队伍2), 全局.missilePos, 9, 可见);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
+            创建光束效果(所有玩家(所有队伍), 智械切割者光束, 全局.missilePos, 加(全局.missilePos, 乘(较小(16, 乘(20, 减(总计消耗时间, 全局.missileTemp))), 上)), 颜色(队伍2), 可见，位置和半径);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
+            创建光束效果(所有玩家(所有队伍), 智械切割者光束, 加(全局.missilePos, 矢量(0, 12, 0)), 加(加(全局.missilePos, 矢量(0, 12, 0)), 乘(较小(4, 较大(0.01, 乘(20, 减(减(总计消耗时间, 全局.missileTemp), 0.6)))), 左)), 颜色(队伍2), 可见，位置和半径);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
+            创建光束效果(所有玩家(所有队伍), 智械切割者光束, 加(全局.missilePos, 矢量(0, 12, 0)), 加(加(全局.missilePos, 矢量(0, 12, 0)), 乘(较小(4, 较大(0.01, 乘(20, 减(减(总计消耗时间, 全局.missileTemp), 0.6)))), 右)), 颜色(队伍2), 可见，位置和半径);
+            修改全局变量(missileFx, 添加至数组, 最后创建的实体);
             "start damage while eva anim plays"
-            For Global Variable(missileTemp, 0, 20, 1);
-                Damage(Players Within Radius(Global.missilePos, 9, Team 1, Off), Null, 30);
-                Set Status(Players Within Radius(Global.missilePos, 9, Team 1, Off), Null, Burning, 0.16);
-                Wait(0.112, Ignore Condition);
+            For 全局变量(missileTemp, 0, 20, 1);
+                伤害(范围内玩家(全局.missilePos, 9, 队伍1, 关闭), 空, 30);
+                设置状态(范围内玩家(全局.missilePos, 9, 队伍1, 关闭), 空, 燃烧, 0.16);
+                等待(0.112, 无视条件);
             End;
-            For Global Variable(missileTemp, 2, Count Of(Global.missileFx), 1);
-                Destroy Effect(Value In Array(Global.missileFx, Global.missileTemp));
+            For 全局变量(missileTemp, 2, 数量(全局.missileFx), 1);
+                消除效果(数组中的值(全局.missileFx, 全局.missileTemp));
             End;
-            Set Global Variable(missileFx, Array Slice(Global.missileFx, 0, 2));
+            设置全局变量(missileFx, 数组分割(全局.missileFx, 0, 2));
             "dot"
-            For Global Variable(missileTemp, 0, 50, 1);
-                Damage(Players Within Radius(Global.missilePos, 9, Team 1, Off), Null, 30);
-                Set Status(Players Within Radius(Global.missilePos, 9, Team 1, Off), Null, Burning, 0.16);
-                Wait(0.112, Ignore Condition);
+            For 全局变量(missileTemp, 0, 50, 1);
+                伤害(范围内玩家(全局.missilePos, 9, 队伍1, 关闭), 空, 30);
+                设置状态(范围内玩家(全局.missilePos, 9, 队伍1, 关闭), 空, 燃烧, 0.16);
+                等待(0.112, 无视条件);
             End;
-            For Global Variable(missileTemp, 0, Count Of(Global.missileFx), 1);
-                Destroy Effect(Value In Array(Global.missileFx, Global.missileTemp));
+            For 全局变量(missileTemp, 0, 数量(全局.missileFx), 1);
+                消除效果(数组中的值(全局.missileFx, 全局.missileTemp));
             End;
-            Set Global Variable(missileFx, Empty Array);
+            设置全局变量(missileFx, 空数组);
         End;
     }
 }
 
-rule ("make ice") {
-    event {
-        Ongoing - Global;
+规则 ("make ice") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 2) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 2) == 真;
     }
-    actions {
+    动作 {
         "createProjectileEffect(getAllPlayers(), Projectile.MEI_ICICLE, null, threatVar1, directionTowards(threatVar1, target1), 0.5, ProjectileEffectReeval.VISIBILITY_POSITION_DIRECTION_AND_SIZE)\nthreatFx.append(getLastCreatedEntity())"
-        While(Compare(Global.obj, !=, -1));
-            Wait(9, Ignore Condition);
-            Set Global Variable(target1, Random Value In Array(All Living Players(Team 1)));
-            Set Global Variable(target2, Random Value In Array(All Living Players(Team 1)));
-            Create Projectile(Mei Icicle, Global.nipman, (Global.nipman).cacheA, Direction Towards((Global.nipman).cacheA, Global.target1), To World, Damage, Team 1, 70, 1, 1, Tracer Recall Reappear Effect, Sigma Hypersphere Implosion Sound, 0.2, 20, 10, 0, 0, 0);
-            Wait(0.36, Ignore Condition);
-            Create Projectile(Mei Icicle, Global.nipman, (Global.nipman).cacheB, Direction Towards((Global.nipman).cacheB, Global.target2), To World, Damage, Team 1, 70, 1, 1, Tracer Recall Reappear Effect, Sigma Hypersphere Implosion Sound, 0.2, 20, 10, 0, 0, 0);
+        While(比较(全局.obj, !=, -1));
+            等待(9, 无视条件);
+            设置全局变量(target1, 数组随机取值(所有存活玩家(队伍1)));
+            设置全局变量(target2, 数组随机取值(所有存活玩家(队伍1)));
+            创建弹道(美冰锥, 全局.nipman, (全局.nipman).cacheA, 方向((全局.nipman).cacheA, 全局.target1), 至地图, 输出, 队伍1, 70, 1, 1, “猎空“闪回重现效果, “西格玛”超能之球内爆声音, 0.2, 20, 10, 0, 0, 0);
+            等待(0.36, 无视条件);
+            创建弹道(美冰锥, 全局.nipman, (全局.nipman).cacheB, 方向((全局.nipman).cacheB, 全局.target2), 至地图, 输出, 队伍1, 70, 1, 1, “猎空“闪回重现效果, “西格玛”超能之球内爆声音, 0.2, 20, 10, 0, 0, 0);
         End;
     }
 }
 
-rule ("ice impact") {
-    event {
-        Player Took Damage;
-        Team 1;
-        All;
+规则 ("ice impact") {
+    事件 {
+        玩家受到伤害;
+        队伍1;
+        全部;
     }
-    conditions {
-        Event Ability == Null;
-        Attacker == Global.nipman;
-        Array Contains(Global.threatList, 2) == True;
+    条件 {
+        事件技能 == 空;
+        攻击方 == 全局.nipman;
+        数组包含(全局.threatList, 2) == 真;
     }
-    actions {
-        Set Status(Victim, Global.nipman, Frozen, 1.2);
-    }
-}
-
-rule ("ice effect init") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
-    }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 2) == True;
-        Or(Compare(Event Player, ==, Global.nipman), Array Contains(Global.objPos, Event Player)) == True;
-    }
-    actions {
-        Wait Until(Compare((Event Player).cacheA, !=, Null), 3);
-        Create Projectile Effect(All Players(All Teams), Mei Icicle, Null, (Event Player).cacheA, Facing Direction Of(Event Player), 0.5, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(All Players(All Teams), Mei Icicle, Null, (Event Player).cacheB, Facing Direction Of(Event Player), 0.5, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+    动作 {
+        设置状态(被攻击方, 全局.nipman, 冰冻, 1.2);
     }
 }
 
-rule ("dupe ice") {
-    event {
-        Ongoing - Global;
+规则 ("ice effect init") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Global.obj == 1;
-        Array Contains(Global.threatList, 2) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 2) == 真;
+        或(比较(事件玩家, ==, 全局.nipman), 数组包含(全局.objPos, 事件玩家)) == 真;
     }
-    actions {
-        While(Compare(Global.obj, !=, -1));
-            Wait(9, Ignore Condition);
+    动作 {
+        等待直到 (比较((事件玩家).cacheA, !=, 空), 3);
+        创建弹道效果(所有玩家(所有队伍), 美冰锥, 空, (事件玩家).cacheA, 面朝方向(事件玩家), 0.5, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(所有玩家(所有队伍), 美冰锥, 空, (事件玩家).cacheB, 面朝方向(事件玩家), 0.5, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+    }
+}
+
+规则 ("dupe ice") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.obj == 1;
+        数组包含(全局.threatList, 2) == 真;
+    }
+    动作 {
+        While(比较(全局.obj, !=, -1));
+            等待(9, 无视条件);
             "share target\nmust be owned by main mauga to apply freeze"
-            Create Projectile(Mei Icicle, Global.nipman, (Value In Array(Global.objPos, Modulo(Total Time Elapsed, Count Of(Global.objPos)))).cacheA, Direction Towards((Value In Array(Global.objPos, Modulo(Total Time Elapsed, Count Of(Global.objPos)))).cacheA, Global.target1), To World, Damage, Team 1, 20, 1, 1, Tracer Recall Reappear Effect, Sigma Hypersphere Implosion Sound, 0.2, 20, 10, 0, 0, 0);
-            Wait(0.36, Ignore Condition);
-            Create Projectile(Mei Icicle, Global.nipman, (Value In Array(Global.objPos, Modulo(Total Time Elapsed, Count Of(Global.objPos)))).cacheB, Direction Towards((Value In Array(Global.objPos, Modulo(Total Time Elapsed, Count Of(Global.objPos)))).cacheB, Global.target2), To World, Damage, Team 1, 20, 1, 1, Tracer Recall Reappear Effect, Sigma Hypersphere Implosion Sound, 0.2, 20, 10, 0, 0, 0);
+            创建弹道(美冰锥, 全局.nipman, (数组中的值(全局.objPos, 余数(总计消耗时间, 数量(全局.objPos)))).cacheA, 方向((数组中的值(全局.objPos, 余数(总计消耗时间, 数量(全局.objPos)))).cacheA, 全局.target1), 至地图, 输出, 队伍1, 20, 1, 1, “猎空“闪回重现效果, “西格玛”超能之球内爆声音, 0.2, 20, 10, 0, 0, 0);
+            等待(0.36, 无视条件);
+            创建弹道(美冰锥, 全局.nipman, (数组中的值(全局.objPos, 余数(总计消耗时间, 数量(全局.objPos)))).cacheB, 方向((数组中的值(全局.objPos, 余数(总计消耗时间, 数量(全局.objPos)))).cacheB, 全局.target2), 至地图, 输出, 队伍1, 20, 1, 1, “猎空“闪回重现效果, “西格玛”超能之球内爆声音, 0.2, 20, 10, 0, 0, 0);
         End;
     }
 }
 
-rule ("dupe boolet") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
+规则 ("dupe boolet") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Global.obj == 1;
-        Array Contains(Global.threatList, 15) == True;
-        Array Contains(Global.objPos, Event Player) == True;
+    条件 {
+        全局.obj == 1;
+        数组包含(全局.threatList, 15) == 真;
+        数组包含(全局.objPos, 事件玩家) == 真;
     }
-    actions {
+    动作 {
         "print(\"bullet dupe run\")"
-        While(Compare(Global.obj, ==, 1));
-            Wait(0.36, Ignore Condition);
+        While(比较(全局.obj, ==, 1));
+            等待(0.36, 无视条件);
             "smallMessage(hostPlayer, eventPlayer.smallRNip)"
-            Create Projectile(Mercy Caduceus Blaster, Event Player, Vector(5.4, 20.565, 3.99), Vector(Multiply(Sine From Radians(Total Time Elapsed), -12), -0.5, 9), To Player, Damage, Team 1, 50, 1, 0, Bad Explosion, Ashe Dynamite Explosion Sound, 0.03, 20, 3, 0, 0, 0);
-            Create Projectile(Ramattra Ravenous Vortex Sphere, Event Player, Vector(-2.055, 20.67, 6.99), Vector(Multiply(Sine From Radians(Total Time Elapsed), 12), -0.5, 9), To Player, Damage, Team 1, 50, 1, 0, Bad Explosion, Ashe Dynamite Explosion Sound, 0.03, 20, 3, 0, 0, 0);
+            创建弹道(“天使”天使冲击枪, 事件玩家, 矢量(5.4, 20.565, 3.99), 矢量(乘(弧度的正弦值(总计消耗时间), -12), -0.5, 9), 至玩家, 输出, 队伍1, 50, 1, 0, 有害爆炸, 艾什延时雷管爆炸声音, 0.03, 20, 3, 0, 0, 0);
+            创建弹道(拉玛刹吞噬漩涡能量球, 事件玩家, 矢量(-2.055, 20.67, 6.99), 矢量(乘(弧度的正弦值(总计消耗时间), 12), -0.5, 9), 至玩家, 输出, 队伍1, 50, 1, 0, 有害爆炸, 艾什延时雷管爆炸声音, 0.03, 20, 3, 0, 0, 0);
         End;
     }
 }
 
-rule ("dupe + normal sniper") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
+规则 ("dupe + normal sniper") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 13) == True;
-        Or(Compare((Event Player).cacheA, ==, (Global.nipman).cacheA), Array Contains(Global.objPos, Event Player)) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 13) == 真;
+        或(比较((事件玩家).cacheA, ==, (全局.nipman).cacheA), 数组包含(全局.objPos, 事件玩家)) == 真;
     }
-    actions {
+    动作 {
         "wait(0.048 * objPos.index(eventPlayer))"
-        Create Dummy Bot(Hero(Widowmaker), Team 2, -1, Up, Facing Direction Of(Event Player));
-        Set Player Variable(Event Player, botA, Last Created Entity);
-        Start Facing((Event Player).botA, Direction Towards(Eye Position((Event Player).botA), Eye Position(((Event Player).botA).mobTarget)), 4, To World, Direction and Turn Rate);
-        Modify Global Variable(threatSnipers, Append To Array, (Event Player).botA);
-        Create Beam Effect(All Players(All Teams), Torbjörn Turret Sight Beam, Eye Position((Event Player).botA), Add(Eye Position((Event Player).botA), Multiply(80, Facing Direction Of((Event Player).botA))), Color(Team 2), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Dummy Bot(Hero(Widowmaker), Team 2, -1, Up, Backward);
-        Set Player Variable(Event Player, botB, Last Created Entity);
-        Start Facing((Event Player).botB, Direction Towards(Eye Position((Event Player).botB), Eye Position(((Event Player).botB).mobTarget)), 4, To World, Direction and Turn Rate);
-        Modify Global Variable(threatSnipers, Append To Array, (Event Player).botB);
-        Create Beam Effect(All Players(All Teams), Torbjörn Turret Sight Beam, Eye Position((Event Player).botB), Add(Eye Position((Event Player).botB), Multiply(80, Facing Direction Of((Event Player).botB))), Color(Team 2), Visible To Position and Radius);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Start Holding Button(Global.threatSnipers, Button(Secondary Fire));
-        Disable Nameplates(Global.threatSnipers, All Players(All Teams));
-        Start Forcing Dummy Bot Name(Global.threatSnipers, Custom String("s-nip-ers"));
-        Set Status(Global.threatSnipers, Null, Phased Out, 9999);
-        Start Scaling Player(Global.threatSnipers, 0.1, False);
-        Wait(0.48, Ignore Condition);
-        Start Forcing Player Position((Event Player).botB, (Event Player).cacheB, False);
-        Start Forcing Player Position((Event Player).botA, (Event Player).cacheA, False);
+        生成机器人(英雄(黑百合), 队伍2, -1, 上, 面朝方向(事件玩家));
+        设置玩家变量(事件玩家, botA, 最后创建的实体);
+        开始朝向((事件玩家).botA, 方向(眼睛位置((事件玩家).botA), 眼睛位置(((事件玩家).botA).mobTarget)), 4, 至地图, 方向及角速率);
+        修改全局变量(threatSnipers, 添加至数组, (事件玩家).botA);
+        创建光束效果(所有玩家(所有队伍), 托比昂炮台视线光束, 眼睛位置((事件玩家).botA), 加(眼睛位置((事件玩家).botA), 乘(80, 面朝方向((事件玩家).botA))), 颜色(队伍2), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        生成机器人(英雄(黑百合), 队伍2, -1, 上, 后);
+        设置玩家变量(事件玩家, botB, 最后创建的实体);
+        开始朝向((事件玩家).botB, 方向(眼睛位置((事件玩家).botB), 眼睛位置(((事件玩家).botB).mobTarget)), 4, 至地图, 方向及角速率);
+        修改全局变量(threatSnipers, 添加至数组, (事件玩家).botB);
+        创建光束效果(所有玩家(所有队伍), 托比昂炮台视线光束, 眼睛位置((事件玩家).botB), 加(眼睛位置((事件玩家).botB), 乘(80, 面朝方向((事件玩家).botB))), 颜色(队伍2), 可见，位置和半径);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        开始按下按钮(全局.threatSnipers, 按钮(辅助攻击模式));
+        隐藏姓名板(全局.threatSnipers, 所有玩家(所有队伍));
+        开始为机器人强制设置名称(全局.threatSnipers, 自定义字符串("s-nip-ers"));
+        设置状态(全局.threatSnipers, 空, 相移, 9999);
+        开始调整玩家大小(全局.threatSnipers, 0.1, 假);
+        等待(0.48, 无视条件);
+        开始强制设置玩家位置((事件玩家).botB, (事件玩家).cacheB, 假);
+        开始强制设置玩家位置((事件玩家).botA, (事件玩家).cacheA, 假);
     }
 }
 
-rule ("sniper change target") {
-    event {
-        Ongoing - Each Player;
-        Team 2;
-        Widowmaker;
+规则 ("sniper change target") {
+    事件 {
+        持续 - 每名玩家;
+        队伍2;
+        黑百合;
     }
-    actions {
-        While(Compare(Global.obj, !=, -1));
-            Wait(4, Ignore Condition);
-            Set Player Variable(Event Player, mobTarget, Random Value In Array(All Living Players(Team 1)));
-            Set Ammo(Event Player, 0, 9999);
+    动作 {
+        While(比较(全局.obj, !=, -1));
+            等待(4, 无视条件);
+            设置玩家变量(事件玩家, mobTarget, 数组随机取值(所有存活玩家(队伍1)));
+            设置弹药(事件玩家, 0, 9999);
         End;
     }
 }
 
-rule ("sniper fire") {
-    event {
-        Ongoing - Global;
+规则 ("sniper fire") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 13) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 13) == 真;
     }
-    actions {
-        Wait(2, Ignore Condition);
-        Set Damage Dealt(Global.threatSnipers, Divide(60, Number Of Heroes(Hero(Widowmaker), Team 2)));
-        Press Button(Global.threatSnipers, Button(Primary Fire));
-        Loop If Condition Is True;
+    动作 {
+        等待(2, 无视条件);
+        设置造成伤害(全局.threatSnipers, 除(60, 英雄数量(英雄(黑百合), 队伍2)));
+        按下按键(全局.threatSnipers, 按钮(主要攻击模式));
+        如条件为“真”则循环;
     }
 }
 
-rule ("init suns") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Mauga;
+规则 ("init suns") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        毛加;
     }
-    conditions {
-        Global.obj != -1;
-        Array Contains(Global.threatList, 17) == True;
-        Or(Compare((Event Player).cacheA, ==, (Global.nipman).cacheA), Array Contains(Global.objPos, Event Player)) == True;
+    条件 {
+        全局.obj != -1;
+        数组包含(全局.threatList, 17) == 真;
+        或(比较((事件玩家).cacheA, ==, (全局.nipman).cacheA), 数组包含(全局.objPos, 事件玩家)) == 真;
     }
-    actions {
-        Create Dummy Bot(Hero(Illari), Team 2, -1, (Event Player).cacheA, Down);
-        Modify Global Variable(threatSuns, Append To Array, Last Created Entity);
-        Set Player Variable(Event Player, botA, Last Created Entity);
-        Create Dummy Bot(Hero(Illari), Team 2, -1, (Event Player).cacheB, Down);
-        Modify Global Variable(threatSuns, Append To Array, Last Created Entity);
-        Set Player Variable(Event Player, botB, Last Created Entity);
-        Start Forcing Player Position((Event Player).botA, (Event Player).cacheA, False);
-        Start Forcing Player Position((Event Player).botB, (Event Player).cacheB, False);
-        Wait(0.64, Ignore Condition);
+    动作 {
+        生成机器人(英雄(伊拉锐), 队伍2, -1, (事件玩家).cacheA, 下);
+        修改全局变量(threatSuns, 添加至数组, 最后创建的实体);
+        设置玩家变量(事件玩家, botA, 最后创建的实体);
+        生成机器人(英雄(伊拉锐), 队伍2, -1, (事件玩家).cacheB, 下);
+        修改全局变量(threatSuns, 添加至数组, 最后创建的实体);
+        设置玩家变量(事件玩家, botB, 最后创建的实体);
+        开始强制设置玩家位置((事件玩家).botA, (事件玩家).cacheA, 假);
+        开始强制设置玩家位置((事件玩家).botB, (事件玩家).cacheB, 假);
+        等待(0.64, 无视条件);
         "eventPlayer.threatDecor = []"
-        Create Projectile Effect(If-Then-Else(Array Contains(Global.threatList, 17), All Players(All Teams), Empty Array), Reinhardt Fire Strike, Null, (Event Player).cacheA, Facing Direction Of(Event Player), 0, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
-        Create Projectile Effect(If-Then-Else(Array Contains(Global.threatList, 17), All Players(All Teams), Empty Array), Reinhardt Fire Strike, Null, (Event Player).cacheB, Facing Direction Of(Event Player), 0.02, Visible To);
-        Modify Global Variable(threatFx, Append To Array, Last Created Entity);
+        创建弹道效果(If-Then-Else(数组包含(全局.threatList, 17), 所有玩家(所有队伍), 空数组), 莱因哈特烈焰打击, 空, (事件玩家).cacheA, 面朝方向(事件玩家), 0, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
+        创建弹道效果(If-Then-Else(数组包含(全局.threatList, 17), 所有玩家(所有队伍), 空数组), 莱因哈特烈焰打击, 空, (事件玩家).cacheB, 面朝方向(事件玩家), 0.02, 可见);
+        修改全局变量(threatFx, 添加至数组, 最后创建的实体);
     }
 }
 
-rule ("missing mauga") {
-    event {
-        Ongoing - Global;
+规则 ("missing mauga") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 1;
-        Is True For All(Global.objPos, Not(Entity Exists(Current Array Element))) == True;
+    条件 {
+        全局.obj == 1;
+        对全部为“真”(全局.objPos, 非(实体存在(当前数组元素))) == 真;
     }
-    actions {
-        Wait(2, Abort When False);
-        Small Message(All Players(All Teams), Custom String("something went wrong. skipping phase..."));
-        Set Global Variable(objProg, Global.objGoal);
+    动作 {
+        等待(2, 当为“假”时中止);
+        小字体信息(所有玩家(所有队伍), 自定义字符串("something went wrong. skipping phase..."));
+        设置全局变量(objProg, 全局.objGoal);
     }
 }
 
-rule ("NO BOTS?") {
-    event {
-        Ongoing - Global;
+规则 ("NO BOTS?") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
+    条件 {
         "slendy is also a mob"
-        Global.obj == 2;
-        Number Of Players(Team 2) < 8;
+        全局.obj == 2;
+        玩家数量(队伍2) < 8;
     }
-    actions {
-        Wait(3, Abort When False);
-        For Global Variable(i, 0, Count Of(Global.mobs), 1);
-            Destroy Dummy Bot(Team Of(Value In Array(Global.mobs, Global.i)), Slot Of(Value In Array(Global.mobs, Global.i)));
+    动作 {
+        等待(3, 当为“假”时中止);
+        For 全局变量(i, 0, 数量(全局.mobs), 1);
+            移除机器人(所在队伍(数组中的值(全局.mobs, 全局.i)), 栏位(数组中的值(全局.mobs, 全局.i)));
         End;
-        Set Global Variable(mobs, Empty Array);
-        Call Subroutine(mobsInit);
+        设置全局变量(mobs, 空数组);
+        调用子程序(mobsInit);
     }
 }
 
-rule ("more maugas") {
-    event {
-        Ongoing - Global;
+规则 ("more maugas") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 1;
+    条件 {
+        全局.obj == 1;
     }
-    actions {
+    动作 {
         "wait(0.016 * THREATS.MORE)"
-        Set Global Variable(objPos, Empty Array);
+        设置全局变量(objPos, 空数组);
         "need to keep them far away or the fingers block the weak spots"
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Multiply(Up, Max Health(Global.nipman)), Left);
-        Modify Global Variable(objPos, Append To Array, Last Created Entity);
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Multiply(Up, Max Health(Global.nipman)), Right);
-        Modify Global Variable(objPos, Append To Array, Last Created Entity);
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Multiply(Up, Max Health(Global.nipman)), Forward);
-        Modify Global Variable(objPos, Append To Array, Last Created Entity);
-        Set Gravity(Global.objPos, 0);
-        Wait(0.016, Ignore Condition);
-        Start Scaling Player(Global.objPos, 15, False);
-        Disable Movement Collision With Players(Global.objPos);
-        Disable Movement Collision With Environment(Global.objPos, True);
-        Set Knockback Received(Global.objPos, 0);
-        Set Max Health(Global.objPos, Absolute Value(2500));
-        Wait(0.12, Ignore Condition);
-        Heal(Global.objPos, Null, 99999);
-        Set Healing Dealt(Global.objPos, 0);
-        For Global Variable(iMores, 0, 3, 1);
-            Wait(0.016, Ignore Condition);
-            Start Forcing Player Position(Value In Array(Global.objPos, Global.iMores), Value In Array(Array(Vector(-31, -18, 0), Vector(31, -18, 0), Vector(0, -18, -31)), Global.iMores), False);
+        生成机器人(英雄(毛加), 队伍2, -1, 乘(上, 最大生命值(全局.nipman)), 左);
+        修改全局变量(objPos, 添加至数组, 最后创建的实体);
+        生成机器人(英雄(毛加), 队伍2, -1, 乘(上, 最大生命值(全局.nipman)), 右);
+        修改全局变量(objPos, 添加至数组, 最后创建的实体);
+        生成机器人(英雄(毛加), 队伍2, -1, 乘(上, 最大生命值(全局.nipman)), 前);
+        修改全局变量(objPos, 添加至数组, 最后创建的实体);
+        设置引力(全局.objPos, 0);
+        等待(0.016, 无视条件);
+        开始调整玩家大小(全局.objPos, 15, 假);
+        取消与玩家的移动碰撞(全局.objPos);
+        取消与环境的移动碰撞(全局.objPos, 真);
+        设置受到的击退(全局.objPos, 0);
+        设置最大生命值(全局.objPos, 绝对值(2500));
+        等待(0.12, 无视条件);
+        治疗(全局.objPos, 空, 99999);
+        设置造成治疗(全局.objPos, 0);
+        For 全局变量(iMores, 0, 3, 1);
+            等待(0.016, 无视条件);
+            开始强制设置玩家位置(数组中的值(全局.objPos, 全局.iMores), 数组中的值(数组(矢量(-31, -18, 0), 矢量(31, -18, 0), 矢量(0, -18, -31)), 全局.iMores), 假);
             "LOAD BEARING WAIT. NEEDS TO BE THIS LONG AT LEAST"
-            Wait(0.08, Ignore Condition);
-            Set Player Variable(Value In Array(Global.objPos, Global.iMores), cacheA, World Vector Of(Vector(5.4, 20.565, 3.99), Value In Array(Global.objPos, Global.iMores), Rotation And Translation));
-            Set Player Variable(Value In Array(Global.objPos, Global.iMores), cacheB, World Vector Of(Vector(-2.055, 20.67, 6.99), Value In Array(Global.objPos, Global.iMores), Rotation And Translation));
-            Start Forcing Dummy Bot Name(Value In Array(Global.objPos, Global.iMores), Custom String("mauga jr."));
+            等待(0.08, 无视条件);
+            设置玩家变量(数组中的值(全局.objPos, 全局.iMores), cacheA, 地图矢量(矢量(5.4, 20.565, 3.99), 数组中的值(全局.objPos, 全局.iMores), 旋转并转换));
+            设置玩家变量(数组中的值(全局.objPos, 全局.iMores), cacheB, 地图矢量(矢量(-2.055, 20.67, 6.99), 数组中的值(全局.objPos, 全局.iMores), 旋转并转换));
+            开始为机器人强制设置名称(数组中的值(全局.objPos, 全局.iMores), 自定义字符串("mauga jr."));
             "WHY IS IT 400. IT SHOULD BE 100 BUT THAT MAKES IT WRONG evalOnce(objPos[iMores]).getNormalizedHealth() * 400"
-            Create Progress Bar In-World Text(All Players(All Teams), Multiply(Divide(Health(Evaluate Once(Value In Array(Global.objPos, Global.iMores))), Evaluate Once(Round To Integer(Max Health(Value In Array(Global.objPos, Global.iMores)), Up))), 100), Custom String("{0} / {1} HP", Round To Integer(Health(Evaluate Once(Value In Array(Global.objPos, Global.iMores))), Up), Evaluate Once(Round To Integer(Max Health(Value In Array(Global.objPos, Global.iMores)), Up))), Add(Eye Position(Value In Array(Global.objPos, Global.iMores)), Vector(0, 2, 0)), 1, Do Not Clip, Color(Red), Color(White), Visible To and Values, Default Visibility);
-            Set Player Variable(Value In Array(Global.objPos, Global.iMores), cacheC, Last Text ID);
+            创建进度条地图文本(所有玩家(所有队伍), 乘(除(生命值(单次赋值(数组中的值(全局.objPos, 全局.iMores))), 单次赋值(取整(最大生命值(数组中的值(全局.objPos, 全局.iMores)), 上))), 100), 自定义字符串("{0} / {1} HP", 取整(生命值(单次赋值(数组中的值(全局.objPos, 全局.iMores))), 上), 单次赋值(取整(最大生命值(数组中的值(全局.objPos, 全局.iMores)), 上))), 加(眼睛位置(数组中的值(全局.objPos, 全局.iMores)), 矢量(0, 2, 0)), 1, 不要截取, 颜色(红色), 颜色(白色), 可见和值, 默认可见度);
+            设置玩家变量(数组中的值(全局.objPos, 全局.iMores), cacheC, 上一个文本ID);
         End;
-        Wait(0.8, Ignore Condition);
-        Set Status(Global.objPos, Null, Frozen, 99999);
-        Wait(0.8, Ignore Condition);
-        Set Status(Global.objPos, Null, Frozen, 99999);
-        Heal(Global.objPos, Null, 99999);
+        等待(0.8, 无视条件);
+        设置状态(全局.objPos, 空, 冰冻, 99999);
+        等待(0.8, 无视条件);
+        设置状态(全局.objPos, 空, 冰冻, 99999);
+        治疗(全局.objPos, 空, 99999);
     }
 }
 
-rule ("miniboss") {
-    event {
-        Ongoing - Global;
+规则 ("miniboss") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 3;
+    条件 {
+        全局.obj == 3;
     }
-    actions {
+    动作 {
         "hero must be same as mobs for skin limit"
-        Wait(0.64, Ignore Condition);
-        Create Dummy Bot(Value In Array(Global.enemies, Modulo(Global.roundNo, Count Of(Global.enemies))), Team 2, -1, Vector(0, 50, 0), Backward);
-        Set Global Variable(objPos, Last Created Entity);
-        Set Knockback Received(Global.objPos, 10);
-        Set Move Speed(Global.objPos, 40);
-        Start Scaling Player(Global.objPos, 3, False);
-        If(Compare(Hero Of(Global.objPos), ==, Hero(Winston)));
-            Set Damage Dealt(Global.objPos, 55);
+        等待(0.64, 无视条件);
+        生成机器人(数组中的值(全局.enemies, 余数(全局.roundNo, 数量(全局.enemies))), 队伍2, -1, 矢量(0, 50, 0), 后);
+        设置全局变量(objPos, 最后创建的实体);
+        设置受到的击退(全局.objPos, 10);
+        设置移动速度(全局.objPos, 40);
+        开始调整玩家大小(全局.objPos, 3, 假);
+        If(比较(所用英雄(全局.objPos), ==, 英雄(温斯顿)));
+            设置造成伤害(全局.objPos, 55);
         End;
-        Start Forcing Throttle(Global.objPos, 1, 1, 0, 0, 0, 1);
-        Start Forcing Dummy Bot Name(Global.objPos, Custom String("miniboss"));
-        Start Facing(Global.objPos, Direction Towards(Position Of(Global.objPos), Position Of((Global.objPos).mobTarget)), 400, To World, Direction and Turn Rate);
-        Set Max Health(Global.objPos, If-Then-Else(Array Contains(All Tank Heroes, Hero Of(Global.objPos)), 3500, 4500));
-        Wait(2, Ignore Condition);
-        Wait Until(Is On Ground(Global.objPos), 4);
-        Set Status(Global.objPos, Null, Knocked Down, 2);
-        Start Holding Button(Global.objPos, Button(Primary Fire));
-        While(Compare(Global.obj, ==, 3));
+        开始限制阈值(全局.objPos, 1, 1, 0, 0, 0, 1);
+        开始为机器人强制设置名称(全局.objPos, 自定义字符串("miniboss"));
+        开始朝向(全局.objPos, 方向(所选位置(全局.objPos), 所选位置((全局.objPos).mobTarget)), 400, 至地图, 方向及角速率);
+        设置最大生命值(全局.objPos, If-Then-Else(数组包含(所有重装英雄, 所用英雄(全局.objPos)), 3500, 4500));
+        等待(2, 无视条件);
+        等待直到 (在地面上(全局.objPos), 4);
+        设置状态(全局.objPos, 空, 击倒, 2);
+        开始按下按钮(全局.objPos, 按钮(主要攻击模式));
+        While(比较(全局.obj, ==, 3));
             "objPos.getNormalizedHealth()"
-            Set Global Variable(objProg, Subtract(1, Divide(Health(Global.objPos), Max Health(Global.objPos))));
-            Wait(0.24, Ignore Condition);
+            设置全局变量(objProg, 减(1, 除(生命值(全局.objPos), 最大生命值(全局.objPos))));
+            等待(0.24, 无视条件);
         End;
     }
 }
 
-rule ("clean bots") {
-    event {
-        Ongoing - Each Player;
-        Team 2;
-        All;
+规则 ("clean bots") {
+    事件 {
+        持续 - 每名玩家;
+        队伍2;
+        全部;
     }
-    conditions {
-        Is Dummy Bot(Event Player) == True;
-        Event Player != Global.nipman;
-        Global.obj == -1;
+    条件 {
+        是否是机器人(事件玩家) == 真;
+        事件玩家 != 全局.nipman;
+        全局.obj == -1;
     }
-    actions {
-        If(Entity Exists((Event Player).cacheC));
-            Destroy Progress Bar In-World Text((Event Player).cacheC);
+    动作 {
+        If(实体存在((事件玩家).cacheC));
+            消除进度条地图文本((事件玩家).cacheC);
         End;
-        Destroy Dummy Bot(Team 2, Slot Of(Event Player));
+        移除机器人(队伍2, 栏位(事件玩家));
     }
 }
 
-rule ("setup & refresh forest") {
-    event {
-        Ongoing - Global;
+规则 ("setup & refresh forest") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 0;
+    条件 {
+        全局.obj == 0;
     }
-    actions {
-        Wait(1.5, Abort When False);
-        For Global Variable(i, 0, 7, 1);
-            Create Dummy Bot(Hero(Lifeweaver), Team 2, -1, Up, Down);
-            Start Modifying Hero Voice Lines(Last Created Entity, Add(0.5, Multiply(Global.i, 0.143)), False);
-            Wait(0.032, Ignore Condition);
-            If(Compare(Number Of Heroes(Hero(Lifeweaver), Team 2), >, 7));
-                Break;
+    动作 {
+        等待(1.5, 当为“假”时中止);
+        For 全局变量(i, 0, 7, 1);
+            生成机器人(英雄(生命之梭), 队伍2, -1, 上, 下);
+            开始修改英雄语音(最后创建的实体, 加(0.5, 乘(全局.i, 0.143)), 假);
+            等待(0.032, 无视条件);
+            If(比较(英雄数量(英雄(生命之梭), 队伍2), >, 7));
+                中断;
             End;
         End;
-        Set Status(Players On Hero(Hero(Lifeweaver), Team 2), Null, Phased Out, 9999);
-        Set Invisible(Players On Hero(Hero(Lifeweaver), Team 2), Enemies);
-        Set Healing Dealt(Players On Hero(Hero(Lifeweaver), Team 2), 30);
-        Wait(0.96, Ignore Condition);
-        While(Compare(Global.obj, ==, 0));
-            Set Ultimate Charge(All Players(Team 2), 100);
-            Wait(0.08, Ignore Condition);
-            Press Button(Players On Hero(Hero(Lifeweaver), Team 2), Button(Ultimate));
-            Set Facing(Players On Hero(Hero(Lifeweaver), Team 2), Down, To World);
-            Wait(0.016, Ignore Condition);
-            For Global Variable(i, 0, 7, 1);
-                Teleport(Value In Array(Players On Hero(Hero(Lifeweaver), Team 2), Global.i), Vector(Random Real(-18, 18), 6, Random Real(-18, 18)));
+        设置状态(选择英雄的玩家(英雄(生命之梭), 队伍2), 空, 相移, 9999);
+        设置不可见(选择英雄的玩家(英雄(生命之梭), 队伍2), 敌人);
+        设置造成治疗(选择英雄的玩家(英雄(生命之梭), 队伍2), 30);
+        等待(0.96, 无视条件);
+        While(比较(全局.obj, ==, 0));
+            设置终极技能充能(所有玩家(队伍2), 100);
+            等待(0.08, 无视条件);
+            按下按键(选择英雄的玩家(英雄(生命之梭), 队伍2), 按钮(终极技能));
+            设置朝向(选择英雄的玩家(英雄(生命之梭), 队伍2), 下, 至地图);
+            等待(0.016, 无视条件);
+            For 全局变量(i, 0, 7, 1);
+                传送(数组中的值(选择英雄的玩家(英雄(生命之梭), 队伍2), 全局.i), 矢量(随机实数(-18, 18), 6, 随机实数(-18, 18)));
                 "while distance(objPos, getPlayersOnHero(Hero.LIFEWEAVER, Team.2)[i]) < 4:\ngetPlayersOnHero(Hero.LIFEWEAVER, Team.2)[i].teleport(vect(random.randint(-18,18),5,random.randint(-18,18)))\nwait()"
-                Wait(0.016, Ignore Condition);
+                等待(0.016, 无视条件);
             End;
-            Wait(0.08, Ignore Condition);
-            Press Button(Players On Hero(Hero(Lifeweaver), Team 2), Button(Primary Fire));
-            Wait(0.55, Ignore Condition);
-            Set Status(Players On Hero(Hero(Lifeweaver), Team 2), Null, Hacked, 0.5);
-            Wait(14, Abort When False);
+            等待(0.08, 无视条件);
+            按下按键(选择英雄的玩家(英雄(生命之梭), 队伍2), 按钮(主要攻击模式));
+            等待(0.55, 无视条件);
+            设置状态(选择英雄的玩家(英雄(生命之梭), 队伍2), 空, 被入侵, 0.5);
+            等待(14, 当为“假”时中止);
         End;
     }
 }
 
-rule ("place objective") {
-    event {
-        Ongoing - Global;
+规则 ("place objective") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 4;
+    条件 {
+        全局.obj == 4;
     }
-    actions {
-        Set Global Variable(objPos, Vector(Random Integer(-13, 13), 0, Random Integer(-13, 13)));
-        Wait(0.016, Ignore Condition);
-        Loop If(And(Compare(Z Component Of(Global.objPos), <, -5), Array Contains(Global.threatList, 5)));
+    动作 {
+        设置全局变量(objPos, 矢量(随机整数(-13, 13), 0, 随机整数(-13, 13)));
+        等待(0.016, 无视条件);
+        根据条件循环(与(比较(Z方向分量(全局.objPos), <, -5), 数组包含(全局.threatList, 5)));
     }
 }
 
-rule ("kill/obj prog/weak spot + respawn timer") {
-    event {
-        Player Died;
-        All;
-        All;
+规则 ("kill/obj prog/weak spot + respawn timer") {
+    事件 {
+        玩家阵亡;
+        双方;
+        全部;
     }
-    conditions {
-        Is Dummy Bot(Event Player) == True;
-        Event Player != Global.nipman;
+    条件 {
+        是否是机器人(事件玩家) == 真;
+        事件玩家 != 全局.nipman;
     }
-    actions {
-        If(Array Contains(Global.weakSpots, Event Player));
-            Modify Global Variable(weakSpots, Remove From Array By Value, Event Player);
-            Play Effect(All Players(All Teams), Sombra Translocator Reappear Effect, Color(Team 2), Event Player, 1);
-            Play Effect(All Players(All Teams), Ashe Dynamite Explosion Sound, Color(Team 2), Event Player, 50);
-            Wait(0.48, Ignore Condition);
-            Destroy Dummy Bot(Team Of(Event Player), Slot Of(Event Player));
-            Abort;
+    动作 {
+        If(数组包含(全局.weakSpots, 事件玩家));
+            修改全局变量(weakSpots, 根据值从数组中移除, 事件玩家);
+            播放效果(所有玩家(所有队伍), “黑影”位移传动重现效果, 颜色(队伍2), 事件玩家, 1);
+            播放效果(所有玩家(所有队伍), 艾什延时雷管爆炸声音, 颜色(队伍2), 事件玩家, 50);
+            等待(0.48, 无视条件);
+            移除机器人(所在队伍(事件玩家), 栏位(事件玩家));
+            中止;
         End;
-        Heal(Attacker, Event Player, 50);
-        If(Array Contains(Global.threatList, 9));
-            Play Effect(All Players(All Teams), Moira Fade Reappear Effect, Color(Team 2), Add(Position Of(Event Player), Up), 1);
-            Play Effect(All Players(All Teams), Echo Sticky Bomb Explosion Sound, Color(Team 2), Add(Position Of(Event Player), Up), 10);
-            Damage(Players Within Radius(Position Of(Event Player), 2, Team 1, Surfaces And Enemy Barriers), Event Player, 90);
+        治疗(攻击方, 事件玩家, 50);
+        If(数组包含(全局.threatList, 9));
+            播放效果(所有玩家(所有队伍), 莫伊拉消散重现效果, 颜色(队伍2), 加(所选位置(事件玩家), 上), 1);
+            播放效果(所有玩家(所有队伍), “回声”黏性炸弹爆炸声音, 颜色(队伍2), 加(所选位置(事件玩家), 上), 10);
+            伤害(范围内玩家(所选位置(事件玩家), 2, 队伍1, 表面及敌方屏障), 事件玩家, 90);
         End;
-        If(Compare(Global.obj, ==, 0));
-            Set Respawn Max Time(Event Player, 7);
-            Modify Global Variable(objProg, Add, 0.5);
-            Abort;
-        Else If(Compare(Global.obj, ==, 2));
-            Modify Global Variable(objProg, Add, 1);
-            Modify Team Score(Team 1, 1);
-            Set Team Score(Team 1, 0);
-            Set Respawn Max Time(Event Player, 2);
-            Abort;
-        Else If(And(Compare(Global.obj, ==, 3), Compare(Event Player, ==, Global.objPos)));
-            Set Global Variable(objProg, Global.objGoal);
-        Else If(And(Compare(Global.obj, ==, 1), Array Contains(Global.objPos, Event Player)));
-            If(Compare(Event Player, ==, Global.attackingClone));
-                Kill(Global.weakSpots, Null);
-                Destroy Effect(Global.moreFx);
-                Set Global Variable(moreFx, Empty Array);
-                Set Global Variable(attackingClone, Null);
+        If(比较(全局.obj, ==, 0));
+            设置最大复生时间(事件玩家, 7);
+            修改全局变量(objProg, 加, 0.5);
+            中止;
+        Else If(比较(全局.obj, ==, 2));
+            修改全局变量(objProg, 加, 1);
+            修改队伍分数(队伍1, 1);
+            设置队伍分数(队伍1, 0);
+            设置最大复生时间(事件玩家, 2);
+            中止;
+        Else If(与(比较(全局.obj, ==, 3), 比较(事件玩家, ==, 全局.objPos)));
+            设置全局变量(objProg, 全局.objGoal);
+        Else If(与(比较(全局.obj, ==, 1), 数组包含(全局.objPos, 事件玩家)));
+            If(比较(事件玩家, ==, 全局.attackingClone));
+                击杀(全局.weakSpots, 空);
+                消除效果(全局.moreFx);
+                设置全局变量(moreFx, 空数组);
+                设置全局变量(attackingClone, 空);
             End;
-            Modify Global Variable(objProg, Add, 1);
-            Destroy Dummy Bot(Team Of((Event Player).botA), Slot Of((Event Player).botA));
-            Destroy Dummy Bot(Team Of((Event Player).botB), Slot Of((Event Player).botB));
-            Modify Global Variable(objPos, Remove From Array By Value, Event Player);
-            Destroy Progress Bar In-World Text((Event Player).cacheC);
-            Disable Built-In Game Mode Respawning(Event Player);
-            Wait(1.2, Ignore Condition);
-            Destroy Dummy Bot(Team Of(Event Player), Slot Of(Event Player));
+            修改全局变量(objProg, 加, 1);
+            移除机器人(所在队伍((事件玩家).botA), 栏位((事件玩家).botA));
+            移除机器人(所在队伍((事件玩家).botB), 栏位((事件玩家).botB));
+            修改全局变量(objPos, 根据值从数组中移除, 事件玩家);
+            消除进度条地图文本((事件玩家).cacheC);
+            关闭游戏预设复生模式(事件玩家);
+            等待(1.2, 无视条件);
+            移除机器人(所在队伍(事件玩家), 栏位(事件玩家));
         End;
-        Set Respawn Max Time(Event Player, 1.8);
+        设置最大复生时间(事件玩家, 1.8);
     }
 }
 
-rule ("point") {
-    event {
-        Ongoing - Global;
+规则 ("point") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.obj == 4;
+    条件 {
+        全局.obj == 4;
     }
-    actions {
-        If(Compare(Players Within Radius(Global.objPos, 12, Team 1, Off), !=, Empty Array));
-            Modify Global Variable(objProg, Add, Multiply(Divide(Count Of(Players Within Radius(Global.objPos, 12, Team 1, Off)), Number Of Players(Team 1)), 3));
-            Play Effect(All Players(All Teams), Ring Explosion, Color(Team 1), Global.objPos, 25);
-            Play Effect(All Players(All Teams), Widowmaker Venom Mine Explosion Sound, Color(Team 1), Global.objPos, 150);
+    动作 {
+        If(比较(范围内玩家(全局.objPos, 12, 队伍1, 关闭), !=, 空数组));
+            修改全局变量(objProg, 加, 乘(除(数量(范围内玩家(全局.objPos, 12, 队伍1, 关闭)), 玩家数量(队伍1)), 3));
+            播放效果(所有玩家(所有队伍), 环状爆炸, 颜色(队伍1), 全局.objPos, 25);
+            播放效果(所有玩家(所有队伍), “黑百合”剧毒诡雷爆炸声音, 颜色(队伍1), 全局.objPos, 150);
         End;
-        Wait(0.64, Ignore Condition);
-        Loop If Condition Is True;
+        等待(0.64, 无视条件);
+        如条件为“真”则循环;
     }
 }
 
-rule ("page found") {
-    event {
-        Ongoing - Each Player;
-        Team 1;
-        All;
+规则 ("page found") {
+    事件 {
+        持续 - 每名玩家;
+        队伍1;
+        全部;
     }
-    conditions {
-        Global.obj == 0;
-        Is Dummy Bot(Event Player) == False;
-        Distance Between(Event Player, Global.objPos) < 1.3;
+    条件 {
+        全局.obj == 0;
+        是否是机器人(事件玩家) == 假;
+        相距距离(事件玩家, 全局.objPos) < 1.3;
     }
-    actions {
-        Small Message(All Players(All Teams), Custom String(" {0} found a page!", Event Player));
-        Play Effect(All Players(All Teams), Buff Impact Sound, Color(White), Global.objPos, 65);
-        Play Effect(All Players(All Teams), Good Explosion, Color(Team 1), Global.objPos, 1);
+    动作 {
+        小字体信息(所有玩家(所有队伍), 自定义字符串(" {0} found a page!", 事件玩家));
+        播放效果(所有玩家(所有队伍), 正面状态施加声音, 颜色(白色), 全局.objPos, 65);
+        播放效果(所有玩家(所有队伍), 有益爆炸, 颜色(队伍1), 全局.objPos, 1);
         "sound"
-        Modify Team Score(Team 1, 1);
-        Set Team Score(Team 1, 0);
-        Modify Global Variable(objProg, Add, 1);
-        Set Global Variable(objPos, Vector(Random Integer(-18, 18), 0, Random Integer(If-Then-Else(Array Contains(Global.threatList, 5), -5, -18), 16)));
+        修改队伍分数(队伍1, 1);
+        设置队伍分数(队伍1, 0);
+        修改全局变量(objProg, 加, 1);
+        设置全局变量(objPos, 矢量(随机整数(-18, 18), 0, 随机整数(If-Then-Else(数组包含(全局.threatList, 5), -5, -18), 16)));
     }
 }
 
-disabled rule ("debug finish obj") {
-    event {
-        Ongoing - Global;
+禁用 规则 ("debug finish obj") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Custom String("{0}", Host Player) == Custom String("OMGIDIED");
-        Is Button Held(Host Player, Button(Interact)) == True;
-        Global.obj != -1;
+    条件 {
+        自定义字符串("{0}", 主机玩家) == 自定义字符串("OMGIDIED");
+        按钮被按下(主机玩家, 按钮(互动)) == 真;
+        全局.obj != -1;
     }
-    actions {
-        Set Global Variable(objProg, Global.objGoal);
-    }
-}
-
-rule ("wrong mauga") {
-    event {
-        Player Dealt Damage;
-        All;
-        All;
-    }
-    conditions {
-        Victim == Global.nipman;
-        Global.obj != -1;
-    }
-    actions {
-        Communicate(Event Player, No);
-        Wait(10, Ignore Condition);
+    动作 {
+        设置全局变量(objProg, 全局.objGoal);
     }
 }
 
-rule ("rez cd if not hardcore") {
-    event {
-        Ongoing - Global;
+规则 ("wrong mauga") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        全部;
     }
-    actions {
-        Wait(2, Ignore Condition);
-        If(Compare(Global.isHardcore, ==, False));
-            While(True);
-                Set Ability Cooldown(Players On Hero(Hero(Mercy), Team 1), Button(Ability 2), 0);
-                Wait(1, Ignore Condition);
+    条件 {
+        被攻击方 == 全局.nipman;
+        全局.obj != -1;
+    }
+    动作 {
+        交流(事件玩家, 不行);
+        等待(10, 无视条件);
+    }
+}
+
+规则 ("rez cd if not hardcore") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        等待(2, 无视条件);
+        If(比较(全局.isHardcore, ==, 假));
+            While(真);
+                设置技能冷却(选择英雄的玩家(英雄(天使), 队伍1), 按钮(技能2), 0);
+                等待(1, 无视条件);
             End;
     }
 }
 
-rule ("player count balancing, freeze & nip pos check") {
-    event {
-        Ongoing - Global;
+规则 ("player count balancing, freeze & nip pos check") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        While(True);
-            If(Workshop Setting Toggle(Custom String("gameplay"), Custom String("increase player damage per missing player"), True, 0));
+    动作 {
+        While(真);
+            If(地图工坊设置开关(自定义字符串("gameplay"), 自定义字符串("increase player damage per missing player"), 真, 0));
                 "getPlayers(Team.1).setDamageDealt(100 + (20 * (9 - getNumberOfPlayers(Team.1))))"
-                Set Damage Dealt(All Players(Team 1), Min(400, Divide(900, Number Of Players(Team 1))));
+                设置造成伤害(所有玩家(队伍1), 较小(400, 除(900, 玩家数量(队伍1))));
             End;
-            If(Compare(Global.obj, !=, -1));
-                Set Status(Players On Hero(Hero(Mauga), Team 2), Null, Frozen, 99999);
-                Set Damage Received(Global.nipman, 1);
+            If(比较(全局.obj, !=, -1));
+                设置状态(选择英雄的玩家(英雄(毛加), 队伍2), 空, 冰冻, 99999);
+                设置受到伤害(全局.nipman, 1);
             End;
-            If(Compare(Y Component Of((Global.nipman).cacheA), <=, 4));
-                Set Player Variable(Global.nipman, cacheA, Vector(2.93, 8.04, 26.15));
-                Set Player Variable(Global.nipman, cacheB, Vector(-7.19, 8, 30.27));
+            If(比较(Y方向分量((全局.nipman).cacheA), <=, 4));
+                设置玩家变量(全局.nipman, cacheA, 矢量(2.93, 8.04, 26.15));
+                设置玩家变量(全局.nipman, cacheB, 矢量(-7.19, 8, 30.27));
             End;
-            Wait(10, Ignore Condition);
+            等待(10, 无视条件);
         End;
     }
 }
 
-rule ("wake up") {
-    event {
-        Ongoing - Each Player;
-        Team 2;
-        Mauga;
+规则 ("wake up") {
+    事件 {
+        持续 - 每名玩家;
+        队伍2;
+        毛加;
     }
-    conditions {
-        Has Status(Event Player, Knocked Down) == True;
+    条件 {
+        具有状态(事件玩家, 击倒) == 真;
     }
-    actions {
-        Clear Status(Event Player, Knocked Down);
-        Wait(0.112, Ignore Condition);
-        Loop If Condition Is True;
-    }
-}
-
-rule ("get up") {
-    event {
-        Ongoing - Each Player;
-        Team 2;
-        Mauga;
-    }
-    conditions {
-        Has Status(Event Player, Asleep) == True;
-    }
-    actions {
-        Clear Status(Event Player, Asleep);
-        Wait(0.112, Ignore Condition);
-        Loop If Condition Is True;
+    动作 {
+        清除状态(事件玩家, 击倒);
+        等待(0.112, 无视条件);
+        如条件为“真”则循环;
     }
 }
 
-rule ("anti crash on") {
-    event {
-        Ongoing - Global;
+规则 ("get up") {
+    事件 {
+        持续 - 每名玩家;
+        队伍2;
+        毛加;
     }
-    conditions {
-        Global.antiCrashOn == False;
-        Server Load > 235;
+    条件 {
+        具有状态(事件玩家, 沉睡) == 真;
     }
-    actions {
-        Wait(0.8, Abort When False);
-        Set Slow Motion(50);
+    动作 {
+        清除状态(事件玩家, 沉睡);
+        等待(0.112, 无视条件);
+        如条件为“真”则循环;
+    }
+}
+
+规则 ("anti crash on") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.antiCrashOn == 假;
+        服务器负载 > 235;
+    }
+    动作 {
+        等待(0.8, 当为“假”时中止);
+        设置慢动作(50);
         "smallMessage(getAllPlayers(), \"server load high. anti crash on.\")"
-        Set Global Variable(antiCrashOn, True);
+        设置全局变量(antiCrashOn, 真);
     }
 }
 
-rule ("anti crash off") {
-    event {
-        Ongoing - Global;
+规则 ("anti crash off") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.antiCrashOn != False;
-        Server Load < 200;
+    条件 {
+        全局.antiCrashOn != 假;
+        服务器负载 < 200;
     }
-    actions {
-        Wait(0.16, Abort When False);
-        Set Slow Motion(100);
-        Set Global Variable(antiCrashOn, False);
-        Loop If Condition Is True;
+    动作 {
+        等待(0.16, 当为“假”时中止);
+        设置慢动作(100);
+        设置全局变量(antiCrashOn, 假);
+        如条件为“真”则循环;
     }
 }
 
-rule ("where did he go") {
-    event {
-        Ongoing - Global;
+规则 ("where did he go") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Entity Exists(Global.nipman) == False;
+    条件 {
+        实体存在(全局.nipman) == 假;
     }
-    actions {
-        Wait(2, Abort When False);
-        Create Dummy Bot(Hero(Mauga), Team 2, -1, Up, Backward);
-        Set Global Variable(nipman, Last Created Entity);
-        Start Forcing Player Position(Global.nipman, Vector(0, -17, 35), False);
-        Start Facing(Global.nipman, Backward, 999, To World, None);
-        Disable Movement Collision With Players(Global.nipman);
-        Start Scaling Player(Global.nipman, 50, False);
-        Set Global Variable(upto, Max Health(Global.nipman));
-        Wait(0.08, Ignore Condition);
-        Set Max Health(Global.nipman, Absolute Value(10000));
+    动作 {
+        等待(2, 当为“假”时中止);
+        生成机器人(英雄(毛加), 队伍2, -1, 上, 后);
+        设置全局变量(nipman, 最后创建的实体);
+        开始强制设置玩家位置(全局.nipman, 矢量(0, -17, 35), 假);
+        开始朝向(全局.nipman, 后, 999, 至地图, 无);
+        取消与玩家的移动碰撞(全局.nipman);
+        开始调整玩家大小(全局.nipman, 50, 假);
+        设置全局变量(upto, 最大生命值(全局.nipman));
+        等待(0.08, 无视条件);
+        设置最大生命值(全局.nipman, 绝对值(10000));
         "kill(nipman, null) # this is to fill hp and reset his pose"
-        Set Knockback Received(Global.nipman, 0);
-        Disable Built-In Game Mode Completion;
-        Disable Built-In Game Mode Music;
-        Disable Built-In Game Mode Scoring;
-        Heal(Global.nipman, Null, 999999);
-        Wait(0.016, Ignore Condition);
-        Set Healing Received(Global.nipman, 0);
-        Wait(0.016, Ignore Condition);
-        Set Player Health(Global.nipman, 72500);
+        设置受到的击退(全局.nipman, 0);
+        关闭游戏预设完成条件;
+        关闭游戏预设音乐模式;
+        关闭游戏预设计分模式;
+        治疗(全局.nipman, 空, 999999);
+        等待(0.016, 无视条件);
+        设置受到治疗(全局.nipman, 0);
+        等待(0.016, 无视条件);
+        设置玩家生命值(全局.nipman, 72500);
     }
 }
 
-rule ("charge no breaky") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Reinhardt;
+规则 ("charge no breaky") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        莱因哈特;
     }
-    conditions {
-        Is Using Ability 1(Event Player) == True;
-        Z Component Of(Position Of(Event Player)) > 18;
-        Z Component Of(Facing Direction Of(Event Player)) > -0.7;
+    条件 {
+        正在使用技能 1(事件玩家) == 真;
+        Z方向分量(所选位置(事件玩家)) > 18;
+        Z方向分量(面朝方向(事件玩家)) > -0.7;
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Cancel Primary Action(Event Player);
-        Small Message(Event Player, Custom String("do not the mauga"));
-    }
-}
-
-rule ("charge no breaky more maugas") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Reinhardt;
-    }
-    conditions {
-        Global.obj == 1;
-        Is Using Ability 1(Event Player) == True;
-        Or(Or(And(Compare(Z Component Of(Position Of(Event Player)), <, -18), Compare(Z Component Of(Facing Direction Of(Event Player)), <, 0.7)), And(Compare(X Component Of(Position Of(Event Player)), <, -18), Compare(X Component Of(Facing Direction Of(Event Player)), <, 0.7))), And(Compare(X Component Of(Position Of(Event Player)), >, 18), Compare(X Component Of(Facing Direction Of(Event Player)), >, -0.7))) == True;
-    }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Cancel Primary Action(Event Player);
-        Small Message(Event Player, Custom String("do not the mauga"));
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        取消主要动作(事件玩家);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
     }
 }
 
-rule ("echo charge no breaky") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Echo;
+规则 ("charge no breaky more maugas") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        莱因哈特;
     }
-    conditions {
-        Hero Being Duplicated(Event Player) == Hero(Reinhardt);
-        Is Using Ability 1(Event Player) == True;
-        Z Component Of(Position Of(Event Player)) > 18;
-        Z Component Of(Facing Direction Of(Event Player)) > -0.7;
+    条件 {
+        全局.obj == 1;
+        正在使用技能 1(事件玩家) == 真;
+        或(或(与(比较(Z方向分量(所选位置(事件玩家)), <, -18), 比较(Z方向分量(面朝方向(事件玩家)), <, 0.7)), 与(比较(X方向分量(所选位置(事件玩家)), <, -18), 比较(X方向分量(面朝方向(事件玩家)), <, 0.7))), 与(比较(X方向分量(所选位置(事件玩家)), >, 18), 比较(X方向分量(面朝方向(事件玩家)), >, -0.7))) == 真;
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Cancel Primary Action(Event Player);
-        Small Message(Event Player, Custom String("do not the mauga"));
-    }
-}
-
-rule ("echo charge no breaky more maugas") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Echo;
-    }
-    conditions {
-        Hero Being Duplicated(Event Player) == Hero(Reinhardt);
-        Global.obj == 1;
-        Is Using Ability 1(Event Player) == True;
-        Or(Or(And(Compare(Z Component Of(Position Of(Event Player)), <, -18), Compare(Z Component Of(Facing Direction Of(Event Player)), <, 0.7)), And(Compare(X Component Of(Position Of(Event Player)), <, -18), Compare(X Component Of(Facing Direction Of(Event Player)), <, 0.7))), And(Compare(X Component Of(Position Of(Event Player)), >, 18), Compare(X Component Of(Facing Direction Of(Event Player)), >, -0.7))) == True;
-    }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Cancel Primary Action(Event Player);
-        Small Message(Event Player, Custom String("do not the mauga"));
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        取消主要动作(事件玩家);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
     }
 }
 
-disabled rule ("punch no breaky") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Doomfist;
+规则 ("echo charge no breaky") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        回声;
     }
-    conditions {
-        Global.obj != -1;
-        Is Firing Secondary(Event Player) == True;
-        Z Component Of(Position Of(Event Player)) > 15;
-        Z Component Of(Facing Direction Of(Event Player)) > 0;
+    条件 {
+        正在复制的英雄(事件玩家) == 英雄(莱因哈特);
+        正在使用技能 1(事件玩家) == 真;
+        Z方向分量(所选位置(事件玩家)) > 18;
+        Z方向分量(面朝方向(事件玩家)) > -0.7;
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Small Message(Event Player, Custom String("do not the mauga"));
-    }
-}
-
-disabled rule ("hook no breaky") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Roadhog;
-    }
-    conditions {
-        Global.obj != -1;
-        Is Using Ability 1(Event Player) == True;
-        Ray Cast Hit Player(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(35, Facing Direction Of(Event Player))), All Players(Team 2), Players On Hero(Hero(Lifeweaver), Team 2), True) == Global.nipman;
-    }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Small Message(Event Player, Custom String("do not the mauga"));
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        取消主要动作(事件玩家);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
     }
 }
 
-rule ("flux no breaky") {
-    event {
-        Player Dealt Damage;
-        All;
-        Sigma;
+规则 ("echo charge no breaky more maugas") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        回声;
     }
-    conditions {
-        Event Ability == Button(Ultimate);
-        Or(Compare(Victim, ==, Global.nipman), And(Compare(Global.obj, ==, 1), Array Contains(Global.objPos, Victim))) == True;
+    条件 {
+        正在复制的英雄(事件玩家) == 英雄(莱因哈特);
+        全局.obj == 1;
+        正在使用技能 1(事件玩家) == 真;
+        或(或(与(比较(Z方向分量(所选位置(事件玩家)), <, -18), 比较(Z方向分量(面朝方向(事件玩家)), <, 0.7)), 与(比较(X方向分量(所选位置(事件玩家)), <, -18), 比较(X方向分量(面朝方向(事件玩家)), <, 0.7))), 与(比较(X方向分量(所选位置(事件玩家)), >, 18), 比较(X方向分量(面朝方向(事件玩家)), >, -0.7))) == 真;
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Small Message(Event Player, Custom String("do not the mauga"));
-        Wait(0.8, Ignore Condition);
-        Set Ultimate Charge(Event Player, 100);
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        取消主要动作(事件玩家);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
     }
 }
 
-rule ("punch unbreaky") {
-    event {
-        Player Dealt Damage;
-        All;
-        Doomfist;
+禁用 规则 ("punch no breaky") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        末日铁拳;
     }
-    conditions {
+    条件 {
+        全局.obj != -1;
+        正在使用辅助武器(事件玩家) == 真;
+        Z方向分量(所选位置(事件玩家)) > 15;
+        Z方向分量(面朝方向(事件玩家)) > 0;
+    }
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
+    }
+}
+
+禁用 规则 ("hook no breaky") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        路霸;
+    }
+    条件 {
+        全局.obj != -1;
+        正在使用技能 1(事件玩家) == 真;
+        射线命中玩家(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(35, 面朝方向(事件玩家))), 所有玩家(队伍2), 选择英雄的玩家(英雄(生命之梭), 队伍2), 真) == 全局.nipman;
+    }
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
+    }
+}
+
+规则 ("flux no breaky") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        西格玛;
+    }
+    条件 {
+        事件技能 == 按钮(终极技能);
+        或(比较(被攻击方, ==, 全局.nipman), 与(比较(全局.obj, ==, 1), 数组包含(全局.objPos, 被攻击方))) == 真;
+    }
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        小字体信息(事件玩家, 自定义字符串("do not the mauga"));
+        等待(0.8, 无视条件);
+        设置终极技能充能(事件玩家, 100);
+    }
+}
+
+规则 ("punch unbreaky") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        末日铁拳;
+    }
+    条件 {
         "or (obj == OBJ.MORE and victim in objPos)"
-        Victim == Global.nipman;
-        Global.obj != -1;
-        Event Ability == Button(Secondary Fire);
+        被攻击方 == 全局.nipman;
+        全局.obj != -1;
+        事件技能 == 按钮(辅助攻击模式);
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Clear Status(Victim, Frozen);
-        Wait(0.48, Abort When False);
-        Set Status(Victim, Null, Frozen, 9999);
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        清除状态(被攻击方, 冰冻);
+        等待(0.48, 当为“假”时中止);
+        设置状态(被攻击方, 空, 冰冻, 9999);
     }
 }
 
-rule ("echo punch unbreaky") {
-    event {
-        Player Dealt Damage;
-        All;
-        Echo;
+规则 ("echo punch unbreaky") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        回声;
     }
-    conditions {
-        Hero Being Duplicated(Event Player) == Hero(Doomfist);
+    条件 {
+        正在复制的英雄(事件玩家) == 英雄(末日铁拳);
         "or (obj == OBJ.MORE and victim in objPos)"
-        Victim == Global.nipman;
-        Global.obj != -1;
-        Event Ability == Button(Secondary Fire);
+        被攻击方 == 全局.nipman;
+        全局.obj != -1;
+        事件技能 == 按钮(辅助攻击模式);
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Clear Status(Victim, Frozen);
-        Wait(0.48, Abort When False);
-        Set Status(Victim, Null, Frozen, 9999);
-    }
-}
-
-rule ("hook unbreaky") {
-    event {
-        Player Dealt Damage;
-        All;
-        Roadhog;
-    }
-    conditions {
-        Or(Compare(Victim, ==, Global.nipman), And(Compare(Global.obj, ==, 1), Array Contains(Global.objPos, Victim))) == True;
-        Global.obj != -1;
-        Event Ability == Button(Ability 1);
-    }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Clear Status(Victim, Frozen);
-        Wait(0.48, Abort When False);
-        Set Status(Victim, Null, Frozen, 9999);
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        清除状态(被攻击方, 冰冻);
+        等待(0.48, 当为“假”时中止);
+        设置状态(被攻击方, 空, 冰冻, 9999);
     }
 }
 
-rule ("echo hook unbreaky") {
-    event {
-        Player Dealt Damage;
-        All;
-        Echo;
+规则 ("hook unbreaky") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        路霸;
     }
-    conditions {
-        Hero Being Duplicated(Event Player) == Hero(Roadhog);
-        Or(Compare(Victim, ==, Global.nipman), And(Compare(Global.obj, ==, 1), Array Contains(Global.objPos, Victim))) == True;
-        Global.obj != -1;
-        Event Ability == Button(Ability 1);
+    条件 {
+        或(比较(被攻击方, ==, 全局.nipman), 与(比较(全局.obj, ==, 1), 数组包含(全局.objPos, 被攻击方))) == 真;
+        全局.obj != -1;
+        事件技能 == 按钮(技能1);
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.5);
-        Clear Status(Victim, Frozen);
-        Wait(0.48, Abort When False);
-        Set Status(Victim, Null, Frozen, 9999);
-    }
-}
-
-disabled rule ("debug") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Is Button Held(Host Player, Button(Ultimate)) == True;
-    }
-    actions {
-        Set Ultimate Charge(Host Player, 100);
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        清除状态(被攻击方, 冰冻);
+        等待(0.48, 当为“假”时中止);
+        设置状态(被攻击方, 空, 冰冻, 9999);
     }
 }
 
-rule ("win") {
-    event {
-        Player Died;
-        All;
-        All;
+规则 ("echo hook unbreaky") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        回声;
     }
-    conditions {
-        Event Player == Global.nipman;
-        Attacker != Null;
+    条件 {
+        正在复制的英雄(事件玩家) == 英雄(路霸);
+        或(比较(被攻击方, ==, 全局.nipman), 与(比较(全局.obj, ==, 1), 数组包含(全局.objPos, 被攻击方))) == 真;
+        全局.obj != -1;
+        事件技能 == 按钮(技能1);
     }
-    actions {
-        Set Slow Motion(50);
-        Communicate(All Players(All Teams), Voice Line Up);
-        Wait(0.48, Ignore Condition);
-        Declare Team Victory(Team 1);
-        Destroy All Effects;
-        Set Slow Motion(100);
-        Wait(3, Ignore Condition);
-        Restart Match;
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.5);
+        清除状态(被攻击方, 冰冻);
+        等待(0.48, 当为“假”时中止);
+        设置状态(被攻击方, 空, 冰冻, 9999);
     }
 }
 
-rule ("player init, cage add") {
-    event {
-        Ongoing - Each Player;
-        Team 1;
-        All;
+禁用 规则 ("debug") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Has Spawned(Event Player) == True;
+    条件 {
+        按钮被按下(主机玩家, 按钮(终极技能)) == 真;
     }
-    actions {
-        Disable Game Mode HUD(Event Player);
-        Set Player Allowed Heroes(Event Player, All Heroes);
-        If(Global.isHardcore);
-            Disable Built-In Game Mode Respawning(All Players(Team 1));
+    动作 {
+        设置终极技能充能(主机玩家, 100);
     }
 }
 
-rule ("sombra aint slick") {
-    event {
-        Ongoing - Each Player;
-        All;
-        Sombra;
+规则 ("win") {
+    事件 {
+        玩家阵亡;
+        双方;
+        全部;
     }
-    conditions {
-        Or(Is Using Ultimate(Event Player), And(Is Button Held(Event Player, Button(Ultimate)), Compare(Ultimate Charge Percent(Event Player), ==, 100))) == True;
+    条件 {
+        事件玩家 == 全局.nipman;
+        攻击方 != 空;
     }
-    actions {
-        Start Damage Modification(Players On Hero(Hero(Mauga), Team 2), Event Player, 2, None);
-        Set Player Variable(Event Player, mobTarget, Last Damage Modification ID);
-        Wait Until(Compare(Ultimate Charge Percent(Event Player), <, 100), 2);
-        Stop Damage Modification((Event Player).mobTarget);
-    }
-}
-
-disabled rule ("sombra was a little slick") {
-    event {
-        Player Dealt Damage;
-        All;
-        Sombra;
-    }
-    conditions {
-        Victim == Global.nipman;
-        Or(Compare(Event Ability, ==, Button(Ultimate)), Compare(Event Damage, >, 1000)) == True;
-    }
-    actions {
-        Set Player Health(Global.nipman, Add(Health(Global.nipman), Multiply(Event Damage, 0.7)));
+    动作 {
+        设置慢动作(50);
+        交流(所有玩家(所有队伍), 语音（上）);
+        等待(0.48, 无视条件);
+        宣告队伍胜利(队伍1);
+        消除所有效果;
+        设置慢动作(100);
+        等待(3, 无视条件);
+        重新开始比赛;
     }
 }
 
-rule ("you are dead, not big surprise") {
-    event {
-        Player Died;
-        Team 1;
-        All;
+规则 ("player init, cage add") {
+    事件 {
+        持续 - 每名玩家;
+        队伍1;
+        全部;
     }
-    actions {
-        Modify Team Score(Team 2, 1);
+    条件 {
+        已重生(事件玩家) == 真;
+    }
+    动作 {
+        隐藏游戏模式HUD(事件玩家);
+        设置玩家可选的英雄(事件玩家, 全部英雄);
+        If(全局.isHardcore);
+            关闭游戏预设复生模式(所有玩家(队伍1));
+    }
+}
+
+规则 ("sombra aint slick") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        黑影;
+    }
+    条件 {
+        或(正在使用终极技能(事件玩家), 与(按钮被按下(事件玩家, 按钮(终极技能)), 比较(终极技能充能百分比(事件玩家), ==, 100))) == 真;
+    }
+    动作 {
+        开始伤害调整(选择英雄的玩家(英雄(毛加), 队伍2), 事件玩家, 2, 无);
+        设置玩家变量(事件玩家, mobTarget, 上一个伤害调整ID);
+        等待直到 (比较(终极技能充能百分比(事件玩家), <, 100), 2);
+        停止伤害调整((事件玩家).mobTarget);
+    }
+}
+
+禁用 规则 ("sombra was a little slick") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        黑影;
+    }
+    条件 {
+        被攻击方 == 全局.nipman;
+        或(比较(事件技能, ==, 按钮(终极技能)), 比较(事件伤害, >, 1000)) == 真;
+    }
+    动作 {
+        设置玩家生命值(全局.nipman, 加(生命值(全局.nipman), 乘(事件伤害, 0.7)));
+    }
+}
+
+规则 ("you are dead, not big surprise") {
+    事件 {
+        玩家阵亡;
+        队伍1;
+        全部;
+    }
+    动作 {
+        修改队伍分数(队伍2, 1);
         "if getPlayersOnHero(Hero.MERCY, Team.1) == []:\neventPlayer.teleport(Vector.DOWN * getTotalTimeElapsed())"
-        If(Global.isHardcore);
+        If(全局.isHardcore);
             "eventPlayer.setRespawnTime(99999)"
-            If(Compare(Filtered Array(All Players(Team 1), And(Is Alive(Current Array Element), Has Spawned(Current Array Element))), ==, Empty Array));
-                Big Message(All Players(All Teams), Custom String("game over. all players died."));
-                Set Slow Motion(50);
-                Wait(1, Ignore Condition);
-                Declare Team Victory(Team 2);
-                Destroy All Effects;
-                Set Slow Motion(100);
-                Wait(3, Ignore Condition);
-                Restart Match;
+            If(比较(已过滤的数组(所有玩家(队伍1), 与(存活(当前数组元素), 已重生(当前数组元素))), ==, 空数组));
+                大字体信息(所有玩家(所有队伍), 自定义字符串("game over. all players died."));
+                设置慢动作(50);
+                等待(1, 无视条件);
+                宣告队伍胜利(队伍2);
+                消除所有效果;
+                设置慢动作(100);
+                等待(3, 无视条件);
+                重新开始比赛;
     }
 }
 

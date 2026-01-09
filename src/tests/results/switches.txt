@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -7,65 +7,65 @@ variables {
         4: E
 }
 //Optimize for size enabled
-rule ("switches") {
-    event {
-        Ongoing - Global;
+规则 ("switches") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        If(True);
-        Skip(Value In Array(Array(4, Null, 2), Add(True, Index Of Array Value(Array(1, 2), Global.A))));
+    动作 {
+        If(真);
+        跳过(数组中的值(数组(4, 空, 2), 加(真, 数组值的索引(数组(1, 2), 全局.A))));
         //__label_switch_2_0__:
-        Modify Global Variable(B, Add, True);
+        修改全局变量(B, 加, 真);
         Else;
         //__label_switch_2_1__:
-        Modify Global Variable(C, Add, True);
+        修改全局变量(C, 加, 真);
         Else;
         //__label_switch_2_default__:
         End;
-        If(True);
-        Skip(Value In Array(Array(2, Null, 1, 1, 2), Add(True, Index Of Array Value(Array(1, 2, 3, Hero(Brigitte)), Global.B))));
+        If(真);
+        跳过(数组中的值(数组(2, 空, 1, 1, 2), 加(真, 数组值的索引(数组(1, 2, 3, 英雄(布丽吉塔)), 全局.B))));
         //__label_switch_3_0__:
-        Modify Global Variable(B, Add, True);
+        修改全局变量(B, 加, 真);
         //__label_switch_3_1__:
         //__label_switch_3_2__:
-        Modify Global Variable(C, Add, True);
+        修改全局变量(C, 加, 真);
         //__label_switch_3_default__:
         //__label_switch_3_3__:
-        Modify Global Variable(D, Add, True);
+        修改全局变量(D, 加, 真);
         End;
     }
 }
 
-rule ("nested switches") {
-    event {
-        Ongoing - Global;
+规则 ("nested switches") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        If(Global.A);
-            If(True);
-            Skip(Value In Array(Array(12, Null, 2, 4), Add(True, Index Of Array Value(Array(1, 2, 3), Global.B))));
+    动作 {
+        If(全局.A);
+            If(真);
+            跳过(数组中的值(数组(12, 空, 2, 4), 加(真, 数组值的索引(数组(1, 2, 3), 全局.B))));
             //__label_switch_5_0__:
-            Modify Global Variable(C, Add, True);
+            修改全局变量(C, 加, 真);
             Else;
             //__label_switch_5_1__:
-            Modify Global Variable(D, Add, True);
+            修改全局变量(D, 加, 真);
             Else;
             //__label_switch_5_2__:
-            If(True);
-            Skip(Value In Array(Array(4, Null, 3), Add(True, Index Of Array Value(Array(1, 2), Global.C))));
+            If(真);
+            跳过(数组中的值(数组(4, 空, 3), 加(真, 数组值的索引(数组(1, 2), 全局.C))));
             //__label_switch_4_0__:
-            Modify Global Variable(A, Add, True);
-            Modify Global Variable(B, Add, True);
+            修改全局变量(A, 加, 真);
+            修改全局变量(B, 加, 真);
             Else;
             //__label_switch_4_1__:
-            Modify Global Variable(C, Add, True);
+            修改全局变量(C, 加, 真);
             //__label_switch_4_default__:
-            Modify Global Variable(D, Add, True);
+            修改全局变量(D, 加, 真);
             End;
             //__label_switch_5_default__:
             End;
         Else;
-            Modify Global Variable(E, Add, True);
+            修改全局变量(E, 加, 真);
     }
 }
 

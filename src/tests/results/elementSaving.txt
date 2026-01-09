@@ -1,162 +1,162 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
-    player:
+    玩家:
         0: A
 }
 //Optimize for size enabled
-rule ("0 to null") {
-    event {
-        Ongoing - Global;
+规则 ("0 to null") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Append To Array(Global.B, Null));
-        Set Global Variable(A, Array(Null, 1, Null));
-        Set Global Variable(A, Array Contains(Global.B, Null));
-        Set Global Variable(A, Compare(Global.B, ==, Null));
-        Set Global Variable(A, Compare(Null, ==, Global.B));
-        Set Global Variable(A, Compare(Global.B, !=, Null));
-        Set Global Variable(A, Compare(Null, !=, Global.B));
-        Set Global Variable(A, Custom String("000"));
-        Set Global Variable(A, String("{0}, {1}, and {2}"));
-        Big Message(All Players(All Teams), Null);
-        Set Global Variable(A, Null);
-        Set Global Variable At Index(A, Global.B, Null);
-        Set Player Variable(Global.B, A, Null);
-        Set Player Variable At Index(Global.B, A, Global.C, Null);
-        Small Message(All Players(All Teams), Null);
-    }
-}
-
-rule ("0 to false") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Set Global Variable(A, Compare(Global.B, >, Null));
-        Set Global Variable(A, Compare(Null, >, Global.B));
-        Set Global Variable(A, Compare(Global.B, >=, Null));
-        Set Global Variable(A, Compare(Null, >=, Global.B));
-        Set Global Variable(A, Compare(Global.B, <, Null));
-        Set Global Variable(A, Compare(Null, <, Global.B));
-        Set Global Variable(A, Compare(Global.B, <=, Null));
-        Set Global Variable(A, Compare(Null, <=, Global.B));
-        Set Global Variable(A, Max(False, Global.B));
-        Set Global Variable(A, Max(Global.B, False));
-        Set Global Variable(A, Min(False, Global.B));
-        Set Global Variable(A, Min(Global.B, False));
-        Set Global Variable(A, Random Integer(False, Global.B));
-        Set Global Variable(A, Random Integer(Global.B, False));
-        Set Global Variable(A, Subtract(False, Global.B));
-        Set Global Variable(A, Add(Left, Right));
-        Chase Global Variable At Rate(A, False, False, None);
-        Chase Global Variable Over Time(A, False, False, None);
-        Chase Player Variable At Rate(Global.B, A, False, False, None);
-        Chase Player Variable Over Time(Global.B, A, False, False, None);
-        Create Dummy Bot(Hero(Ana), Team 2, False, Global.B, Global.C);
-        Create HUD Text(All Players(All Teams), Custom String("123"), Null, Null, Left, False, Color(White), Null, Null, Visible To, Visible Always);
-        For Global Variable(A, 0, False, False);
-        End;
-        For Player Variable(Global.B, A, 0, False, False);
-        End;
-        Set Global Variable At Index(A, False, Global.B);
-        Set Player Variable At Index(Global.B, A, False, Global.C);
-        Wait(False, Ignore Condition);
-        Wait(False, Ignore Condition);
-        Wait(False, Ignore Condition);
+    动作 {
+        设置全局变量(A, 添加至数组(全局.B, 空));
+        设置全局变量(A, 数组(空, 1, 空));
+        设置全局变量(A, 数组包含(全局.B, 空));
+        设置全局变量(A, 比较(全局.B, ==, 空));
+        设置全局变量(A, 比较(空, ==, 全局.B));
+        设置全局变量(A, 比较(全局.B, !=, 空));
+        设置全局变量(A, 比较(空, !=, 全局.B));
+        设置全局变量(A, 自定义字符串("000"));
+        设置全局变量(A, 字符串("{0}，{1}和{2}"));
+        大字体信息(所有玩家(所有队伍), 空);
+        设置全局变量(A, 空);
+        在索引处设置全局变量(A, 全局.B, 空);
+        设置玩家变量(全局.B, A, 空);
+        在索引处设置玩家变量(全局.B, A, 全局.C, 空);
+        小字体信息(所有玩家(所有队伍), 空);
     }
 }
 
-rule ("1 to true") {
-    event {
-        Ongoing - Global;
+规则 ("0 to false") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Add(Global.B, True));
-        Set Global Variable(A, Add(True, Global.B));
-        Set Global Variable(A, Compare(Global.B, >, 1));
-        Set Global Variable(A, Compare(1, >, Global.B));
-        Set Global Variable(A, Compare(Global.B, >=, 1));
-        Set Global Variable(A, Compare(1, >=, Global.B));
-        Set Global Variable(A, Compare(Global.B, <, 1));
-        Set Global Variable(A, Compare(1, <, Global.B));
-        Set Global Variable(A, Compare(Global.B, <=, 1));
-        Set Global Variable(A, Compare(1, <=, Global.B));
-        Set Global Variable(A, Divide(True, Global.B));
-        Set Global Variable(A, Max(True, Global.B));
-        Set Global Variable(A, Max(Global.B, True));
-        Set Global Variable(A, Min(True, Global.B));
-        Set Global Variable(A, Min(Global.B, True));
-        Set Global Variable(A, Random Integer(True, Global.B));
-        Set Global Variable(A, Random Integer(Global.B, True));
-        Set Global Variable(A, Subtract(True, Global.B));
-        Set Global Variable(A, Subtract(Global.B, True));
-        Set Global Variable(A, Value In Array(Global.B, True));
-        Set Global Variable(A, Vector(True, True, True));
-        Chase Global Variable At Rate(A, True, True, None);
-        Chase Global Variable Over Time(A, True, True, None);
-        Chase Player Variable At Rate(Global.B, A, True, True, None);
-        Chase Player Variable Over Time(Global.B, A, True, True, None);
-        Create Dummy Bot(Hero(Ana), Team 2, True, Global.B, Global.C);
-        Create HUD Text(All Players(All Teams), Custom String("123"), Null, Null, Left, True, Color(White), Null, Null, Visible To, Visible Always);
-        For Global Variable(A, 1, True, True);
+    动作 {
+        设置全局变量(A, 比较(全局.B, >, 空));
+        设置全局变量(A, 比较(空, >, 全局.B));
+        设置全局变量(A, 比较(全局.B, >=, 空));
+        设置全局变量(A, 比较(空, >=, 全局.B));
+        设置全局变量(A, 比较(全局.B, <, 空));
+        设置全局变量(A, 比较(空, <, 全局.B));
+        设置全局变量(A, 比较(全局.B, <=, 空));
+        设置全局变量(A, 比较(空, <=, 全局.B));
+        设置全局变量(A, 较大(假, 全局.B));
+        设置全局变量(A, 较大(全局.B, 假));
+        设置全局变量(A, 较小(假, 全局.B));
+        设置全局变量(A, 较小(全局.B, 假));
+        设置全局变量(A, 随机整数(假, 全局.B));
+        设置全局变量(A, 随机整数(全局.B, 假));
+        设置全局变量(A, 减(假, 全局.B));
+        设置全局变量(A, 加(左, 右));
+        追踪全局变量频率(A, 假, 假, 全部禁用);
+        持续追踪全局变量(A, 假, 假, 全部禁用);
+        追踪玩家变量频率(全局.B, A, 假, 假, 全部禁用);
+        持续追踪玩家变量(全局.B, A, 假, 假, 全部禁用);
+        生成机器人(英雄(安娜), 队伍2, 假, 全局.B, 全局.C);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("123"), 空, 空, 左边, 假, 颜色(白色), 空, 空, 可见, 始终可见);
+        For 全局变量(A, 0, 假, 假);
         End;
-        For Player Variable(Global.B, A, 1, True, True);
+        For 玩家变量(全局.B, A, 0, 假, 假);
         End;
-        Set Global Variable At Index(A, True, Global.B);
-        Set Player Variable At Index(Global.B, A, True, Global.C);
-        Wait(True, Ignore Condition);
+        在索引处设置全局变量(A, 假, 全局.B);
+        在索引处设置玩家变量(全局.B, A, 假, 全局.C);
+        等待(假, 无视条件);
+        等待(假, 无视条件);
+        等待(假, 无视条件);
     }
 }
 
-rule ("null vector to null") {
-    event {
-        Ongoing - Global;
+规则 ("1 to true") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Create Dummy Bot(Hero(Ana), Team 2, Global.A, Null, Null);
+    动作 {
+        设置全局变量(A, 加(全局.B, 真));
+        设置全局变量(A, 加(真, 全局.B));
+        设置全局变量(A, 比较(全局.B, >, 1));
+        设置全局变量(A, 比较(1, >, 全局.B));
+        设置全局变量(A, 比较(全局.B, >=, 1));
+        设置全局变量(A, 比较(1, >=, 全局.B));
+        设置全局变量(A, 比较(全局.B, <, 1));
+        设置全局变量(A, 比较(1, <, 全局.B));
+        设置全局变量(A, 比较(全局.B, <=, 1));
+        设置全局变量(A, 比较(1, <=, 全局.B));
+        设置全局变量(A, 除(真, 全局.B));
+        设置全局变量(A, 较大(真, 全局.B));
+        设置全局变量(A, 较大(全局.B, 真));
+        设置全局变量(A, 较小(真, 全局.B));
+        设置全局变量(A, 较小(全局.B, 真));
+        设置全局变量(A, 随机整数(真, 全局.B));
+        设置全局变量(A, 随机整数(全局.B, 真));
+        设置全局变量(A, 减(真, 全局.B));
+        设置全局变量(A, 减(全局.B, 真));
+        设置全局变量(A, 数组中的值(全局.B, 真));
+        设置全局变量(A, 矢量(真, 真, 真));
+        追踪全局变量频率(A, 真, 真, 全部禁用);
+        持续追踪全局变量(A, 真, 真, 全部禁用);
+        追踪玩家变量频率(全局.B, A, 真, 真, 全部禁用);
+        持续追踪玩家变量(全局.B, A, 真, 真, 全部禁用);
+        生成机器人(英雄(安娜), 队伍2, 真, 全局.B, 全局.C);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("123"), 空, 空, 左边, 真, 颜色(白色), 空, 空, 可见, 始终可见);
+        For 全局变量(A, 1, 真, 真);
+        End;
+        For 玩家变量(全局.B, A, 1, 真, 真);
+        End;
+        在索引处设置全局变量(A, 真, 全局.B);
+        在索引处设置玩家变量(全局.B, A, 真, 全局.C);
+        等待(真, 无视条件);
     }
 }
 
-rule ("other optimizations") {
-    event {
-        Ongoing - Global;
+规则 ("null vector to null") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
+        生成机器人(英雄(安娜), 队伍2, 全局.A, 空, 空);
+    }
+}
+
+规则 ("other optimizations") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
         "left + right"
-        Set Global Variable(A, Add(Left, Right));
+        设置全局变量(A, 加(左, 右));
         "left"
-        Set Global Variable(A, Left);
+        设置全局变量(A, 左);
         "left"
-        Set Global Variable(A, Left);
+        设置全局变量(A, 左);
         "right"
-        Set Global Variable(A, Right);
+        设置全局变量(A, 右);
         "right"
-        Set Global Variable(A, Right);
+        设置全局变量(A, 右);
         "up"
-        Set Global Variable(A, Up);
+        设置全局变量(A, 上);
         "up"
-        Set Global Variable(A, Up);
+        设置全局变量(A, 上);
         "down"
-        Set Global Variable(A, Down);
+        设置全局变量(A, 下);
         "down"
-        Set Global Variable(A, Down);
+        设置全局变量(A, 下);
         "forward"
-        Set Global Variable(A, Forward);
+        设置全局变量(A, 前);
         "forward"
-        Set Global Variable(A, Forward);
+        设置全局变量(A, 前);
         "backward"
-        Set Global Variable(A, Backward);
+        设置全局变量(A, 后);
         "backward"
-        Set Global Variable(A, Backward);
+        设置全局变量(A, 后);
         "B * left"
-        Set Global Variable(A, Multiply(Global.B, Left));
+        设置全局变量(A, 乘(全局.B, 左));
         "B * up"
-        Set Global Variable(A, Multiply(Global.B, Up));
+        设置全局变量(A, 乘(全局.B, 上));
         "B * forward"
-        Set Global Variable(A, Multiply(Global.B, Forward));
+        设置全局变量(A, 乘(全局.B, 前));
     }
 }
 

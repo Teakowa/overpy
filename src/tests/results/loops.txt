@@ -1,129 +1,129 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
         3: D
         8: I
-    player:
+    玩家:
         8: I
 }
 //Optimize for size enabled
-rule ("while loop") {
-    event {
-        Ongoing - Global;
+规则 ("while loop") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        While(Compare(Global.A, ==, Global.B));
-            While(Compare(Global.B, ==, Global.C));
-                Modify Global Variable(A, Add, True);
-                If(Global.D);
-                    Break;
+    动作 {
+        While(比较(全局.A, ==, 全局.B));
+            While(比较(全局.B, ==, 全局.C));
+                修改全局变量(A, 加, 真);
+                If(全局.D);
+                    中断;
                 End;
             End;
         End;
-        Modify Global Variable(B, Add, True);
+        修改全局变量(B, 加, 真);
     }
 }
 
-rule ("while to the end") {
-    event {
-        Ongoing - Global;
+规则 ("while to the end") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        While(Compare(Global.A, ==, Global.B));
-            Skip If(Global.C, True);
-            Modify Global Variable(A, Add, True);
+    动作 {
+        While(比较(全局.A, ==, 全局.B));
+            根据条件跳过(全局.C, 真);
+            修改全局变量(A, 加, 真);
             //__label_continue_2__:
         End;
     }
 }
 
-rule ("while to the end nested") {
-    event {
-        Ongoing - Global;
+规则 ("while to the end nested") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        While(Compare(Global.A, ==, Global.B));
-            While(Compare(Global.B, ==, Global.C));
-                Modify Global Variable(A, Add, True);
+    动作 {
+        While(比较(全局.A, ==, 全局.B));
+            While(比较(全局.B, ==, 全局.C));
+                修改全局变量(A, 加, 真);
             End;
         End;
     }
 }
 
-rule ("while false") {
-    event {
-        Ongoing - Global;
+规则 ("while false") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Modify Global Variable(B, Add, True);
-    }
-}
-
-rule ("for loop") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        For Global Variable(I, 1, 3, 2);
-            Modify Global Variable(A, Add, True);
-        End;
-        For Global Variable(I, 1, 3, True);
-            Modify Global Variable(A, Add, True);
-        End;
-        For Global Variable(I, 0, 3, True);
-            Modify Global Variable(A, Add, True);
-        End;
-        For Player Variable(Host Player, I, 0, 3, True);
-            Modify Global Variable(A, Add, True);
-        End;
+    动作 {
+        修改全局变量(B, 加, 真);
     }
 }
 
-rule ("do/while") {
-    event {
-        Ongoing - Global;
+规则 ("for loop") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Modify Global Variable(A, Add, True);
-        Skip(True);
-        Loop If(Compare(Global.A, ==, Global.B));
+    动作 {
+        For 全局变量(I, 1, 3, 2);
+            修改全局变量(A, 加, 真);
+        End;
+        For 全局变量(I, 1, 3, 真);
+            修改全局变量(A, 加, 真);
+        End;
+        For 全局变量(I, 0, 3, 真);
+            修改全局变量(A, 加, 真);
+        End;
+        For 玩家变量(主机玩家, I, 0, 3, 真);
+            修改全局变量(A, 加, 真);
+        End;
+    }
+}
+
+规则 ("do/while") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        修改全局变量(A, 加, 真);
+        跳过(真);
+        根据条件循环(比较(全局.A, ==, 全局.B));
         //__label_break_3__:
-        Modify Global Variable(B, Add, True);
+        修改全局变量(B, 加, 真);
     }
 }
 
-rule ("nested do/while") {
-    event {
-        Ongoing - Global;
+规则 ("nested do/while") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Modify Global Variable(A, Add, True);
-        Skip(True);
-        Loop;
+    动作 {
+        修改全局变量(A, 加, 真);
+        跳过(真);
+        循环;
         //__label_break_4__:
-        Skip(True);
-        Loop If(Compare(Global.A, ==, Global.B));
+        跳过(真);
+        根据条件循环(比较(全局.A, ==, 全局.B));
         //__label_break_5__:
-        Modify Global Variable(B, Add, True);
+        修改全局变量(B, 加, 真);
     }
 }
 
-rule ("do/while rule condition") {
-    event {
-        Ongoing - Global;
+规则 ("do/while rule condition") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.A == Global.B;
+    条件 {
+        全局.A == 全局.B;
     }
-    actions {
-        Wait(False, Ignore Condition);
-        Modify Global Variable(A, Add, True);
-        If(Compare(Global.A, >, Number Of Players(Team 2)));
-            Set Global Variable(A, Null);
+    动作 {
+        等待(假, 无视条件);
+        修改全局变量(A, 加, 真);
+        If(比较(全局.A, >, 玩家数量(队伍2)));
+            设置全局变量(A, 空);
         End;
-        Loop If Condition Is True;
+        如条件为“真”则循环;
     }
 }
 

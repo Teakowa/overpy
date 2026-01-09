@@ -1,25 +1,25 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: foo
         2: bar
         4: E
-    player:
+    玩家:
         0: A
         1: foo
         2: bar
         4: E
 }
 //Optimize for size enabled
-rule ("variables") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("variables") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Set Global Variable(foo, Add(Add(Global.bar, Global.A), Global.E));
-        Set Player Variable(Event Player, foo, Add(Add((Event Player).bar, (Event Player).A), (Event Player).E));
+    动作 {
+        设置全局变量(foo, 加(加(全局.bar, 全局.A), 全局.E));
+        设置玩家变量(事件玩家, foo, 加(加((事件玩家).bar, (事件玩家).A), (事件玩家).E));
     }
 }
 

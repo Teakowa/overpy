@@ -1,45 +1,45 @@
-settings
+设置
 {
-	main
+	主程序
 	{
-		Description: "Overwatch Pictionary 1.2 by PMAJellies"
-		Mode Name: "Overwatch Pictionary"
+		描述: "Overwatch Pictionary 1.2 by PMAJellies"
+		模式名称: "Overwatch Pictionary"
 	}
-	lobby
+	大厅
 	{
-		Allow Players Who Are In Queue: Yes
-		Match Voice Chat: Enabled
+		队列中的玩家可以加入: 是
+		比赛语音聊天: 启用
 	}
-	modes
+	模式
 	{
-		Deathmatch
+		死斗
 		{
-			enabled maps
+			启用地图
 			{
-				Workshop Chamber
+				地图工坊室内
 			}
 		}
-		General
+		综合
 		{
-			Game Mode Start: Manual
-			Hero Limit: Off
-			Score To Win: 50
+			游戏模式开始: 手动
+			英雄限制: 关闭
+			获胜得分: 50
 		}
 	}
-	heroes
+	英雄
 	{
-		General
+		综合
 		{
-			Ultimate Ability: Off
+			终极技能: 关闭
 		}
 	}
-	extensions
+	扩展
 	{
-		Play More Effects
+		播放更多效果
 	}
 }
-variables {
-    global:
+变量 {
+    全局:
         0: PlayerArray
         1: StartPictionary
         2: Drawer
@@ -60,14 +60,14 @@ variables {
         17: WordText
         19: HiddenWord
         20: BannedWords
-    player:
+    玩家:
         0: Points
         2: BulletEffect
         3: Firing
         4: WordArray
         6: GuessedWord
 }
-subroutines {
+子程序 {
     0: Menu
     1: Pictionary
     2: Keyboard
@@ -75,1454 +75,1454 @@ subroutines {
     4: NewDrawer
     5: Winner
 }
-disabled rule ("Debug Hud") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+禁用 规则 ("Debug Hud") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Is Dummy Bot(Event Player) == False;
+    条件 {
+        是否是机器人(事件玩家) == 假;
     }
-    actions {
-        Create HUD Text(Event Player, Null, Facing Direction Of(Event Player), Null, Left, 0, Null, Color(White), Null, Visible To and String, Default Visibility);
-        Create HUD Text(Event Player, Null, Position Of(Event Player), Null, Left, 0, Null, Color(Red), Null, Visible To and String, Default Visibility);
-        Create HUD Text(Event Player, Null, Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Null, Left, 0, Null, Color(Green), Null, Visible To and String, Default Visibility);
-    }
-}
-
-rule ("Banned Words") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Set Global Variable(BannedWords, Empty Array);
-        Modify Global Variable(BannedWords, Append To Array, Custom String("***"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("*****"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("******"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("*****"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("*****H"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("******"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("*****R"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("NIGOR"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("****OR"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("*****"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("****"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("***"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("******"));
-        Modify Global Variable(BannedWords, Append To Array, Custom String("TESTTESTTEST"));
+    动作 {
+        创建HUD文本(事件玩家, 空, 面朝方向(事件玩家), 空, 左边, 0, 空, 颜色(白色), 空, 可见和字符串, 默认可见度);
+        创建HUD文本(事件玩家, 空, 所选位置(事件玩家), 空, 左边, 0, 空, 颜色(红色), 空, 可见和字符串, 默认可见度);
+        创建HUD文本(事件玩家, 空, 射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 空, 左边, 0, 空, 颜色(绿色), 空, 可见和字符串, 默认可见度);
     }
 }
 
-rule ("Pictionary All Words Array 1") {
-    event {
-        Ongoing - Global;
+规则 ("Banned Words") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(AllWordsArray, Empty Array);
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BANANA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PUMPKIN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("APPLE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GRAPES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CARROT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FISH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HOTDOG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIZZA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PINEAPPLE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHICKEN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DOG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ELEPHANT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SNAKE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SHARK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BUTTERFLY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SPIDER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FLOWER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TREE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VOLCANO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TORNADO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OCEAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SEAWEED"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ISLAND"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WATERFALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("EARTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MOON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SUN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SATURN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HEADPHONES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PHONE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("KEYBOARD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MOUSE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MICROPHONE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MONEY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DESK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BED"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOOTHBRUSH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOILET"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHAIR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FIRE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WATER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LIGHTNING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NIKE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COKE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PEPSI"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OVERWATCH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MINECRAFT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MCDONALDS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BURGER KING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOYOTA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FACEBOOK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("YOUTUBE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TWITTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("REDDIT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WINDOWS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FOOTBALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BASEBALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TENNIS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GOLF"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BASKETBALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SOCCER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FOOTBALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HOCKEY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PLAYSTATION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NINTENDO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STEAM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DISCORD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("XBOX"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MARIO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SONIC"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("KIRBY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIKACHU"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PACMAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LINK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TETRIS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PONG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BATMAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SUPERMAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SPIDERMAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("IRON MAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CAPTAIN AMERICA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("THOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("JEFF KAPLAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TRUMP"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OBAMA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("KIT KAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("REESES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CANDY CORN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DOCTOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POLICE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FARMER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BOXING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BOOK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RAINBOW"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TRUCK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CAR"));
+    动作 {
+        设置全局变量(BannedWords, 空数组);
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("***"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("*****"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("******"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("*****"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("*****H"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("******"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("*****R"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("NIGOR"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("****OR"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("*****"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("****"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("***"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("******"));
+        修改全局变量(BannedWords, 添加至数组, 自定义字符串("TESTTESTTEST"));
     }
 }
 
-rule ("Pictionary All Words Array 2") {
-    event {
-        Ongoing - Global;
+规则 ("Pictionary All Words Array 1") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BIKINI"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BEARD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("EYE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LADYBUG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NOSE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BEE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MAILBOX"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STARFISH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CRAB"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LOBSTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ANGRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SAD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HAPPY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DRAGON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LIPSTICK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FLAG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ROBOT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MAGNET"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TELESCOPE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TENT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MUSIC"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIANO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BIRD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TACO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CLOCK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WATCH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIRATE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BOAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MOM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DAD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CAKE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CAMERA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TWITCH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PHOTOSHOP"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SPOTIFY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("INSTAGRAM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FIREFOX"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CALCULATOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ANDROID"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POPCORN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DICE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PENCIL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SHAVE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BALLOON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DIAMOND"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OCTOPUS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FLORIDA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CUPCAKE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SCISSORS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FORK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SPOON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("KNIFE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SANDWICH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GLASSES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BUBBLEGUM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("JELLYFISH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STRAWBERRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LIGHTSABER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FLASHLIGHT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SPONGEBOB"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SQUIDWARD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HOMER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MICKEY MOUSE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SHAGGY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DONALD DUCK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PATRICK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOM AND JERRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SAMURAI JACK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DEXTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("AVATAR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DUCKTALES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PHINEAS AND FERB"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HEART"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PICKLE RICK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("JAWS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("JURASSIC PARK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STAR WARS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ET"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LION KING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOY STORY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PINOCCHIO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GENIE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NEMO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("UP"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MONSTERS INC"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DORY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GRENADE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("YODA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ICE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SKITTLES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DEATH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LADDER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COFFIN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ELMO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HARRY POTTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TEAR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BEACH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MUSTACHE"));
-    }
-}
-
-rule ("Pictionary All Words Array 3") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ZENYATTA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ANA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LUCIO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ZARYA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("REINHARDT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WRECKING BALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MCCREE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ASHE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DOOMFIST"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MOIRA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SOLDIER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DVA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ORISA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WIDOWMAKER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GENJI"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HANZO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BASTION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TORBJORN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SIGMA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NOTHING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DRUGS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WEED"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SHADOW"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HAIR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WINSTON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("JOYSTICK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BLENDER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SPRING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WINTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SUMMER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WHEEL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PLANE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HELICOPTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ZOMBIE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HORSE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SQUID"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BOWSER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LEAF"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("JAZZ"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FOX"));
+    动作 {
+        设置全局变量(AllWordsArray, 空数组);
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BANANA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PUMPKIN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("APPLE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GRAPES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CARROT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FISH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HOTDOG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIZZA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PINEAPPLE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHICKEN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DOG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ELEPHANT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SNAKE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SHARK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BUTTERFLY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SPIDER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FLOWER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TREE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VOLCANO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TORNADO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OCEAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SEAWEED"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ISLAND"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WATERFALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("EARTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MOON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SUN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SATURN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HEADPHONES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PHONE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("KEYBOARD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MOUSE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MICROPHONE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MONEY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DESK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BED"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOOTHBRUSH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOILET"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHAIR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FIRE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WATER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LIGHTNING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NIKE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COKE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PEPSI"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OVERWATCH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MINECRAFT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MCDONALDS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BURGER KING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOYOTA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FACEBOOK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("YOUTUBE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TWITTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("REDDIT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WINDOWS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FOOTBALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BASEBALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TENNIS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GOLF"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BASKETBALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SOCCER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FOOTBALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HOCKEY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PLAYSTATION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NINTENDO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STEAM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DISCORD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("XBOX"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MARIO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SONIC"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("KIRBY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIKACHU"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PACMAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LINK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TETRIS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PONG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BATMAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SUPERMAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SPIDERMAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("IRON MAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CAPTAIN AMERICA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("THOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("JEFF KAPLAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TRUMP"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OBAMA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("KIT KAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("REESES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CANDY CORN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DOCTOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POLICE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FARMER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BOXING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BOOK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RAINBOW"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TRUCK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CAR"));
     }
 }
 
-rule ("Pictionary All Words Array 4") {
-    event {
-        Ongoing - Global;
+规则 ("Pictionary All Words Array 2") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PEOPLE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HISTORY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ART"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WORLD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MAP"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TWO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FAMILY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HEALTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COMPUTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MEAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("YEAR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("THANKS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MUSIC"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PERSON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FOOD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LAW"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BIRD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ABILITY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LOVE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TELEVISION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SCIENCE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TEMPERATURE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STORY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OVEN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LANGUAGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PLAYER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VIDEO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WEEK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COUNTRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("EXAM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MOVIE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ARMY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CAMERA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PAPER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHILD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MONTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GOAL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("AUDIENCE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FISHING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MARRIAGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MEDICINE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TEACHER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NIGHT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHEMISTRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DISEASE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DISK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ROAD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SOUP"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ADDITION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MATH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PAINTING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STUDENT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WOOD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OFFICE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PRESIDENT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CIGARETTE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DRIVER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FLIGHT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LENGTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MAGAZINE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NEWSPAPER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TEACHING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CELL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DEALER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LAKE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PHONE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DEATH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WOMAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BLOOD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WEALTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CITY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DEPTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GRANDMOTHER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HEART"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PHOTO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RECIPE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PERCENTAGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("AD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COLLEGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MEMORY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STORAGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VERSION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ALCOHOL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ARGUMENT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HIGHWAY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LOSS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STEAK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CANCER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CURRENCY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ENTRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MIXTURE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VIRUS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ACTOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CLASSROOM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DELIVERY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DIFFICULTY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DRAMA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ELECTION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ENGINE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FOOTBALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HOTEL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("OWNER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BATH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BREAD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CANDIDATE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CLIMATE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ELEVATOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("EMOTION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GUEST"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HEIGHT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MANAGER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RECORDING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHARITY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COUSIN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("EDITOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GUITAR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MOM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("REFLECTION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("REFRIGERATOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SINGER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TENNIS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BASKET"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BONUS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CABINET"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHURCH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CLOTHES"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COFFEE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DINNER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DRAWING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HAIR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LAB"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MEASUREMENT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MUD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ORANGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POETRY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POLICE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("QUEEN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RATIO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RESTAURANT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SONG"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOOTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TOWN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VEHICLE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VOLUME"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WIFE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("AIRPORT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BASEBALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHAPTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("ERROR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FARMER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GATE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GIRL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HALL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HISTORIAN"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HOSPITAL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("INJURY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MEAL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POEM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PROPOSAL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RIVER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SON"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TEA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("VILLAGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WARNING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WINNER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WRITER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BREATH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BUYER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHEST"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHOCOLATE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("COOKIE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DAD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DESK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GARBAGE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GROCERY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HONEY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("INSECT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("KING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LADDER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MENU"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PENALTY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIANO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POTATO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PROFESSOR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SALAD"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SISTER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TONGUE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WEAKNESS"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WEDDING"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("AFFAIR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("APPLE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BATHROOM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BEDROOM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BEER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BIRTHDAY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CHEEK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DIAMOND"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DIRT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("EAR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FUNERAL"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GENE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GIRLFRIEND"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LADY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MIDNIGHT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PIZZA"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POET"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("POLLUTION"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SHIRT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("SIR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TALE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("THROAT"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("UNCLE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("YOUTH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TIME"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WORK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FILM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("WATER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("MONEY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STUDY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("GAME"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("LIFE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FORM"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("AIR"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("DAY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("NUMBER"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("FISH"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HAND"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BOOK"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("TYPE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("HOME"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("BODY"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("STATE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("RADIO"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("PRICE"));
-        Modify Global Variable(AllWordsArray, Append To Array, Custom String("CARD"));
+    动作 {
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BIKINI"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BEARD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("EYE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LADYBUG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NOSE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BEE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MAILBOX"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STARFISH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CRAB"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LOBSTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ANGRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SAD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HAPPY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DRAGON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LIPSTICK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FLAG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ROBOT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MAGNET"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TELESCOPE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TENT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MUSIC"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIANO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BIRD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TACO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CLOCK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WATCH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIRATE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BOAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MOM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DAD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CAKE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CAMERA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TWITCH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PHOTOSHOP"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SPOTIFY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("INSTAGRAM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FIREFOX"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CALCULATOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ANDROID"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POPCORN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DICE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PENCIL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SHAVE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BALLOON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DIAMOND"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OCTOPUS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FLORIDA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CUPCAKE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SCISSORS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FORK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SPOON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("KNIFE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SANDWICH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GLASSES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BUBBLEGUM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("JELLYFISH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STRAWBERRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LIGHTSABER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FLASHLIGHT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SPONGEBOB"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SQUIDWARD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HOMER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MICKEY MOUSE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SHAGGY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DONALD DUCK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PATRICK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOM AND JERRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SAMURAI JACK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DEXTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("AVATAR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DUCKTALES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PHINEAS AND FERB"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HEART"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PICKLE RICK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("JAWS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("JURASSIC PARK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STAR WARS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ET"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LION KING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOY STORY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PINOCCHIO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GENIE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NEMO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("UP"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MONSTERS INC"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DORY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GRENADE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("YODA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ICE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SKITTLES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DEATH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LADDER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COFFIN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ELMO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HARRY POTTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TEAR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BEACH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MUSTACHE"));
     }
 }
 
-rule ("Global Variables") {
-    event {
-        Ongoing - Global;
+规则 ("Pictionary All Words Array 3") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Disable Built-In Game Mode Completion;
-        Disable Built-In Game Mode Scoring;
-        Set Global Variable(PlayerArray, Empty Array);
-        Set Global Variable(StartPictionary, False);
-        Set Global Variable(Timer, -1);
-        Set Global Variable(RoundNum, 1);
-        Set Global Variable(HiddenWord, Custom String(""));
+    动作 {
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ZENYATTA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ANA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LUCIO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ZARYA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("REINHARDT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WRECKING BALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MCCREE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ASHE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DOOMFIST"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MOIRA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SOLDIER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DVA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ORISA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WIDOWMAKER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GENJI"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HANZO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BASTION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TORBJORN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SIGMA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NOTHING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DRUGS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WEED"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SHADOW"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HAIR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WINSTON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("JOYSTICK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BLENDER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SPRING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WINTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SUMMER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WHEEL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PLANE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HELICOPTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ZOMBIE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HORSE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SQUID"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BOWSER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LEAF"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("JAZZ"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FOX"));
     }
 }
 
-rule ("Player Variables") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Pictionary All Words Array 4") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Player Variable(Event Player, Points, 0);
-        Set Player Variable(Event Player, WordArray, Empty Array);
+    动作 {
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PEOPLE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HISTORY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ART"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WORLD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MAP"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TWO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FAMILY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HEALTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COMPUTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MEAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("YEAR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("THANKS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MUSIC"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PERSON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FOOD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LAW"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BIRD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ABILITY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LOVE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TELEVISION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SCIENCE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TEMPERATURE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STORY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OVEN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LANGUAGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PLAYER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VIDEO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WEEK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COUNTRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("EXAM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MOVIE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ARMY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CAMERA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PAPER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHILD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MONTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GOAL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("AUDIENCE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FISHING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MARRIAGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MEDICINE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TEACHER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NIGHT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHEMISTRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DISEASE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DISK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ROAD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SOUP"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ADDITION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MATH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PAINTING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STUDENT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WOOD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OFFICE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PRESIDENT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CIGARETTE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DRIVER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FLIGHT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LENGTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MAGAZINE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NEWSPAPER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TEACHING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CELL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DEALER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LAKE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PHONE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DEATH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WOMAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BLOOD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WEALTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CITY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DEPTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GRANDMOTHER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HEART"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PHOTO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RECIPE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PERCENTAGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("AD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COLLEGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MEMORY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STORAGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VERSION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ALCOHOL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ARGUMENT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HIGHWAY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LOSS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STEAK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CANCER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CURRENCY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ENTRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MIXTURE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VIRUS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ACTOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CLASSROOM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DELIVERY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DIFFICULTY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DRAMA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ELECTION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ENGINE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FOOTBALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HOTEL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("OWNER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BATH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BREAD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CANDIDATE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CLIMATE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ELEVATOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("EMOTION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GUEST"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HEIGHT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MANAGER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RECORDING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHARITY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COUSIN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("EDITOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GUITAR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MOM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("REFLECTION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("REFRIGERATOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SINGER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TENNIS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BASKET"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BONUS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CABINET"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHURCH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CLOTHES"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COFFEE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DINNER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DRAWING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HAIR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LAB"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MEASUREMENT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MUD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ORANGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POETRY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POLICE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("QUEEN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RATIO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RESTAURANT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SONG"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOOTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TOWN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VEHICLE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VOLUME"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WIFE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("AIRPORT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BASEBALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHAPTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("ERROR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FARMER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GATE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GIRL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HALL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HISTORIAN"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HOSPITAL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("INJURY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MEAL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POEM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PROPOSAL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RIVER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SON"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TEA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("VILLAGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WARNING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WINNER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WRITER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BREATH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BUYER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHEST"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHOCOLATE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("COOKIE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DAD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DESK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GARBAGE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GROCERY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HONEY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("INSECT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("KING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LADDER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MENU"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PENALTY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIANO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POTATO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PROFESSOR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SALAD"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SISTER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TONGUE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WEAKNESS"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WEDDING"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("AFFAIR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("APPLE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BATHROOM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BEDROOM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BEER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BIRTHDAY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CHEEK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DIAMOND"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DIRT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("EAR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FUNERAL"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GENE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GIRLFRIEND"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LADY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MIDNIGHT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PIZZA"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POET"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("POLLUTION"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SHIRT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("SIR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TALE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("THROAT"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("UNCLE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("YOUTH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TIME"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WORK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FILM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("WATER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("MONEY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STUDY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("GAME"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("LIFE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FORM"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("AIR"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("DAY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("NUMBER"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("FISH"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HAND"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BOOK"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("TYPE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("HOME"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("BODY"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("STATE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("RADIO"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("PRICE"));
+        修改全局变量(AllWordsArray, 添加至数组, 自定义字符串("CARD"));
     }
 }
 
-rule ("Menu") {
-    event {
-        Subroutine;
+规则 ("Global Variables") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        关闭游戏预设完成条件;
+        关闭游戏预设计分模式;
+        设置全局变量(PlayerArray, 空数组);
+        设置全局变量(StartPictionary, 假);
+        设置全局变量(Timer, -1);
+        设置全局变量(RoundNum, 1);
+        设置全局变量(HiddenWord, 自定义字符串(""));
+    }
+}
+
+规则 ("Player Variables") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
+    }
+    动作 {
+        设置玩家变量(事件玩家, Points, 0);
+        设置玩家变量(事件玩家, WordArray, 空数组);
+    }
+}
+
+规则 ("Menu") {
+    事件 {
+        子程序;
         Menu;
     }
-    actions {
-        Create In-World Text(All Players(All Teams), Custom String("Overwatch   Pictionary"), Vector(19.5, 19, 0), 3, Do Not Clip, Visible To Position and String, Color(Orange), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("By PMAJellies"), Vector(19.5, 17, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("START"), Vector(19.5, 5, 0), 3, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
+    动作 {
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("Overwatch   Pictionary"), 矢量(19.5, 19, 0), 3, 不要截取, 可见，位置和字符串, 颜色(橙色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("By PMAJellies"), 矢量(19.5, 17, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("START"), 矢量(19.5, 5, 0), 3, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
     }
 }
 
-rule ("StartLobby") {
-    event {
-        Ongoing - Global;
+规则 ("StartLobby") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Call Subroutine(Menu);
-    }
-}
-
-rule ("Loop Time") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Match Time < 3500;
-    }
-    actions {
-        Set Match Time(3599);
+    动作 {
+        调用子程序(Menu);
     }
 }
 
-rule ("Player Joins") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Loop Time") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Is Alive(Event Player) == True;
-        Has Spawned(Event Player) == True;
+    条件 {
+        比赛时间 < 3500;
     }
-    actions {
-        Teleport(Event Player, Vector(-8, 0, Random Real(-8, 8)));
-        Set Facing(Event Player, Vector(0.95, 0.3, 0), To World);
-        Set Status(Event Player, Null, Phased Out, 9999);
-        Set Primary Fire Enabled(Event Player, False);
-        Modify Global Variable(PlayerArray, Append To Array, Event Player);
-        Set Ability 1 Enabled(Event Player, False);
-        Set Ability 2 Enabled(Event Player, False);
-        Set Secondary Fire Enabled(Event Player, False);
+    动作 {
+        设置比赛时间(3599);
     }
 }
 
-rule ("Player Leaves") {
-    event {
-        Player Left Match;
-        All;
-        All;
+规则 ("Player Joins") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Modify Global Variable(PlayerArray, Remove From Array By Value, Event Player);
-        If(Compare((Event Player).GuessedWord, ==, True));
-            Modify Global Variable(NumGuessed, Subtract, 1);
+    条件 {
+        存活(事件玩家) == 真;
+        已重生(事件玩家) == 真;
+    }
+    动作 {
+        传送(事件玩家, 矢量(-8, 0, 随机实数(-8, 8)));
+        设置朝向(事件玩家, 矢量(0.95, 0.3, 0), 至地图);
+        设置状态(事件玩家, 空, 相移, 9999);
+        设置主要攻击模式启用(事件玩家, 假);
+        修改全局变量(PlayerArray, 添加至数组, 事件玩家);
+        设置启用技能 1(事件玩家, 假);
+        设置启用技能 2(事件玩家, 假);
+        设置辅助攻击模式启用(事件玩家, 假);
+    }
+}
+
+规则 ("Player Leaves") {
+    事件 {
+        玩家离开比赛;
+        双方;
+        全部;
+    }
+    动作 {
+        修改全局变量(PlayerArray, 根据值从数组中移除, 事件玩家);
+        If(比较((事件玩家).GuessedWord, ==, 真));
+            修改全局变量(NumGuessed, 减, 1);
         End;
-        If(Compare(Global.Drawer, ==, Event Player));
-            Set Global Variable(Timer, 0);
+        If(比较(全局.Drawer, ==, 事件玩家));
+            设置全局变量(Timer, 0);
     }
 }
 
-rule ("Primary Fire") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Primary Fire") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.Drawer != Event Player;
-        (Event Player).GuessedWord == False;
+    条件 {
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.Drawer != 事件玩家;
+        (事件玩家).GuessedWord == 假;
     }
-    actions {
-        Set Player Variable(Event Player, Firing, True);
+    动作 {
+        设置玩家变量(事件玩家, Firing, 真);
         "eventPlayer.BulletEffect = getLastCreatedEntity()"
-        Play Effect(Event Player, Ring Explosion Sound, Color(White), Event Player, 100);
-        Wait(0.016, Ignore Condition);
-        Set Player Variable(Event Player, Firing, False);
-        Wait(0.1, Ignore Condition);
+        播放效果(事件玩家, 环状爆炸声音, 颜色(白色), 事件玩家, 100);
+        等待(0.016, 无视条件);
+        设置玩家变量(事件玩家, Firing, 假);
+        等待(0.1, 无视条件);
     }
 }
 
-rule ("Start Pictionary") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Start Pictionary") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Distance Between(Vector(20, 5.75, 0), Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), Distance Between(Eye Position(Event Player), Vector(20, 5.75, 0)))), Null, All Players(All Teams), False)) <= 1;
-        (Event Player).Firing == True;
-        Global.StartPictionary == False;
+    条件 {
+        相距距离(矢量(20, 5.75, 0), 射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 相距距离(眼睛位置(事件玩家), 矢量(20, 5.75, 0)))), 空, 所有玩家(所有队伍), 假)) <= 1;
+        (事件玩家).Firing == 真;
+        全局.StartPictionary == 假;
     }
-    actions {
-        Set Status(All Players(All Teams), Null, Rooted, 2);
-        Destroy All In-World Text;
-        Wait(0.016, Ignore Condition);
-        Set Global Variable(StartPictionary, True);
+    动作 {
+        设置状态(所有玩家(所有队伍), 空, 定身, 2);
+        消除所有地图文本;
+        等待(0.016, 无视条件);
+        设置全局变量(StartPictionary, 真);
         "Pictionary()\nKeyboard()\nScoreboard()"
-        Set Global Variable(PlayerArray, Randomized Array(Global.PlayerArray));
-        Set Global Variable(Turn, -1);
-        Call Subroutine(NewDrawer);
-        Big Message(All Players(All Teams), Custom String("Round {0}", Global.RoundNum));
+        设置全局变量(PlayerArray, 随机数组(全局.PlayerArray));
+        设置全局变量(Turn, -1);
+        调用子程序(NewDrawer);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Round {0}", 全局.RoundNum));
     }
 }
 
-rule ("Setup Pictionary Players") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Setup Pictionary Players") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
+    条件 {
+        全局.StartPictionary == 真;
     }
-    actions {
-        Create In-World Text(Event Player, (Event Player).WordArray, Add(Eye Position(Event Player), Facing Direction Of(Event Player)), 1.5, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Set Player Variable(Event Player, Points, 0);
+    动作 {
+        创建地图文本(事件玩家, (事件玩家).WordArray, 加(眼睛位置(事件玩家), 面朝方向(事件玩家)), 1.5, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        设置玩家变量(事件玩家, Points, 0);
     }
 }
 
-rule ("PictionarySub") {
-    event {
-        Subroutine;
+规则 ("PictionarySub") {
+    事件 {
+        子程序;
         Pictionary;
     }
-    actions {
-        Create Beam Effect(All Players(All Teams), Good Beam, Vector(19.5, 8, -8), Vector(19.5, 8, 8), Color(White), Visible To Position and Radius);
-        Create Beam Effect(All Players(All Teams), Good Beam, Vector(19.5, 24, -8), Vector(19.5, 24, 8), Color(White), Visible To Position and Radius);
-        Create Beam Effect(All Players(All Teams), Good Beam, Vector(19.5, 24, 8), Vector(19.5, 8, 8), Color(White), Visible To Position and Radius);
-        Create Beam Effect(All Players(All Teams), Good Beam, Vector(19.5, 24, -8), Vector(19.5, 8, -8), Color(White), Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(White), Vector(20, 22, -10), 1, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(White), Vector(20, 19, -10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(White), Vector(20, 16, -10), 0.6, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(White), Vector(20, 13, -10), 0.4, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(White), Vector(20, 10, -10), 0.2, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(White), Vector(20, 20, 10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Red), Vector(20, 18, 10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Orange), Vector(20, 16, 10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Yellow), Vector(20, 14, 10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Lime Green), Vector(20, 12, 10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Green), Vector(20, 18, 12), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Sky Blue), Vector(20, 16, 12), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Blue), Vector(20, 14, 12), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Purple), Vector(20, 12, 12), 0.8, Visible To Position and Radius);
-        Create Beam Effect(All Players(All Teams), Good Beam, Vector(-4, 0, 20), Vector(-4, 0, -20), Color(Red), Visible To Position and Radius);
-        Create Icon(Global.Drawer, Vector(20, 7.5, 11), Trashcan, Visible To and Position, Color(Red), False);
-        Create Effect(Global.Drawer, Sphere, Color(Black), Vector(20, 20, 12), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Gray), Vector(20, 22, 10), 0.8, Visible To Position and Radius);
-        Create Effect(Global.Drawer, Sphere, Color(Rose), Vector(20, 22, 12), 0.8, Visible To Position and Radius);
+    动作 {
+        创建光束效果(所有玩家(所有队伍), 有益光束, 矢量(19.5, 8, -8), 矢量(19.5, 8, 8), 颜色(白色), 可见，位置和半径);
+        创建光束效果(所有玩家(所有队伍), 有益光束, 矢量(19.5, 24, -8), 矢量(19.5, 24, 8), 颜色(白色), 可见，位置和半径);
+        创建光束效果(所有玩家(所有队伍), 有益光束, 矢量(19.5, 24, 8), 矢量(19.5, 8, 8), 颜色(白色), 可见，位置和半径);
+        创建光束效果(所有玩家(所有队伍), 有益光束, 矢量(19.5, 24, -8), 矢量(19.5, 8, -8), 颜色(白色), 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(白色), 矢量(20, 22, -10), 1, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(白色), 矢量(20, 19, -10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(白色), 矢量(20, 16, -10), 0.6, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(白色), 矢量(20, 13, -10), 0.4, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(白色), 矢量(20, 10, -10), 0.2, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(白色), 矢量(20, 20, 10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(红色), 矢量(20, 18, 10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(橙色), 矢量(20, 16, 10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(黄色), 矢量(20, 14, 10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(灰绿色), 矢量(20, 12, 10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(绿色), 矢量(20, 18, 12), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(天蓝色), 矢量(20, 16, 12), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(蓝色), 矢量(20, 14, 12), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(亮紫色), 矢量(20, 12, 12), 0.8, 可见，位置和半径);
+        创建光束效果(所有玩家(所有队伍), 有益光束, 矢量(-4, 0, 20), 矢量(-4, 0, -20), 颜色(红色), 可见，位置和半径);
+        创建图标(全局.Drawer, 矢量(20, 7.5, 11), 垃圾箱, 可见和位置, 颜色(红色), 假);
+        创建效果(全局.Drawer, 球体, 颜色(黑色), 矢量(20, 20, 12), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(灰色), 矢量(20, 22, 10), 0.8, 可见，位置和半径);
+        创建效果(全局.Drawer, 球体, 颜色(玫红), 矢量(20, 22, 12), 0.8, 可见，位置和半径);
     }
 }
 
-rule ("KeyboardSub") {
-    event {
-        Subroutine;
+规则 ("KeyboardSub") {
+    事件 {
+        子程序;
         Keyboard;
     }
-    actions {
+    动作 {
         "createInWorldText(getAllPlayers(), \"Q  W  E  R  T  Y  U  I  O  P\", vect(20, 4.5, 0), 2, Clip.NONE, WorldTextReeval.VISIBILITY_POSITION_AND_STRING)"
-        Create In-World Text(All Players(All Teams), Custom String("Q"), Vector(20, 6, -9), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("W"), Vector(20, 6, -7), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("E"), Vector(20, 6, -5), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("R"), Vector(20, 6, -3), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("T"), Vector(20, 6, -1), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("Y"), Vector(20, 6, 1), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("U"), Vector(20, 6, 3), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("I"), Vector(20, 6, 5), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("O"), Vector(20, 6, 7), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("P"), Vector(20, 6, 9), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("DEL"), Vector(20, 6, 11), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("A"), Vector(20, 4, -8), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("S"), Vector(20, 4, -6), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("D"), Vector(20, 4, -4), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("F"), Vector(20, 4, -2), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("G"), Vector(20, 4, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("H"), Vector(20, 4, 2), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("J"), Vector(20, 4, 4), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("K"), Vector(20, 4, 6), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("L"), Vector(20, 4, 8), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("Z"), Vector(20, 2, -6), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("X"), Vector(20, 2, -4), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("C"), Vector(20, 2, -2), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("V"), Vector(20, 2, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("B"), Vector(20, 2, 2), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("N"), Vector(20, 2, 4), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("M"), Vector(20, 2, 6), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("SUBMIT"), Vector(20, 2, 10), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Create In-World Text(All Players(All Teams), Custom String("| SPACE |"), Vector(20, 0, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("Q"), 矢量(20, 6, -9), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("W"), 矢量(20, 6, -7), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("E"), 矢量(20, 6, -5), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("R"), 矢量(20, 6, -3), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("T"), 矢量(20, 6, -1), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("Y"), 矢量(20, 6, 1), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("U"), 矢量(20, 6, 3), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("I"), 矢量(20, 6, 5), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("O"), 矢量(20, 6, 7), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("P"), 矢量(20, 6, 9), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("DEL"), 矢量(20, 6, 11), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("A"), 矢量(20, 4, -8), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("S"), 矢量(20, 4, -6), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("D"), 矢量(20, 4, -4), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("F"), 矢量(20, 4, -2), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("G"), 矢量(20, 4, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("H"), 矢量(20, 4, 2), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("J"), 矢量(20, 4, 4), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("K"), 矢量(20, 4, 6), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("L"), 矢量(20, 4, 8), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("Z"), 矢量(20, 2, -6), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("X"), 矢量(20, 2, -4), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("C"), 矢量(20, 2, -2), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("V"), 矢量(20, 2, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("B"), 矢量(20, 2, 2), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("N"), 矢量(20, 2, 4), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("M"), 矢量(20, 2, 6), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("SUBMIT"), 矢量(20, 2, 10), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        创建地图文本(所有玩家(所有队伍), 自定义字符串("| SPACE |"), 矢量(20, 0, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
     }
 }
 
-rule ("ScoreboardSub") {
-    event {
-        Subroutine;
+规则 ("ScoreboardSub") {
+    事件 {
+        子程序;
         Scoreboard;
     }
-    actions {
-        Set Global Variable(ScoreboardArray, Sorted Array(Global.PlayerArray, (Current Array Element).Points));
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", First Of(Global.ScoreboardArray), (First Of(Global.ScoreboardArray)).Points), Left, 0, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 1), (Value In Array(Global.ScoreboardArray, 1)).Points), Left, 1, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 2), (Value In Array(Global.ScoreboardArray, 2)).Points), Left, 2, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 3), (Value In Array(Global.ScoreboardArray, 3)).Points), Left, 3, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 4), (Value In Array(Global.ScoreboardArray, 4)).Points), Left, 4, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 5), (Value In Array(Global.ScoreboardArray, 5)).Points), Left, 5, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 6), (Value In Array(Global.ScoreboardArray, 6)).Points), Left, 6, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 7), (Value In Array(Global.ScoreboardArray, 7)).Points), Left, 7, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 8), (Value In Array(Global.ScoreboardArray, 8)).Points), Left, 8, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 9), (Value In Array(Global.ScoreboardArray, 9)).Points), Left, 9, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 10), (Value In Array(Global.ScoreboardArray, 10)).Points), Left, 10, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: Points {1}", Value In Array(Global.ScoreboardArray, 11), (Value In Array(Global.ScoreboardArray, 11)).Points), Left, 11, Null, Null, Color(White), Visible To and String, Default Visibility);
+    动作 {
+        设置全局变量(ScoreboardArray, 已排序的数组(全局.PlayerArray, (当前数组元素).Points));
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 首个(全局.ScoreboardArray), (首个(全局.ScoreboardArray)).Points), 左边, 0, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 1), (数组中的值(全局.ScoreboardArray, 1)).Points), 左边, 1, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 2), (数组中的值(全局.ScoreboardArray, 2)).Points), 左边, 2, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 3), (数组中的值(全局.ScoreboardArray, 3)).Points), 左边, 3, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 4), (数组中的值(全局.ScoreboardArray, 4)).Points), 左边, 4, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 5), (数组中的值(全局.ScoreboardArray, 5)).Points), 左边, 5, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 6), (数组中的值(全局.ScoreboardArray, 6)).Points), 左边, 6, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 7), (数组中的值(全局.ScoreboardArray, 7)).Points), 左边, 7, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 8), (数组中的值(全局.ScoreboardArray, 8)).Points), 左边, 8, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 9), (数组中的值(全局.ScoreboardArray, 9)).Points), 左边, 9, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 10), (数组中的值(全局.ScoreboardArray, 10)).Points), 左边, 10, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: Points {1}", 数组中的值(全局.ScoreboardArray, 11), (数组中的值(全局.ScoreboardArray, 11)).Points), 左边, 11, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
     }
 }
 
-rule ("NewDrawer Setup") {
-    event {
-        Subroutine;
+规则 ("NewDrawer Setup") {
+    事件 {
+        子程序;
         NewDrawer;
     }
-    actions {
-        Start Forcing Throttle(All Players(All Teams), 0, 0, 0, 0, 0, 0);
-        Set Global Variable(NumGuessed, 0);
-        Set Player Variable(All Players(All Teams), GuessedWord, False);
-        Set Global Variable(ChoosingWord, False);
+    动作 {
+        开始限制阈值(所有玩家(所有队伍), 0, 0, 0, 0, 0, 0);
+        设置全局变量(NumGuessed, 0);
+        设置玩家变量(所有玩家(所有队伍), GuessedWord, 假);
+        设置全局变量(ChoosingWord, 假);
         "getAllPlayers().clearStatusEffect(Status.ROOTED)"
-        Destroy All Effects;
-        Destroy All In-World Text;
-        Destroy All HUD Text;
-        If(Compare(Global.Turn, >=, Subtract(Count Of(Global.PlayerArray), 1)));
-            Set Global Variable(Turn, 0);
-            Modify Global Variable(RoundNum, Add, 1);
-            If(Compare(Global.RoundNum, ==, 5));
-                Big Message(All Players(All Teams), Custom String("Final Round"));
+        消除所有效果;
+        消除所有地图文本;
+        消除所有HUD文本;
+        If(比较(全局.Turn, >=, 减(数量(全局.PlayerArray), 1)));
+            设置全局变量(Turn, 0);
+            修改全局变量(RoundNum, 加, 1);
+            If(比较(全局.RoundNum, ==, 5));
+                大字体信息(所有玩家(所有队伍), 自定义字符串("Final Round"));
             Else;
-                Big Message(All Players(All Teams), Custom String("Round {0}", Global.RoundNum));
+                大字体信息(所有玩家(所有队伍), 自定义字符串("Round {0}", 全局.RoundNum));
             End;
         Else;
-            Modify Global Variable(Turn, Add, 1);
+            修改全局变量(Turn, 加, 1);
         End;
-        Set Global Variable(Drawer, Value In Array(Global.PlayerArray, Global.Turn));
-        Set Global Variable(ChoosingWord, False);
-        Teleport(Global.Drawer, Vector(2, 0, 0));
-        Set Status(Global.Drawer, Null, Rooted, 9999);
-        Set Gravity(Global.Drawer, 0);
-        Wait(0.7, Ignore Condition);
-        Set Status(Global.Drawer, Null, Phased Out, 9999);
-        Set Facing(Global.Drawer, Vector(1, 0.07, 0), To World);
-        Teleport(Global.Drawer, Vector(2, 12, 0));
-        Call Subroutine(Scoreboard);
-        Call Subroutine(Keyboard);
-        Call Subroutine(Pictionary);
-        Set Global Variable(Timer, 60);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("Drawing: {0}", Global.Drawer), Top, 0, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("Time: {0}", Global.Timer), Top, 0, Null, Null, Color(White), Visible To and String, Default Visibility);
+        设置全局变量(Drawer, 数组中的值(全局.PlayerArray, 全局.Turn));
+        设置全局变量(ChoosingWord, 假);
+        传送(全局.Drawer, 矢量(2, 0, 0));
+        设置状态(全局.Drawer, 空, 定身, 9999);
+        设置引力(全局.Drawer, 0);
+        等待(0.7, 无视条件);
+        设置状态(全局.Drawer, 空, 相移, 9999);
+        设置朝向(全局.Drawer, 矢量(1, 0.07, 0), 至地图);
+        传送(全局.Drawer, 矢量(2, 12, 0));
+        调用子程序(Scoreboard);
+        调用子程序(Keyboard);
+        调用子程序(Pictionary);
+        设置全局变量(Timer, 60);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("Drawing: {0}", 全局.Drawer), 顶部, 0, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("Time: {0}", 全局.Timer), 顶部, 0, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
         "chaseAtRate(Timer, 0, 1)"
-        Set Global Variable(DrawerColor, Custom String("White"));
-        Set Global Variable(DrawerRadius, 0.6);
-        Set Global Variable(NumOfEffects, 0);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("Effect Limit: {0} / 230", Global.NumOfEffects), Top, 0, Null, Null, Color(White), Visible To and String, Default Visibility);
-        Set Global Variable(AllWordsArray, Randomized Array(Global.AllWordsArray));
-        Create In-World Text(Global.Drawer, First Of(Global.AllWordsArray), Vector(20, 18, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Visible Never);
-        Create In-World Text(Global.Drawer, Value In Array(Global.AllWordsArray, 1), Vector(20, 15, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Visible Never);
-        Create In-World Text(Global.Drawer, Value In Array(Global.AllWordsArray, 2), Vector(20, 12, 0), 2, Do Not Clip, Visible To Position and String, Color(White), Visible Never);
-        Clear Status(All Players(All Teams), Rooted);
-        Wait(0.1, Ignore Condition);
-        Set Status(Global.Drawer, Null, Rooted, 9999);
-        Stop Forcing Throttle(All Players(All Teams));
-        Set Player Variable(Event Player, WordArray, Custom String(""));
-        Set Global Variable(HiddenWord, Custom String(""));
+        设置全局变量(DrawerColor, 自定义字符串("White"));
+        设置全局变量(DrawerRadius, 0.6);
+        设置全局变量(NumOfEffects, 0);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("Effect Limit: {0} / 230", 全局.NumOfEffects), 顶部, 0, 空, 空, 颜色(白色), 可见和字符串, 默认可见度);
+        设置全局变量(AllWordsArray, 随机数组(全局.AllWordsArray));
+        创建地图文本(全局.Drawer, 首个(全局.AllWordsArray), 矢量(20, 18, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 始终不可见);
+        创建地图文本(全局.Drawer, 数组中的值(全局.AllWordsArray, 1), 矢量(20, 15, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 始终不可见);
+        创建地图文本(全局.Drawer, 数组中的值(全局.AllWordsArray, 2), 矢量(20, 12, 0), 2, 不要截取, 可见，位置和字符串, 颜色(白色), 始终不可见);
+        清除状态(所有玩家(所有队伍), 定身);
+        等待(0.1, 无视条件);
+        设置状态(全局.Drawer, 空, 定身, 9999);
+        停止限制阈值(所有玩家(所有队伍));
+        设置玩家变量(事件玩家, WordArray, 自定义字符串(""));
+        设置全局变量(HiddenWord, 自定义字符串(""));
     }
 }
 
-rule ("QWERTYUIOP") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("QWERTYUIOP") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 5.5;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 7.5;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > -10;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 10;
-        (Event Player).Firing == True;
+    条件 {
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 5.5;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 7.5;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > -10;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 10;
+        (事件玩家).Firing == 真;
     }
-    actions {
-        If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -8));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}Q", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -6));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}W", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -4));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}E", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -2));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}R", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 0));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}T", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 2));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}Y", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 4));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}U", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 6));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}I", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 8));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}O", (Event Player).WordArray));
+    动作 {
+        If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -8));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}Q", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -6));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}W", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -4));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}E", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -2));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}R", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 0));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}T", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 2));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}Y", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 4));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}U", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 6));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}I", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 8));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}O", (事件玩家).WordArray));
         Else;
-            Set Player Variable(Event Player, WordArray, Custom String("{0}P", (Event Player).WordArray));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}P", (事件玩家).WordArray));
     }
 }
 
-rule ("ASDFGHJKL") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("ASDFGHJKL") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 3.5;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 5.5;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > -9;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 9;
-        (Event Player).Firing == True;
+    条件 {
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 3.5;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 5.5;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > -9;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 9;
+        (事件玩家).Firing == 真;
     }
-    actions {
-        If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -7));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}A", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -5));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}S", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -3));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}D", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -1));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}F", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 1));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}G", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 3));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}H", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 5));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}J", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 7));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}K", (Event Player).WordArray));
+    动作 {
+        If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -7));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}A", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -5));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}S", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -3));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}D", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -1));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}F", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 1));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}G", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 3));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}H", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 5));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}J", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 7));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}K", (事件玩家).WordArray));
         Else;
-            Set Player Variable(Event Player, WordArray, Custom String("{0}L", (Event Player).WordArray));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}L", (事件玩家).WordArray));
     }
 }
 
-rule ("ZXCVBNM") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("ZXCVBNM") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 1.5;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 3.5;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > -7;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 7;
-        (Event Player).Firing == True;
+    条件 {
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 1.5;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 3.5;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > -7;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 7;
+        (事件玩家).Firing == 真;
     }
-    actions {
-        If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -5));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}Z", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -3));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}X", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -1));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}C", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 1));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}V", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 3));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}B", (Event Player).WordArray));
-        Else If(Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 5));
-            Set Player Variable(Event Player, WordArray, Custom String("{0}N", (Event Player).WordArray));
+    动作 {
+        If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -5));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}Z", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -3));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}X", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -1));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}C", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 1));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}V", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 3));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}B", (事件玩家).WordArray));
+        Else If(比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 5));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}N", (事件玩家).WordArray));
         Else;
-            Set Player Variable(Event Player, WordArray, Custom String("{0}M", (Event Player).WordArray));
+            设置玩家变量(事件玩家, WordArray, 自定义字符串("{0}M", (事件玩家).WordArray));
     }
 }
 
-rule ("SPACE") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("SPACE") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 0.5, 0)) <= 1;
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
-        (Event Player).Firing == True;
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 0.5, 0)) <= 1;
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
+        (事件玩家).Firing == 真;
     }
-    actions {
-        Set Player Variable(Event Player, WordArray, Custom String("{0} ", (Event Player).WordArray));
+    动作 {
+        设置玩家变量(事件玩家, WordArray, 自定义字符串("{0} ", (事件玩家).WordArray));
     }
 }
 
-rule ("SUBMIT") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("SUBMIT") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 2.5, 10)) <= 1;
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
-        (Event Player).Firing == True;
-        (Event Player).WordArray != Custom String("");
-        (Event Player).WordArray != Custom String("******");
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 2.5, 10)) <= 1;
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
+        (事件玩家).Firing == 真;
+        (事件玩家).WordArray != 自定义字符串("");
+        (事件玩家).WordArray != 自定义字符串("******");
     }
-    actions {
-        If(Compare((Event Player).WordArray, ==, Global.PictionaryWord));
-            Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0} guessed correctly!", Event Player), Right, 0, Null, Null, Color(Green), None, Default Visibility);
-            Wait(0.02, Ignore Condition);
-            Set Player Variable(Event Player, GuessedWord, True);
-            Set Player Variable(Event Player, WordArray, Custom String(""));
-            Modify Global Variable(NumGuessed, Add, 1);
-            Modify Player Variable(Event Player, Points, Add, Divide(100, Global.NumGuessed));
-            Modify Player Variable(Global.Drawer, Points, Add, 20);
-        Else If(Array Contains(Global.BannedWords, (Event Player).WordArray));
-            Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0} kicked for racism!", Event Player), Right, 0, Null, Null, Color(Red), None, Default Visibility);
-            Remove Player(Event Player);
+    动作 {
+        If(比较((事件玩家).WordArray, ==, 全局.PictionaryWord));
+            创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0} guessed correctly!", 事件玩家), 右边, 0, 空, 空, 颜色(绿色), 无, 默认可见度);
+            等待(0.02, 无视条件);
+            设置玩家变量(事件玩家, GuessedWord, 真);
+            设置玩家变量(事件玩家, WordArray, 自定义字符串(""));
+            修改全局变量(NumGuessed, 加, 1);
+            修改玩家变量(事件玩家, Points, 加, 除(100, 全局.NumGuessed));
+            修改玩家变量(全局.Drawer, Points, 加, 20);
+        Else If(数组包含(全局.BannedWords, (事件玩家).WordArray));
+            创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0} kicked for racism!", 事件玩家), 右边, 0, 空, 空, 颜色(红色), 无, 默认可见度);
+            移除玩家(事件玩家);
         Else;
-            Create HUD Text(All Players(All Teams), Null, Null, Custom String("{0}: {1}", Event Player, (Event Player).WordArray), Right, 0, Null, Null, Color(White), None, Default Visibility);
-            Wait(0.02, Ignore Condition);
-            Set Player Variable(Event Player, WordArray, Custom String(""));
+            创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("{0}: {1}", 事件玩家, (事件玩家).WordArray), 右边, 0, 空, 空, 颜色(白色), 无, 默认可见度);
+            等待(0.02, 无视条件);
+            设置玩家变量(事件玩家, WordArray, 自定义字符串(""));
     }
 }
 
-rule ("DEL") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("DEL") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 6.5, 11)) <= 1;
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
-        (Event Player).Firing == True;
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 6.5, 11)) <= 1;
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
+        (事件玩家).Firing == 真;
     }
-    actions {
-        Set Player Variable(Event Player, WordArray, Custom String(""));
-    }
-}
-
-rule ("DrawTool") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Global.Drawer == Event Player;
-        Global.StartPictionary == True;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 8;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 24;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > -8;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 8;
-        Global.ChoosingWord == True;
-    }
-    actions {
-        Create Effect(Event Player, Sphere, Global.DrawerColor, Update Every Frame(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), Global.DrawerRadius, Visible To Position and Radius);
-        Set Global Variable(DrawTool, Last Created Entity);
+    动作 {
+        设置玩家变量(事件玩家, WordArray, 自定义字符串(""));
     }
 }
 
-rule ("DrawTool Destroy") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("DrawTool") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.Drawer == Event Player;
-        Global.StartPictionary == True;
-        Or(Or(Or(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), >, 24), Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 8)), Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, -8)), Compare(Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), >, 8)) == True;
-        Global.ChoosingWord == True;
+    条件 {
+        全局.Drawer == 事件玩家;
+        全局.StartPictionary == 真;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 8;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 24;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > -8;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 8;
+        全局.ChoosingWord == 真;
     }
-    actions {
-        Destroy Effect(Global.DrawTool);
+    动作 {
+        创建效果(事件玩家, 球体, 全局.DrawerColor, 逐帧更新(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), 全局.DrawerRadius, 可见，位置和半径);
+        设置全局变量(DrawTool, 最后创建的实体);
     }
 }
 
-rule ("Drawer Draw") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("DrawTool Destroy") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.Drawer == Event Player;
-        Global.StartPictionary == True;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 8;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 24;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > -8;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 8;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == True;
+    条件 {
+        全局.Drawer == 事件玩家;
+        全局.StartPictionary == 真;
+        或(或(或(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), >, 24), 比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 8)), 比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, -8)), 比较(Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), >, 8)) == 真;
+        全局.ChoosingWord == 真;
     }
-    actions {
-        Create Effect(All Players(All Teams), Sphere, Global.DrawerColor, Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Global.DrawerRadius, None);
-        Modify Global Variable(NumOfEffects, Add, 1);
-        Wait(0.1, Ignore Condition);
-        If(Compare(Global.NumOfEffects, >=, 230));
-            Small Message(Global.Drawer, Custom String("Effect Limit Reached"));
+    动作 {
+        消除效果(全局.DrawTool);
+    }
+}
+
+规则 ("Drawer Draw") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
+    }
+    条件 {
+        全局.Drawer == 事件玩家;
+        全局.StartPictionary == 真;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 8;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 24;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > -8;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 8;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 真;
+    }
+    动作 {
+        创建效果(所有玩家(所有队伍), 球体, 全局.DrawerColor, 射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 全局.DrawerRadius, 无);
+        修改全局变量(NumOfEffects, 加, 1);
+        等待(0.1, 无视条件);
+        If(比较(全局.NumOfEffects, >=, 230));
+            小字体信息(全局.Drawer, 自定义字符串("Effect Limit Reached"));
         End;
-        Loop If Condition Is True;
+        如条件为“真”则循环;
     }
 }
 
-rule ("Drawer Select Size") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Drawer Select Size") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 8;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 24;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > -12;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < -8;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == True;
+    条件 {
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 8;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 24;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > -12;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < -8;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 真;
     }
-    actions {
-        If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 11.5));
-            Set Global Variable(DrawerRadius, 0.2);
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 14.5));
-            Set Global Variable(DrawerRadius, 0.4);
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 17.5));
-            Set Global Variable(DrawerRadius, 0.6);
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 20.5));
-            Set Global Variable(DrawerRadius, 0.8);
+    动作 {
+        If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 11.5));
+            设置全局变量(DrawerRadius, 0.2);
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 14.5));
+            设置全局变量(DrawerRadius, 0.4);
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 17.5));
+            设置全局变量(DrawerRadius, 0.6);
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 20.5));
+            设置全局变量(DrawerRadius, 0.8);
         Else;
-            Set Global Variable(DrawerRadius, 1);
+            设置全局变量(DrawerRadius, 1);
     }
 }
 
-rule ("Drawer Select Color 1") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Drawer Select Color 1") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 11;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 24;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 9;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 11;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == True;
+    条件 {
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 11;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 24;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 9;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 11;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 真;
     }
-    actions {
-        If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 13));
-            Set Global Variable(DrawerColor, Color(Lime Green));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 15));
-            Set Global Variable(DrawerColor, Color(Yellow));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 17));
-            Set Global Variable(DrawerColor, Color(Orange));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 19));
-            Set Global Variable(DrawerColor, Color(Red));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 21));
-            Set Global Variable(DrawerColor, Color(White));
+    动作 {
+        If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 13));
+            设置全局变量(DrawerColor, 颜色(灰绿色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 15));
+            设置全局变量(DrawerColor, 颜色(黄色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 17));
+            设置全局变量(DrawerColor, 颜色(橙色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 19));
+            设置全局变量(DrawerColor, 颜色(红色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 21));
+            设置全局变量(DrawerColor, 颜色(白色));
         Else;
-            Set Global Variable(DrawerColor, Color(Gray));
+            设置全局变量(DrawerColor, 颜色(灰色));
     }
 }
 
-rule ("Drawer Select Color 2") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Drawer Select Color 2") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        X Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) == 20;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 11;
-        Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 24;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) > 11;
-        Z Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)) < 13;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == True;
+    条件 {
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        X方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) == 20;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 11;
+        Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 24;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) > 11;
+        Z方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)) < 13;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 真;
     }
-    actions {
-        If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 13));
-            Set Global Variable(DrawerColor, Color(Purple));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 15));
-            Set Global Variable(DrawerColor, Color(Blue));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 17));
-            Set Global Variable(DrawerColor, Color(Sky Blue));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 19));
-            Set Global Variable(DrawerColor, Color(Green));
-        Else If(Compare(Y Component Of(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True)), <, 21));
-            Set Global Variable(DrawerColor, Color(Black));
+    动作 {
+        If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 13));
+            设置全局变量(DrawerColor, 颜色(亮紫色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 15));
+            设置全局变量(DrawerColor, 颜色(蓝色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 17));
+            设置全局变量(DrawerColor, 颜色(天蓝色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 19));
+            设置全局变量(DrawerColor, 颜色(绿色));
+        Else If(比较(Y方向分量(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真)), <, 21));
+            设置全局变量(DrawerColor, 颜色(黑色));
         Else;
-            Set Global Variable(DrawerColor, Color(Rose));
+            设置全局变量(DrawerColor, 颜色(玫红));
     }
 }
 
-rule ("Trash") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Trash") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 9.5, 11)) <= 1;
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 9.5, 11)) <= 1;
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
     }
-    actions {
-        Destroy All Icons;
-        Destroy In-World Text(Global.WordText);
-        Destroy All Effects;
-        Wait(0.02, Ignore Condition);
-        Call Subroutine(Pictionary);
-        Set Global Variable(NumOfEffects, 0);
-        Create In-World Text(Event Player, Global.PictionaryWord, Vector(20, 24, 0), 2.5, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Set Global Variable(WordText, Last Created Entity);
-    }
-}
-
-rule ("Drawer Select Word 0") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 18.4, 0)) <= 0.8;
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == False;
-    }
-    actions {
-        Set Global Variable(PictionaryWord, First Of(Global.AllWordsArray));
-        Chase Global Variable At Rate(Timer, 0, 1, Destination and Rate);
-        Destroy All In-World Text;
-        Destroy All Effects;
-        Wait(0.05, Ignore Condition);
-        Call Subroutine(Keyboard);
-        Call Subroutine(Pictionary);
-        Create In-World Text(Event Player, Global.PictionaryWord, Vector(20, 24, 0), 2.5, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Set Global Variable(WordText, Last Created Entity);
-        Wait(0.25, Ignore Condition);
-        Set Global Variable(ChoosingWord, True);
-        Set Global Variable(DrawerColor, Custom String("White"));
-        Set Global Variable(DrawerRadius, 0.6);
-        Set Global Variable(NumOfEffects, 0);
+    动作 {
+        消除所有图标;
+        消除地图文本(全局.WordText);
+        消除所有效果;
+        等待(0.02, 无视条件);
+        调用子程序(Pictionary);
+        设置全局变量(NumOfEffects, 0);
+        创建地图文本(事件玩家, 全局.PictionaryWord, 矢量(20, 24, 0), 2.5, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        设置全局变量(WordText, 最后创建的实体);
     }
 }
 
-rule ("Drawer Select Word 1") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Drawer Select Word 0") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 15.35, 0)) <= 0.8;
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == False;
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 18.4, 0)) <= 0.8;
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 假;
     }
-    actions {
-        Set Global Variable(PictionaryWord, Value In Array(Global.AllWordsArray, 1));
-        Chase Global Variable At Rate(Timer, 0, 1, Destination and Rate);
-        Destroy All In-World Text;
-        Destroy All Effects;
-        Wait(0.05, Ignore Condition);
-        Call Subroutine(Keyboard);
-        Call Subroutine(Pictionary);
-        Create In-World Text(Event Player, Global.PictionaryWord, Vector(20, 24, 0), 2.5, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Wait(0.25, Ignore Condition);
-        Set Global Variable(ChoosingWord, True);
-        Set Global Variable(DrawerColor, Custom String("White"));
-        Set Global Variable(DrawerRadius, 0.6);
-        Set Global Variable(NumOfEffects, 0);
-    }
-}
-
-rule ("Drawer Select Word 2") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Distance Between(Ray Cast Hit Position(Eye Position(Event Player), Add(Eye Position(Event Player), Multiply(Facing Direction Of(Event Player), 1000)), Null, Event Player, True), Vector(20, 12.35, 0)) <= 0.8;
-        Global.StartPictionary == True;
-        Global.Drawer == Event Player;
-        Is Button Held(Event Player, Button(Primary Fire)) == True;
-        Global.ChoosingWord == False;
-    }
-    actions {
-        Set Global Variable(PictionaryWord, Value In Array(Global.AllWordsArray, 2));
-        Chase Global Variable At Rate(Timer, 0, 1, Destination and Rate);
-        Destroy All In-World Text;
-        Destroy All Effects;
-        Wait(0.05, Ignore Condition);
-        Call Subroutine(Keyboard);
-        Call Subroutine(Pictionary);
-        Create In-World Text(Event Player, Global.PictionaryWord, Vector(20, 24, 0), 2.5, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
-        Wait(0.25, Ignore Condition);
-        Set Global Variable(ChoosingWord, True);
-        Set Global Variable(DrawerColor, Custom String("White"));
-        Set Global Variable(DrawerRadius, 0.6);
-        Set Global Variable(NumOfEffects, 0);
+    动作 {
+        设置全局变量(PictionaryWord, 首个(全局.AllWordsArray));
+        追踪全局变量频率(Timer, 0, 1, 速率及最终值);
+        消除所有地图文本;
+        消除所有效果;
+        等待(0.05, 无视条件);
+        调用子程序(Keyboard);
+        调用子程序(Pictionary);
+        创建地图文本(事件玩家, 全局.PictionaryWord, 矢量(20, 24, 0), 2.5, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        设置全局变量(WordText, 最后创建的实体);
+        等待(0.25, 无视条件);
+        设置全局变量(ChoosingWord, 真);
+        设置全局变量(DrawerColor, 自定义字符串("White"));
+        设置全局变量(DrawerRadius, 0.6);
+        设置全局变量(NumOfEffects, 0);
     }
 }
 
-rule ("Times Up or Everyone Guesses") {
-    event {
-        Ongoing - Global;
+规则 ("Drawer Select Word 1") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Or(Compare(Global.Timer, ==, 0), Compare(Global.NumGuessed, ==, Subtract(Count Of(Global.PlayerArray), 1))) == True;
-        Global.StartPictionary == True;
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 15.35, 0)) <= 0.8;
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 假;
     }
-    actions {
-        Set Global Variable(Drawer, Null);
-        Stop Chasing Global Variable(Timer);
-        Set Global Variable(Timer, -1);
-        Play Effect(All Players(All Teams), Debuff Impact Sound, Color(White), Vector(0, 0, 0), 200);
-        Clear Status(All Players(All Teams), Phased Out);
-        Set Status(All Players(All Teams), Null, Rooted, 8);
-        Wait(0.5, Ignore Condition);
-        Big Message(All Players(All Teams), Custom String("The Word Was: {0}", Global.PictionaryWord));
-        Wait(5, Ignore Condition);
-        Teleport(All Players(All Teams), Vector(-8, 0, Random Real(-8, 8)));
-        Set Gravity(All Players(All Teams), 100);
-        Set Status(All Players(All Teams), Null, Phased Out, 9999);
-        Call Subroutine(NewDrawer);
-    }
-}
-
-rule ("Create Typing Text") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Global.Drawer != Event Player;
-        Global.ChoosingWord == True;
-    }
-    actions {
-        Create In-World Text(Event Player, (Event Player).WordArray, Add(Eye Position(Event Player), Facing Direction Of(Event Player)), 1.5, Do Not Clip, Visible To Position and String, Color(White), Default Visibility);
+    动作 {
+        设置全局变量(PictionaryWord, 数组中的值(全局.AllWordsArray, 1));
+        追踪全局变量频率(Timer, 0, 1, 速率及最终值);
+        消除所有地图文本;
+        消除所有效果;
+        等待(0.05, 无视条件);
+        调用子程序(Keyboard);
+        调用子程序(Pictionary);
+        创建地图文本(事件玩家, 全局.PictionaryWord, 矢量(20, 24, 0), 2.5, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        等待(0.25, 无视条件);
+        设置全局变量(ChoosingWord, 真);
+        设置全局变量(DrawerColor, 自定义字符串("White"));
+        设置全局变量(DrawerRadius, 0.6);
+        设置全局变量(NumOfEffects, 0);
     }
 }
 
-rule ("End Game") {
-    event {
-        Ongoing - Global;
+规则 ("Drawer Select Word 2") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.Turn >= Subtract(Count Of(Global.PlayerArray), 1);
-        Global.RoundNum == 5;
+    条件 {
+        相距距离(射线命中位置(眼睛位置(事件玩家), 加(眼睛位置(事件玩家), 乘(面朝方向(事件玩家), 1000)), 空, 事件玩家, 真), 矢量(20, 12.35, 0)) <= 0.8;
+        全局.StartPictionary == 真;
+        全局.Drawer == 事件玩家;
+        按钮被按下(事件玩家, 按钮(主要攻击模式)) == 真;
+        全局.ChoosingWord == 假;
     }
-    actions {
-        Call Subroutine(Winner);
-        Big Message(All Players(All Teams), Custom String("{0} Wins!!!", Global.Winner));
-        Wait(5, Ignore Condition);
-        Set Global Variable(PlayerArray, Empty Array);
-        Set Global Variable(StartPictionary, False);
-        Set Global Variable(Timer, -1);
-        Set Global Variable(RoundNum, 1);
-        Destroy All Effects;
-        Destroy All HUD Text;
-        Destroy All In-World Text;
-        Wait(0.2, Ignore Condition);
+    动作 {
+        设置全局变量(PictionaryWord, 数组中的值(全局.AllWordsArray, 2));
+        追踪全局变量频率(Timer, 0, 1, 速率及最终值);
+        消除所有地图文本;
+        消除所有效果;
+        等待(0.05, 无视条件);
+        调用子程序(Keyboard);
+        调用子程序(Pictionary);
+        创建地图文本(事件玩家, 全局.PictionaryWord, 矢量(20, 24, 0), 2.5, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+        等待(0.25, 无视条件);
+        设置全局变量(ChoosingWord, 真);
+        设置全局变量(DrawerColor, 自定义字符串("White"));
+        设置全局变量(DrawerRadius, 0.6);
+        设置全局变量(NumOfEffects, 0);
     }
 }
 
-rule ("Winner Subroutine") {
-    event {
-        Subroutine;
+规则 ("Times Up or Everyone Guesses") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        或(比较(全局.Timer, ==, 0), 比较(全局.NumGuessed, ==, 减(数量(全局.PlayerArray), 1))) == 真;
+        全局.StartPictionary == 真;
+    }
+    动作 {
+        设置全局变量(Drawer, 空);
+        停止追踪全局变量(Timer);
+        设置全局变量(Timer, -1);
+        播放效果(所有玩家(所有队伍), 负面状态施加声音, 颜色(白色), 矢量(0, 0, 0), 200);
+        清除状态(所有玩家(所有队伍), 相移);
+        设置状态(所有玩家(所有队伍), 空, 定身, 8);
+        等待(0.5, 无视条件);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("The Word Was: {0}", 全局.PictionaryWord));
+        等待(5, 无视条件);
+        传送(所有玩家(所有队伍), 矢量(-8, 0, 随机实数(-8, 8)));
+        设置引力(所有玩家(所有队伍), 100);
+        设置状态(所有玩家(所有队伍), 空, 相移, 9999);
+        调用子程序(NewDrawer);
+    }
+}
+
+规则 ("Create Typing Text") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
+    }
+    条件 {
+        全局.Drawer != 事件玩家;
+        全局.ChoosingWord == 真;
+    }
+    动作 {
+        创建地图文本(事件玩家, (事件玩家).WordArray, 加(眼睛位置(事件玩家), 面朝方向(事件玩家)), 1.5, 不要截取, 可见，位置和字符串, 颜色(白色), 默认可见度);
+    }
+}
+
+规则 ("End Game") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.Turn >= 减(数量(全局.PlayerArray), 1);
+        全局.RoundNum == 5;
+    }
+    动作 {
+        调用子程序(Winner);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("{0} Wins!!!", 全局.Winner));
+        等待(5, 无视条件);
+        设置全局变量(PlayerArray, 空数组);
+        设置全局变量(StartPictionary, 假);
+        设置全局变量(Timer, -1);
+        设置全局变量(RoundNum, 1);
+        消除所有效果;
+        消除所有HUD文本;
+        消除所有地图文本;
+        等待(0.2, 无视条件);
+    }
+}
+
+规则 ("Winner Subroutine") {
+    事件 {
+        子程序;
         Winner;
     }
-    actions {
-        If(Compare((First Of(Global.PlayerArray)).Points, >, (Value In Array(Global.PlayerArray, 1)).Points));
-            Set Global Variable(Winner, First Of(Global.PlayerArray));
+    动作 {
+        If(比较((首个(全局.PlayerArray)).Points, >, (数组中的值(全局.PlayerArray, 1)).Points));
+            设置全局变量(Winner, 首个(全局.PlayerArray));
         Else;
-            Set Global Variable(Winner, Value In Array(Global.PlayerArray, 1));
+            设置全局变量(Winner, 数组中的值(全局.PlayerArray, 1));
         End;
-        Set Global Variable(ForLoop, 0);
-        For Global Variable(ForLoop, 0, Count Of(Global.PlayerArray), 1);
-            If(Compare((Value In Array(Global.PlayerArray, Global.ForLoop)).Points, >, (Global.Winner).Points));
-                Set Global Variable(Winner, Value In Array(Global.PlayerArray, Global.ForLoop));
+        设置全局变量(ForLoop, 0);
+        For 全局变量(ForLoop, 0, 数量(全局.PlayerArray), 1);
+            If(比较((数组中的值(全局.PlayerArray, 全局.ForLoop)).Points, >, (全局.Winner).Points));
+                设置全局变量(Winner, 数组中的值(全局.PlayerArray, 全局.ForLoop));
             End;
         End;
     }
 }
 
-rule ("Crossing Red Line") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Crossing Red Line") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        X Component Of(Position Of(Event Player)) > -4;
-        Global.StartPictionary == True;
-        Global.Drawer != Event Player;
+    条件 {
+        X方向分量(所选位置(事件玩家)) > -4;
+        全局.StartPictionary == 真;
+        全局.Drawer != 事件玩家;
     }
-    actions {
-        Apply Impulse(Event Player, Right, 10, To World, Cancel Contrary Motion);
-        Wait(0.016, Ignore Condition);
-        Loop If Condition Is True;
-    }
-}
-
-rule ("Drawer Flies Away") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Distance Between(Position Of(Global.Drawer), Vector(2, 13.425, 0)) >= 2;
-        Global.Drawer == Event Player;
-    }
-    actions {
-        Set Gravity(Event Player, 100);
-        Teleport(Event Player, Vector(2, 0, 0));
-        Wait(0.25, Ignore Condition);
-        Set Gravity(Event Player, 0);
-        Wait(0.25, Ignore Condition);
-        Set Facing(Global.Drawer, Vector(1, 0.07, 0), To World);
-        Teleport(Global.Drawer, Vector(2, 12, 0));
+    动作 {
+        施加推力(事件玩家, 右, 10, 至地图, 取消相反运动);
+        等待(0.016, 无视条件);
+        如条件为“真”则循环;
     }
 }
 
-disabled rule ("Create Bot [testing]") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Drawer Flies Away") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Is Button Held(Event Player, Button(Interact)) == True;
+    条件 {
+        相距距离(所选位置(全局.Drawer), 矢量(2, 13.425, 0)) >= 2;
+        全局.Drawer == 事件玩家;
     }
-    actions {
-        Create Dummy Bot(Hero(Ana), All Teams, -1, Position Of(Event Player), Vector(0, 0, 0));
+    动作 {
+        设置引力(事件玩家, 100);
+        传送(事件玩家, 矢量(2, 0, 0));
+        等待(0.25, 无视条件);
+        设置引力(事件玩家, 0);
+        等待(0.25, 无视条件);
+        设置朝向(全局.Drawer, 矢量(1, 0.07, 0), 至地图);
+        传送(全局.Drawer, 矢量(2, 12, 0));
+    }
+}
+
+禁用 规则 ("Create Bot [testing]") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
+    }
+    条件 {
+        按钮被按下(事件玩家, 按钮(互动)) == 真;
+    }
+    动作 {
+        生成机器人(英雄(安娜), 所有队伍, -1, 所选位置(事件玩家), 矢量(0, 0, 0));
     }
 }
 

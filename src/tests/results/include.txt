@@ -1,138 +1,138 @@
-settings
+设置
 {
-	main
+	主程序
 	{
-		Description: "Tower Meifense - BETA do not copy! by Zezombye"
+		描述: "Tower Meifense - BETA do not copy! by Zezombye"
 	}
-	lobby
+	大厅
 	{
-		Map Rotation: Paused
-		Max Spectators: 6
-		Return To Lobby: Never
-		Swap Teams After Match: No
+		地图轮换: 暂停轮换
+		观战者人数上限: 6
+		返回大厅: 从不
+		比赛结束后转换队伍: 否
 	}
-	modes
+	模式
 	{
-		Assault
+		攻防作战
 		{
-			enabled maps
+			启用地图
 			{
-				Temple of Anubis
+				阿努比斯神殿
 			}
-			Capture Speed Modifier: 60%
+			占领速度: 60%
 		}
-		Escort
+		运载目标
 		{
-			enabled maps
+			启用地图
 			{
-				Dorado
+				多拉多
 			}
-			Payload Speed Modifier: 200%
+			运载目标速度: 200%
 		}
-		General
+		综合
 		{
-			Game Mode Start: Manual
-			Hero Limit: Off
-			Respawn Time Scalar: 50%
-			Spawn Health Packs: Disabled
+			游戏模式开始: 手动
+			英雄限制: 关闭
+			复生时间: 50%
+			急救包刷新: 禁用
 		}
 	}
-	heroes
+	英雄
 	{
-		Team 1
+		队伍1
 		{
-			enabled heroes
+			启用英雄
 			{
-				Ashe
-				Bastion
-				Torbjörn
-				Widowmaker
+				艾什
+				堡垒
+				托比昂
+				黑百合
 			}
 		}
-		Team 2
+		队伍2
 		{
-			Mei
+			美
 			{
-				Cryo-Freeze Cooldown Time: 200%
-				Ice Wall Cooldown Time: 200%
-				Secondary Fire: Off
-				Weapon Freeze Rate Scalar: 50%
+				急冻冷却时间: 200%
+				冰墙冷却时间: 200%
+				辅助攻击模式: 关闭
+				冰霜枪冰冻敌人的速度: 50%
 			}
 		}
-		General
+		综合
 		{
-			Ashe
+			艾什
 			{
-				Ammunition Clip Size Scalar: 200%
-				Ultimate Duration: 300%
+				弹夹容量倍率: 200%
+				终极技能持续时间: 300%
 			}
-			Bastion
+			堡垒
 			{
-				Ammunition Clip Size Scalar: 200%
+				弹夹容量倍率: 200%
 			}
-			Widowmaker
+			黑百合
 			{
-				Damage Dealt: 120%
-				Grappling Hook Cooldown Time: 10%
+				伤害量: 120%
+				抓钩冷却时间: 10%
 			}
 		}
 	}
 }
-variables {
-    global:
+变量 {
+    全局:
         0: A
 }
-rule ("1") {
-    event {
-        Ongoing - Global;
+规则 ("1") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, 1);
-    }
-}
-
-rule ("2") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Set Global Variable(A, 2);
+    动作 {
+        设置全局变量(A, 1);
     }
 }
 
-rule ("3") {
-    event {
-        Ongoing - Global;
+规则 ("2") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, 3);
-    }
-}
-
-rule ("4") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Set Global Variable(A, 4);
+    动作 {
+        设置全局变量(A, 2);
     }
 }
 
-rule ("5") {
-    event {
-        Ongoing - Global;
+规则 ("3") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, 5);
+    动作 {
+        设置全局变量(A, 3);
     }
 }
 
-rule ("6") {
-    event {
-        Ongoing - Global;
+规则 ("4") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, 6);
+    动作 {
+        设置全局变量(A, 4);
+    }
+}
+
+规则 ("5") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        设置全局变量(A, 5);
+    }
+}
+
+规则 ("6") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        设置全局变量(A, 6);
     }
 }
 

@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -23,7 +23,7 @@ variables {
         22: W
         23: X
         25: Z
-    player:
+    玩家:
         1: B
         2: C
         5: F
@@ -33,1012 +33,1012 @@ variables {
         25: Z
 }
 //Optimize for size enabled
-rule ("cs:s zombie escape - made by /u/zezombye - discord in description") {
-    event {
-        Ongoing - Global;
+规则 ("cs:s zombie escape - made by /u/zezombye - discord in description") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(F, Round To Integer(X Component Of(Nearest Walkable Position(Vector(100, 100, 100))), Up));
-    }
-}
-
-rule ("kings row") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Global.F == 17;
-    }
-    actions {
-        Set Global Variable(S, Empty Array);
-        Modify Global Variable(S, Append To Array, Vector(False, 6, 15));
-        Modify Global Variable(S, Append To Array, Vector(True, 6, 20));
-        Modify Global Variable(S, Append To Array, Vector(7, 5, 20));
-        Modify Global Variable(S, Append To Array, Vector(12, 6, 20));
-        Modify Global Variable(S, Append To Array, Vector(18, 5, 15));
-        Modify Global Variable(S, Append To Array, Vector(23, 2, 20));
-        Modify Global Variable(S, Append To Array, Vector(25, False, 10));
-        Set Global Variable(L, Empty Array);
-        Modify Global Variable(L, Append To Array, Vector(62.73, 5.86, -55.22));
-        Modify Global Variable(L, Append To Array, Vector(32.71, 7.46, -31.96));
-        Modify Global Variable(L, Append To Array, Vector(-10.513, 0.937, 41.313));
-        Modify Global Variable(L, Append To Array, Vector(24.319, 5.35, -4.521));
-        Modify Global Variable(L, Append To Array, Vector(-25.564, 1.336, -34.058));
-        Modify Global Variable(L, Append To Array, Vector(-92.891, 2.859, -28.7));
-        Modify Global Variable(L, Append To Array, Vector(-156.65, 1.479, 48.01));
-        Set Global Variable(H, Vector(21.27, 0.58, -48.48));
-        Set Global Variable(D, -15);
-        Set Global Variable(M, Empty Array);
-        Modify Global Variable(M, Append To Array, 21);
-        Modify Global Variable(M, Append To Array, 16);
-        Modify Global Variable(M, Append To Array, 17);
-        Modify Global Variable(M, Append To Array, 20);
-        Modify Global Variable(M, Append To Array, 25);
-        Modify Global Variable(M, Append To Array, 35);
-        Modify Global Variable(M, Append To Array, 10);
-        Set Global Variable(T, Empty Array);
-        Modify Global Variable(T, Append To Array, Vector(30.029, 7.399, -15.74));
-        Modify Global Variable(T, Append To Array, Vector(-17.2, 0.55, 42.439));
-        Modify Global Variable(T, Append To Array, Vector(9.729, 9.35, -8.53));
-        Modify Global Variable(T, Append To Array, Vector(-22.48, 2.35, -16.36));
-        Modify Global Variable(T, Append To Array, Vector(-95.54, -1.141, -46.36));
-        Modify Global Variable(T, Append To Array, Vector(-168.86, 1.16, 35.54));
-        Modify Global Variable(T, Append To Array, Vector(-178.84, 1.54, 37.25));
-        Set Global Variable(W, Empty Array);
-        Modify Global Variable(W, Append To Array, Vector(30.77, 5.96, -8));
-        Set Global Variable(X, 1);
-        Modify Global Variable(W, Append To Array, Vector(27.6, 5.859, -39.78));
-        Modify Global Variable(W, Append To Array, Vector(31.81, 0.24, -63.221));
-        Modify Global Variable(W, Append To Array, Vector(25, 5.96, -10.971));
-        Modify Global Variable(W, Append To Array, Vector(25.359, 5.859, -51.5));
-        Modify Global Variable(W, Append To Array, Vector(24.88, 5.96, -16.25));
-        Modify Global Variable(W, Append To Array, Vector(19.22, 4, -6.98));
-        Set Global Variable(X, 2);
-        Modify Global Variable(W, Append To Array, Vector(10.5, 7.35, -16.181));
-        Modify Global Variable(W, Append To Array, Vector(-8.021, 1.24, 3.88));
-        Modify Global Variable(W, Append To Array, Vector(1.109, 1.42, 4.25));
-        Modify Global Variable(W, Append To Array, Vector(-1.59, 1.24, -12.7));
-        Modify Global Variable(W, Append To Array, Vector(4.67, 7, -13.62));
-        Set Global Variable(X, 3);
-        Modify Global Variable(W, Append To Array, Vector(-11.931, 1.41, -15.03));
-        Modify Global Variable(W, Append To Array, Vector(-2.94, 1.41, -38.69));
-        Modify Global Variable(W, Append To Array, Vector(-19.63, 2.35, -54.021));
-        Modify Global Variable(W, Append To Array, Vector(-15.25, 1.229, -27.73));
-        Modify Global Variable(W, Append To Array, Vector(-15.471, 1.22, -31.96));
-        Modify Global Variable(W, Append To Array, Vector(-17.3, 1.22, -37));
-        Set Global Variable(X, 4);
-        Modify Global Variable(W, Append To Array, Vector(-62.45, 6.3, -17.04));
-        Modify Global Variable(W, Append To Array, Vector(-66.01, 6.37, -12.891));
-        Modify Global Variable(W, Append To Array, Vector(-52.851, 1.2, -36.07));
-        Modify Global Variable(W, Append To Array, Vector(-55.46, 0.95, -32.54));
-        Modify Global Variable(W, Append To Array, Vector(-72.33, 1.16, -12.42));
-        Set Global Variable(X, 5);
-        Modify Global Variable(W, Append To Array, Vector(-170.521, 1.479, 39.27));
-        Modify Global Variable(W, Append To Array, Vector(-171.641, 1.479, 32.51));
-        Set Global Variable(B, Empty Array);
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(42.16, 0.67, 31.96));
-        Modify Global Variable(B, Append To Array, Vector(-20.25, 1.26, 27.649));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(-19.271, 2.35, -16.34));
-        Modify Global Variable(B, Append To Array, Vector(-97.971, -1.141, -47.771));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Set Global Variable(C, Empty Array);
-        Modify Global Variable(C, Append To Array, Vector(62.729, 5.859, -55.221));
-        Modify Global Variable(C, Append To Array, Vector(3.63, 3.55, 52.29));
-        Modify Global Variable(C, Append To Array, Vector(7.409, 1.488, 13.761));
-        Modify Global Variable(C, Append To Array, Vector(11.27, 7.35, -2.21));
-        Modify Global Variable(C, Append To Array, Vector(-29.23, 10.35, -12.99));
-        Modify Global Variable(C, Append To Array, Vector(-102.94, 2.24, -8.07));
-        Modify Global Variable(C, Append To Array, Vector(-102.94, 2.24, -8.07));
+    动作 {
+        设置全局变量(F, 取整(X方向分量(最近的可行走位置(矢量(100, 100, 100))), 上));
     }
 }
 
-rule ("blizz world") {
-    event {
-        Ongoing - Global;
+规则 ("kings row") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.F == 54;
+    条件 {
+        全局.F == 17;
     }
-    actions {
-        Set Global Variable(W, Empty Array);
-        Set Global Variable(X, 1);
-        Modify Global Variable(W, Append To Array, Vector(3, 1.25, 24.29));
-        Modify Global Variable(W, Append To Array, Vector(16.91, -2.65, 25.75));
-        Set Global Variable(X, 2);
-        Modify Global Variable(W, Append To Array, Vector(-9.13, 3.15, 64.19));
-        Modify Global Variable(W, Append To Array, Vector(-5.1, 2.47, 59.9));
-        Set Global Variable(X, 3);
-        Modify Global Variable(W, Append To Array, Vector(-1.24, 1.86, 55.56));
-        Modify Global Variable(W, Append To Array, Vector(5.64, 1.77, 55.98));
-        Modify Global Variable(W, Append To Array, Vector(8.03, 1.44, 52.01));
-        Modify Global Variable(W, Append To Array, Vector(16.46, 4.44, 83));
-        Modify Global Variable(W, Append To Array, Vector(16.27, 0.63, 88.9));
-        Modify Global Variable(W, Append To Array, Vector(16.38, 0.38, 95.98));
-        Set Global Variable(X, 4);
-        Modify Global Variable(W, Append To Array, Vector(-69.17, 7.93, 103.97));
-        Modify Global Variable(W, Append To Array, Vector(-53.75, 1.14, 126.34));
-        Set Global Variable(X, 5);
-        Modify Global Variable(W, Append To Array, Vector(-59.73, 2.16, 120.33));
-        Modify Global Variable(W, Append To Array, Vector(-63.11, 2.17, 115.72));
-        Set Global Variable(X, 6);
-        Modify Global Variable(W, Append To Array, Vector(-115.74, 0.27, 95.59));
-        Modify Global Variable(W, Append To Array, Vector(-135.51, 2.1, 118.18));
-        Modify Global Variable(W, Append To Array, Vector(-125.93, 0.95, 118.13));
-        Modify Global Variable(W, Append To Array, Vector(-120.98, 1.1, 119.23));
-        Modify Global Variable(W, Append To Array, Vector(-145.59, 2.15, 115.9));
-        Modify Global Variable(W, Append To Array, Vector(-147.46, 2.23, 90.87));
-        Set Global Variable(S, Empty Array);
-        Modify Global Variable(S, Append To Array, Multiply(15, Forward));
-        Modify Global Variable(S, Append To Array, Vector(False, 2, 20));
-        Modify Global Variable(S, Append To Array, Vector(2, 5, 15));
-        Modify Global Variable(S, Append To Array, Vector(4, 6, 15));
-        Modify Global Variable(S, Append To Array, Vector(10, 4, 25));
-        Modify Global Variable(S, Append To Array, Vector(12, 6, 20));
-        Modify Global Variable(S, Append To Array, Vector(14, 6, 15));
-        Modify Global Variable(S, Append To Array, Add(Left, Right));
-        Set Global Variable(L, Empty Array);
-        Modify Global Variable(L, Append To Array, Vector(2.97, -4.65, -85.64));
-        Modify Global Variable(L, Append To Array, Vector(-12.371, -4.201, -57.627));
-        Modify Global Variable(L, Append To Array, Vector(-10.511, -2.848, -0.823));
-        Modify Global Variable(L, Append To Array, Vector(-25.075, 5.251, 39.109));
-        Modify Global Variable(L, Append To Array, Vector(35.927, 3.303, 78.218));
-        Modify Global Variable(L, Append To Array, Vector(-50.66, 5.87, 88.57));
-        Modify Global Variable(L, Append To Array, Vector(-115.069, 2.995, 156.563));
-        Modify Global Variable(L, Append To Array, Vector(-123.48, 1.2, 110.01));
-        Set Global Variable(M, Empty Array);
-        Modify Global Variable(M, Append To Array, 21);
-        Modify Global Variable(M, Append To Array, 16);
-        Modify Global Variable(M, Append To Array, 17);
-        Modify Global Variable(M, Append To Array, 20);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 20);
-        Modify Global Variable(M, Append To Array, 20);
-        Set Global Variable(T, Empty Array);
-        Modify Global Variable(T, Append To Array, Vector(-12.49, -2.65, -34.07));
-        Modify Global Variable(T, Append To Array, Vector(2.73, 1.25, 16.76));
-        Modify Global Variable(T, Append To Array, Vector(-8.83, 7.42, 51.64));
-        Modify Global Variable(T, Append To Array, Vector(22.19, 1.38, 97.41));
-        Modify Global Variable(T, Append To Array, Vector(-55.68, 5.87, 98.16));
-        Modify Global Variable(T, Append To Array, Vector(-109.04, 8, 131.87));
-        Modify Global Variable(T, Append To Array, Vector(-145.55, 2.1, 103.96));
-        Modify Global Variable(T, Append To Array, Vector(-145.55, 2.1, 103.96));
-        Set Global Variable(B, Empty Array);
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(-12.51, -2.65, -33.5));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(22.18, 1.52, 96.16));
-        Modify Global Variable(B, Append To Array, Vector(-78.4, 1.95, 129.36));
-        Modify Global Variable(B, Append To Array, Vector(-113.26, 6.1, 130.81));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Set Global Variable(C, Empty Array);
-        Modify Global Variable(C, Append To Array, Vector(2.97, -4.65, -85.64));
-        Modify Global Variable(C, Append To Array, Vector(-12.48, -2.72, -32.04));
-        Modify Global Variable(C, Append To Array, Vector(5.41, 1.42, 11.439));
-        Modify Global Variable(C, Append To Array, Vector(11.27, 7.35, -2.21));
-        Modify Global Variable(C, Append To Array, Vector(-17.94, 3.35, 65.14));
-        Modify Global Variable(C, Append To Array, Vector(-85.12, 0.1, 108.35));
-        Modify Global Variable(C, Append To Array, Vector(-116.57, 1.2, 112.06));
-        Modify Global Variable(C, Append To Array, Vector(-116.57, 1.2, 112.06));
-        Set Global Variable(D, -6.1);
-    }
-}
-
-rule ("eichenwalde") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Global.F == 124;
-    }
-    actions {
-        Set Global Variable(W, Empty Array);
-        Modify Global Variable(W, Append To Array, Vector(8.603, 5.397, -34.937));
-        Modify Global Variable(W, Append To Array, Vector(-0.034, 4.28, -25.379));
-        Modify Global Variable(W, Append To Array, Vector(-1.348, 3.689, -27.841));
-        Modify Global Variable(W, Append To Array, Vector(-1.492, 1.359, -11.064));
-        Modify Global Variable(W, Append To Array, Vector(-1.939, 1.356, -6.578));
-        Set Global Variable(X, 1);
-        Modify Global Variable(W, Append To Array, Vector(38.464, 10.852, -51.943));
-        Modify Global Variable(W, Append To Array, Vector(13, 5.554, -39.5));
-        Modify Global Variable(W, Append To Array, Vector(8.708, 6.434, -45.911));
-        Set Global Variable(X, 2);
-        Modify Global Variable(W, Append To Array, Vector(7.928, 6.38, -52.23));
-        Modify Global Variable(W, Append To Array, Vector(22, 6.398, -58.962));
-        Modify Global Variable(W, Append To Array, Vector(27.209, 6.395, -59.248));
-        Set Global Variable(X, 3);
-        Modify Global Variable(W, Append To Array, Vector(70.735, 8, -78.1));
-        Modify Global Variable(W, Append To Array, Vector(67.838, 8, -89.479));
-        Modify Global Variable(W, Append To Array, Vector(72.732, 8, -85.123));
-        Modify Global Variable(W, Append To Array, Vector(65.018, 18.071, -81.605));
-        Modify Global Variable(W, Append To Array, Vector(51.731, 8.021, -66.974));
-        Modify Global Variable(W, Append To Array, Vector(60.254, 12.454, -94.021));
-        Set Global Variable(X, 4);
-        Modify Global Variable(W, Append To Array, Vector(104.171, 14.071, -53.97));
-        Modify Global Variable(W, Append To Array, Vector(100.794, 12.071, -29.289));
-        Set Global Variable(X, 5);
-        Modify Global Variable(W, Append To Array, Vector(98.65, 12.071, -37.693));
-        Modify Global Variable(W, Append To Array, Vector(95.719, 12.071, -44.037));
-        Modify Global Variable(W, Append To Array, Vector(115.603, 10.072, -40.858));
-        Modify Global Variable(W, Append To Array, Vector(115.165, 10.073, -48.097));
-        Modify Global Variable(W, Append To Array, Vector(111.677, 12.09, -7.81));
-        Modify Global Variable(W, Append To Array, Vector(142.352, 12.09, -16.331));
-        Set Global Variable(X, 6);
-        Set Global Variable(S, Empty Array);
-        Modify Global Variable(S, Append To Array, Vector(False, 5, 15));
-        Modify Global Variable(S, Append To Array, Vector(5, 6, 15));
-        Modify Global Variable(S, Append To Array, Vector(8, 3, 25));
-        Modify Global Variable(S, Append To Array, Vector(11, 6, 15));
-        Modify Global Variable(S, Append To Array, Vector(17, 6, 20));
-        Modify Global Variable(S, Append To Array, Vector(19, 6, 20));
-        Modify Global Variable(S, Append To Array, Add(Left, Right));
-        Set Global Variable(L, Empty Array);
-        Modify Global Variable(L, Append To Array, Vector(-11.842, 1.351, -9.35));
-        Modify Global Variable(L, Append To Array, Vector(-7.643, 3.377, -28.96));
-        Modify Global Variable(L, Append To Array, Vector(17.593, 6.142, -51.242));
-        Modify Global Variable(L, Append To Array, Vector(10.165, 12.363, -96.497));
-        Modify Global Variable(L, Append To Array, Vector(56.275, 6.161, -98));
-        Modify Global Variable(L, Append To Array, Vector(107.763, 12.071, -32.7));
-        Modify Global Variable(L, Append To Array, Vector(128.931, 15.071, -6.823));
-        Set Global Variable(M, Empty Array);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 22);
-        Modify Global Variable(M, Append To Array, 11);
-        Modify Global Variable(M, Append To Array, 20);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 11);
-        Modify Global Variable(M, Append To Array, 20);
-        Set Global Variable(T, Empty Array);
-        Modify Global Variable(T, Append To Array, Vector(-4.208, 3.352, -36.936));
-        Modify Global Variable(T, Append To Array, Vector(31.75, 8.819, -49.356));
-        Modify Global Variable(T, Append To Array, Vector(17.581, 12.364, -88.729));
-        Modify Global Variable(T, Append To Array, Vector(67.373, 6.071, -83.719));
-        Modify Global Variable(T, Append To Array, Vector(105.776, 14.071, -46.755));
-        Modify Global Variable(T, Append To Array, Vector(126.503, 17.516, -15.358));
-        Modify Global Variable(T, Append To Array, Vector(111.545, 16.071, -33.741));
-        Set Global Variable(B, Empty Array);
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(21, 11.208, -99));
-        Modify Global Variable(B, Append To Array, Vector(26.932, 10.006, -87.287));
-        Modify Global Variable(B, Append To Array, Vector(67.503, 6.071, -83.707));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(125.858, 16.083, -19.069));
-        Set Global Variable(C, Empty Array);
-        Modify Global Variable(C, Append To Array, Vector(-12.112, 2.165, -7.337));
-        Modify Global Variable(C, Append To Array, Vector(-12.48, -2.72, -32.04));
-        Modify Global Variable(C, Append To Array, Vector(5.125, 12.613, -84.363));
-        Modify Global Variable(C, Append To Array, Vector(28.763, 9.349, -86.46));
-        Modify Global Variable(C, Append To Array, Vector(73.259, 14.071, -50.833));
-        Modify Global Variable(C, Append To Array, Vector(-85.12, 0.1, 108.35));
-        Modify Global Variable(C, Append To Array, Vector(113.351, 16.071, -27.425));
-        Set Global Variable(D, -2.05);
+    动作 {
+        设置全局变量(S, 空数组);
+        修改全局变量(S, 添加至数组, 矢量(假, 6, 15));
+        修改全局变量(S, 添加至数组, 矢量(真, 6, 20));
+        修改全局变量(S, 添加至数组, 矢量(7, 5, 20));
+        修改全局变量(S, 添加至数组, 矢量(12, 6, 20));
+        修改全局变量(S, 添加至数组, 矢量(18, 5, 15));
+        修改全局变量(S, 添加至数组, 矢量(23, 2, 20));
+        修改全局变量(S, 添加至数组, 矢量(25, 假, 10));
+        设置全局变量(L, 空数组);
+        修改全局变量(L, 添加至数组, 矢量(62.73, 5.86, -55.22));
+        修改全局变量(L, 添加至数组, 矢量(32.71, 7.46, -31.96));
+        修改全局变量(L, 添加至数组, 矢量(-10.513, 0.937, 41.313));
+        修改全局变量(L, 添加至数组, 矢量(24.319, 5.35, -4.521));
+        修改全局变量(L, 添加至数组, 矢量(-25.564, 1.336, -34.058));
+        修改全局变量(L, 添加至数组, 矢量(-92.891, 2.859, -28.7));
+        修改全局变量(L, 添加至数组, 矢量(-156.65, 1.479, 48.01));
+        设置全局变量(H, 矢量(21.27, 0.58, -48.48));
+        设置全局变量(D, -15);
+        设置全局变量(M, 空数组);
+        修改全局变量(M, 添加至数组, 21);
+        修改全局变量(M, 添加至数组, 16);
+        修改全局变量(M, 添加至数组, 17);
+        修改全局变量(M, 添加至数组, 20);
+        修改全局变量(M, 添加至数组, 25);
+        修改全局变量(M, 添加至数组, 35);
+        修改全局变量(M, 添加至数组, 10);
+        设置全局变量(T, 空数组);
+        修改全局变量(T, 添加至数组, 矢量(30.029, 7.399, -15.74));
+        修改全局变量(T, 添加至数组, 矢量(-17.2, 0.55, 42.439));
+        修改全局变量(T, 添加至数组, 矢量(9.729, 9.35, -8.53));
+        修改全局变量(T, 添加至数组, 矢量(-22.48, 2.35, -16.36));
+        修改全局变量(T, 添加至数组, 矢量(-95.54, -1.141, -46.36));
+        修改全局变量(T, 添加至数组, 矢量(-168.86, 1.16, 35.54));
+        修改全局变量(T, 添加至数组, 矢量(-178.84, 1.54, 37.25));
+        设置全局变量(W, 空数组);
+        修改全局变量(W, 添加至数组, 矢量(30.77, 5.96, -8));
+        设置全局变量(X, 1);
+        修改全局变量(W, 添加至数组, 矢量(27.6, 5.859, -39.78));
+        修改全局变量(W, 添加至数组, 矢量(31.81, 0.24, -63.221));
+        修改全局变量(W, 添加至数组, 矢量(25, 5.96, -10.971));
+        修改全局变量(W, 添加至数组, 矢量(25.359, 5.859, -51.5));
+        修改全局变量(W, 添加至数组, 矢量(24.88, 5.96, -16.25));
+        修改全局变量(W, 添加至数组, 矢量(19.22, 4, -6.98));
+        设置全局变量(X, 2);
+        修改全局变量(W, 添加至数组, 矢量(10.5, 7.35, -16.181));
+        修改全局变量(W, 添加至数组, 矢量(-8.021, 1.24, 3.88));
+        修改全局变量(W, 添加至数组, 矢量(1.109, 1.42, 4.25));
+        修改全局变量(W, 添加至数组, 矢量(-1.59, 1.24, -12.7));
+        修改全局变量(W, 添加至数组, 矢量(4.67, 7, -13.62));
+        设置全局变量(X, 3);
+        修改全局变量(W, 添加至数组, 矢量(-11.931, 1.41, -15.03));
+        修改全局变量(W, 添加至数组, 矢量(-2.94, 1.41, -38.69));
+        修改全局变量(W, 添加至数组, 矢量(-19.63, 2.35, -54.021));
+        修改全局变量(W, 添加至数组, 矢量(-15.25, 1.229, -27.73));
+        修改全局变量(W, 添加至数组, 矢量(-15.471, 1.22, -31.96));
+        修改全局变量(W, 添加至数组, 矢量(-17.3, 1.22, -37));
+        设置全局变量(X, 4);
+        修改全局变量(W, 添加至数组, 矢量(-62.45, 6.3, -17.04));
+        修改全局变量(W, 添加至数组, 矢量(-66.01, 6.37, -12.891));
+        修改全局变量(W, 添加至数组, 矢量(-52.851, 1.2, -36.07));
+        修改全局变量(W, 添加至数组, 矢量(-55.46, 0.95, -32.54));
+        修改全局变量(W, 添加至数组, 矢量(-72.33, 1.16, -12.42));
+        设置全局变量(X, 5);
+        修改全局变量(W, 添加至数组, 矢量(-170.521, 1.479, 39.27));
+        修改全局变量(W, 添加至数组, 矢量(-171.641, 1.479, 32.51));
+        设置全局变量(B, 空数组);
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(42.16, 0.67, 31.96));
+        修改全局变量(B, 添加至数组, 矢量(-20.25, 1.26, 27.649));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(-19.271, 2.35, -16.34));
+        修改全局变量(B, 添加至数组, 矢量(-97.971, -1.141, -47.771));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        设置全局变量(C, 空数组);
+        修改全局变量(C, 添加至数组, 矢量(62.729, 5.859, -55.221));
+        修改全局变量(C, 添加至数组, 矢量(3.63, 3.55, 52.29));
+        修改全局变量(C, 添加至数组, 矢量(7.409, 1.488, 13.761));
+        修改全局变量(C, 添加至数组, 矢量(11.27, 7.35, -2.21));
+        修改全局变量(C, 添加至数组, 矢量(-29.23, 10.35, -12.99));
+        修改全局变量(C, 添加至数组, 矢量(-102.94, 2.24, -8.07));
+        修改全局变量(C, 添加至数组, 矢量(-102.94, 2.24, -8.07));
     }
 }
 
-rule ("oasis city center") {
-    event {
-        Ongoing - Global;
+规则 ("blizz world") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.F == 186;
+    条件 {
+        全局.F == 54;
     }
-    actions {
-        Set Global Variable(W, Empty Array);
-        Set Global Variable(X, 1);
-        Modify Global Variable(W, Append To Array, Vector(138.166, 2, 209.031));
-        Modify Global Variable(W, Append To Array, Vector(173.918, 5.451, 238.435));
-        Modify Global Variable(W, Append To Array, Vector(153.992, 4.105, 211.989));
-        Modify Global Variable(W, Append To Array, Vector(170.979, 5.348, 232.41));
-        Modify Global Variable(W, Append To Array, Vector(169.23, 4.23, 221.512));
-        Set Global Variable(X, 2);
-        Modify Global Variable(W, Append To Array, Vector(146.914, 5.353, 269.272));
-        Modify Global Variable(W, Append To Array, Vector(165.43, 5.353, 251.3));
-        Modify Global Variable(W, Append To Array, Vector(174.073, 5.453, 244.755));
-        Modify Global Variable(W, Append To Array, Vector(152.772, 4.353, 256.83));
-        Set Global Variable(X, 3);
-        Modify Global Variable(W, Append To Array, Vector(152.202, 5.453, 277.696));
-        Modify Global Variable(W, Append To Array, Vector(169.966, 5.352, 239.374));
-        Modify Global Variable(W, Append To Array, Vector(154.181, 4.298, 236.817));
-        Set Global Variable(X, 4);
-        Modify Global Variable(W, Append To Array, Vector(80.529, 21, 321.752));
-        Modify Global Variable(W, Append To Array, Vector(58.479, 14, 315.438));
-        Modify Global Variable(W, Append To Array, Vector(68.252, 10, 321.405));
-        Modify Global Variable(W, Append To Array, Vector(73.934, 14, 309.11));
-        Set Global Variable(X, 5);
-        Modify Global Variable(W, Append To Array, Vector(144.727, 5.348, 216.623));
-        Modify Global Variable(W, Append To Array, Vector(112.532, 5.348, 248.279));
-        Modify Global Variable(W, Append To Array, Vector(124.038, 4.408, 228.053));
-        Modify Global Variable(W, Append To Array, Vector(122.864, 5.352, 246.109));
-        Modify Global Variable(W, Append To Array, Vector(142.109, 5.352, 226.935));
-        Modify Global Variable(W, Append To Array, Vector(137.603, 2, 210.548));
-        Set Global Variable(S, Empty Array);
-        Modify Global Variable(S, Append To Array, Multiply(15, Forward));
-        Modify Global Variable(S, Append To Array, Vector(False, 5, 20));
-        Modify Global Variable(S, Append To Array, Vector(4, 7, 15));
-        Modify Global Variable(S, Append To Array, Vector(9, 3, 25));
-        Modify Global Variable(S, Append To Array, Vector(12, 4, 20));
-        Modify Global Variable(S, Append To Array, Vector(16, 5, 15));
-        Modify Global Variable(S, Append To Array, Multiply(15, Forward));
-        Modify Global Variable(S, Append To Array, Add(Left, Right));
-        Set Global Variable(L, Empty Array);
-        Modify Global Variable(L, Append To Array, Vector(220.224, 2.351, 167.747));
-        Modify Global Variable(L, Append To Array, Vector(211.228, 2.351, 181.767));
-        Modify Global Variable(L, Append To Array, Vector(194.838, 2.995, 221.516));
-        Modify Global Variable(L, Append To Array, Vector(153.317, 5.353, 228.67));
-        Modify Global Variable(L, Append To Array, Vector(157.114, 12.871, 256.487));
-        Modify Global Variable(L, Append To Array, Vector(81.267, 8.348, 305.765));
-        Modify Global Variable(L, Append To Array, Vector(139.865, 3.553, 243.895));
-        Modify Global Variable(L, Append To Array, Vector(37.6, -5.314, 141.744));
-        Set Global Variable(M, Empty Array);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 22);
-        Modify Global Variable(M, Append To Array, 20);
-        Modify Global Variable(M, Append To Array, 15);
-        Modify Global Variable(M, Append To Array, 25);
-        Modify Global Variable(M, Append To Array, 20);
-        Modify Global Variable(M, Append To Array, 20);
-        Set Global Variable(T, Empty Array);
-        Modify Global Variable(T, Append To Array, Vector(203.838, 2.351, 193.103));
-        Modify Global Variable(T, Append To Array, Vector(187.465, 3.197, 228.936));
-        Modify Global Variable(T, Append To Array, Vector(164.01, 5.352, 246.529));
-        Modify Global Variable(T, Append To Array, Vector(146.688, 12.871, 272.18));
-        Modify Global Variable(T, Append To Array, Vector(62.132, 9.21, 309.589));
-        Modify Global Variable(T, Append To Array, Vector(128.289, 5.349, 232.291));
-        Modify Global Variable(T, Append To Array, Vector(16.617, -8.5, 120.524));
-        Modify Global Variable(T, Append To Array, Vector(16.617, -8.5, 120.524));
-        Set Global Variable(B, Empty Array);
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(202.897, 2.351, 194.546));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Modify Global Variable(B, Append To Array, Vector(146.278, 12.871, 273.901));
-        Modify Global Variable(B, Append To Array, Vector(62.114, 9.21, 309.601));
-        Modify Global Variable(B, Append To Array, Vector(113.736, 2.148, 217.728));
-        Modify Global Variable(B, Append To Array, Multiply(-30, Up));
-        Set Global Variable(C, Empty Array);
-        Modify Global Variable(C, Append To Array, Vector(201.216, 2.354, 197.171));
-        Modify Global Variable(C, Append To Array, Vector(202.001, 2.349, 195.913));
-        Modify Global Variable(C, Append To Array, Vector(5.125, 12.613, -84.363));
-        Modify Global Variable(C, Append To Array, Vector(28.763, 9.349, -86.46));
-        Modify Global Variable(C, Append To Array, Vector(87.876, 19.998, 314.105));
-        Modify Global Variable(C, Append To Array, Vector(153.019, 5.453, 281.754));
-        Modify Global Variable(C, Append To Array, Vector(112, 2.148, 216));
-        Modify Global Variable(C, Append To Array, Vector(112, 2.148, 216));
-        Set Global Variable(D, -8.9);
-    }
-}
-
-rule ("initial zombie hero") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Set Global Variable(Z, Hero(Torbjörn));
-        Set Global Variable(N, Null);
-        Create HUD Text(All Players(All Teams), Custom String("Waiting 4 Players 2 Start ..."), Null, Null, Left, False, Color(White), Null, Null, Visible To and String, Default Visibility);
+    动作 {
+        设置全局变量(W, 空数组);
+        设置全局变量(X, 1);
+        修改全局变量(W, 添加至数组, 矢量(3, 1.25, 24.29));
+        修改全局变量(W, 添加至数组, 矢量(16.91, -2.65, 25.75));
+        设置全局变量(X, 2);
+        修改全局变量(W, 添加至数组, 矢量(-9.13, 3.15, 64.19));
+        修改全局变量(W, 添加至数组, 矢量(-5.1, 2.47, 59.9));
+        设置全局变量(X, 3);
+        修改全局变量(W, 添加至数组, 矢量(-1.24, 1.86, 55.56));
+        修改全局变量(W, 添加至数组, 矢量(5.64, 1.77, 55.98));
+        修改全局变量(W, 添加至数组, 矢量(8.03, 1.44, 52.01));
+        修改全局变量(W, 添加至数组, 矢量(16.46, 4.44, 83));
+        修改全局变量(W, 添加至数组, 矢量(16.27, 0.63, 88.9));
+        修改全局变量(W, 添加至数组, 矢量(16.38, 0.38, 95.98));
+        设置全局变量(X, 4);
+        修改全局变量(W, 添加至数组, 矢量(-69.17, 7.93, 103.97));
+        修改全局变量(W, 添加至数组, 矢量(-53.75, 1.14, 126.34));
+        设置全局变量(X, 5);
+        修改全局变量(W, 添加至数组, 矢量(-59.73, 2.16, 120.33));
+        修改全局变量(W, 添加至数组, 矢量(-63.11, 2.17, 115.72));
+        设置全局变量(X, 6);
+        修改全局变量(W, 添加至数组, 矢量(-115.74, 0.27, 95.59));
+        修改全局变量(W, 添加至数组, 矢量(-135.51, 2.1, 118.18));
+        修改全局变量(W, 添加至数组, 矢量(-125.93, 0.95, 118.13));
+        修改全局变量(W, 添加至数组, 矢量(-120.98, 1.1, 119.23));
+        修改全局变量(W, 添加至数组, 矢量(-145.59, 2.15, 115.9));
+        修改全局变量(W, 添加至数组, 矢量(-147.46, 2.23, 90.87));
+        设置全局变量(S, 空数组);
+        修改全局变量(S, 添加至数组, 乘(15, 前));
+        修改全局变量(S, 添加至数组, 矢量(假, 2, 20));
+        修改全局变量(S, 添加至数组, 矢量(2, 5, 15));
+        修改全局变量(S, 添加至数组, 矢量(4, 6, 15));
+        修改全局变量(S, 添加至数组, 矢量(10, 4, 25));
+        修改全局变量(S, 添加至数组, 矢量(12, 6, 20));
+        修改全局变量(S, 添加至数组, 矢量(14, 6, 15));
+        修改全局变量(S, 添加至数组, 加(左, 右));
+        设置全局变量(L, 空数组);
+        修改全局变量(L, 添加至数组, 矢量(2.97, -4.65, -85.64));
+        修改全局变量(L, 添加至数组, 矢量(-12.371, -4.201, -57.627));
+        修改全局变量(L, 添加至数组, 矢量(-10.511, -2.848, -0.823));
+        修改全局变量(L, 添加至数组, 矢量(-25.075, 5.251, 39.109));
+        修改全局变量(L, 添加至数组, 矢量(35.927, 3.303, 78.218));
+        修改全局变量(L, 添加至数组, 矢量(-50.66, 5.87, 88.57));
+        修改全局变量(L, 添加至数组, 矢量(-115.069, 2.995, 156.563));
+        修改全局变量(L, 添加至数组, 矢量(-123.48, 1.2, 110.01));
+        设置全局变量(M, 空数组);
+        修改全局变量(M, 添加至数组, 21);
+        修改全局变量(M, 添加至数组, 16);
+        修改全局变量(M, 添加至数组, 17);
+        修改全局变量(M, 添加至数组, 20);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 20);
+        修改全局变量(M, 添加至数组, 20);
+        设置全局变量(T, 空数组);
+        修改全局变量(T, 添加至数组, 矢量(-12.49, -2.65, -34.07));
+        修改全局变量(T, 添加至数组, 矢量(2.73, 1.25, 16.76));
+        修改全局变量(T, 添加至数组, 矢量(-8.83, 7.42, 51.64));
+        修改全局变量(T, 添加至数组, 矢量(22.19, 1.38, 97.41));
+        修改全局变量(T, 添加至数组, 矢量(-55.68, 5.87, 98.16));
+        修改全局变量(T, 添加至数组, 矢量(-109.04, 8, 131.87));
+        修改全局变量(T, 添加至数组, 矢量(-145.55, 2.1, 103.96));
+        修改全局变量(T, 添加至数组, 矢量(-145.55, 2.1, 103.96));
+        设置全局变量(B, 空数组);
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(-12.51, -2.65, -33.5));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(22.18, 1.52, 96.16));
+        修改全局变量(B, 添加至数组, 矢量(-78.4, 1.95, 129.36));
+        修改全局变量(B, 添加至数组, 矢量(-113.26, 6.1, 130.81));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        设置全局变量(C, 空数组);
+        修改全局变量(C, 添加至数组, 矢量(2.97, -4.65, -85.64));
+        修改全局变量(C, 添加至数组, 矢量(-12.48, -2.72, -32.04));
+        修改全局变量(C, 添加至数组, 矢量(5.41, 1.42, 11.439));
+        修改全局变量(C, 添加至数组, 矢量(11.27, 7.35, -2.21));
+        修改全局变量(C, 添加至数组, 矢量(-17.94, 3.35, 65.14));
+        修改全局变量(C, 添加至数组, 矢量(-85.12, 0.1, 108.35));
+        修改全局变量(C, 添加至数组, 矢量(-116.57, 1.2, 112.06));
+        修改全局变量(C, 添加至数组, 矢量(-116.57, 1.2, 112.06));
+        设置全局变量(D, -6.1);
     }
 }
 
-rule ("list kb for each hero (k)") {
-    event {
-        Ongoing - Global;
+规则 ("eichenwalde") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(K, Empty Array);
-        Modify Global Variable(K, Append To Array, 30);
-        Modify Global Variable(K, Append To Array, 15);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, 300);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, 50);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, 15);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, 10);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, Null);
-        Modify Global Variable(K, Append To Array, 25);
-        Modify Global Variable(K, Append To Array, 20);
+    条件 {
+        全局.F == 124;
+    }
+    动作 {
+        设置全局变量(W, 空数组);
+        修改全局变量(W, 添加至数组, 矢量(8.603, 5.397, -34.937));
+        修改全局变量(W, 添加至数组, 矢量(-0.034, 4.28, -25.379));
+        修改全局变量(W, 添加至数组, 矢量(-1.348, 3.689, -27.841));
+        修改全局变量(W, 添加至数组, 矢量(-1.492, 1.359, -11.064));
+        修改全局变量(W, 添加至数组, 矢量(-1.939, 1.356, -6.578));
+        设置全局变量(X, 1);
+        修改全局变量(W, 添加至数组, 矢量(38.464, 10.852, -51.943));
+        修改全局变量(W, 添加至数组, 矢量(13, 5.554, -39.5));
+        修改全局变量(W, 添加至数组, 矢量(8.708, 6.434, -45.911));
+        设置全局变量(X, 2);
+        修改全局变量(W, 添加至数组, 矢量(7.928, 6.38, -52.23));
+        修改全局变量(W, 添加至数组, 矢量(22, 6.398, -58.962));
+        修改全局变量(W, 添加至数组, 矢量(27.209, 6.395, -59.248));
+        设置全局变量(X, 3);
+        修改全局变量(W, 添加至数组, 矢量(70.735, 8, -78.1));
+        修改全局变量(W, 添加至数组, 矢量(67.838, 8, -89.479));
+        修改全局变量(W, 添加至数组, 矢量(72.732, 8, -85.123));
+        修改全局变量(W, 添加至数组, 矢量(65.018, 18.071, -81.605));
+        修改全局变量(W, 添加至数组, 矢量(51.731, 8.021, -66.974));
+        修改全局变量(W, 添加至数组, 矢量(60.254, 12.454, -94.021));
+        设置全局变量(X, 4);
+        修改全局变量(W, 添加至数组, 矢量(104.171, 14.071, -53.97));
+        修改全局变量(W, 添加至数组, 矢量(100.794, 12.071, -29.289));
+        设置全局变量(X, 5);
+        修改全局变量(W, 添加至数组, 矢量(98.65, 12.071, -37.693));
+        修改全局变量(W, 添加至数组, 矢量(95.719, 12.071, -44.037));
+        修改全局变量(W, 添加至数组, 矢量(115.603, 10.072, -40.858));
+        修改全局变量(W, 添加至数组, 矢量(115.165, 10.073, -48.097));
+        修改全局变量(W, 添加至数组, 矢量(111.677, 12.09, -7.81));
+        修改全局变量(W, 添加至数组, 矢量(142.352, 12.09, -16.331));
+        设置全局变量(X, 6);
+        设置全局变量(S, 空数组);
+        修改全局变量(S, 添加至数组, 矢量(假, 5, 15));
+        修改全局变量(S, 添加至数组, 矢量(5, 6, 15));
+        修改全局变量(S, 添加至数组, 矢量(8, 3, 25));
+        修改全局变量(S, 添加至数组, 矢量(11, 6, 15));
+        修改全局变量(S, 添加至数组, 矢量(17, 6, 20));
+        修改全局变量(S, 添加至数组, 矢量(19, 6, 20));
+        修改全局变量(S, 添加至数组, 加(左, 右));
+        设置全局变量(L, 空数组);
+        修改全局变量(L, 添加至数组, 矢量(-11.842, 1.351, -9.35));
+        修改全局变量(L, 添加至数组, 矢量(-7.643, 3.377, -28.96));
+        修改全局变量(L, 添加至数组, 矢量(17.593, 6.142, -51.242));
+        修改全局变量(L, 添加至数组, 矢量(10.165, 12.363, -96.497));
+        修改全局变量(L, 添加至数组, 矢量(56.275, 6.161, -98));
+        修改全局变量(L, 添加至数组, 矢量(107.763, 12.071, -32.7));
+        修改全局变量(L, 添加至数组, 矢量(128.931, 15.071, -6.823));
+        设置全局变量(M, 空数组);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 22);
+        修改全局变量(M, 添加至数组, 11);
+        修改全局变量(M, 添加至数组, 20);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 11);
+        修改全局变量(M, 添加至数组, 20);
+        设置全局变量(T, 空数组);
+        修改全局变量(T, 添加至数组, 矢量(-4.208, 3.352, -36.936));
+        修改全局变量(T, 添加至数组, 矢量(31.75, 8.819, -49.356));
+        修改全局变量(T, 添加至数组, 矢量(17.581, 12.364, -88.729));
+        修改全局变量(T, 添加至数组, 矢量(67.373, 6.071, -83.719));
+        修改全局变量(T, 添加至数组, 矢量(105.776, 14.071, -46.755));
+        修改全局变量(T, 添加至数组, 矢量(126.503, 17.516, -15.358));
+        修改全局变量(T, 添加至数组, 矢量(111.545, 16.071, -33.741));
+        设置全局变量(B, 空数组);
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(21, 11.208, -99));
+        修改全局变量(B, 添加至数组, 矢量(26.932, 10.006, -87.287));
+        修改全局变量(B, 添加至数组, 矢量(67.503, 6.071, -83.707));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(125.858, 16.083, -19.069));
+        设置全局变量(C, 空数组);
+        修改全局变量(C, 添加至数组, 矢量(-12.112, 2.165, -7.337));
+        修改全局变量(C, 添加至数组, 矢量(-12.48, -2.72, -32.04));
+        修改全局变量(C, 添加至数组, 矢量(5.125, 12.613, -84.363));
+        修改全局变量(C, 添加至数组, 矢量(28.763, 9.349, -86.46));
+        修改全局变量(C, 添加至数组, 矢量(73.259, 14.071, -50.833));
+        修改全局变量(C, 添加至数组, 矢量(-85.12, 0.1, 108.35));
+        修改全局变量(C, 添加至数组, 矢量(113.351, 16.071, -27.425));
+        设置全局变量(D, -2.05);
     }
 }
 
-rule ("init round") {
-    event {
-        Ongoing - Global;
+规则 ("oasis city center") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.R <= True;
-        Match Time != Null;
+    条件 {
+        全局.F == 186;
     }
-    actions {
-        Set Global Variable(P, Match Time);
-        Skip If(Compare(Global.R, !=, Null), True);
-        Set Global Variable(P, 1200);
+    动作 {
+        设置全局变量(W, 空数组);
+        设置全局变量(X, 1);
+        修改全局变量(W, 添加至数组, 矢量(138.166, 2, 209.031));
+        修改全局变量(W, 添加至数组, 矢量(173.918, 5.451, 238.435));
+        修改全局变量(W, 添加至数组, 矢量(153.992, 4.105, 211.989));
+        修改全局变量(W, 添加至数组, 矢量(170.979, 5.348, 232.41));
+        修改全局变量(W, 添加至数组, 矢量(169.23, 4.23, 221.512));
+        设置全局变量(X, 2);
+        修改全局变量(W, 添加至数组, 矢量(146.914, 5.353, 269.272));
+        修改全局变量(W, 添加至数组, 矢量(165.43, 5.353, 251.3));
+        修改全局变量(W, 添加至数组, 矢量(174.073, 5.453, 244.755));
+        修改全局变量(W, 添加至数组, 矢量(152.772, 4.353, 256.83));
+        设置全局变量(X, 3);
+        修改全局变量(W, 添加至数组, 矢量(152.202, 5.453, 277.696));
+        修改全局变量(W, 添加至数组, 矢量(169.966, 5.352, 239.374));
+        修改全局变量(W, 添加至数组, 矢量(154.181, 4.298, 236.817));
+        设置全局变量(X, 4);
+        修改全局变量(W, 添加至数组, 矢量(80.529, 21, 321.752));
+        修改全局变量(W, 添加至数组, 矢量(58.479, 14, 315.438));
+        修改全局变量(W, 添加至数组, 矢量(68.252, 10, 321.405));
+        修改全局变量(W, 添加至数组, 矢量(73.934, 14, 309.11));
+        设置全局变量(X, 5);
+        修改全局变量(W, 添加至数组, 矢量(144.727, 5.348, 216.623));
+        修改全局变量(W, 添加至数组, 矢量(112.532, 5.348, 248.279));
+        修改全局变量(W, 添加至数组, 矢量(124.038, 4.408, 228.053));
+        修改全局变量(W, 添加至数组, 矢量(122.864, 5.352, 246.109));
+        修改全局变量(W, 添加至数组, 矢量(142.109, 5.352, 226.935));
+        修改全局变量(W, 添加至数组, 矢量(137.603, 2, 210.548));
+        设置全局变量(S, 空数组);
+        修改全局变量(S, 添加至数组, 乘(15, 前));
+        修改全局变量(S, 添加至数组, 矢量(假, 5, 20));
+        修改全局变量(S, 添加至数组, 矢量(4, 7, 15));
+        修改全局变量(S, 添加至数组, 矢量(9, 3, 25));
+        修改全局变量(S, 添加至数组, 矢量(12, 4, 20));
+        修改全局变量(S, 添加至数组, 矢量(16, 5, 15));
+        修改全局变量(S, 添加至数组, 乘(15, 前));
+        修改全局变量(S, 添加至数组, 加(左, 右));
+        设置全局变量(L, 空数组);
+        修改全局变量(L, 添加至数组, 矢量(220.224, 2.351, 167.747));
+        修改全局变量(L, 添加至数组, 矢量(211.228, 2.351, 181.767));
+        修改全局变量(L, 添加至数组, 矢量(194.838, 2.995, 221.516));
+        修改全局变量(L, 添加至数组, 矢量(153.317, 5.353, 228.67));
+        修改全局变量(L, 添加至数组, 矢量(157.114, 12.871, 256.487));
+        修改全局变量(L, 添加至数组, 矢量(81.267, 8.348, 305.765));
+        修改全局变量(L, 添加至数组, 矢量(139.865, 3.553, 243.895));
+        修改全局变量(L, 添加至数组, 矢量(37.6, -5.314, 141.744));
+        设置全局变量(M, 空数组);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 22);
+        修改全局变量(M, 添加至数组, 20);
+        修改全局变量(M, 添加至数组, 15);
+        修改全局变量(M, 添加至数组, 25);
+        修改全局变量(M, 添加至数组, 20);
+        修改全局变量(M, 添加至数组, 20);
+        设置全局变量(T, 空数组);
+        修改全局变量(T, 添加至数组, 矢量(203.838, 2.351, 193.103));
+        修改全局变量(T, 添加至数组, 矢量(187.465, 3.197, 228.936));
+        修改全局变量(T, 添加至数组, 矢量(164.01, 5.352, 246.529));
+        修改全局变量(T, 添加至数组, 矢量(146.688, 12.871, 272.18));
+        修改全局变量(T, 添加至数组, 矢量(62.132, 9.21, 309.589));
+        修改全局变量(T, 添加至数组, 矢量(128.289, 5.349, 232.291));
+        修改全局变量(T, 添加至数组, 矢量(16.617, -8.5, 120.524));
+        修改全局变量(T, 添加至数组, 矢量(16.617, -8.5, 120.524));
+        设置全局变量(B, 空数组);
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(202.897, 2.351, 194.546));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        修改全局变量(B, 添加至数组, 矢量(146.278, 12.871, 273.901));
+        修改全局变量(B, 添加至数组, 矢量(62.114, 9.21, 309.601));
+        修改全局变量(B, 添加至数组, 矢量(113.736, 2.148, 217.728));
+        修改全局变量(B, 添加至数组, 乘(-30, 上));
+        设置全局变量(C, 空数组);
+        修改全局变量(C, 添加至数组, 矢量(201.216, 2.354, 197.171));
+        修改全局变量(C, 添加至数组, 矢量(202.001, 2.349, 195.913));
+        修改全局变量(C, 添加至数组, 矢量(5.125, 12.613, -84.363));
+        修改全局变量(C, 添加至数组, 矢量(28.763, 9.349, -86.46));
+        修改全局变量(C, 添加至数组, 矢量(87.876, 19.998, 314.105));
+        修改全局变量(C, 添加至数组, 矢量(153.019, 5.453, 281.754));
+        修改全局变量(C, 添加至数组, 矢量(112, 2.148, 216));
+        修改全局变量(C, 添加至数组, 矢量(112, 2.148, 216));
+        设置全局变量(D, -8.9);
+    }
+}
+
+规则 ("initial zombie hero") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        设置全局变量(Z, 英雄(托比昂));
+        设置全局变量(N, 空);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Waiting 4 Players 2 Start ..."), 空, 空, 左边, 假, 颜色(白色), 空, 空, 可见和字符串, 默认可见度);
+    }
+}
+
+规则 ("list kb for each hero (k)") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        设置全局变量(K, 空数组);
+        修改全局变量(K, 添加至数组, 30);
+        修改全局变量(K, 添加至数组, 15);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 300);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 50);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 15);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 10);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 空);
+        修改全局变量(K, 添加至数组, 25);
+        修改全局变量(K, 添加至数组, 20);
+    }
+}
+
+规则 ("init round") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.R <= 真;
+        比赛时间 != 空;
+    }
+    动作 {
+        设置全局变量(P, 比赛时间);
+        根据条件跳过(比较(全局.R, !=, 空), 真);
+        设置全局变量(P, 1200);
         //lbl_0:
-        Set Global Variable(G, Null);
-        Set Global Variable(I, 1);
-        Set Global Variable(N, Null);
-        Set Global Variable(O, Null);
-        Set Global Variable(Q, Null);
-        Set Global Variable(E, Null);
-        Set Player Variable(All Players(All Teams), F, Null);
-        Set Player Variable(All Players(All Teams), Z, Null);
-        Destroy All HUD Text;
+        设置全局变量(G, 空);
+        设置全局变量(I, 1);
+        设置全局变量(N, 空);
+        设置全局变量(O, 空);
+        设置全局变量(Q, 空);
+        设置全局变量(E, 空);
+        设置玩家变量(所有玩家(所有队伍), F, 空);
+        设置玩家变量(所有玩家(所有队伍), Z, 空);
+        消除所有HUD文本;
         //lbl_1:
-        Resurrect(All Players(All Teams));
-        Wait(0.25, Ignore Condition);
-        Go To Assemble Heroes;
-        Set Match Time(8.9);
-        Reset Player Hero Availability(All Players(All Teams));
-        Stop Forcing Player To Be Hero(All Players(All Teams));
-        Disable Built-In Game Mode Completion;
-        Wait(9, Ignore Condition);
-        Set Global Variable(I, Null);
-        Set Global Variable(R, 3);
-        Set Match Time(Global.P);
-        Skip If(Compare(Match Time, >, Null), True);
-        Set Global Variable(J, 4);
+        复活(所有玩家(所有队伍));
+        等待(0.25, 无视条件);
+        前往集结英雄;
+        设置比赛时间(8.9);
+        重置玩家英雄可选状态(所有玩家(所有队伍));
+        停止强制玩家选择英雄(所有玩家(所有队伍));
+        关闭游戏预设完成条件;
+        等待(9, 无视条件);
+        设置全局变量(I, 空);
+        设置全局变量(R, 3);
+        设置比赛时间(全局.P);
+        根据条件跳过(比较(比赛时间, >, 空), 真);
+        设置全局变量(J, 4);
         //lbl_2:
-        Set Global Variable(G, Null);
-        Set Global Variable(N, Null);
-        Set Global Variable(O, Null);
-        Set Global Variable(Q, Null);
-        Set Global Variable(E, Null);
+        设置全局变量(G, 空);
+        设置全局变量(N, 空);
+        设置全局变量(O, 空);
+        设置全局变量(Q, 空);
+        设置全局变量(E, 空);
     }
 }
 
-rule ("init section (slice + draw tp)") {
-    event {
-        Ongoing - Global;
+规则 ("init section (slice + draw tp)") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.I == Null;
+    条件 {
+        全局.I == 空;
     }
-    actions {
-        Set Global Variable(A, Array Slice(Global.W, X Component Of(Value In Array(Global.S, Global.N)), Y Component Of(Value In Array(Global.S, Global.N))));
-        Create Effect(All Players(All Teams), Orb, Color(Green), Value In Array(Global.B, Global.N), 0.25, Visible To Position and Radius);
-    }
-}
-
-rule ("tri­gger draw") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Global.I == Null;
-    }
-    actions {
-        Destroy All Icons;
-        Create Effect(All Players(All Teams), Sphere, Color(Blue), Value In Array(Global.T, Global.N), 4, Visible To);
-        Create Icon(All Players(All Teams), Value In Array(Global.T, Global.N), Arrow: Down, Visible To and Position, Color(Blue), True);
+    动作 {
+        设置全局变量(A, 数组分割(全局.W, X方向分量(数组中的值(全局.S, 全局.N)), Y方向分量(数组中的值(全局.S, 全局.N))));
+        创建效果(所有玩家(所有队伍), 球, 颜色(绿色), 数组中的值(全局.B, 全局.N), 0.25, 可见，位置和半径);
     }
 }
 
-rule ("walls visual effect") {
-    event {
-        Ongoing - Global;
+规则 ("tri­gger draw") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.I == Null;
+    条件 {
+        全局.I == 空;
     }
-    actions {
-        Create Effect(All Players(All Teams), Sphere, Color(Yellow), Value In Array(Global.A, Global.I), 4, Visible To);
-        Create Effect(All Players(All Teams), Sphere, Color(Yellow), Add(Value In Array(Global.A, Global.I), Multiply(4, Up)), 4, Visible To);
-        Modify Global Variable(I, Add, True);
-        Wait(0.05, Ignore Condition);
-        Loop If(Compare(Global.I, <, Count Of(Global.A)));
+    动作 {
+        消除所有图标;
+        创建效果(所有玩家(所有队伍), 球体, 颜色(蓝色), 数组中的值(全局.T, 全局.N), 4, 可见);
+        创建图标(所有玩家(所有队伍), 数组中的值(全局.T, 全局.N), 箭头：向下, 可见和位置, 颜色(蓝色), 真);
+    }
+}
+
+规则 ("walls visual effect") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.I == 空;
+    }
+    动作 {
+        创建效果(所有玩家(所有队伍), 球体, 颜色(黄色), 数组中的值(全局.A, 全局.I), 4, 可见);
+        创建效果(所有玩家(所有队伍), 球体, 颜色(黄色), 加(数组中的值(全局.A, 全局.I), 乘(4, 上)), 4, 可见);
+        修改全局变量(I, 加, 真);
+        等待(0.05, 无视条件);
+        根据条件循环(比较(全局.I, <, 数量(全局.A)));
         "pass"
-        disabled Abort;
+        禁用 中止;
         //lbl_0:
     }
 }
 
-rule ("walls kb effect") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("walls kb effect") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Skip If(Compare(Y Component Of(Position Of(Event Player)), <, Subtract(Y Component Of(Value In Array(Global.A, (Event Player).J)), 4)), 5);
-        Skip If(Compare(Distance Between(Vector(X Component Of(Position Of(Event Player)), False, Z Component Of(Position Of(Event Player))), Vector(X Component Of(Value In Array(Global.A, (Event Player).J)), False, Z Component Of(Value In Array(Global.A, (Event Player).J)))), >, 4.5), 4);
-        Apply Impulse(Event Player, Up, 1, To Player, Cancel Contrary Motion);
-        Apply Impulse(Event Player, Vector(X Component Of(Vector Towards(Value In Array(Global.A, (Event Player).J), Position Of(Event Player))), False, Z Component Of(Vector Towards(Value In Array(Global.A, (Event Player).J), Position Of(Event Player)))), Add(2.5, Multiply(Horizontal Speed Of(Event Player), 1.5)), To World, Cancel Contrary Motion);
-        Skip(True);
-        Apply Impulse(Event Player, Divide(Velocity Of(Event Player), Vector(Absolute Value(X Component Of(Velocity Of(Event Player))), Absolute Value(Y Component Of(Velocity Of(Event Player))), Absolute Value(Z Component Of(Velocity Of(Event Player))))), -10, To World, Cancel Contrary Motion);
+    动作 {
+        根据条件跳过(比较(Y方向分量(所选位置(事件玩家)), <, 减(Y方向分量(数组中的值(全局.A, (事件玩家).J)), 4)), 5);
+        根据条件跳过(比较(相距距离(矢量(X方向分量(所选位置(事件玩家)), 假, Z方向分量(所选位置(事件玩家))), 矢量(X方向分量(数组中的值(全局.A, (事件玩家).J)), 假, Z方向分量(数组中的值(全局.A, (事件玩家).J)))), >, 4.5), 4);
+        施加推力(事件玩家, 上, 1, 至玩家, 取消相反运动);
+        施加推力(事件玩家, 矢量(X方向分量(向量(数组中的值(全局.A, (事件玩家).J), 所选位置(事件玩家))), 假, Z方向分量(向量(数组中的值(全局.A, (事件玩家).J), 所选位置(事件玩家)))), 加(2.5, 乘(水平速度(事件玩家), 1.5)), 至地图, 取消相反运动);
+        跳过(真);
+        施加推力(事件玩家, 除(速率(事件玩家), 矢量(绝对值(X方向分量(速率(事件玩家))), 绝对值(Y方向分量(速率(事件玩家))), 绝对值(Z方向分量(速率(事件玩家))))), -10, 至地图, 取消相反运动);
         //lbl_0:
         //lbl_1:
         //lbl_2:
-        Modify Player Variable(Event Player, J, Add, True);
-        Skip If(Compare((Event Player).J, <, Count Of(Global.A)), True);
-        Set Player Variable(Event Player, J, Null);
+        修改玩家变量(事件玩家, J, 加, 真);
+        根据条件跳过(比较((事件玩家).J, <, 数量(全局.A)), 真);
+        设置玩家变量(事件玩家, J, 空);
         //lbl_3:
-        Wait(False, Ignore Condition);
-        Loop;
+        等待(假, 无视条件);
+        循环;
     }
 }
 
-rule ("use tp") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("use tp") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Array Contains(Players Within Radius(Subtract(Value In Array(Global.B, Global.N), Up), 2, All Teams, Off), Event Player) == True;
+    条件 {
+        数组包含(范围内玩家(减(数组中的值(全局.B, 全局.N), 上), 2, 所有队伍, 关闭), 事件玩家) == 真;
     }
-    actions {
-        Teleport(Event Player, Value In Array(Global.C, Global.N));
+    动作 {
+        传送(事件玩家, 数组中的值(全局.C, 全局.N));
     }
 }
 
-rule ("tri­gger") {
-    event {
-        Ongoing - Global;
+规则 ("tri­gger") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Count Of(Players Within Radius(Value In Array(Global.T, Global.N), 5, All Teams, Off)) > Null;
-        Global.Q == Null;
+    条件 {
+        数量(范围内玩家(数组中的值(全局.T, 全局.N), 5, 所有队伍, 关闭)) > 空;
+        全局.Q == 空;
     }
-    actions {
-        Set Global Variable(Q, 1);
-        Skip If(Compare(Count Of(Filtered Array(Players Within Radius(Value In Array(Global.T, Global.N), 5, All Teams, Off), Compare((Current Array Element).Z, ==, 1))), !=, Null), 23);
-        Skip If(Compare(Global.N, ==, Add(Count Of(Global.S), -1)), 11);
-        Big Message(All Players(All Teams), Custom String("Defend: {0} sec", Z Component Of(Value In Array(Global.S, Global.N))));
-        Wait(Subtract(Z Component Of(Value In Array(Global.S, Global.N)), 8), Ignore Condition);
-        Abort If(Compare(Global.R, <=, 2));
-        Big Message(All Players(All Teams), Custom String("Defend: 8 sec"));
-        Set Global Variable(Q, 1.5);
-        Wait(7, Ignore Condition);
-        Abort If(Compare(Global.R, <=, 2));
-        Big Message(All Players(All Teams), Custom String("Defend: 1 sec"));
-        Set Global Variable(Q, 2);
-        Wait(True, Ignore Condition);
-        Abort If(Compare(Global.R, <=, 2));
+    动作 {
+        设置全局变量(Q, 1);
+        根据条件跳过(比较(数量(已过滤的数组(范围内玩家(数组中的值(全局.T, 全局.N), 5, 所有队伍, 关闭), 比较((当前数组元素).Z, ==, 1))), !=, 空), 23);
+        根据条件跳过(比较(全局.N, ==, 加(数量(全局.S), -1)), 11);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Defend: {0} sec", Z方向分量(数组中的值(全局.S, 全局.N))));
+        等待(减(Z方向分量(数组中的值(全局.S, 全局.N)), 8), 无视条件);
+        根据条件中止(比较(全局.R, <=, 2));
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Defend: 8 sec"));
+        设置全局变量(Q, 1.5);
+        等待(7, 无视条件);
+        根据条件中止(比较(全局.R, <=, 2));
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Defend: 1 sec"));
+        设置全局变量(Q, 2);
+        等待(真, 无视条件);
+        根据条件中止(比较(全局.R, <=, 2));
         //lbl_1:
-        Set Global Variable(Q, 3);
-        Modify Global Variable(N, Add, True);
-        Skip If(Compare(Global.N, ==, Count Of(Global.S)), True);
-        Big Message(All Players(All Teams), Custom String("Run!!!"));
+        设置全局变量(Q, 3);
+        修改全局变量(N, 加, 真);
+        根据条件跳过(比较(全局.N, ==, 数量(全局.S)), 真);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Run!!!"));
         //lbl_2:
-        Destroy All Effects;
-        Wait(0.25, Ignore Condition);
-        Set Global Variable(I, Null);
-        Set Global Variable(Q, Null);
-        Skip If(Compare(Global.N, !=, Count Of(Global.S)), 3);
-        Set Global Variable(E, 2);
-        Abort;
+        消除所有效果;
+        等待(0.25, 无视条件);
+        设置全局变量(I, 空);
+        设置全局变量(Q, 空);
+        根据条件跳过(比较(全局.N, !=, 数量(全局.S)), 3);
+        设置全局变量(E, 2);
+        中止;
         //lbl_0:
-        Set Global Variable(E, 1);
+        设置全局变量(E, 1);
         //lbl_3:
     }
 }
 
-rule ("first infection") {
-    event {
-        Ongoing - Global;
+规则 ("first infection") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.R == 3;
+    条件 {
+        全局.R == 3;
     }
-    actions {
-        Wait(True, Ignore Condition);
-        Big Message(All Players(All Teams), Custom String("Initial Dead: {0} sec", Subtract(10, Global.O)));
-        Modify Global Variable(O, Add, True);
-        Loop If(Compare(Global.O, <, 10));
-        Skip If(Compare(Count Of(Filtered Array(All Players(All Teams), Has Spawned(Current Array Element))), <=, 10), True);
-        Set Player Variable(Array Slice(Randomized Array(Filtered Array(All Players(All Teams), And(Has Spawned(Current Array Element), Compare((Current Array Element).L, ==, Null)))), False, 2), Z, 1);
+    动作 {
+        等待(真, 无视条件);
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Initial Dead: {0} sec", 减(10, 全局.O)));
+        修改全局变量(O, 加, 真);
+        根据条件循环(比较(全局.O, <, 10));
+        根据条件跳过(比较(数量(已过滤的数组(所有玩家(所有队伍), 已重生(当前数组元素))), <=, 10), 真);
+        设置玩家变量(数组分割(随机数组(已过滤的数组(所有玩家(所有队伍), 与(已重生(当前数组元素), 比较((当前数组元素).L, ==, 空)))), 假, 2), Z, 1);
         //lbl_0:
-        Skip If(Compare(Count Of(Filtered Array(All Players(All Teams), Has Spawned(Current Array Element))), >, 10), True);
-        Set Player Variable(Array Slice(Randomized Array(Filtered Array(All Players(All Teams), And(Has Spawned(Current Array Element), Compare((Current Array Element).L, ==, Null)))), False, True), Z, 1);
+        根据条件跳过(比较(数量(已过滤的数组(所有玩家(所有队伍), 已重生(当前数组元素))), >, 10), 真);
+        设置玩家变量(数组分割(随机数组(已过滤的数组(所有玩家(所有队伍), 与(已重生(当前数组元素), 比较((当前数组元素).L, ==, 空)))), 假, 真), Z, 1);
         //lbl_1:
-        Teleport(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, 1)), First Of(Global.L));
-        Set Global Variable(G, 1);
-        Set Player Variable(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, 1)), L, 1);
-        Set Player Variable(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, Null)), L, Null);
+        传送(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 1)), 首个(全局.L));
+        设置全局变量(G, 1);
+        设置玩家变量(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 1)), L, 1);
+        设置玩家变量(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 空)), L, 空);
     }
 }
 
-rule ("tp players at 1 sec left") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("tp players at 1 sec left") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.Q == 2;
-        Array Contains(Players Within Radius(Value In Array(Global.T, Global.N), Value In Array(Global.M, Global.N), All Teams, Off), Event Player) == False;
+    条件 {
+        全局.Q == 2;
+        数组包含(范围内玩家(数组中的值(全局.T, 全局.N), 数组中的值(全局.M, 全局.N), 所有队伍, 关闭), 事件玩家) == 假;
     }
-    actions {
-        Teleport(Event Player, Value In Array(Global.L, Add(Global.N, True)));
-    }
-}
-
-rule ("deathplane tp") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Y Component Of(Position Of(Event Player)) < Global.D;
-        Global.R != Null;
-        Global.E == Null;
-    }
-    actions {
-        Teleport(Event Player, Value In Array(Global.L, Global.N));
-        Resurrect(Event Player);
+    动作 {
+        传送(事件玩家, 数组中的值(全局.L, 加(全局.N, 真)));
     }
 }
 
-rule ("infect players") {
-    event {
-        Player Took Damage;
-        All;
-        All;
+规则 ("deathplane tp") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        (Attacker).Z == 1;
-        (Victim).Z == Null;
-        Global.E == Null;
-        Distance Between(Position Of(Attacker), Position Of(Victim)) <= 5.5;
+    条件 {
+        Y方向分量(所选位置(事件玩家)) < 全局.D;
+        全局.R != 空;
+        全局.E == 空;
     }
-    actions {
-        Set Player Variable(Victim, Z, 1);
-        Modify Player Score(Attacker, True);
-        Set Player Variable(Victim, H, Hero Of(Victim));
-        Create HUD Text(All Players(All Teams), Custom String("{0} {1} -> {2}", Hero Icon String(Hero Of(Attacker)), Attacker, Custom String("{0} {1}", Hero Icon String((Victim).H), Victim)), Null, Null, Right, False, Color(White), Null, Null, Visible To and String, Default Visibility);
-        Skip If(Compare(Count Of(Filtered Array(Filtered Array(All Players(All Teams), Has Spawned(Current Array Element)), Compare((Current Array Element).Z, ==, Null))), !=, Null), 2);
-        Set Global Variable(E, 1);
-        Resurrect(Event Player);
+    动作 {
+        传送(事件玩家, 数组中的值(全局.L, 全局.N));
+        复活(事件玩家);
+    }
+}
+
+规则 ("infect players") {
+    事件 {
+        玩家受到伤害;
+        双方;
+        全部;
+    }
+    条件 {
+        (攻击方).Z == 1;
+        (被攻击方).Z == 空;
+        全局.E == 空;
+        相距距离(所选位置(攻击方), 所选位置(被攻击方)) <= 5.5;
+    }
+    动作 {
+        设置玩家变量(被攻击方, Z, 1);
+        修改玩家分数(攻击方, 真);
+        设置玩家变量(被攻击方, H, 所用英雄(被攻击方));
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("{0} {1} -> {2}", 英雄图标字符串(所用英雄(攻击方)), 攻击方, 自定义字符串("{0} {1}", 英雄图标字符串((被攻击方).H), 被攻击方)), 空, 空, 右边, 假, 颜色(白色), 空, 空, 可见和字符串, 默认可见度);
+        根据条件跳过(比较(数量(已过滤的数组(已过滤的数组(所有玩家(所有队伍), 已重生(当前数组元素)), 比较((当前数组元素).Z, ==, 空))), !=, 空), 2);
+        设置全局变量(E, 1);
+        复活(事件玩家);
         //lbl_0:
     }
 }
 
-rule ("player dies = gets tp'd, +10 pts if zombie kill") {
-    event {
-        Player Died;
-        All;
-        All;
+规则 ("player dies = gets tp'd, +10 pts if zombie kill") {
+    事件 {
+        玩家阵亡;
+        双方;
+        全部;
     }
-    conditions {
-        Global.E == Null;
-        Global.R != Null;
+    条件 {
+        全局.E == 空;
+        全局.R != 空;
     }
-    actions {
-        Resurrect(Victim);
-        Teleport(Victim, Value In Array(Global.L, Global.N));
-        Skip If(Compare(Victim, ==, Attacker), 2);
-        Skip If(Compare((Attacker).Z, ==, 1), True);
-        Modify Player Score(Attacker, 9);
+    动作 {
+        复活(被攻击方);
+        传送(被攻击方, 数组中的值(全局.L, 全局.N));
+        根据条件跳过(比较(被攻击方, ==, 攻击方), 2);
+        根据条件跳过(比较((攻击方).Z, ==, 1), 真);
+        修改玩家分数(攻击方, 9);
         //lbl_0:
         //lbl_1:
     }
 }
 
-rule ("humans and zombies cant hurt same") {
-    event {
-        Ongoing - Global;
+规则 ("humans and zombies cant hurt same") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Is Game In Progress == True;
+    条件 {
+        游戏正在进行中 == 真;
     }
-    actions {
-        Start Damage Modification(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, Null)), Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, Null)), 0, Receivers Damagers and Damage Percent);
-        Start Damage Modification(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, 1)), Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, 1)), 0, Receivers Damagers and Damage Percent);
+    动作 {
+        开始伤害调整(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 空)), 已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 空)), 0, 受伤害者，伤害者及伤害百分比);
+        开始伤害调整(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 1)), 已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 1)), 0, 受伤害者，伤害者及伤害百分比);
     }
 }
 
-rule ("humans and zombies can hurt each other + kb") {
-    event {
-        Player Dealt Damage;
-        All;
-        All;
+规则 ("humans and zombies can hurt each other + kb") {
+    事件 {
+        玩家造成伤害;
+        双方;
+        全部;
     }
-    conditions {
-        (Attacker).Z != (Victim).Z;
-        (Victim).Z == 1;
+    条件 {
+        (攻击方).Z != (被攻击方).Z;
+        (被攻击方).Z == 1;
     }
-    actions {
-        Skip If(Compare(Random Integer(True, 4), !=, 1), True);
-        Apply Impulse(Victim, Up, 1.5, To Player, Cancel Contrary Motion);
+    动作 {
+        根据条件跳过(比较(随机整数(真, 4), !=, 1), 真);
+        施加推力(被攻击方, 上, 1.5, 至玩家, 取消相反运动);
         //lbl_0:
-        Apply Impulse(Victim, Divide(Vector Towards(Position Of(Attacker), Position Of(Victim)), Vector(Absolute Value(X Component Of(Vector Towards(Position Of(Attacker), Position Of(Victim)))), False, Absolute Value(Z Component Of(Vector Towards(Position Of(Attacker), Position Of(Victim)))))), Multiply(Event Damage, 1.05), To World, Cancel Contrary Motion);
+        施加推力(被攻击方, 除(向量(所选位置(攻击方), 所选位置(被攻击方)), 矢量(绝对值(X方向分量(向量(所选位置(攻击方), 所选位置(被攻击方)))), 假, 绝对值(Z方向分量(向量(所选位置(攻击方), 所选位置(被攻击方)))))), 乘(事件伤害, 1.05), 至地图, 取消相反运动);
     }
 }
 
-rule ("tp dest") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("tp dest") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Hero Of(Event Player) == Hero(Baptiste);
-        Is Using Ability 1(Event Player) == True;
+    条件 {
+        所用英雄(事件玩家) == 英雄(巴蒂斯特);
+        正在使用技能 1(事件玩家) == 真;
     }
-    actions {
-        Set Projectile Speed(Event Player, 100);
-        Wait(False, Ignore Condition);
-        Modify Player Variable(Event Player, B, Add, True);
-        Loop If(Compare((Event Player).B, <, 105));
-        Set Player Variable(Event Player, B, Null);
+    动作 {
+        设置弹道速度(事件玩家, 100);
+        等待(假, 无视条件);
+        修改玩家变量(事件玩家, B, 加, 真);
+        根据条件循环(比较((事件玩家).B, <, 105));
+        设置玩家变量(事件玩家, B, 空);
     }
 }
 
-rule ("zombie behavior") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("zombie behavior") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        (Event Player).Z == 1;
+    条件 {
+        (事件玩家).Z == 1;
     }
-    actions {
-        Set Player Variable(Event Player, C, Position Of(Event Player));
-        Start Forcing Player To Be Hero(Event Player, Global.Z);
-        Teleport(Event Player, (Event Player).C);
-        Stop All Heal Over Time(Event Player);
-        Set Status(Event Player, Null, Rooted, 2);
-        Big Message(Event Player, Custom String("You Dead"));
-        Wait(True, Ignore Condition);
-        Clear Status(Event Player, Rooted);
-        Press Button(Event Player, Button(Ultimate));
-        Skip If(Compare(Count Of(Filtered Array(Filtered Array(All Players(All Teams), Has Spawned(Current Array Element)), Compare((Current Array Element).Z, ==, Null))), !=, Null), True);
-        Set Global Variable(E, 1);
+    动作 {
+        设置玩家变量(事件玩家, C, 所选位置(事件玩家));
+        开始强制玩家选择英雄(事件玩家, 全局.Z);
+        传送(事件玩家, (事件玩家).C);
+        停止所有持续治疗(事件玩家);
+        设置状态(事件玩家, 空, 定身, 2);
+        大字体信息(事件玩家, 自定义字符串("You Dead"));
+        等待(真, 无视条件);
+        清除状态(事件玩家, 定身);
+        按下按键(事件玩家, 按钮(终极技能));
+        根据条件跳过(比较(数量(已过滤的数组(已过滤的数组(所有玩家(所有队伍), 已重生(当前数组元素)), 比较((当前数组元素).Z, ==, 空))), !=, 空), 真);
+        设置全局变量(E, 1);
         //lbl_0:
     }
 }
 
-rule ("player selected hero") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("player selected hero") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Has Spawned(Event Player) == True;
-        Global.R >= 3;
+    条件 {
+        已重生(事件玩家) == 真;
+        全局.R >= 3;
     }
-    actions {
-        Disallow Button(Event Player, Button(Crouch));
-        Wait(0.1, Ignore Condition);
-        Teleport(Event Player, Value In Array(Global.L, Global.N));
-        Skip If(Compare(Global.G, ==, Null), True);
-        Set Player Variable(Event Player, Z, 1);
+    动作 {
+        禁用按钮(事件玩家, 按钮(蹲下));
+        等待(0.1, 无视条件);
+        传送(事件玩家, 数组中的值(全局.L, 全局.N));
+        根据条件跳过(比较(全局.G, ==, 空), 真);
+        设置玩家变量(事件玩家, Z, 1);
         //lbl_0:
-        Start Heal Over Time(Event Player, Null, 9999, 20);
-        Wait(2, Ignore Condition);
-        Allow Button(Event Player, Button(Crouch));
+        开始持续治疗(事件玩家, 空, 9999, 20);
+        等待(2, 无视条件);
+        可用按钮(事件玩家, 按钮(蹲下));
     }
 }
 
-rule ("burn = slow") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("burn = slow") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Has Status(Event Player, Burning) == True;
-        (Event Player).Z == 1;
+    条件 {
+        具有状态(事件玩家, 燃烧) == 真;
+        (事件玩家).Z == 1;
     }
-    actions {
-        Set Move Speed(Event Player, 75);
-        Wait(5, Ignore Condition);
-        Set Move Speed(Event Player, 100);
-    }
-}
-
-rule ("no stun for humans") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    conditions {
-        Has Status(Event Player, Stunned) == True;
-        (Event Player).Z == Null;
-    }
-    actions {
-        Clear Status(Event Player, Stunned);
+    动作 {
+        设置移动速度(事件玩家, 75);
+        等待(5, 无视条件);
+        设置移动速度(事件玩家, 100);
     }
 }
 
-rule ("red orb") {
-    event {
-        Ongoing - Global;
+规则 ("no stun for humans") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.Q == 1.5;
+    条件 {
+        具有状态(事件玩家, 击晕) == 真;
+        (事件玩家).Z == 空;
     }
-    actions {
-        Create Effect(All Players(All Teams), Orb, Color(Red), Value In Array(Global.L, Add(Global.N, True)), True, Visible To Position and Radius);
-    }
-}
-
-rule ("normal zombies: rein") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Global.J == 1;
-    }
-    actions {
-        Set Global Variable(Z, Hero(Reinhardt));
-        Big Message(All Players(All Teams), Custom String("Level 2: {0}", Hero(Reinhardt)));
+    动作 {
+        清除状态(事件玩家, 击晕);
     }
 }
 
-rule ("hard zombies: winston") {
-    event {
-        Ongoing - Global;
+规则 ("red orb") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.J == 2;
+    条件 {
+        全局.Q == 1.5;
     }
-    actions {
-        Set Global Variable(Z, Hero(Winston));
-        Big Message(All Players(All Teams), Custom String("Level 3: {0}", Hero(Winston)));
-    }
-}
-
-rule ("expert zombies: brig") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Global.J == 3;
-    }
-    actions {
-        Set Global Variable(Z, Hero(Brigitte));
-        Big Message(All Players(All Teams), Custom String("Final Level: {0}", Hero(Brigitte)));
+    动作 {
+        创建效果(所有玩家(所有队伍), 球, 颜色(红色), 数组中的值(全局.L, 加(全局.N, 真)), 真, 可见，位置和半径);
     }
 }
 
-rule ("map finished") {
-    event {
-        Ongoing - Global;
+规则 ("normal zombies: rein") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.J == 4;
+    条件 {
+        全局.J == 1;
     }
-    actions {
-        Declare Player Victory(Last Of(Sorted Array(All Players(All Teams), Score Of(Current Array Element))));
+    动作 {
+        设置全局变量(Z, 英雄(莱因哈特));
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Level 2: {0}", 英雄(莱因哈特)));
     }
 }
 
-rule ("zombies win") {
-    event {
-        Ongoing - Global;
+规则 ("hard zombies: winston") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.E == 1;
+    条件 {
+        全局.J == 2;
     }
-    actions {
-        Stop All Damage Modifications;
-        Big Message(All Players(All Teams), Custom String("Dead Win"));
-        Wait(5, Ignore Condition);
-        Skip If(Compare(Match Time, >, Null), True);
-        Set Global Variable(J, 4);
+    动作 {
+        设置全局变量(Z, 英雄(温斯顿));
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Level 3: {0}", 英雄(温斯顿)));
+    }
+}
+
+规则 ("expert zombies: brig") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.J == 3;
+    }
+    动作 {
+        设置全局变量(Z, 英雄(布丽吉塔));
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Final Level: {0}", 英雄(布丽吉塔)));
+    }
+}
+
+规则 ("map finished") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.J == 4;
+    }
+    动作 {
+        宣告玩家胜利(最后(已排序的数组(所有玩家(所有队伍), 分数(当前数组元素))));
+    }
+}
+
+规则 ("zombies win") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.E == 1;
+    }
+    动作 {
+        停止所有伤害调整;
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Dead Win"));
+        等待(5, 无视条件);
+        根据条件跳过(比较(比赛时间, >, 空), 真);
+        设置全局变量(J, 4);
         //lbl_0:
-        Set Global Variable(R, 1);
+        设置全局变量(R, 1);
     }
 }
 
-rule ("humans win") {
-    event {
-        Ongoing - Global;
+规则 ("humans win") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.E == 2;
+    条件 {
+        全局.E == 2;
     }
-    actions {
-        Stop All Damage Modifications;
-        Big Message(All Players(All Teams), Custom String("Heroes Win"));
-        Wait(False, Ignore Condition);
-        Kill(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, 1)), Null);
-        Modify Player Score(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, Null)), 100);
-        Wait(1.5, Ignore Condition);
-        Modify Global Variable(J, Add, True);
-        Wait(3.5, Ignore Condition);
-        Set Match Time(1200);
-        Set Global Variable(R, 1);
-        Teleport(Filtered Array(All Players(All Teams), Compare((Current Array Element).Z, ==, 1)), Multiply(-500, Up));
-    }
-}
-
-rule ("skirmish rez") {
-    event {
-        Player Died;
-        All;
-        All;
-    }
-    conditions {
-        Match Time == Null;
-        Global.R == Null;
-    }
-    actions {
-        Wait(4, Ignore Condition);
-        Respawn(Victim);
+    动作 {
+        停止所有伤害调整;
+        大字体信息(所有玩家(所有队伍), 自定义字符串("Heroes Win"));
+        等待(假, 无视条件);
+        击杀(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 1)), 空);
+        修改玩家分数(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 空)), 100);
+        等待(1.5, 无视条件);
+        修改全局变量(J, 加, 真);
+        等待(3.5, 无视条件);
+        设置比赛时间(1200);
+        设置全局变量(R, 1);
+        传送(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).Z, ==, 1)), 乘(-500, 上));
     }
 }
 
-rule ("oasis city center death plane modif 1") {
-    event {
-        Ongoing - Global;
+规则 ("skirmish rez") {
+    事件 {
+        玩家阵亡;
+        双方;
+        全部;
     }
-    conditions {
-        Global.F == 186;
-        Global.N == 3;
+    条件 {
+        比赛时间 == 空;
+        全局.R == 空;
     }
-    actions {
-        Set Global Variable(D, 3);
-    }
-}
-
-rule ("oasis city center death plane modif 2") {
-    event {
-        Ongoing - Global;
-    }
-    conditions {
-        Global.F == 186;
-        Global.N == 4;
-    }
-    actions {
-        Set Global Variable(D, 1.5);
-        Wait(0.25, Ignore Condition);
-        Create Effect(All Players(All Teams), Sphere, Color(Red), Vector(73.298, -96.5, 318.105), 100, Visible To Position and Radius);
+    动作 {
+        等待(4, 无视条件);
+        复生(被攻击方);
     }
 }
 
-rule ("oasis city center death plane modif 3") {
-    event {
-        Ongoing - Global;
+规则 ("oasis city center death plane modif 1") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.F == 186;
-        Or(Compare(Global.N, <, 3), Compare(Global.N, >, 5)) == True;
+    条件 {
+        全局.F == 186;
+        全局.N == 3;
     }
-    actions {
-        Set Global Variable(D, -8.9);
+    动作 {
+        设置全局变量(D, 3);
     }
 }
 
-rule ("baptiste no crouch jump") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("oasis city center death plane modif 2") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Hero Of(Event Player) == Hero(Baptiste);
-        Is Crouching(Event Player) == True;
+    条件 {
+        全局.F == 186;
+        全局.N == 4;
     }
-    actions {
-        Set Status(Event Player, Null, Hacked, 0.016);
+    动作 {
+        设置全局变量(D, 1.5);
+        等待(0.25, 无视条件);
+        创建效果(所有玩家(所有队伍), 球体, 颜色(红色), 矢量(73.298, -96.5, 318.105), 100, 可见，位置和半径);
+    }
+}
+
+规则 ("oasis city center death plane modif 3") {
+    事件 {
+        持续 - 全局;
+    }
+    条件 {
+        全局.F == 186;
+        或(比较(全局.N, <, 3), 比较(全局.N, >, 5)) == 真;
+    }
+    动作 {
+        设置全局变量(D, -8.9);
+    }
+}
+
+规则 ("baptiste no crouch jump") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
+    }
+    条件 {
+        所用英雄(事件玩家) == 英雄(巴蒂斯特);
+        正在蹲下(事件玩家) == 真;
+    }
+    动作 {
+        设置状态(事件玩家, 空, 被入侵, 0.016);
     }
 }
 

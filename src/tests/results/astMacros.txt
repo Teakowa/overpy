@@ -1,89 +1,89 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
         3: owo
-    player:
+    玩家:
         0: A
 }
-rule ("1") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("1") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Global.A == Global.B;
+    条件 {
+        全局.A == 全局.B;
     }
-    actions {
+    动作 {
         "A = 543+B"
-        Set Global Variable(A, Add(543, Global.B));
+        设置全局变量(A, 加(543, 全局.B));
         "A = A.x + A.y"
-        Set Global Variable(A, Add(X Component Of(Global.A), Y Component Of(Global.A)));
+        设置全局变量(A, 加(X方向分量(全局.A), Y方向分量(全局.A)));
         "A = 2, B = 3"
-        Set Global Variable(A, 2);
+        设置全局变量(A, 2);
         "A = 2, B = 3"
-        Set Global Variable(B, 3);
+        设置全局变量(B, 3);
         "A = 2 + B + C"
-        Set Global Variable(A, Add(Add(2, Global.B), Global.C));
+        设置全局变量(A, 加(加(2, 全局.B), 全局.C));
         "A = B - 3"
-        Set Global Variable(A, Subtract(Global.B, 3));
+        设置全局变量(A, 减(全局.B, 3));
         "A = B - C"
-        Set Global Variable(A, Subtract(Global.B, Global.C));
+        设置全局变量(A, 减(全局.B, 全局.C));
         "A = B - C"
-        Set Global Variable(A, Subtract(Global.B, Global.C));
+        设置全局变量(A, 减(全局.B, 全局.C));
         "A = 5, B = (5+B) - 6"
-        Set Global Variable(A, 5);
+        设置全局变量(A, 5);
         "A = 5, B = (5+B) - 6"
-        Set Global Variable(B, Subtract(Add(5, Global.B), 6));
+        设置全局变量(B, 减(加(5, 全局.B), 6));
         "hostPlayer.A = 3"
-        Set Player Variable(Host Player, A, 3);
-        If(Global.A);
-            If(Global.A);
-                Set Global Variable(B, 3);
+        设置玩家变量(主机玩家, A, 3);
+        If(全局.A);
+            If(全局.A);
+                设置全局变量(B, 3);
             End;
-            While(Global.B);
-                Modify Global Variable(C, Add, 1);
-            End;
-        End;
-        While(Global.A);
-            If(Global.A);
-                Set Global Variable(B, 3);
+            While(全局.B);
+                修改全局变量(C, 加, 1);
             End;
         End;
-        If(Global.A);
-            Set Global Variable(B, 3);
+        While(全局.A);
+            If(全局.A);
+                设置全局变量(B, 3);
+            End;
+        End;
+        If(全局.A);
+            设置全局变量(B, 3);
         End;
         "hostPlayer.A = 4"
-        Set Player Variable(Host Player, A, 4);
+        设置玩家变量(主机玩家, A, 4);
     }
 }
 
-rule ("2") {
-    event {
-        Ongoing - Global;
+规则 ("2") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, 123);
-    }
-}
-
-rule ("3") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Set Global Variable(A, 456);
+    动作 {
+        设置全局变量(A, 123);
     }
 }
 
-rule ("4") {
-    event {
-        Ongoing - Global;
+规则 ("3") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(B, 789);
+    动作 {
+        设置全局变量(A, 456);
+    }
+}
+
+规则 ("4") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        设置全局变量(B, 789);
     }
 }
 

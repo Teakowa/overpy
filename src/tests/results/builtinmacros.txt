@@ -1,16 +1,16 @@
-variables {
-    global:
+变量 {
+    全局:
         0: waveHeroes
         1: waveLengths
 }
 //Optimize for size enabled
-rule ("splitDictArray") {
-    event {
-        Ongoing - Global;
+规则 ("splitDictArray") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(waveHeroes, Array(Hero(Ana), Hero(Soldier: 76), Hero(Wrecking Ball)));
-        Set Global Variable(waveLengths, Array(3, 8, Null));
+    动作 {
+        设置全局变量(waveHeroes, 数组(英雄(安娜), 英雄(士兵：76), 英雄(破坏球)));
+        设置全局变量(waveLengths, 数组(3, 8, 空));
     }
 }
 

@@ -1,45 +1,45 @@
-settings
+设置
 {
-	lobby
+	大厅
 	{
-		Max Team 1 Players: 0
-		Max Team 2 Players: 0
+		玩家上限 队伍1: 0
+		玩家上限 队伍2: 0
 	}
-	modes
+	模式
 	{
-		Team Deathmatch
+		团队死斗
 		{
-			enabled maps
+			启用地图
 			{
-				Workshop Chamber
-				Workshop Expanse
-				Workshop Green Screen
-				Workshop Island
+				地图工坊室内
+				地图工坊空地
+				地图工坊绿幕
+				地图工坊岛屿
 			}
 		}
 	}
-	extensions
+	扩展
 	{
-		Beam Effects
-		Beam Sounds
-		Buff and Debuff Sounds
-		Spawn More Dummy Bots
+		光束效果
+		光束声音
+		增益效果和减益效果声音
+		生成更多机器人
 	}
 }
-variables {
-    global:
+变量 {
+    全局:
         0: Afqdsfdsq
 }
-rule ("Rule 1") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("Rule 1") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Create Beam Effect(All Players(All Teams), Brigitte Flail Chain Beam, Event Player, Event Player, Color(White), Visible To Position and Radius);
-        Create Effect(All Players(All Teams), Echo Focusing Beam Sound, Color(White), Event Player, Global.Afqdsfdsq, Visible To Position and Radius);
-        Play Effect(All Players(All Teams), Ana Biotic Grenade Increased Healing Sound, Color(White), Event Player, 1);
+    动作 {
+        创建光束效果(所有玩家(所有队伍), 布丽吉塔连枷链光束, 事件玩家, 事件玩家, 颜色(白色), 可见，位置和半径);
+        创建效果(所有玩家(所有队伍), “回声”聚焦光线光束声音, 颜色(白色), 事件玩家, 全局.Afqdsfdsq, 可见，位置和半径);
+        播放效果(所有玩家(所有队伍), 安娜生物手雷增疗声音, 颜色(白色), 事件玩家, 1);
     }
 }
 

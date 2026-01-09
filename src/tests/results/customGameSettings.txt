@@ -1,80 +1,110 @@
-settings
+设置
 {
-	main
+	主程序
 	{
-		Mode Name: "Ｔｏｗｅｒ Ｍｅｉｆｅｎｓｅ"
-		Description: "Tower Meifense - BETA do not copy! by Zezombye v1.4.3\n\nThis is an extremely long string that takes advantage of the fact that the description can have up to 512 characters (not bytes). ¤§€ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat naz|"
+		模式名称: "Ｔｏｗｅｒ Ｍｅｉｆｅｎｓｅ"
+		描述: "Tower Meifense - BETA do not copy! by Zezombye v1.4.3\n\nThis is an extremely long string that takes advantage of the fact that the description can have up to 512 characters (not bytes). ¤§€ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat naz|"
 	}
-	lobby
+	大厅
 	{
-		Map Rotation: Paused
-		Max Spectators: 6
-		Return To Lobby: Never
-		Swap Teams After Match: No
+		地图轮换: 完成比赛后
+		比赛语音聊天: 启用
+		玩家上限 队伍1: 8
+		玩家上限 队伍2: 0
+		观战者人数上限: 12
+		返回大厅: 从不
+		队列中的玩家可以加入: 是
 	}
-	modes
+	模式
 	{
-		Assault
+		勇夺锦旗
 		{
-			enabled maps
+			启用地图
 			{
-				Temple of Anubis
+				阿育陀耶
 			}
-			Capture Speed Modifier: 60%
+			得分后旗帜刷新时间: 15
+			旗帜归还时间: 4
+			旗帜掉落后锁定时间: 5
 		}
-		Escort
+		突击模式
 		{
-			enabled maps
+			禁用地图
 			{
-				Dorado
+				国王大道
+				地图工坊室内
+				地图工坊岛屿
+				地图工坊岛屿（夜间）
+				地图工坊空地
+				地图工坊空地（夜间）
+				地图工坊绿幕
+				暴雪世界
 			}
-			Payload Speed Modifier: 200%
 		}
-		General
+		综合
 		{
-			Game Mode Start: Manual
-			Hero Limit: Off
-			Respawn Time Scalar: 100%
-			Spawn Health Packs: Disabled
+			启用威能: 开启
+			威能充能速度: 500%
+			复生时间: 10%
+			急救包刷新时间: 20%
+			敌方生命条: 关闭
+			游戏模式开始: 手动
+			英雄限制: 关闭
+			阵亡镜头: 关闭
 		}
 	}
-	heroes
+	英雄
 	{
-		Team 1
+		队伍1
 		{
-			enabled heroes
+			启用英雄
 			{
-				Ashe
-				Bastion
-				Torbjörn
-				Widowmaker
+				艾什
+				堡垒
+				托比昂
+				黑百合
 			}
 		}
-		Team 2
+		队伍2
 		{
-			Mei
+			美
 			{
-				Cryo-Freeze Cooldown Time: 200%
-				Ice Wall Cooldown Time: 200%
-				Secondary Fire: Off
-				Weapon Freeze Rate Scalar: 50%
+				急冻冷却时间: 200%
+				冰墙冷却时间: 200%
+				辅助攻击模式: 关闭
+				冰霜枪冰冻敌人的速度: 50%
 			}
 		}
-		General
+		综合
 		{
-			Ashe
+			艾什
 			{
-				Ammunition Clip Size Scalar: 200%
-				Ultimate Duration: 400%
+				弹夹容量倍率: 200%
+				终极技能持续时间: 400%
 			}
-			Bastion
+			堡垒
 			{
-				Ammunition Clip Size Scalar: 200%
+				弹夹容量倍率: 200%
 			}
-			Widowmaker
+			黑百合
 			{
-				Damage Dealt: 120%
-				Grappling Hook Cooldown Time: 10%
+				伤害量: 120%
+				抓钩冷却时间: 10%
+			}
+			无漾
+			{
+				伤害量: 120%
+				飞流步冷却时间: 10%
+			}
+			斩仇
+			{
+				伤害量: 120%
+				旋风疾步冷却时间: 10%
+			}
+			骇灾
+			{
+				伤害量: 120%
+				狂跃冷却时间: 10%
 			}
 		}
 	}

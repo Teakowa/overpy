@@ -1,110 +1,110 @@
-settings
+设置
 {
-	lobby
+	大厅
 	{
-		Allow Players Who Are In Queue: Yes
-		Match Voice Chat: Enabled
+		队列中的玩家可以加入: 是
+		比赛语音聊天: 启用
 	}
-	modes
+	模式
 	{
-		Skirmish
+		突击模式
 		{
-			enabled maps
+			启用地图
 			{
-				Workshop Chamber
+				地图工坊室内
 			}
 		}
 	}
 }
-variables {
-    global:
+变量 {
+    全局:
         0: A
         126: __holygrail__
         127: __overpyTranslationHelper__
-    player:
+    玩家:
         127: __languageIndex__
 }
-rule ("<fg00FFFFFF>OverPy <­tx> / <­fg> setup code</fg>") {
-    event {
-        Ongoing - Global;
+规则 ("<fg00FFFFFF>OverPy <­tx> / <­fg> setup code</fg>") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "By Zezombye"
-        Create Dummy Bot(All Heroes, If-Then-Else(Number Of Slots(Team 1), Team 1, If-Then-Else(Number Of Slots(Team 2), Team 2, True)), False, Null, Null);
+        生成机器人(全部英雄, If-Then-Else(栏位数量(队伍1), 队伍1, If-Then-Else(栏位数量(队伍2), 队伍2, 真)), 假, 空, 空);
         "More info: https://workshop.codes/wiki/articles/tx-reference-sheet"
-        Start Forcing Dummy Bot Name(Last Created Entity, Custom String("______________________________________________________________________________________________________________________________〼"));
-        Set Global Variable(__holygrail__, String Split(First Of(Last Created Entity), Empty Array));
-        Start Forcing Dummy Bot Name(Last Created Entity, Custom String("______________________________________________________________________________________________________________________________ࡀ"));
-        Set Global Variable(__holygrail__, String Slice(String Replace(Custom String("______________________________________________________________________________________________________________________________〼"), Global.__holygrail__, First Of(Last Created Entity)), 126, True));
-        Destroy All Dummy Bots;
+        开始为机器人强制设置名称(最后创建的实体, 自定义字符串("______________________________________________________________________________________________________________________________〼"));
+        设置全局变量(__holygrail__, 字符串分割(首个(最后创建的实体), 空数组));
+        开始为机器人强制设置名称(最后创建的实体, 自定义字符串("______________________________________________________________________________________________________________________________ࡀ"));
+        设置全局变量(__holygrail__, 截取字符串(字符串替换(自定义字符串("______________________________________________________________________________________________________________________________〼"), 全局.__holygrail__, 首个(最后创建的实体)), 126, 真));
+        移除所有机器人;
     }
 }
 
-rule ("OverPy translation setup - Determine the player's language") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("OverPy translation setup - Determine the player's language") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Has Spawned(Event Player) == True;
-        Is Dummy Bot(Event Player) == False;
-        (Event Player).__languageIndex__ == 1.1;
+    条件 {
+        已重生(事件玩家) == 真;
+        是否是机器人(事件玩家) == 假;
+        (事件玩家).__languageIndex__ == 1.1;
     }
-    actions {
-        Modify Player Variable(Event Player, __languageIndex__, Append To Array, Facing Direction Of(Event Player));
-        Start Facing(Event Player, Direction From Angles(Multiply(10, Index Of Array Value(String Split(Custom String("0Weiß0Blanc0白色0Blanco0Beyaz0ขาว0白0흰색0Biały0Branco0Белый0Bianco0White"), First Of(Null)), String Split(Color(White), Empty Array))), 5), 999999999999, To World, Direction and Turn Rate);
+    动作 {
+        修改玩家变量(事件玩家, __languageIndex__, 添加至数组, 面朝方向(事件玩家));
+        开始朝向(事件玩家, 与此角度的相对方向(乘(10, 数组值的索引(字符串分割(自定义字符串("0Weiß0Blanc0白色0Blanco0Beyaz0ขาว0白0흰색0Biały0Branco0Белый0Bianco0White"), 首个(空)), 字符串分割(颜色(白色), 空数组))), 5), 999999999999, 至地图, 方向及角速率);
         "Have a tolerance of 1/100 of a degree to account for precision errors"
-        Wait Until(And(Not(Modulo(Round To Integer(Multiply(Horizontal Facing Angle Of(Event Player), 100), To Nearest), 1000)), Compare(Absolute Value(Subtract(Vertical Facing Angle Of(Event Player), 5)), <, 0.01)), 15);
-        Set Player Variable At Index(Event Player, __languageIndex__, 0, Max(1, Multiply(Compare(Absolute Value(Subtract(Vertical Facing Angle Of(Event Player), 5)), <, 0.01), Round To Integer(Divide(Horizontal Facing Angle Of(Event Player), 10), To Nearest))));
-        Stop Facing(Event Player);
-        Set Facing(Event Player, Last Of((Event Player).__languageIndex__), To World);
-        Set Player Variable(Event Player, __languageIndex__, First Of((Event Player).__languageIndex__));
+        等待直到 (与(非(余数(取整(乘(水平朝向角度(事件玩家), 100), 至最近), 1000)), 比较(绝对值(减(垂直朝向角度(事件玩家), 5)), <, 0.01)), 15);
+        在索引处设置玩家变量(事件玩家, __languageIndex__, 0, 较大(1, 乘(比较(绝对值(减(垂直朝向角度(事件玩家), 5)), <, 0.01), 取整(除(水平朝向角度(事件玩家), 10), 至最近))));
+        停止朝向(事件玩家);
+        设置朝向(事件玩家, 最后((事件玩家).__languageIndex__), 至地图);
+        设置玩家变量(事件玩家, __languageIndex__, 首个((事件玩家).__languageIndex__));
     }
 }
 
-rule ("Initialize global variables") {
-    event {
-        Ongoing - Global;
+规则 ("Initialize global variables") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(__overpyTranslationHelper__, String Split(Custom String("0Weiß0Blanc0白色0Blanco0Beyaz0ขาว0白0흰색0Biały0Branco0Белый0Bianco0White"), First Of(Null)));
-    }
-}
-
-rule ("Initialize player variables") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    actions {
-        Set Player Variable(Event Player, __languageIndex__, 1.1);
+    动作 {
+        设置全局变量(__overpyTranslationHelper__, 字符串分割(自定义字符串("0Weiß0Blanc0白色0Blanco0Beyaz0ขาว0白0흰색0Biały0Branco0Белый0Bianco0White"), 首个(空)));
     }
 }
 
-rule ("owo\nuwu") {
-    event {
-        Ongoing - Global;
+规则 ("Initialize player variables") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Set Global Variable(A, Mapped Array(String Split(Custom String("ＴＬＥｒｒhost player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.0{0}", Custom String("0, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, {0}", Custom String("1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.0{0}", Custom String("0, 1.00, 0.00)host player: (0.00, 1.00, 0.00)")))), Global.__overpyTranslationHelper__), String Replace(Current Array Element, Update Every Frame(Up), Host Player)));
-        Create HUD Text(All Players(All Teams), Null, Custom String("{0}FGD0FF00FF>ṭ\"ѕοṃẹ ѕṭṛіṇǥ\" {0}FG99F3FFFF>= {0}FGFFFF00FF>{1}                                                               {2}", Global.__holygrail__, Value In Array(String Split(Custom String("ＴＬＥｒｒsome stringsome stringsome stringsome stringsome stringsome stringsome stringsome stringsome stringsome string{0}", Custom String("some stringsome stringsome string")), Global.__overpyTranslationHelper__), (Local Player).__languageIndex__), Custom String("                                                                                                           ")), Null, Left, -9999, Null, Color(White), Null, Visible To Sort Order String and Color, Default Visibility);
+    动作 {
+        设置玩家变量(事件玩家, __languageIndex__, 1.1);
     }
 }
 
-rule ("") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("owo\nuwu") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Is Button Held(Event Player, Button(Interact)) == True;
+    动作 {
+        设置全局变量(A, 映射的数组(字符串分割(自定义字符串("ＴＬＥｒｒhost player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.0{0}", 自定义字符串("0, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, {0}", 自定义字符串("1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.00, 1.00, 0.00)host player: (0.0{0}", 自定义字符串("0, 1.00, 0.00)host player: (0.00, 1.00, 0.00)")))), 全局.__overpyTranslationHelper__), 字符串替换(当前数组元素, 逐帧更新(上), 主机玩家)));
+        创建HUD文本(所有玩家(所有队伍), 空, 自定义字符串("{0}FGD0FF00FF>ṭ\"ѕοṃẹ ѕṭṛіṇǥ\" {0}FG99F3FFFF>= {0}FGFFFF00FF>{1}                                                               {2}", 全局.__holygrail__, 数组中的值(字符串分割(自定义字符串("ＴＬＥｒｒsome stringsome stringsome stringsome stringsome stringsome stringsome stringsome stringsome stringsome string{0}", 自定义字符串("some stringsome stringsome string")), 全局.__overpyTranslationHelper__), (本地玩家).__languageIndex__), 自定义字符串("                                                                                                           ")), 空, 左边, -9999, 空, 颜色(白色), 空, 可见，排序规则，字符串和颜色, 默认可见度);
     }
-    actions {
-        Big Message(All Players(All Teams), Custom String("{0}{1}", Value In Array(Global.A, (Local Player).__languageIndex__), Input Binding String(Button(Interact))));
-        Small Message(All Players(All Teams), Custom String("{0}{1}", Value In Array(Global.A, (Local Player).__languageIndex__), Input Binding String(Button(Interact))));
+}
+
+规则 ("") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
+    }
+    条件 {
+        按钮被按下(事件玩家, 按钮(互动)) == 真;
+    }
+    动作 {
+        大字体信息(所有玩家(所有队伍), 自定义字符串("{0}{1}", 数组中的值(全局.A, (本地玩家).__languageIndex__), 输入绑定字符串(按钮(互动))));
+        小字体信息(所有玩家(所有队伍), 自定义字符串("{0}{1}", 数组中的值(全局.A, (本地玩家).__languageIndex__), 输入绑定字符串(按钮(互动))));
     }
 }
 

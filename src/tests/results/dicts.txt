@@ -1,19 +1,19 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
 }
 //Optimize for size enabled
-rule ("dicts") {
-    event {
-        Ongoing - Global;
+规则 ("dicts") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Value In Array(Array(2, 3), Index Of Array Value(Array(Hero(Pharah), Hero(Brigitte)), Global.B)));
+    动作 {
+        设置全局变量(A, 数组中的值(数组(2, 3), 数组值的索引(数组(英雄(法老之鹰), 英雄(布丽吉塔)), 全局.B)));
         "null"
-        Set Global Variable(A, Null);
+        设置全局变量(A, 空);
         "2"
-        Set Global Variable(A, 2);
+        设置全局变量(A, 2);
     }
 }
 

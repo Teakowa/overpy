@@ -1,32 +1,32 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
 }
 //Optimize for size enabled
-rule ("gotos") {
-    event {
-        Ongoing - Global;
+规则 ("gotos") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "skip 3"
-        Skip(True);
-        If(False);
+        跳过(真);
+        If(假);
             //lbl_0:
-            Set Global Variable(A, 2);
+            设置全局变量(A, 2);
         End;
-        If(False);
+        If(假);
             //lbl_1:
         End;
-        Skip(Global.A);
+        跳过(全局.A);
         "skip 3"
-        Skip(3);
+        跳过(3);
         "pass"
-        disabled Abort;
+        禁用 中止;
         //lbl_3:
-        If(False);
-            Set Global Variable(A, 1);
+        If(假);
+            设置全局变量(A, 1);
             //lbl_2:
-            Set Global Variable(A, 2);
+            设置全局变量(A, 2);
     }
 }
 

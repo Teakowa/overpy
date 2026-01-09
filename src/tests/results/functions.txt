@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -8,209 +8,209 @@ variables {
         23: X
         24: Y
         25: Z
-    player:
+    玩家:
         1: B
 }
 //Optimize for size enabled
-rule ("function") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("function") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Set Global Variable(A, Ray Cast Hit Player(Global.B, Global.C, Global.D, Global.E, True));
-        Set Global Variable(A, Ray Cast Hit Position(Global.B, Global.C, Global.D, Global.E, False));
-        Set Global Variable(A, Ray Cast Hit Normal(Global.B, Global.C, Global.D, Global.E, True));
-        Set Global Variable(A, Divide(Divide(Multiply(Multiply(-3, 999999999999), 999999999999), 999999999999), 10));
-        Set Global Variable(A, String Slice(Global.B, 2, 4));
-        Chase Player Variable Over Time(Event Player, B, 9999, 3, Destination and Duration);
-        Chase Player Variable Over Time(Event Player, B, 9999, 3, Destination and Duration);
-        Chase Player Variable At Rate(Event Player, B, 9999, 3, Destination and Rate);
-        Chase Global Variable Over Time(B, 9999, True, Destination and Duration);
-        Chase Global Variable At Rate(B, 99999, True, Destination and Rate);
-        Create HUD Text(All Players(All Teams), Custom String("test"), Null, Null, Left, True, Color(Red), Null, Null, Visible To and String, Visible Always);
-        Create HUD Text(All Players(All Teams), Null, Null, Custom String("test"), Left, True, Null, Null, Color(Red), Visible To and String, Visible Always);
-        Create HUD Text(All Players(All Teams), Null, Custom String("test"), Null, Left, True, Null, Color(Red), Null, Visible To and String, Visible Always);
-        Create HUD Text(Null, Custom String("azer"), Custom String("dqsf"), Custom String("fdsq"), Left, -1, Color(Red), Color(White), Color(Yellow), Visible To Sort Order and String, Visible Never);
-        Wait(False, Ignore Condition);
-        Set Global Variable(A, Closest Player To(Global.B, Global.C));
-        Set Global Variable(A, First Of(Sorted Array(Filtered Array(All Living Players(Global.C), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Global.B))));
-        Set Global Variable(A, First Of(Sorted Array(Filtered Array(All Living Players(Global.C), Has Spawned(Current Array Element)), Distance Between(Current Array Element, Global.B))));
-        Set Global Variable(A, Farthest Player From(Global.B, Global.C));
-        Set Global Variable(A, First Of(Sorted Array(Filtered Array(All Living Players(Global.C), Has Spawned(Current Array Element)), Multiply(-1, Distance Between(Current Array Element, Global.B)))));
-        Set Global Variable(A, First Of(Sorted Array(Filtered Array(All Living Players(Global.C), Has Spawned(Current Array Element)), Multiply(-1, Distance Between(Current Array Element, Global.B)))));
-        Set Global Variable(A, Player Closest To Reticle(Global.A, Global.B));
-        Set Global Variable(A, First Of(Sorted Array(Filtered Array(All Living Players(Global.B), And(Has Spawned(Current Array Element), Compare(Current Array Element, !=, Global.A))), Angle Between Vectors(Facing Direction Of(Global.A), Subtract(Current Array Element, Eye Position(Global.A))))));
-        Set Global Variable(A, First Of(Sorted Array(Filtered Array(All Living Players(Global.B), And(Has Spawned(Current Array Element), Compare(Current Array Element, !=, Global.A))), Angle Between Vectors(Facing Direction Of(Global.A), Subtract(Current Array Element, Eye Position(Global.A))))));
-        Set Global Variable(A, Compare(Angle Between Vectors(Global.B, Random Value In Array(Global.C)), <=, Arcsine In Degrees(Divide(Random Value In Array(Global.E), Distance Between(Global.B, Global.D)))));
+    动作 {
+        设置全局变量(A, 射线命中玩家(全局.B, 全局.C, 全局.D, 全局.E, 真));
+        设置全局变量(A, 射线命中位置(全局.B, 全局.C, 全局.D, 全局.E, 假));
+        设置全局变量(A, 射线命中法线(全局.B, 全局.C, 全局.D, 全局.E, 真));
+        设置全局变量(A, 除(除(乘(乘(-3, 999999999999), 999999999999), 999999999999), 10));
+        设置全局变量(A, 截取字符串(全局.B, 2, 4));
+        持续追踪玩家变量(事件玩家, B, 9999, 3, 终点及持续时间);
+        持续追踪玩家变量(事件玩家, B, 9999, 3, 终点及持续时间);
+        追踪玩家变量频率(事件玩家, B, 9999, 3, 速率及最终值);
+        持续追踪全局变量(B, 9999, 真, 终点及持续时间);
+        追踪全局变量频率(B, 99999, 真, 速率及最终值);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("test"), 空, 空, 左边, 真, 颜色(红色), 空, 空, 可见和字符串, 始终可见);
+        创建HUD文本(所有玩家(所有队伍), 空, 空, 自定义字符串("test"), 左边, 真, 空, 空, 颜色(红色), 可见和字符串, 始终可见);
+        创建HUD文本(所有玩家(所有队伍), 空, 自定义字符串("test"), 空, 左边, 真, 空, 颜色(红色), 空, 可见和字符串, 始终可见);
+        创建HUD文本(空, 自定义字符串("azer"), 自定义字符串("dqsf"), 自定义字符串("fdsq"), 左边, -1, 颜色(红色), 颜色(白色), 颜色(黄色), 可见性，排序规则和字符串, 始终不可见);
+        等待(假, 无视条件);
+        设置全局变量(A, 距离最近的玩家(全局.B, 全局.C));
+        设置全局变量(A, 首个(已排序的数组(已过滤的数组(所有存活玩家(全局.C), 已重生(当前数组元素)), 相距距离(当前数组元素, 全局.B))));
+        设置全局变量(A, 首个(已排序的数组(已过滤的数组(所有存活玩家(全局.C), 已重生(当前数组元素)), 相距距离(当前数组元素, 全局.B))));
+        设置全局变量(A, 距离最远的玩家(全局.B, 全局.C));
+        设置全局变量(A, 首个(已排序的数组(已过滤的数组(所有存活玩家(全局.C), 已重生(当前数组元素)), 乘(-1, 相距距离(当前数组元素, 全局.B)))));
+        设置全局变量(A, 首个(已排序的数组(已过滤的数组(所有存活玩家(全局.C), 已重生(当前数组元素)), 乘(-1, 相距距离(当前数组元素, 全局.B)))));
+        设置全局变量(A, 距离准星最近的玩家(全局.A, 全局.B));
+        设置全局变量(A, 首个(已排序的数组(已过滤的数组(所有存活玩家(全局.B), 与(已重生(当前数组元素), 比较(当前数组元素, !=, 全局.A))), 矢量间夹角(面朝方向(全局.A), 减(当前数组元素, 眼睛位置(全局.A))))));
+        设置全局变量(A, 首个(已排序的数组(已过滤的数组(所有存活玩家(全局.B), 与(已重生(当前数组元素), 比较(当前数组元素, !=, 全局.A))), 矢量间夹角(面朝方向(全局.A), 减(当前数组元素, 眼睛位置(全局.A))))));
+        设置全局变量(A, 比较(矢量间夹角(全局.B, 数组随机取值(全局.C)), <=, 以角度为单位的反正弦值(除(数组随机取值(全局.E), 相距距离(全局.B, 全局.D)))));
         "Color.YELLOW"
-        Set Global Variable(A, Color(Yellow));
+        设置全局变量(A, 颜色(黄色));
     }
 }
 
-rule ("beams") {
-    event {
-        Ongoing - Global;
+规则 ("beams") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Create Beam Effect(Global.A, Grapple Beam, Global.B, Global.C, Null, Visible To Position and Radius);
-        Create Beam Effect(Global.A, Grapple Beam, Vector(Global.A, Global.B, Global.C), Vector(Global.A, Global.D, Global.C), Null, Visible To Position and Radius);
-        Create Beam Effect(Global.A, Grapple Beam, Vector(Global.Z, Global.B, Global.C), Vector(Global.A, Global.D, Global.C), Null, Visible To Position and Radius);
-        Create Beam Effect(Global.A, Good Beam, Vector(Global.A, Global.B, Global.C), Vector(Global.A, Global.D, Global.C), Color(White), Visible To Position and Radius);
-        Create Beam Effect(Global.A, Good Beam, Vector(Global.A, Global.B, Global.C), Vector(Global.A, Global.D, Global.C), Color(White), Visible To Position and Radius);
-        Create Beam Effect(Global.A, Bad Beam, Vector(Global.A, Global.B, Global.C), Vector(Global.A, Global.D, Global.C), Color(White), Visible To Position and Radius);
-        Create Beam Effect(Global.A, Bad Beam, Vector(Global.A, Global.B, Global.C), Vector(Global.A, Global.D, Global.Z), Color(White), Visible To Position and Radius);
+    动作 {
+        创建光束效果(全局.A, 抓钩光束, 全局.B, 全局.C, 空, 可见，位置和半径);
+        创建光束效果(全局.A, 抓钩光束, 矢量(全局.A, 全局.B, 全局.C), 矢量(全局.A, 全局.D, 全局.C), 空, 可见，位置和半径);
+        创建光束效果(全局.A, 抓钩光束, 矢量(全局.Z, 全局.B, 全局.C), 矢量(全局.A, 全局.D, 全局.C), 空, 可见，位置和半径);
+        创建光束效果(全局.A, 有益光束, 矢量(全局.A, 全局.B, 全局.C), 矢量(全局.A, 全局.D, 全局.C), 颜色(白色), 可见，位置和半径);
+        创建光束效果(全局.A, 有益光束, 矢量(全局.A, 全局.B, 全局.C), 矢量(全局.A, 全局.D, 全局.C), 颜色(白色), 可见，位置和半径);
+        创建光束效果(全局.A, 有害光束, 矢量(全局.A, 全局.B, 全局.C), 矢量(全局.A, 全局.D, 全局.C), 颜色(白色), 可见，位置和半径);
+        创建光束效果(全局.A, 有害光束, 矢量(全局.A, 全局.B, 全局.C), 矢量(全局.A, 全局.D, 全局.Z), 颜色(白色), 可见，位置和半径);
     }
 }
 
-rule ("vectors") {
-    event {
-        Ongoing - Global;
+规则 ("vectors") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Vector(Global.B, Global.C, Global.D));
-        Set Global Variable(A, X Component Of(Global.B));
+    动作 {
+        设置全局变量(A, 矢量(全局.B, 全局.C, 全局.D));
+        设置全局变量(A, X方向分量(全局.B));
         "B"
-        Set Global Variable(A, Global.B);
+        设置全局变量(A, 全局.B);
         "C"
-        Set Global Variable(A, Global.C);
+        设置全局变量(A, 全局.C);
         "D"
-        Set Global Variable(A, Global.D);
+        设置全局变量(A, 全局.D);
         "Vector.UP"
-        Set Global Variable(A, Up);
+        设置全局变量(A, 上);
     }
 }
 
-rule ("optimizations with literals") {
-    event {
-        Ongoing - Global;
+规则 ("optimizations with literals") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "4"
-        Modify Global Variable(A, Append To Array, 4);
+        修改全局变量(A, 添加至数组, 4);
         "3"
-        Modify Global Variable(A, Append To Array, 3);
+        修改全局变量(A, 添加至数组, 3);
         "4"
-        Modify Global Variable(A, Append To Array, 4);
+        修改全局变量(A, 添加至数组, 4);
         "3"
-        Modify Global Variable(A, Append To Array, 3);
+        修改全局变量(A, 添加至数组, 3);
         "5"
-        Modify Global Variable(A, Append To Array, 5);
+        修改全局变量(A, 添加至数组, 5);
         "1.012"
-        Modify Global Variable(A, Append To Array, 1.012195761452095);
+        修改全局变量(A, 添加至数组, 1.012195761452095);
         "3.1415"
-        Modify Global Variable(A, Append To Array, 3.141592653589793);
+        修改全局变量(A, 添加至数组, 3.141592653589793);
         "113.633"
-        Modify Global Variable(A, Append To Array, 0.034597891672104);
+        修改全局变量(A, 添加至数组, 0.034597891672104);
         "-0.302"
-        Modify Global Variable(A, Append To Array, -0.304692654015397);
+        修改全局变量(A, 添加至数组, -0.304692654015397);
         "36.865"
-        Modify Global Variable(A, Append To Array, 0.011231213088677);
+        修改全局变量(A, 添加至数组, 0.011231213088677);
         "1.584"
-        Modify Global Variable(A, Append To Array, 1.583839065425504);
+        修改全局变量(A, 添加至数组, 1.583839065425504);
         "140.057"
-        Modify Global Variable(A, Append To Array, 0.042663877670413);
+        修改全局变量(A, 添加至数组, 0.042663877670413);
         "0.996"
-        Modify Global Variable(A, Append To Array, 0.996090498505521);
+        修改全局变量(A, 添加至数组, 0.996090498505521);
         "-0.934"
-        Modify Global Variable(A, Append To Array, -0.933580426497201);
+        修改全局变量(A, 添加至数组, -0.933580426497201);
         "vect(3951, -3165, -6406)"
-        Modify Global Variable(A, Append To Array, Vector(3951, -3165, -6406));
+        修改全局变量(A, 添加至数组, 矢量(3951, -3165, -6406));
         "vect(-0.182, 0.273, 0.945)"
-        Modify Global Variable(A, Append To Array, Vector(-0.182127177225397, 0.273190765838096, 0.944561536786621));
+        修改全局变量(A, 添加至数组, 矢量(-0.182127177225397, 0.273190765838096, 0.944561536786621));
         "1014.740"
-        Modify Global Variable(A, Append To Array, 1014.7403608805555);
+        修改全局变量(A, 添加至数组, 1014.7403608805555);
         "43498"
-        Modify Global Variable(A, Append To Array, 43498);
+        修改全局变量(A, 添加至数组, 43498);
         "Team 2"
-        Modify Global Variable(A, Append To Array, Team 2);
+        修改全局变量(A, 添加至数组, 队伍2);
         "Team 1"
-        Modify Global Variable(A, Append To Array, Team 1);
+        修改全局变量(A, 添加至数组, 队伍1);
         "All Teams"
-        Modify Global Variable(A, Append To Array, All Teams);
+        修改全局变量(A, 添加至数组, 所有队伍);
         "0"
-        Modify Global Variable(A, Append To Array, Null);
+        修改全局变量(A, 添加至数组, 空);
         "3"
-        Modify Global Variable(A, Append To Array, 3);
+        修改全局变量(A, 添加至数组, 3);
         "4"
-        Modify Global Variable(A, Append To Array, 4);
+        修改全局变量(A, 添加至数组, 4);
         "13.287"
-        Modify Global Variable(A, Append To Array, 13.28771237954945);
+        修改全局变量(A, 添加至数组, 13.28771237954945);
         "9.210"
-        Modify Global Variable(A, Append To Array, 9.210340371976184);
+        修改全局变量(A, 添加至数组, 9.210340371976184);
         "32"
-        Modify Global Variable(A, Append To Array, 32);
+        修改全局变量(A, 添加至数组, 32);
         "-31"
-        Modify Global Variable(A, Append To Array, -31);
+        修改全局变量(A, 添加至数组, -31);
         "vect(-0.017, 0.433, 0.901)"
-        Modify Global Variable(A, Append To Array, Vector(-0.017380968387966, 0.433187212130861, 0.901136361037656));
+        修改全局变量(A, 添加至数组, 矢量(-0.017380968387966, 0.433187212130861, 0.901136361037656));
         "0.704"
-        Modify Global Variable(A, Append To Array, 0.703595051234721);
+        修改全局变量(A, 添加至数组, 0.703595051234721);
         "-0.218"
-        Modify Global Variable(A, Append To Array, -0.218143241396542);
+        修改全局变量(A, 添加至数组, -0.218143241396542);
         "0"
-        Modify Global Variable(A, Append To Array, Null);
+        修改全局变量(A, 添加至数组, 空);
         "9.656"
-        Modify Global Variable(A, Append To Array, 9.655568341635826);
+        修改全局变量(A, 添加至数组, 9.655568341635826);
         "1.364"
-        Modify Global Variable(A, Append To Array, 1.363873635438722);
+        修改全局变量(A, 添加至数组, 1.363873635438722);
         "-36.648"
-        Modify Global Variable(A, Append To Array, -36.64847484990379);
+        修改全局变量(A, 添加至数组, -36.64847484990379);
         "vect(342, -88, 68)"
-        Modify Global Variable(A, Append To Array, Vector(342, -88, 68));
+        修改全局变量(A, 添加至数组, 矢量(342, -88, 68));
     }
 }
 
-rule ("optimizations for function combinations") {
-    event {
-        Ongoing - Global;
+规则 ("optimizations for function combinations") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "directionTowards(x, y)"
-        Set Global Variable(A, Direction Towards(Global.X, Global.Y));
+        设置全局变量(A, 方向(全局.X, 全局.Y));
         "is dead(B)"
-        Set Global Variable(A, Is Dead(Global.B));
+        设置全局变量(A, 死亡(全局.B));
         "is alive(B)"
-        Set Global Variable(A, Is Alive(Global.B));
+        设置全局变量(A, 存活(全局.B));
         "getPlayersOnHero(C, B)"
-        Set Global Variable(A, Players On Hero(Global.C, Global.B));
+        设置全局变量(A, 选择英雄的玩家(全局.C, 全局.B));
         "getPlayersOnObjective(B)"
-        Set Global Variable(A, All Players On Objective(Global.B));
+        设置全局变量(A, 所有目标点内玩家(全局.B));
         "getPlayersNotOnObjective(B)"
-        Set Global Variable(A, All Players Not On Objective(Global.B));
+        设置全局变量(A, 所有目标点外玩家(全局.B));
         "getLivingPlayers(B)"
-        Set Global Variable(A, All Living Players(Global.B));
+        设置全局变量(A, 所有存活玩家(全局.B));
         "getDeadPlayers(B)"
-        Set Global Variable(A, All Dead Players(Global.B));
+        设置全局变量(A, 所有死亡玩家(全局.B));
         "getNumberOfPlayers(B)"
-        Set Global Variable(A, Number Of Players(Global.B));
+        设置全局变量(A, 玩家数量(全局.B));
         "getNumberOfPlayersOnObjective(B)"
-        Set Global Variable(A, Number Of Players On Objective(Global.B));
+        设置全局变量(A, 目标点上玩家数量(全局.B));
         "getNumberOfHeroes(B, C)"
-        Set Global Variable(A, Number Of Heroes(Global.B, Global.C));
+        设置全局变量(A, 英雄数量(全局.B, 全局.C));
         "getNumberOfLivingPlayers(B)"
-        Set Global Variable(A, Number Of Living Players(Global.B));
+        设置全局变量(A, 存活玩家数量(全局.B));
         "getNumberOfDeadPlayers(B)"
-        Set Global Variable(A, Number Of Dead Players(Global.B));
+        设置全局变量(A, 死亡玩家数量(全局.B));
     }
 }
 
-rule ("default arguments") {
-    event {
-        Ongoing - Global;
+规则 ("default arguments") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Create HUD Text(All Players(All Teams), 1234, Null, Null, Left, False, Color(White), Null, Null, Visible To Sort Order String and Color, Default Visibility);
-        Create HUD Text(Global.A, 1234, Null, Null, Left, False, Color(White), Null, Null, Visible To Sort Order String and Color, Default Visibility);
-        Create HUD Text(Global.A, 1234, Null, Null, Left, False, Color(White), Null, Null, Visible To Sort Order String and Color, Default Visibility);
-        Create HUD Text(Global.A, 1234, Null, Null, Left, False, Color(White), Null, Null, Visible To Sort Order String and Color, Default Visibility);
-        Wait(False, Ignore Condition);
-        Start Facing(Global.C, Vector(True, 2, 3), 999999999999, To World, Direction and Turn Rate);
-        Start Facing(Global.C, Vector(True, 2, 3), 999999999999, To Player, Direction and Turn Rate);
-        Set Global Variable(D, Ammo(Global.D, False));
-        Set Global Variable(E, Array Slice(Global.E, 5, 999999999999));
-        Set Global Variable(E, Array Slice(Global.E, 5, 7));
+    动作 {
+        创建HUD文本(所有玩家(所有队伍), 1234, 空, 空, 左边, 假, 颜色(白色), 空, 空, 可见，排序规则，字符串和颜色, 默认可见度);
+        创建HUD文本(全局.A, 1234, 空, 空, 左边, 假, 颜色(白色), 空, 空, 可见，排序规则，字符串和颜色, 默认可见度);
+        创建HUD文本(全局.A, 1234, 空, 空, 左边, 假, 颜色(白色), 空, 空, 可见，排序规则，字符串和颜色, 默认可见度);
+        创建HUD文本(全局.A, 1234, 空, 空, 左边, 假, 颜色(白色), 空, 空, 可见，排序规则，字符串和颜色, 默认可见度);
+        等待(假, 无视条件);
+        开始朝向(全局.C, 矢量(真, 2, 3), 999999999999, 至地图, 方向及角速率);
+        开始朝向(全局.C, 矢量(真, 2, 3), 999999999999, 至玩家, 方向及角速率);
+        设置全局变量(D, 弹药(全局.D, 假));
+        设置全局变量(E, 数组分割(全局.E, 5, 999999999999));
+        设置全局变量(E, 数组分割(全局.E, 5, 7));
     }
 }
 

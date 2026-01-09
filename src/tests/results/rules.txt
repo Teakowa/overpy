@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -8,124 +8,124 @@ variables {
         23: X
         24: Y
         25: Z
-    player:
+    玩家:
         0: A
         1: B
 }
 //Optimize for size enabled
-rule ("normal") {
-    event {
-        Ongoing - Global;
+规则 ("normal") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Modify Global Variable(A, Add, True);
-        Modify Global Variable(B, Add, True);
-    }
-}
-
-rule ("event player") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
-    }
-    actions {
-        Modify Player Variable(Event Player, A, Add, True);
+    动作 {
+        修改全局变量(A, 加, 真);
+        修改全局变量(B, 加, 真);
     }
 }
 
-rule ("filter on team+hero") {
-    event {
-        Player Took Damage;
-        Team 1;
-        Ana;
+规则 ("event player") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    actions {
-        Modify Player Variable(Victim, A, Add, True);
-    }
-}
-
-rule ("filter on team+slot") {
-    event {
-        Player Received Healing;
-        All;
-        Slot 3;
-    }
-    actions {
-        Modify Player Variable(Healer, B, Add, True);
+    动作 {
+        修改玩家变量(事件玩家, A, 加, 真);
     }
 }
 
-disabled rule ("other directives") {
-    event {
-        Player Died;
-        All;
-        All;
+规则 ("filter on team+hero") {
+    事件 {
+        玩家受到伤害;
+        队伍1;
+        安娜;
+    }
+    动作 {
+        修改玩家变量(被攻击方, A, 加, 真);
     }
 }
 
-rule ("conditions") {
-    event {
-        Ongoing - Global;
+规则 ("filter on team+slot") {
+    事件 {
+        玩家受到治疗;
+        双方;
+        栏位 3;
     }
-    conditions {
-        Global.A != False;
-        Global.B != False;
-        Global.X != False;
-        Global.Y != False;
-        Global.Z != False;
-        Global.W != False;
-        Global.C != False;
-    }
-    actions {
-        Modify Global Variable(B, Add, True);
+    动作 {
+        修改玩家变量(治疗者, B, 加, 真);
     }
 }
 
-rule ("condition that is always true") {
-    event {
-        Ongoing - Global;
-    }
-    actions {
-        Modify Global Variable(B, Add, True);
+禁用 规则 ("other directives") {
+    事件 {
+        玩家阵亡;
+        双方;
+        全部;
     }
 }
 
-rule ("rule condition test 1") {
-    event {
-        Ongoing - Global;
+规则 ("conditions") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    条件 {
+        全局.A != 假;
+        全局.B != 假;
+        全局.X != 假;
+        全局.Y != 假;
+        全局.Z != 假;
+        全局.W != 假;
+        全局.C != 假;
+    }
+    动作 {
+        修改全局变量(B, 加, 真);
+    }
+}
+
+规则 ("condition that is always true") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
+        修改全局变量(B, 加, 真);
+    }
+}
+
+规则 ("rule condition test 1") {
+    事件 {
+        持续 - 全局;
+    }
+    动作 {
         "true"
-        Set Global Variable(A, True);
+        设置全局变量(A, 真);
     }
 }
 
-rule ("rule condition test 2") {
-    event {
-        Ongoing - Global;
+规则 ("rule condition test 2") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.A != False;
-        Global.B != False;
-        Global.C != False;
-        Global.D == 2;
+    条件 {
+        全局.A != 假;
+        全局.B != 假;
+        全局.C != 假;
+        全局.D == 2;
     }
-    actions {
+    动作 {
         "A and B and C and D == 2"
-        Set Global Variable(A, ((Global.A) && (Global.B) && (Global.C) && (Compare(Global.D, ==, 2))));
+        设置全局变量(A, ((全局.A) && (全局.B) && (全局.C) && (比较(全局.D, ==, 2))));
     }
 }
 
-rule ("rule condition test 3") {
-    event {
-        Ongoing - Global;
+规则 ("rule condition test 3") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
-        Global.A != False;
+    条件 {
+        全局.A != 假;
     }
-    actions {
-        Set Global Variable(A, ((Global.A)));
+    动作 {
+        设置全局变量(A, ((全局.A)));
     }
 }
 

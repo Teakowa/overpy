@@ -1,33 +1,33 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
 }
-subroutines {
+子程序 {
     0: Sub0
     1: bar
     2: foo
 }
 //Optimize for size enabled
-rule ("my subroutine") {
-    event {
-        Subroutine;
+规则 ("my subroutine") {
+    事件 {
+        子程序;
         foo;
     }
-    actions {
-        Modify Global Variable(A, Add, True);
-        Call Subroutine(bar);
-        Start Rule(Sub0, Do Nothing);
+    动作 {
+        修改全局变量(A, 加, 真);
+        调用子程序(bar);
+        开始规则(Sub0, 无动作);
     }
 }
 
-rule ("Subroutine Sub0") {
-    event {
-        Subroutine;
+规则 ("Subroutine Sub0") {
+    事件 {
+        子程序;
         Sub0;
     }
-    actions {
-        Modify Global Variable(B, Add, True);
+    动作 {
+        修改全局变量(B, 加, 真);
     }
 }
 
