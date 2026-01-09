@@ -151920,6 +151920,38 @@ var customGameSettingsSchema = (
               "zh-TW": "\u731B\u8E8D\u8DDD\u96E2"
             }
           }
+        },
+        "wuyang": {
+          "values": {
+            "secondaryFireCost%": {
+              "values": "__percent__",
+              "min": 0,
+              "max": 500,
+              "default": 100,
+              "zh-CN": "\u517B\u795E\u6CC9\u6D88\u8017\u901F\u5EA6"
+            },
+            "secondaryFireRegen%": {
+              "values": "__percent__",
+              "min": 0,
+              "max": 500,
+              "default": 100,
+              "zh-CN": "\u517B\u795E\u6CC9\u5145\u80FD\u901F\u5EA6"
+            },
+            "ability1Duration%": {
+              "values": "__percent__",
+              "min": 10,
+              "max": 500,
+              "default": 100,
+              "zh-CN": "\u98DE\u6D41\u6B65\u6301\u7EED\u65F6\u95F4\u500D\u7387"
+            },
+            "ability2Kb%": {
+              "values": "__percent__",
+              "min": 10,
+              "max": 500,
+              "default": 100,
+              "zh-CN": "\u7FFB\u6C5F\u6D6A\u51FB\u9000\u500D\u7387"
+            }
+          }
         }
       },
       "guid": "000000010046",
