@@ -1,28 +1,28 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
         3: D
 }
 //Optimize for size enabled
-rule ("comments") {
-    event {
-        Ongoing - Global;
+规则 ("comments") {
+    事件 {
+        持续 - 全局;
     }
-    conditions {
+    条件 {
         "A"
-        Global.A != False;
+        全局.A != 假;
         "B"
-        Global.B != False;
+        全局.B != 假;
     }
-    actions {
+    动作 {
         "C++"
-        Modify Global Variable(C, Add, True);
+        修改全局变量(C, 加, 真);
         "D++"
-        Modify Global Variable(D, Add, True);
+        修改全局变量(D, 加, 真);
         "nothing\nsome array"
-        Set Global Variable(A, Array(1, 2, 3));
+        设置全局变量(A, 数组(1, 2, 3));
     }
 }
 

@@ -1,13 +1,13 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
 }
-rule ("5") {
-    event {
-        Ongoing - Global;
+规则 ("5") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, 5);
+    动作 {
+        设置全局变量(A, 5);
     }
 }
 

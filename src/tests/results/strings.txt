@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -11,150 +11,150 @@ variables {
         8: owo
         127: __holygrail__
 }
-rule ("<fg00FFFFFF>OverPy <­tx> / <­fg> setup code</fg>") {
-    event {
-        Ongoing - Global;
+规则 ("<fg00FFFFFF>OverPy <­tx> / <­fg> setup code</fg>") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "By Zezombye"
-        Create Dummy Bot(All Heroes, If-Then-Else(Number Of Slots(Team 1), Team 1, If-Then-Else(Number Of Slots(Team 2), Team 2, True)), False, Null, Null);
+        生成机器人(全部英雄, If-Then-Else(栏位数量(队伍1), 队伍1, If-Then-Else(栏位数量(队伍2), 队伍2, 真)), 假, 空, 空);
         "More info: https://workshop.codes/wiki/articles/tx-reference-sheet"
-        Start Forcing Dummy Bot Name(Last Created Entity, Custom String("______________________________________________________________________________________________________________________________〼"));
-        Set Global Variable(__holygrail__, String Split(First Of(Last Created Entity), Empty Array));
-        Start Forcing Dummy Bot Name(Last Created Entity, Custom String("______________________________________________________________________________________________________________________________ࡀ"));
-        Set Global Variable(__holygrail__, String Slice(String Replace(Custom String("______________________________________________________________________________________________________________________________〼"), Global.__holygrail__, First Of(Last Created Entity)), 126, True));
-        Destroy All Dummy Bots;
+        开始为机器人强制设置名称(最后创建的实体, 自定义字符串("______________________________________________________________________________________________________________________________〼"));
+        设置全局变量(__holygrail__, 字符串分割(首个(最后创建的实体), 空数组));
+        开始为机器人强制设置名称(最后创建的实体, 自定义字符串("______________________________________________________________________________________________________________________________ࡀ"));
+        设置全局变量(__holygrail__, 截取字符串(字符串替换(自定义字符串("______________________________________________________________________________________________________________________________〼"), 全局.__holygrail__, 首个(最后创建的实体)), 126, 真));
+        移除所有机器人;
     }
 }
 
 //Optimize for size enabled
-rule ("strings") {
-    event {
-        Ongoing - Global;
+规则 ("strings") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Create HUD Text(All Players(All Teams), Custom String("custom 'string'"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("new\nline"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("qu\"o\"tes"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("zero width space: |­|"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Null, Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Null, Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Null, Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("single '\"quotes\""), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("ｆｕｌｌｗｉｄｔｈ ｓｔｒｉｎｇ"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Βig letters string"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Set Global Variable(A, String("Hello"));
-        Create HUD Text(All Players(All Teams), Custom String("localized string"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), String("{0}, {1}, and {2}", Null, 1, 2), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Set Global Variable(A, Custom String("no tags: {{0}} {{}} <tx{{}}>"));
-        Set Global Variable(A, Custom String("ｕｗｕ {0}", Global.C));
-        Set Global Variable(A, Custom String("owo 3"));
-        Set Global Variable(B, Custom String("123145{0} {1} 0", Global.C, Add(Global.A, Global.B)));
-        Set Global Variable(B, Custom String("ｆｕｌｌｗｉｄｔｈ ａ{0}ｆ", Add(Global.A, Global.B)));
-        Set Global Variable(B, Custom String("Iοẉẹṛƈạѕẹ ạ{0}ƒ", Global.owo));
-        Set Global Variable(B, Custom String("consecutivestrings3owo"));
-        Set Global Variable(A, Add(Custom String("owo"), Custom String("uwu")));
-        Set Global Variable(A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", Global.A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", Global.A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", Global.A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", Global.A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", Global.A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", Global.A, Custom String("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}", Global.A))))))));
-        Set Global Variable(A, Custom String("A, B, B, C, D {0}{1}{1}{2}", Global.A, Global.B, Custom String("{0}{1}", Global.C, Global.D)));
-        Set Global Variable(A, Custom String("A, B, C, D {0}{1}{2}", Global.A, Global.B, Custom String("{0}{1}", Global.C, Global.D)));
-        Set Global Variable(A, Custom String("A, A, B, B {0}{0}{1}{1}", Global.A, Global.B));
-        Set Global Variable(A, Custom String("A, B, C, B, A {0}{1}{2}{1}{0}", Global.A, Global.B, Global.C));
-        Set Global Variable(A, Custom String("A, B, C, D, A, B {0}{1}{2}", Global.A, Global.B, Custom String("{0}{1}{2}", Global.C, Global.D, Custom String("{0}{1}", Global.A, Global.B))));
-        Set Global Variable(A, Custom String("{0} {1} {2} {2}", Global.A, Global.B, Global.C));
-        Set Global Variable(A, Custom String("{0} {1} {1} {2}", Global.A, Global.B, Global.C));
-        Set Global Variable(A, Custom String("{0} {1} {1} {2}", Global.A, Global.B, Custom String("{0} {1}", Global.C, Global.D)));
-        Set Global Variable(A, Custom String("{0} {1} {1} {2} {2}", Global.A, Global.B, Global.C));
-        Set Global Variable(A, Custom String("{0} {1} {2}", Global.A, Global.B, Custom String("{0} {1} {1}", Global.C, Global.D)));
-        Set Global Variable(A, Custom String("{0} {1} {2}", Global.A, Global.B, Custom String("{0} {0} {1}", Global.C, Global.D)));
-        Create HUD Text(All Players(All Teams), Custom String("Multiple fields {0} {1} {2}", Global.A, Global.B, Custom String("{0} {1} {2}", Global.C, Global.D, Custom String("{0} {1} {2}", Global.E, Global.F, Custom String("{0} {1}", Global.G, Global.H)))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Numbered fields {0} {1} {2}", Global.A, Global.B, Custom String("{0} {1} {2}", Global.C, Global.B, Global.D)), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Numbered fields 2 {0}{1}{2}{0}", Global.B, Global.A, Global.C), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Missing field: {0} {1}", Global.A, Global.C), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Missing field 2: {0} {1}", Global.B, Global.C), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Null fields: 0 0 0"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Ｖｅｒｙ ｌｏｎｇ ｓｔｒｉｎｇ ｔｈａｔ ｗｉｌｌ ｎｅｅｄ ｔｏ ｂｅ ｓｐｌｉｔｔｅｄ ａｌｏｎｇ ｓｅｖｅｒａｌ ｓｔｒｉｎｇｓ， ａｓ ｉｔ ｉｓ ｆｕｌｌｗｉｄｔｈ ａｎｄ ｔａｋｅｓ ｍｏｒｅ ｔｈａｎ １２８ ｃｈａｒａｃｔｅｒｓ ｗ{0}", Custom String("ｈｉｃｈ ｉｓ ｔｈｅ ｌｉｍｉｔ")), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("String with entities: a■b　c"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("String with  hex escape and   unicode escape"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Cạѕẹ-ѕẹṇѕіṭіνẹ ѕṭṛіṇǥ"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("multiline\nstring"), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("{0} {1}fgFF00FFFF>texture test{1}/fg> {2}", Global.A, Global.__holygrail__, Custom String("{0} {1}txC0000000002DD21> {2}", Global.B, Global.__holygrail__, Global.C)), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("{0} {1}fgFF00FFFF>texture test{1}/fg> {2}", Global.B, Global.__holygrail__, Custom String("{0} {1}txC0000000002DD21> {2}", Global.C, Global.__holygrail__, Global.A)), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("{0}txC0000000002DD21>", Global.__holygrail__), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("{0}txC00000000c12345> {0}txC00000000000003>", Global.__holygrail__), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("{0}tx{1}>", Global.__holygrail__, Global.A), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Optimized strings: 123.45 123|string| {0}", Global.A), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Optimized strings 2: {0} 0.13 0.10{1}txc0000000002dd21> {2}", Global.A, Global.__holygrail__, Custom String("{0} other string {1}{1}", Global.B, Global.C)), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Custom String("Optimized strings 3: |str1|{0}|str2|", Global.A), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Set Global Variable(A, String Split(Custom String("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", Custom String("0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0{0}", Custom String("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", Custom String("0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0{0}", Custom String("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", Custom String("0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0{0}", Custom String("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", Custom String("0a0a0a0a0a0a0a0a0a0a0a0a")))))))), First Of(Null)));
-        Set Global Variable(A, String Split(Custom String("a,b,c"), Custom String(",")));
-        Set Global Variable(A, Index Of String Char(Custom String("abc"), Custom String("b")));
-        Set Global Variable(A, Custom String("a;b;c"));
-        Set Global Variable(A, Custom String("b"));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars||____{0}", Custom String("_________________________________________________________________________________________________________120 chars||_________{0}", Custom String("____________________________________________________________________________________________________120 chars|"))));
-        Set Global Variable(A, Custom String("{0}{1}{2}", Global.A, Global.B, Custom String("{0}|_____________________________________________________________________________________________________________120 chars|{1}", Global.C, Global.D)));
+    动作 {
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("custom 'string'"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("new\nline"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("qu\"o\"tes"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("zero width space: |­|"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 空, 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 空, 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 空, 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("single '\"quotes\""), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("ｆｕｌｌｗｉｄｔｈ ｓｔｒｉｎｇ"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Βig letters string"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        设置全局变量(A, 字符串("问候"));
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("localized string"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 字符串("{0}，{1}和{2}", 空, 1, 2), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        设置全局变量(A, 自定义字符串("no tags: {{0}} {{}} <tx{{}}>"));
+        设置全局变量(A, 自定义字符串("ｕｗｕ {0}", 全局.C));
+        设置全局变量(A, 自定义字符串("owo 3"));
+        设置全局变量(B, 自定义字符串("123145{0} {1} 0", 全局.C, 加(全局.A, 全局.B)));
+        设置全局变量(B, 自定义字符串("ｆｕｌｌｗｉｄｔｈ ａ{0}ｆ", 加(全局.A, 全局.B)));
+        设置全局变量(B, 自定义字符串("Iοẉẹṛƈạѕẹ ạ{0}ƒ", 全局.owo));
+        设置全局变量(B, 自定义字符串("consecutivestrings3owo"));
+        设置全局变量(A, 加(自定义字符串("owo"), 自定义字符串("uwu")));
+        设置全局变量(A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", 全局.A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", 全局.A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", 全局.A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", 全局.A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", 全局.A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}{1}", 全局.A, 自定义字符串("{0}{0}{0}{0}{0}{0}{0}{0}{0}{0}", 全局.A))))))));
+        设置全局变量(A, 自定义字符串("A, B, B, C, D {0}{1}{1}{2}", 全局.A, 全局.B, 自定义字符串("{0}{1}", 全局.C, 全局.D)));
+        设置全局变量(A, 自定义字符串("A, B, C, D {0}{1}{2}", 全局.A, 全局.B, 自定义字符串("{0}{1}", 全局.C, 全局.D)));
+        设置全局变量(A, 自定义字符串("A, A, B, B {0}{0}{1}{1}", 全局.A, 全局.B));
+        设置全局变量(A, 自定义字符串("A, B, C, B, A {0}{1}{2}{1}{0}", 全局.A, 全局.B, 全局.C));
+        设置全局变量(A, 自定义字符串("A, B, C, D, A, B {0}{1}{2}", 全局.A, 全局.B, 自定义字符串("{0}{1}{2}", 全局.C, 全局.D, 自定义字符串("{0}{1}", 全局.A, 全局.B))));
+        设置全局变量(A, 自定义字符串("{0} {1} {2} {2}", 全局.A, 全局.B, 全局.C));
+        设置全局变量(A, 自定义字符串("{0} {1} {1} {2}", 全局.A, 全局.B, 全局.C));
+        设置全局变量(A, 自定义字符串("{0} {1} {1} {2}", 全局.A, 全局.B, 自定义字符串("{0} {1}", 全局.C, 全局.D)));
+        设置全局变量(A, 自定义字符串("{0} {1} {1} {2} {2}", 全局.A, 全局.B, 全局.C));
+        设置全局变量(A, 自定义字符串("{0} {1} {2}", 全局.A, 全局.B, 自定义字符串("{0} {1} {1}", 全局.C, 全局.D)));
+        设置全局变量(A, 自定义字符串("{0} {1} {2}", 全局.A, 全局.B, 自定义字符串("{0} {0} {1}", 全局.C, 全局.D)));
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Multiple fields {0} {1} {2}", 全局.A, 全局.B, 自定义字符串("{0} {1} {2}", 全局.C, 全局.D, 自定义字符串("{0} {1} {2}", 全局.E, 全局.F, 自定义字符串("{0} {1}", 全局.G, 全局.H)))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Numbered fields {0} {1} {2}", 全局.A, 全局.B, 自定义字符串("{0} {1} {2}", 全局.C, 全局.B, 全局.D)), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Numbered fields 2 {0}{1}{2}{0}", 全局.B, 全局.A, 全局.C), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Missing field: {0} {1}", 全局.A, 全局.C), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Missing field 2: {0} {1}", 全局.B, 全局.C), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Null fields: 0 0 0"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Ｖｅｒｙ ｌｏｎｇ ｓｔｒｉｎｇ ｔｈａｔ ｗｉｌｌ ｎｅｅｄ ｔｏ ｂｅ ｓｐｌｉｔｔｅｄ ａｌｏｎｇ ｓｅｖｅｒａｌ ｓｔｒｉｎｇｓ， ａｓ ｉｔ ｉｓ ｆｕｌｌｗｉｄｔｈ ａｎｄ ｔａｋｅｓ ｍｏｒｅ ｔｈａｎ １２８ ｃｈａｒａｃｔｅｒｓ ｗ{0}", 自定义字符串("ｈｉｃｈ ｉｓ ｔｈｅ ｌｉｍｉｔ")), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("String with entities: a■b　c"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("String with  hex escape and   unicode escape"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Cạѕẹ-ѕẹṇѕіṭіνẹ ѕṭṛіṇǥ"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("multiline\nstring"), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("{0} {1}fgFF00FFFF>texture test{1}/fg> {2}", 全局.A, 全局.__holygrail__, 自定义字符串("{0} {1}txC0000000002DD21> {2}", 全局.B, 全局.__holygrail__, 全局.C)), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("{0} {1}fgFF00FFFF>texture test{1}/fg> {2}", 全局.B, 全局.__holygrail__, 自定义字符串("{0} {1}txC0000000002DD21> {2}", 全局.C, 全局.__holygrail__, 全局.A)), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("{0}txC0000000002DD21>", 全局.__holygrail__), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("{0}txC00000000c12345> {0}txC00000000000003>", 全局.__holygrail__), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("{0}tx{1}>", 全局.__holygrail__, 全局.A), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Optimized strings: 123.45 123|string| {0}", 全局.A), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Optimized strings 2: {0} 0.13 0.10{1}txc0000000002dd21> {2}", 全局.A, 全局.__holygrail__, 自定义字符串("{0} other string {1}{1}", 全局.B, 全局.C)), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 自定义字符串("Optimized strings 3: |str1|{0}|str2|", 全局.A), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        设置全局变量(A, 字符串分割(自定义字符串("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", 自定义字符串("0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0{0}", 自定义字符串("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", 自定义字符串("0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0{0}", 自定义字符串("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", 自定义字符串("0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0{0}", 自定义字符串("a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a{0}", 自定义字符串("0a0a0a0a0a0a0a0a0a0a0a0a")))))))), 首个(空)));
+        设置全局变量(A, 字符串分割(自定义字符串("a,b,c"), 自定义字符串(",")));
+        设置全局变量(A, 字符串字符索引(自定义字符串("abc"), 自定义字符串("b")));
+        设置全局变量(A, 自定义字符串("a;b;c"));
+        设置全局变量(A, 自定义字符串("b"));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars||____{0}", 自定义字符串("_________________________________________________________________________________________________________120 chars||_________{0}", 自定义字符串("____________________________________________________________________________________________________120 chars|"))));
+        设置全局变量(A, 自定义字符串("{0}{1}{2}", 全局.A, 全局.B, 自定义字符串("{0}|_____________________________________________________________________________________________________________120 chars|{1}", 全局.C, 全局.D)));
         "should not be split"
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12345678"));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12345678"));
         "should be split"
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12345{0}", Custom String("6789")));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12345{0}", 自定义字符串("6789")));
         "should not be split"
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12345{0}", Global.A));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|1234{0}5", Global.A));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|123{0}56", Global.A));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12{0}456", Global.A));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12{0}{1}", Global.A, Global.B));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|1{0}{1}2", Global.A, Global.B));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|{0}1{1}2", Global.A, Global.B));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12345{0}", 全局.A));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|1234{0}5", 全局.A));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|123{0}56", 全局.A));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12{0}456", 全局.A));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12{0}{1}", 全局.A, 全局.B));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|1{0}{1}2", 全局.A, 全局.B));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|{0}1{1}2", 全局.A, 全局.B));
         "should be split"
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12345{0}", Custom String("6{0}", Global.A)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12345{0}", Custom String("{0}6", Global.A)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|1234{0}", Custom String("{0}56", Global.A)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|123{0}", Custom String("{0}456", Global.A)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|123{0}", Custom String("{0}{1}4", Global.A, Global.B)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|123{0}", Custom String("{0}4{1}", Global.A, Global.B)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12{0}{1}", Global.A, Custom String("34{0}", Global.B)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|12{0}{1}", Global.A, Custom String("3{0}4", Global.B)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|1{0}2{1}", Global.A, Custom String("{0}34", Global.B)));
-        Set Global Variable(A, Custom String("|_____________________________________________________________________________________________________________120 chars|{0}{1}", Global.A, Custom String("{0}{1}", Global.B, Global.C)));
-        Set Global Variable(A, Custom String("[{0}] LEAVE EDIT MODE\n{1} CREATE BOT\n{2}", Global.B, Global.C, Custom String("{0} GRAB BOT\n[{1}] REMOVE BOT\n[{2}", Global.D, Global.E, Custom String("{0}] + [{1}] REMOVE ALL BOTS\n[{2}", Global.A, Global.E, Custom String("{0}] PLACE RESET MARKER\n[{1}] + [{0}] REMOVE RESET MARKER\n[{2}", Global.F, Global.A, Custom String("{0}] INCREASE PLACEMENT DISTANCE\n[{1}] + [{0}] DECREASE PLACEMENT DISTANCE", Global.G, Global.A))))));
-        Set Global Variable(A, Custom String("{0} CREATE BOT {1}\n{2}", Global.B, Global.C, Custom String("{0} GRAB BOT\n[{1}] REMOVE BOT\n[{2}", Global.D, Global.E, Custom String("{0}] + [{1}] REMOVE ALL BOTS\n[{1}] PLACE RESET MARKER\n[{0}] + [{1}] REMOVE RESET MARKER\n[{2}", Global.A, Global.E, Custom String("{0}] INCREASE PLACEMENT DISTANCE\n[{1}] + [{0}] DECREASE PLACEMENT DISTANCE", Global.F, Global.A)))));
-        Set Global Variable(A, Custom String("{0}fgFFFFFFF0>{0}TX C0000000002DD21>{0}TX C0000000002DD21>{0}TX C0000000002DD21>{0}TX C0000000002DD21>", Global.A));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12345{0}", 自定义字符串("6{0}", 全局.A)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12345{0}", 自定义字符串("{0}6", 全局.A)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|1234{0}", 自定义字符串("{0}56", 全局.A)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|123{0}", 自定义字符串("{0}456", 全局.A)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|123{0}", 自定义字符串("{0}{1}4", 全局.A, 全局.B)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|123{0}", 自定义字符串("{0}4{1}", 全局.A, 全局.B)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12{0}{1}", 全局.A, 自定义字符串("34{0}", 全局.B)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|12{0}{1}", 全局.A, 自定义字符串("3{0}4", 全局.B)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|1{0}2{1}", 全局.A, 自定义字符串("{0}34", 全局.B)));
+        设置全局变量(A, 自定义字符串("|_____________________________________________________________________________________________________________120 chars|{0}{1}", 全局.A, 自定义字符串("{0}{1}", 全局.B, 全局.C)));
+        设置全局变量(A, 自定义字符串("[{0}] LEAVE EDIT MODE\n{1} CREATE BOT\n{2}", 全局.B, 全局.C, 自定义字符串("{0} GRAB BOT\n[{1}] REMOVE BOT\n[{2}", 全局.D, 全局.E, 自定义字符串("{0}] + [{1}] REMOVE ALL BOTS\n[{2}", 全局.A, 全局.E, 自定义字符串("{0}] PLACE RESET MARKER\n[{1}] + [{0}] REMOVE RESET MARKER\n[{2}", 全局.F, 全局.A, 自定义字符串("{0}] INCREASE PLACEMENT DISTANCE\n[{1}] + [{0}] DECREASE PLACEMENT DISTANCE", 全局.G, 全局.A))))));
+        设置全局变量(A, 自定义字符串("{0} CREATE BOT {1}\n{2}", 全局.B, 全局.C, 自定义字符串("{0} GRAB BOT\n[{1}] REMOVE BOT\n[{2}", 全局.D, 全局.E, 自定义字符串("{0}] + [{1}] REMOVE ALL BOTS\n[{1}] PLACE RESET MARKER\n[{0}] + [{1}] REMOVE RESET MARKER\n[{2}", 全局.A, 全局.E, 自定义字符串("{0}] INCREASE PLACEMENT DISTANCE\n[{1}] + [{0}] DECREASE PLACEMENT DISTANCE", 全局.F, 全局.A)))));
+        设置全局变量(A, 自定义字符串("{0}fgFFFFFFF0>{0}TX C0000000002DD21>{0}TX C0000000002DD21>{0}TX C0000000002DD21>{0}TX C0000000002DD21>", 全局.A));
     }
 }
 
-rule ("optimizations") {
-    event {
-        Ongoing - Global;
+规则 ("optimizations") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "3"
-        Set Global Variable(A, 3);
-        Set Global Variable(A, String Length(Custom String("owo{0}", Global.A)));
+        设置全局变量(A, 3);
+        设置全局变量(A, 字符串长度(自定义字符串("owo{0}", 全局.A)));
         "true"
-        Set Global Variable(A, True);
-        Set Global Variable(A, String Contains(Custom String("owo{0}", Global.A), Custom String("uwu")));
+        设置全局变量(A, 真);
+        设置全局变量(A, 字符串包含(自定义字符串("owo{0}", 全局.A), 自定义字符串("uwu")));
         "uwu"
-        Set Global Variable(A, Custom String("uwu"));
-        Set Global Variable(A, String Replace(Custom String("owo"), Custom String("o"), Custom String("u{0}", Global.A)));
+        设置全局变量(A, 自定义字符串("uwu"));
+        设置全局变量(A, 字符串替换(自定义字符串("owo"), 自定义字符串("o"), 自定义字符串("u{0}", 全局.A)));
         "\"d\""
-        Set Global Variable(B, Custom String("d"));
+        设置全局变量(B, 自定义字符串("d"));
         "\"\""
-        Set Global Variable(C, Custom String(""));
+        设置全局变量(C, 自定义字符串(""));
         "\"a\""
-        Set Global Variable(D, Custom String("a"));
+        设置全局变量(D, 自定义字符串("a"));
         "\"def\""
-        Set Global Variable(E, Custom String("def"));
+        设置全局变量(E, 自定义字符串("def"));
         "\"abcd\""
-        Set Global Variable(F, Custom String("abcd"));
+        设置全局变量(F, 自定义字符串("abcd"));
         "\"\""
-        Set Global Variable(G, Custom String(""));
+        设置全局变量(G, 自定义字符串(""));
         "should not be optimized"
-        Set Global Variable(A, String Split(Custom String("ab|cd|ef"), Custom String("|")));
+        设置全局变量(A, 字符串分割(自定义字符串("ab|cd|ef"), 自定义字符串("|")));
         //Optimize for size enabled
         ".split(null[0])"
-        Set Global Variable(A, String Split(Custom String("a0b"), First Of(Null)));
+        设置全局变量(A, 字符串分割(自定义字符串("a0b"), 首个(空)));
         ".split(Vector.LEFT[0])"
-        Set Global Variable(A, String Split(Custom String("0(1.00, 0.00, 0.00)1(1.00, 0.00, 0.00)2"), First Of(Left)));
+        设置全局变量(A, 字符串分割(自定义字符串("0(1.00, 0.00, 0.00)1(1.00, 0.00, 0.00)2"), 首个(左)));
         ".split(\"\\uEC51\")"
-        Set Global Variable(A, String Split(Custom String("0(1.00, 0.00, 0.00)123"), Custom String("")));
+        设置全局变量(A, 字符串分割(自定义字符串("0(1.00, 0.00, 0.00)123"), 自定义字符串("")));
     }
 }
 

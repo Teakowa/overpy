@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -8,214 +8,214 @@ variables {
         23: X
         24: Y
         25: Z
-    player:
+    玩家:
         0: A
 }
-rule ("array literals") {
-    event {
-        Ongoing - Global;
+规则 ("array literals") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "empty array"
-        Set Global Variable(A, Empty Array);
-        Set Global Variable(A, Array(1, 2, 3));
-        Set Global Variable(A, Value In Array(Global.A, Global.B));
+        设置全局变量(A, 空数组);
+        设置全局变量(A, 数组(1, 2, 3));
+        设置全局变量(A, 数组中的值(全局.A, 全局.B));
         "first of(B)"
-        Set Global Variable(A, First Of(Global.B));
+        设置全局变量(A, 首个(全局.B));
         "B"
-        Set Global Variable(A, Global.B);
+        设置全局变量(A, 全局.B);
         "C"
-        Set Global Variable(A, Global.C);
+        设置全局变量(A, 全局.C);
         "0"
-        Set Global Variable(A, Null);
+        设置全局变量(A, 空);
         "C"
-        Set Global Variable(A, Global.C);
+        设置全局变量(A, 全局.C);
         "D"
-        Set Global Variable(A, Global.D);
+        设置全局变量(A, 全局.D);
         "D"
-        Set Global Variable(A, Global.D);
+        设置全局变量(A, 全局.D);
         "0"
-        Set Global Variable(A, Null);
-        Set Global Variable(A, Array(Array(1, 2), Array(3, 4)));
-        Set Global Variable At Index(A, 0, First Of(Global.B));
+        设置全局变量(A, 空);
+        设置全局变量(A, 数组(数组(1, 2), 数组(3, 4)));
+        在索引处设置全局变量(A, 0, 首个(全局.B));
     }
 }
 
-rule ("last") {
-    event {
-        Ongoing - Global;
+规则 ("last") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Last Of(Global.B));
+    动作 {
+        设置全局变量(A, 最后(全局.B));
         "D"
-        Set Global Variable(A, Global.D);
+        设置全局变量(A, 全局.D);
     }
 }
 
-rule ("filtered array") {
-    event {
-        Ongoing - Global;
+规则 ("filtered array") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Filtered Array(All Players(All Teams), Compare((Current Array Element).A, ==, 2)));
-        Set Global Variable(A, Filtered Array(All Players(All Teams), Compare(Current Array Element, !=, Compare(Global.B, ==, Current Array Element))));
+    动作 {
+        设置全局变量(A, 已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).A, ==, 2)));
+        设置全局变量(A, 已过滤的数组(所有玩家(所有队伍), 比较(当前数组元素, !=, 比较(全局.B, ==, 当前数组元素))));
         "getAllPlayers.remove(B)"
-        Set Global Variable(A, Remove From Array(All Players(All Teams), Global.B));
+        设置全局变量(A, 从数组中移除(所有玩家(所有队伍), 全局.B));
         "getAllPlayers() if A == B else []"
-        Set Global Variable(A, If-Then-Else(Compare(Global.A, ==, Global.B), All Players(All Teams), Empty Array));
+        设置全局变量(A, If-Then-Else(比较(全局.A, ==, 全局.B), 所有玩家(所有队伍), 空数组));
         "getAllPlayers()"
-        Set Global Variable(A, All Players(All Teams));
-        Set Global Variable(A, Filtered Array(All Players(All Teams), Compare(Current Array Element, !=, Current Array Index)));
-        Set Global Variable(A, Mapped Array(Filtered Array(All Players(All Teams), Compare((Current Array Element).A, ==, 2)), Health(Current Array Element)));
+        设置全局变量(A, 所有玩家(所有队伍));
+        设置全局变量(A, 已过滤的数组(所有玩家(所有队伍), 比较(当前数组元素, !=, 当前数组索引)));
+        设置全局变量(A, 映射的数组(已过滤的数组(所有玩家(所有队伍), 比较((当前数组元素).A, ==, 2)), 生命值(当前数组元素)));
         "mapped array()"
-        Set Global Variable(A, Mapped Array(All Players(All Teams), Health(Current Array Element)));
+        设置全局变量(A, 映射的数组(所有玩家(所有队伍), 生命值(当前数组元素)));
     }
 }
 
-rule ("mapped array") {
-    event {
-        Ongoing - Global;
+规则 ("mapped array") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Mapped Array(All Players(All Teams), Health(Current Array Element)));
+    动作 {
+        设置全局变量(A, 映射的数组(所有玩家(所有队伍), 生命值(当前数组元素)));
         "getAllPlayers()"
-        Set Global Variable(A, All Players(All Teams));
+        设置全局变量(A, 所有玩家(所有队伍));
     }
 }
 
-rule ("index") {
-    event {
-        Ongoing - Global;
+规则 ("index") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Index Of Array Value(Global.B, 3));
+    动作 {
+        设置全局变量(A, 数组值的索引(全局.B, 3));
         "[A,B].index(B)"
-        Set Global Variable(A, Index Of Array Value(Array(Global.A, Global.B), Global.B));
+        设置全局变量(A, 数组值的索引(数组(全局.A, 全局.B), 全局.B));
         "-1"
-        Set Global Variable(A, -1);
+        设置全局变量(A, -1);
         "2"
-        Set Global Variable(A, 2);
+        设置全局变量(A, 2);
         "should not be optimized"
-        Set Global Variable(A, Index Of Array Value(Array(1, 2, Global.B, 3), 3));
+        设置全局变量(A, 数组值的索引(数组(1, 2, 全局.B, 3), 3));
         "-1"
-        Set Global Variable(A, -1);
+        设置全局变量(A, -1);
         "should not be optimized"
-        Set Global Variable(A, Index Of Array Value(Array(1, 2, 3, Global.B), 123));
+        设置全局变量(A, 数组值的索引(数组(1, 2, 3, 全局.B), 123));
     }
 }
 
-rule ("slice") {
-    event {
-        Ongoing - Global;
+规则 ("slice") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Array Slice(Global.B, 1, 3));
+    动作 {
+        设置全局变量(A, 数组分割(全局.B, 1, 3));
         "[4]"
-        Set Global Variable(A, Array(4));
+        设置全局变量(A, 数组(4));
         "[4,5]"
-        Set Global Variable(A, Array(4, 5));
+        设置全局变量(A, 数组(4, 5));
         "[]"
-        Set Global Variable(A, Empty Array);
+        设置全局变量(A, 空数组);
         "[]"
-        Set Global Variable(A, Empty Array);
+        设置全局变量(A, 空数组);
         "[1]"
-        Set Global Variable(A, Array(1));
+        设置全局变量(A, 数组(1));
         "[1,2,3]"
-        Set Global Variable(A, Array(1, 2, 3));
+        设置全局变量(A, 数组(1, 2, 3));
     }
 }
 
-rule ("in") {
-    event {
-        Ongoing - Global;
+规则 ("in") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
+    动作 {
         "true"
-        Set Global Variable(A, True);
+        设置全局变量(A, 真);
         "true"
-        Set Global Variable(A, True);
+        设置全局变量(A, 真);
         "false"
-        Set Global Variable(A, False);
+        设置全局变量(A, 假);
         "false"
-        Set Global Variable(A, False);
+        设置全局变量(A, 假);
         "123 == B"
-        Set Global Variable(A, Compare(123, ==, Global.B));
+        设置全局变量(A, 比较(123, ==, 全局.B));
     }
 }
 
-rule ("exclude") {
-    event {
-        Ongoing - Global;
+规则 ("exclude") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Remove From Array(Global.B, 3));
+    动作 {
+        设置全局变量(A, 从数组中移除(全局.B, 3));
         "should not be optimized"
-        Set Global Variable(A, Remove From Array(Array(Global.B, Global.C, Global.D), Global.C));
+        设置全局变量(A, 从数组中移除(数组(全局.B, 全局.C, 全局.D), 全局.C));
         "[1,3]"
-        Set Global Variable(A, Array(1, 3));
+        设置全局变量(A, 数组(1, 3));
         "[1,D].exclude(2)"
-        Set Global Variable(A, Remove From Array(Array(1, Global.D), 2));
+        设置全局变量(A, 从数组中移除(数组(1, 全局.D), 2));
         "[2]"
-        Set Global Variable(A, Array(2));
+        设置全局变量(A, 数组(2));
         "[2,3].exclude([D])"
-        Set Global Variable(A, Remove From Array(Array(2, 3), Array(Global.D)));
+        设置全局变量(A, 从数组中移除(数组(2, 3), 数组(全局.D)));
     }
 }
 
-rule ("concat") {
-    event {
-        Ongoing - Global;
+规则 ("concat") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Append To Array(Global.B, 2));
+    动作 {
+        设置全局变量(A, 添加至数组(全局.B, 2));
         "[B,C,123]"
-        Set Global Variable(A, Array(Global.B, Global.C, 123));
+        设置全局变量(A, 数组(全局.B, 全局.C, 123));
         "should not be optimized"
-        Set Global Variable(A, Append To Array(Array(Global.B, Global.C), Global.A));
+        设置全局变量(A, 添加至数组(数组(全局.B, 全局.C), 全局.A));
         "[B,C,D,E]"
-        Set Global Variable(A, Array(Global.B, Global.C, Global.D, Global.E));
+        设置全局变量(A, 数组(全局.B, 全局.C, 全局.D, 全局.E));
     }
 }
 
-rule ("other array functions") {
-    event {
-        Ongoing - Global;
+规则 ("other array functions") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Is True For All(All Players(All Teams), Compare((Current Array Element).A, ==, 2)));
-        Set Global Variable(A, Is True For Any(All Players(All Teams), Compare((Current Array Element).A, ==, 2)));
-        Set Global Variable(A, Is True For Any(And(Global.A, Global.B), Array Contains(Global.C, Current Array Element)));
-        Set Global Variable(A, Is True For Any(If-Then-Else(Global.B, Global.A, Global.C), Compare(Current Array Element, ==, 2)));
-        Set Global Variable(A, Is True For All(All Players(All Teams), Current Array Element));
-        Set Global Variable(A, Sorted Array(Global.A, Add(Current Array Element, 2)));
-        Set Global Variable(A, Sorted Array(Global.A, Current Array Element));
-        Modify Global Variable(A, Remove From Array By Index, 1);
-        Modify Global Variable(A, Append To Array, 3);
-        Modify Global Variable(A, Remove From Array By Value, 3);
+    动作 {
+        设置全局变量(A, 对全部为“真”(所有玩家(所有队伍), 比较((当前数组元素).A, ==, 2)));
+        设置全局变量(A, 对任意为“真”(所有玩家(所有队伍), 比较((当前数组元素).A, ==, 2)));
+        设置全局变量(A, 对任意为“真”(与(全局.A, 全局.B), 数组包含(全局.C, 当前数组元素)));
+        设置全局变量(A, 对任意为“真”(If-Then-Else(全局.B, 全局.A, 全局.C), 比较(当前数组元素, ==, 2)));
+        设置全局变量(A, 对全部为“真”(所有玩家(所有队伍), 当前数组元素));
+        设置全局变量(A, 已排序的数组(全局.A, 加(当前数组元素, 2)));
+        设置全局变量(A, 已排序的数组(全局.A, 当前数组元素));
+        修改全局变量(A, 根据索引从数组中移除, 1);
+        修改全局变量(A, 添加至数组, 3);
+        修改全局变量(A, 根据值从数组中移除, 3);
         "Z,Y,X"
-        Set Global Variable(A, Array(Global.Z, Global.Y, Global.X));
-        Set Global Variable(A, Sorted Array(Global.B, Multiply(-1, Current Array Index)));
+        设置全局变量(A, 数组(全局.Z, 全局.Y, 全局.X));
+        设置全局变量(A, 已排序的数组(全局.B, 乘(-1, 当前数组索引)));
     }
 }
 
-rule ("array to string") {
-    event {
-        Ongoing - Global;
+规则 ("array to string") {
+    事件 {
+        持续 - 全局;
     }
-    actions {
-        Set Global Variable(A, Array(10, 20, 30));
-        Set Global Variable(B, Array(100));
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.A, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("…"), String Slice(Custom String("…"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(4, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 0), Custom String("+{0}", Divide(Value In Array(Current Array Element, 1), 3)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.A, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, …", Value In Array(Current Array Element, 2)), String Slice(Custom String("0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(7, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 3), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 1)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.A, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, {1}, …", Value In Array(Current Array Element, 2), Value In Array(Current Array Element, 3)), String Slice(Custom String("0, 0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(10, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 6), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 2)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.A, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, {1}, {2}, …", Value In Array(Current Array Element, 2), Value In Array(Current Array Element, 3), Value In Array(Current Array Element, 4)), String Slice(Custom String("0, 0, 0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(13, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 9), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 3)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.A, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, {1}, {2}", Value In Array(Current Array Element, 2), Value In Array(Current Array Element, 3), Custom String("{0}, {1}, …", Value In Array(Current Array Element, 4), Value In Array(Current Array Element, 5))), String Slice(Custom String("0, 0, 0, 0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(16, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 12), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 4)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Empty Array, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("…"), String Slice(Custom String("…"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(4, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 0), Custom String("+{0}", Divide(Value In Array(Current Array Element, 1), 3)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Empty Array, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, …", Value In Array(Current Array Element, 2)), String Slice(Custom String("0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(7, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 3), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 1)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Empty Array, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, {1}, …", Value In Array(Current Array Element, 2), Value In Array(Current Array Element, 3)), String Slice(Custom String("0, 0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(10, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 6), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 2)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.B, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("…"), String Slice(Custom String("…"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(4, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 0), Custom String("+{0}", Divide(Value In Array(Current Array Element, 1), 3)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.B, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, …", Value In Array(Current Array Element, 2)), String Slice(Custom String("0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(7, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 3), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 1)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
-        Create HUD Text(All Players(All Teams), Mapped Array(Mapped Array(Array(Mapped Array(Global.B, If-Then-Else(Or(Compare(Count Of(Current Array Element), ==, 1), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), Custom String("[{0}]", Current Array Element), If-Then-Else(Count Of(Current Array Element), Custom String("[{0}, …+{1}]", Current Array Element, Subtract(Count Of(Current Array Element), 1)), Current Array Element)))), Append To Array(Append To Array(Or(Count Of(Current Array Element), And(Compare(Current Array Element, ==, Empty Array), Compare(Current Array Element, !=, Null))), If-Then-Else(And(Not(Count Of(Current Array Element)), Compare(Current Array Element, !=, Empty Array)), 3, Multiply(Count Of(Current Array Element), 3))), Current Array Element)), If-Then-Else(First Of(Current Array Element), Custom String("[{0}{1}]", String Replace(Custom String("{0}, {1}, …", Value In Array(Current Array Element, 2), Value In Array(Current Array Element, 3)), String Slice(Custom String("0, 0, …"), Add(-2, Value In Array(Current Array Element, 1)), Subtract(10, Value In Array(Current Array Element, 1))), Empty Array), If-Then-Else(Compare(Value In Array(Current Array Element, 1), >, 6), Custom String("+{0}", Subtract(Divide(Value In Array(Current Array Element, 1), 3), 2)), Empty Array)), String Split(Value In Array(Current Array Element, 2), Empty Array))), Custom String("                                                                                                                             {0}", Custom String("                                             ")), Null, Left, -9999, Color(Orange), Null, Null, Visible To and String, Default Visibility);
+    动作 {
+        设置全局变量(A, 数组(10, 20, 30));
+        设置全局变量(B, 数组(100));
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.A, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("…"), 截取字符串(自定义字符串("…"), 加(-2, 数组中的值(当前数组元素, 1)), 减(4, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 0), 自定义字符串("+{0}", 除(数组中的值(当前数组元素, 1), 3)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.A, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, …", 数组中的值(当前数组元素, 2)), 截取字符串(自定义字符串("0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(7, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 3), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 1)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.A, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, {1}, …", 数组中的值(当前数组元素, 2), 数组中的值(当前数组元素, 3)), 截取字符串(自定义字符串("0, 0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(10, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 6), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 2)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.A, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, {1}, {2}, …", 数组中的值(当前数组元素, 2), 数组中的值(当前数组元素, 3), 数组中的值(当前数组元素, 4)), 截取字符串(自定义字符串("0, 0, 0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(13, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 9), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 3)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.A, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, {1}, {2}", 数组中的值(当前数组元素, 2), 数组中的值(当前数组元素, 3), 自定义字符串("{0}, {1}, …", 数组中的值(当前数组元素, 4), 数组中的值(当前数组元素, 5))), 截取字符串(自定义字符串("0, 0, 0, 0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(16, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 12), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 4)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(空数组, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("…"), 截取字符串(自定义字符串("…"), 加(-2, 数组中的值(当前数组元素, 1)), 减(4, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 0), 自定义字符串("+{0}", 除(数组中的值(当前数组元素, 1), 3)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(空数组, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, …", 数组中的值(当前数组元素, 2)), 截取字符串(自定义字符串("0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(7, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 3), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 1)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(空数组, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, {1}, …", 数组中的值(当前数组元素, 2), 数组中的值(当前数组元素, 3)), 截取字符串(自定义字符串("0, 0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(10, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 6), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 2)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.B, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("…"), 截取字符串(自定义字符串("…"), 加(-2, 数组中的值(当前数组元素, 1)), 减(4, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 0), 自定义字符串("+{0}", 除(数组中的值(当前数组元素, 1), 3)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.B, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, …", 数组中的值(当前数组元素, 2)), 截取字符串(自定义字符串("0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(7, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 3), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 1)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
+        创建HUD文本(所有玩家(所有队伍), 映射的数组(映射的数组(数组(映射的数组(全局.B, If-Then-Else(或(比较(数量(当前数组元素), ==, 1), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), 自定义字符串("[{0}]", 当前数组元素), If-Then-Else(数量(当前数组元素), 自定义字符串("[{0}, …+{1}]", 当前数组元素, 减(数量(当前数组元素), 1)), 当前数组元素)))), 添加至数组(添加至数组(或(数量(当前数组元素), 与(比较(当前数组元素, ==, 空数组), 比较(当前数组元素, !=, 空))), If-Then-Else(与(非(数量(当前数组元素)), 比较(当前数组元素, !=, 空数组)), 3, 乘(数量(当前数组元素), 3))), 当前数组元素)), If-Then-Else(首个(当前数组元素), 自定义字符串("[{0}{1}]", 字符串替换(自定义字符串("{0}, {1}, …", 数组中的值(当前数组元素, 2), 数组中的值(当前数组元素, 3)), 截取字符串(自定义字符串("0, 0, …"), 加(-2, 数组中的值(当前数组元素, 1)), 减(10, 数组中的值(当前数组元素, 1))), 空数组), If-Then-Else(比较(数组中的值(当前数组元素, 1), >, 6), 自定义字符串("+{0}", 减(除(数组中的值(当前数组元素, 1), 3), 2)), 空数组)), 字符串分割(数组中的值(当前数组元素, 2), 空数组))), 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")), 空, 左边, -9999, 颜色(橙色), 空, 空, 可见和字符串, 默认可见度);
     }
 }
 

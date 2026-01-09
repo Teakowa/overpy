@@ -1,5 +1,5 @@
-variables {
-    global:
+变量 {
+    全局:
         0: A
         1: B
         2: C
@@ -14,32 +14,32 @@ variables {
         18: S
 }
 //Optimize for size enabled
-rule ("enums") {
-    event {
-        Ongoing - Each Player;
-        All;
-        All;
+规则 ("enums") {
+    事件 {
+        持续 - 每名玩家;
+        双方;
+        全部;
     }
-    conditions {
-        Is Button Held(Event Player, Button(Interact)) == True;
-        Global.A != False;
+    条件 {
+        按钮被按下(事件玩家, 按钮(互动)) == 真;
+        全局.A != 假;
     }
-    actions {
-        Set Global Variable(A, All Teams);
-        Set Global Variable(B, Hero(Brigitte));
-        Set Global Variable(C, Map(Black Forest Winter));
-        Set Global Variable(D, Compare(Current Game Mode, ==, Game Mode(Assault)));
-        Set Global Variable(E, Button(Interact));
-        Set Global Variable(F, Is Button Held(Event Player, Button(Interact)));
-        Start Holding Button(Event Player, Button(Melee));
-        Start Forcing Player To Be Hero(Event Player, Hero(Ana));
-        Wait(False, Abort When False);
-        Set Global Variable(G, Backward);
-        Set Global Variable(H, Add(Add(Add(Random Integer(True, 2), Random Value In Array(Global.A)), Random Real(1.2, 3.4)), Randomized Array(Global.A)));
-        Set Global Variable(I, 2.718281828459045);
-        Set Global Variable(J, 3.141592653589793);
-        Set Global Variable(K, Color(Blue));
-        Set Global Variable(S, Custom String("                                                                                                                             {0}", Custom String("                                             ")));
+    动作 {
+        设置全局变量(A, 所有队伍);
+        设置全局变量(B, 英雄(布丽吉塔));
+        设置全局变量(C, 地图(圣诞节黑森林));
+        设置全局变量(D, 比较(当前游戏模式, ==, 游戏模式(攻防作战)));
+        设置全局变量(E, 按钮(互动));
+        设置全局变量(F, 按钮被按下(事件玩家, 按钮(互动)));
+        开始按下按钮(事件玩家, 按钮(近身攻击));
+        开始强制玩家选择英雄(事件玩家, 英雄(安娜));
+        等待(假, 当为“假”时中止);
+        设置全局变量(G, 后);
+        设置全局变量(H, 加(加(加(随机整数(真, 2), 数组随机取值(全局.A)), 随机实数(1.2, 3.4)), 随机数组(全局.A)));
+        设置全局变量(I, 2.718281828459045);
+        设置全局变量(J, 3.141592653589793);
+        设置全局变量(K, 颜色(蓝色));
+        设置全局变量(S, 自定义字符串("                                                                                                                             {0}", 自定义字符串("                                             ")));
     }
 }
 
