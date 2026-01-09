@@ -118,7 +118,7 @@ for (let file of opyFiles) {
     let compileResult;
     try {
         await readyPromise;
-        compileResult = (await compile(inputContent, "en-US", compileTestsFolder, file)).result;
+        compileResult = (await compile(inputContent, "zh-CN", compileTestsFolder, file)).result;
     } catch (error) {
         console.error(`Test ${file} failed:`);
         console.error(error);
