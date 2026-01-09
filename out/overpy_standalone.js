@@ -151952,6 +151952,34 @@ var customGameSettingsSchema = (
               "zh-CN": "\u7FFB\u6C5F\u6D6A\u51FB\u9000\u500D\u7387"
             }
           }
+        },
+        "vendetta": {
+          "values": {
+            "secondaryFireRegen%": {
+              "values": "__percent__",
+              "min": 10,
+              "max": 500,
+              "default": 100,
+              "en-US": "Warding Stance",
+              "zh-CN": "\u62DB\u67B6\u59FF\u6001\u6062\u590D\u500D\u7387"
+            },
+            "ability1Distance%": {
+              "values": "__percent__",
+              "min": 10,
+              "max": 500,
+              "default": 100,
+              "en-US": "Whirlwind Dash",
+              "zh-CN": "\u65CB\u98CE\u75BE\u6B65\u8DDD\u79BB"
+            },
+            "ability2Distance%": {
+              "values": "__percent__",
+              "min": 10,
+              "max": 500,
+              "default": 100,
+              "en-US": "Soaring Slice",
+              "zh-CN": "\u98DE\u7A7A\u65A9\u51FB"
+            }
+          }
         }
       },
       "guid": "000000010046",

@@ -90,7 +90,9 @@ settings {
             },
             "vendetta": {
                 "damageDealt%": 120,
-                "ability1Cooldown%": 10
+                "secondaryFireRegen%": 200,
+                "ability1Cooldown%": 10,
+                "ability1Distance%": 120
             },
             "hazard": {
                 "damageDealt%": 120,

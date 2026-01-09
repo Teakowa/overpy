@@ -7593,6 +7593,34 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "zh-CN": "翻江浪击退倍率"
                     }
                 }
+            },
+            "vendetta": {
+                "values": {
+                    "secondaryFireRegen%": {
+                        "values": "__percent__",
+                        "min": 10,
+                        "max": 500,
+                        "default": 100,
+                        "en-US": "Warding Stance",
+                        "zh-CN": "招架姿态恢复倍率"
+                    },
+                    "ability1Distance%": {
+                        "values": "__percent__",
+                        "min": 10,
+                        "max": 500,
+                        "default": 100,
+                        "en-US": "Whirlwind Dash",
+                        "zh-CN": "旋风疾步距离"
+                    },
+                    "ability2Distance%": {
+                        "values": "__percent__",
+                        "min": 10,
+                        "max": 500,
+                        "default": 100,
+                        "en-US": "Soaring Slice",
+                        "zh-CN": "飞空斩击"
+                    }
+                }
             }
         },
         "guid": "000000010046",
