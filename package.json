@@ -1,5 +1,6 @@
 {
     "name": "overpy-bastion",
+    "private": true,
     "publisher": "teakovva",
     "displayName": "OverPy Bastion",
     "repository": {
