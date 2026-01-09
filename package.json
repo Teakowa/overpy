@@ -10,19 +10,22 @@
     "version": "9.4.9",
     "scripts": {
         "dev": "node esbuild.standalone.js --watch",
+        "clean": "rimraf out",
         "compile": "node esbuild.js",
         "compile-standalone": "node esbuild.standalone.js",
         "watch": "npm-run-all -p watch:*",
         "watch:esbuild": "node esbuild.js --watch",
         "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
         "package": "pnpm run check-types && pnpm run lint && pnpm run test && node esbuild.js --production && node generateJsonSchema.mjs",
+        "package:vsix": "pnpm run clean && pnpm run package && pnpm vsce package -o out/extension.vsix --no-dependencies",
         "compile-tests": "tsc -p . --outDir out",
         "watch-tests": "tsc -p . -w --outDir out",
         "check-types": "tsc --noEmit",
         "lint": "npx eslint src --ext ts",
         "test": "node esbuild.standalone.js && node runTests.mjs",
         "prepare": "husky",
-        "publish": "rm *.vsix && pnpm run package && pnpm vsce package --no-dependencies && pnpm vsce publish --no-dependencies --no-update-package-json --no-git-tag-version"
+        "deploy:local": "pnpm run package:vsix && code --install-extension out/extension.vsix --force",
+        "publish": "pnpm run clean && pnpm run package && pnpm vsce package --no-dependencies && pnpm vsce publish --no-dependencies --no-update-package-json --no-git-tag-version"
     },
     "readme": "README.md",
     "engines": {
@@ -205,6 +208,7 @@
         "husky": "^9.1.7",
         "lint-staged": "^15.5.2",
         "npm-run-all": "^4.1.5",
+        "rimraf": "^6.1.2",
         "typescript": "^5.9.3"
     },
     "lint-staged": {
