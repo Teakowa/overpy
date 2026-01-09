@@ -145164,7 +145164,8 @@ var customGameSettingsSchema = (
               "min": 10,
               "max": 500,
               "default": 100,
-              "en-US": "Perk Generation"
+              "en-US": "Perk Generation",
+              "zh-CN": "\u5A01\u80FD\u5145\u80FD\u901F\u5EA6"
             },
             "tankPassiveHealthBonus": {
               "values": {
