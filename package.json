@@ -25,7 +25,7 @@
         "test": "node esbuild.standalone.js && node runTests.mjs",
         "prepare": "husky",
         "deploy:local": "pnpm run package:vsix && code --install-extension out/extension.vsix --force",
-        "publish": "pnpm run clean && pnpm run package && pnpm vsce package --no-dependencies && pnpm vsce publish --no-dependencies --no-update-package-json --no-git-tag-version"
+        "publish": "pnpm run package:vsix && pnpm vsce publish --no-dependencies --no-update-package-json --no-git-tag-version"
     },
     "readme": "README.md",
     "engines": {
@@ -195,6 +195,7 @@
     "devDependencies": {
         "@babel/core": "^7.28.5",
         "@babel/preset-typescript": "^7.28.5",
+        "@semantic-release/git": "^10.0.1",
         "@types/babel__standalone": "^7.1.9",
         "@types/mocha": "^10.0.10",
         "@types/node": "^20.19.24",
@@ -209,6 +210,8 @@
         "lint-staged": "^16.2.7",
         "npm-run-all": "^4.1.5",
         "rimraf": "^6.1.2",
+        "semantic-release": "^25.0.2",
+        "semantic-release-vsce": "^6.0.17",
         "typescript": "^5.9.3"
     },
     "lint-staged": {
