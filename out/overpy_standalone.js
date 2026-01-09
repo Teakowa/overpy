@@ -145164,7 +145164,8 @@ var customGameSettingsSchema = (
               "min": 10,
               "max": 500,
               "default": 100,
-              "en-US": "Perk Generation"
+              "en-US": "Perk Generation",
+              "zh-CN": "\u5A01\u80FD\u5145\u80FD\u901F\u5EA6"
             },
             "tankPassiveHealthBonus": {
               "values": {
@@ -170196,17 +170197,27 @@ var heroKw = (
     },
     "freja": {
       "en-US": "Freja",
+      "zh-CN": "\u5F17\u857E\u5A05",
+      "zh-TW": "\u5F17\u857E\u4E9E",
       "secondaryFire": {
-        "en-US": "Take Aim"
+        "en-US": "Take Aim",
+        "zh-CN": "\u7784\u51C6\u5C04\u51FB",
+        "zh-TW": "\u7CBE\u78BA\u7784\u6E96"
       },
       "ability1": {
-        "en-US": "Quick Dash"
+        "en-US": "Quick Dash",
+        "zh-CN": "\u75BE\u51B2",
+        "zh-TW": "\u5FEB\u901F\u885D\u523A"
       },
       "ability2": {
-        "en-US": "Updraft"
+        "en-US": "Updraft",
+        "zh-CN": "\u4E0A\u5347\u6C14\u6D41",
+        "zh-TW": "\u4E0A\u5347\u6C23\u6D41"
       },
       "ultimate": {
-        "en-US": "Bola Shot"
+        "en-US": "Bola Shot",
+        "zh-CN": "\u6D41\u661F\u7D22",
+        "zh-TW": "\u7E1B\u9318\u5C04\u64CA"
       }
     },
     "genji": {
@@ -173037,32 +173048,57 @@ var heroKw = (
     },
     "wuyang": {
       "en-US": "Wuyang",
+      "zh-CN": "\u65E0\u6F3E",
+      "zh-TW": "\u7121\u6F3E",
       "secondaryFire": {
-        "en-US": "Restorative Stream"
+        "en-US": "Restorative Stream",
+        "zh-CN": "\u517B\u795E\u6CC9",
+        "zh-TW": "\u6062\u5FA9\u6C34\u6D41"
       },
       "ability1": {
-        "en-US": "Rushing Torrent"
+        "en-US": "Rushing Torrent",
+        "zh-CN": "\u98DE\u6D41\u6B65",
+        "zh-TW": "\u5954\u9A30\u6D2A\u6D41"
       },
       "ability2": {
-        "en-US": "Guardian Wave"
+        "en-US": "Guardian Wave",
+        "zh-CN": "\u7FFB\u6C5F\u6D6A",
+        "zh-TW": "\u5B88\u8B77\u4E4B\u6D6A"
       },
       "ultimate": {
-        "en-US": "Tidal Blast"
+        "en-US": "Tidal Blast",
+        "zh-CN": "\u60CA\u6D9B\u7834",
+        "zh-TW": "\u6FE4\u6D6A\u7206\u767C"
       }
     },
     "vendetta": {
       "en-US": "Vendetta",
+      "zh-CN": "\u65A9\u4EC7",
+      "zh-TW": "\u5BBF\u6028",
       "primaryFire": {
-        "en-US": "Projected Edge"
+        "en-US": "Palatine Fang",
+        "zh-CN": "\u5E15\u62C9\u8482\u5C3C\u4E4B\u7259",
+        "zh-TW": "\u5E15\u62C9\u4E01\u4E4B\u7259"
+      },
+      "secondaryFire": {
+        "en-US": "Warding Stance",
+        "zh-CN": "\u62DB\u67B6\u59FF\u6001",
+        "zh-TW": "\u5B88\u5099\u67B6\u5F0F"
       },
       "ability1": {
-        "en-US": "Whirlwind Dash"
+        "en-US": "Whirlwind Dash",
+        "zh-CN": "\u65CB\u98CE\u75BE\u6B65",
+        "zh-TW": "\u65CB\u98A8\u885D\u523A"
       },
       "ability2": {
-        "en-US": "Soaring Slice"
+        "en-US": "Soaring Slice",
+        "zh-CN": "\u98DE\u7A7A\u65A9\u51FB",
+        "zh-TW": "\u98DB\u8E8D\u65AC"
       },
       "ultimate": {
-        "en-US": "Sundering Blade"
+        "en-US": "Sundering Blade",
+        "zh-CN": "\u65A9\u5730\u5DE8\u5251",
+        "zh-TW": "\u788E\u88C2\u5200\u5203"
       }
     }
   }
