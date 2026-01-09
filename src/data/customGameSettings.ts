@@ -7561,6 +7561,38 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "zh-TW": "猛躍距離"
                     }
                 }
+            },
+            "wuyang": {
+                "values": {
+                    "secondaryFireCost%": {
+                        "values": "__percent__",
+                        "min": 0,
+                        "max": 500,
+                        "default": 100,
+                        "zh-CN": "养神泉消耗速度"
+                    },
+                    "secondaryFireRegen%": {
+                        "values": "__percent__",
+                        "min": 0,
+                        "max": 500,
+                        "default": 100,
+                        "zh-CN": "养神泉充能速度"
+                    },
+                    "ability1Duration%": {
+                        "values": "__percent__",
+                        "min": 10,
+                        "max": 500,
+                        "default": 100,
+                        "zh-CN": "飞流步持续时间倍率"
+                    },
+                    "ability2Kb%": {
+                        "values": "__percent__",
+                        "min": 10,
+                        "max": 500,
+                        "default": 100,
+                        "zh-CN": "翻江浪击退倍率"
+                    }
+                }
             }
         },
         "guid": "000000010046",
