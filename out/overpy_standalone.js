@@ -150218,21 +150218,24 @@ var customGameSettingsSchema = (
               "min": 50,
               "max": 300,
               "default": 100,
-              "en-US": "Take Aim Duration"
+              "en-US": "Take Aim Duration",
+              "zh-CN": "\u7784\u51C6\u5C04\u51FB\u6301\u7EED\u65F6\u95F4"
             },
             "ability1Distance%": {
               "values": "__percent__",
               "min": 50,
               "max": 200,
               "default": 100,
-              "en-US": "Quick Dash Distance"
+              "en-US": "Quick Dash Distance",
+              "zh-CN": "\u75BE\u51B2\u8DDD\u79BB"
             },
             "ability2Height%": {
               "values": "__percent__",
               "min": 75,
               "max": 150,
               "default": 100,
-              "en-US": "Updraft Height"
+              "en-US": "Updraft Height",
+              "zh-CN": "\u4E0A\u5347\u6C14\u6D41\u9AD8\u5EA6"
             }
           }
         },
