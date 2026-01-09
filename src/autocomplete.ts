@@ -20,7 +20,7 @@ import { Ast } from "./utils/ast";
 import { builtInEnumNameToAstInfo } from "./compiler/parser";
 import { opyMacros } from "./data/opy/macros";
 
-const overpyExtension = vscode.extensions.getExtension("zezombye.overpy");
+const overpyExtension = vscode.extensions.getExtension("teakovva.overpy-bastion");
 if (overpyExtension === undefined) {
     const errorMessage = "Could not find the OverPy extension when initializing autocomplete";
     showOverPyExtensionError(errorMessage);
