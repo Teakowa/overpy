@@ -131404,7 +131404,8 @@ var mapKw = (
       "variants": {
         "default": "972777519512068153"
       },
-      "en-US": "Aatlis"
+      "en-US": "Aatlis",
+      "zh-CN": "\u963F\u7279\u5229\u65AF"
     },
     "ayutthaya": {
       "guid": "00000000676E",
