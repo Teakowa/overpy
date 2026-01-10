@@ -19,8 +19,9 @@ import { typeToString } from "./utils/logging";
 import { Ast } from "./utils/ast";
 import { builtInEnumNameToAstInfo } from "./compiler/parser";
 import { opyMacros } from "./data/opy/macros";
+import packageJson from "../package.json";
 
-const overpyExtension = vscode.extensions.getExtension("teakovva.overpy-bastion");
+const overpyExtension = vscode.extensions.getExtension(`${packageJson.publisher}.${packageJson.name}`);
 if (overpyExtension === undefined) {
     const errorMessage = "Could not find the OverPy extension when initializing autocomplete";
     showOverPyExtensionError(errorMessage);
