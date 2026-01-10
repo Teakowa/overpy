@@ -20637,6 +20637,9 @@
                                     "minimum": 0,
                                     "maximum": 500
                                 },
+                                "enableAbility3": {
+                                    "type": "boolean"
+                                },
                                 "ultGen%": {
                                     "type": "number",
                                     "minimum": 10,
@@ -26540,6 +26543,9 @@
                                     "type": "number",
                                     "minimum": 0,
                                     "maximum": 500
+                                },
+                                "enableAbility3": {
+                                    "type": "boolean"
                                 },
                                 "ultGen%": {
                                     "type": "number",
@@ -32445,6 +32451,9 @@
                                     "minimum": 0,
                                     "maximum": 500
                                 },
+                                "enableAbility3": {
+                                    "type": "boolean"
+                                },
                                 "ultGen%": {
                                     "type": "number",
                                     "minimum": 10,
@@ -38348,6 +38357,9 @@
                                     "type": "number",
                                     "minimum": 0,
                                     "maximum": 500
+                                },
+                                "enableAbility3": {
+                                    "type": "boolean"
                                 },
                                 "ultGen%": {
                                     "type": "number",
@@ -44393,6 +44405,9 @@
                             "type": "number",
                             "minimum": 0,
                             "maximum": 500
+                        },
+                        "enableAbility3": {
+                            "type": "boolean"
                         },
                         "ultGen%": {
                             "type": "number",
