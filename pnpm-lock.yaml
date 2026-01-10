@@ -24,8 +24,8 @@ importers:
         specifier: ^16.6.1
         version: 16.6.1
       js-interpreter:
-        specifier: ^5.2.1
-        version: 5.2.1
+        specifier: ^6.0.1
+        version: 6.0.1
       pofile:
         specifier: ^1.1.4
         version: 1.1.4
@@ -2119,8 +2119,8 @@ packages:
     resolution: {integrity: sha512-qjdpeo2yKlYTH7nFdK0vbZWuTCesk4o63v5iVOlhMQPfuIZQfW/HI35SjfhA+4qpg36rnFSvUK5b1m+ckIblQQ==}
     engines: {node: '>= 0.6.0'}
 
-  js-interpreter@5.2.1:
-    resolution: {integrity: sha512-offKOHFrtvQckRY0g4Bp6l4QbRUap/pFQ6HgwMgOaqqGmG7hNh21FZpHUJa99XWRyoWUlj7J/P70jHznRB4kUg==}
+  js-interpreter@6.0.1:
+    resolution: {integrity: sha512-XfPw6y1FzFwHcGYB62jzPUoSCoCSIL+dICMjRJx6f8V/AmTczeodDOaVxWc4GU4p7qeN7ieuMXNKxScoaBkJ6A==}
     hasBin: true
 
   js-tokens@4.0.0:
@@ -5968,7 +5968,7 @@ snapshots:
 
   java-properties@1.0.2: {}
 
-  js-interpreter@5.2.1:
+  js-interpreter@6.0.1:
     dependencies:
       minimist: 1.2.8
 
