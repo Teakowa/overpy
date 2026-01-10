@@ -7463,7 +7463,7 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "ru-RU": "Зубчатая стена: сила отбрасывания",
                         "th-TH": "ปรับการกระเด็นถอยหลังของแจ็กด์วอลล์",
                         "tr-TR": "Dişli Duvar Geri İtme Skaleri",
-                        "zh-CN": "尖刺墙击退倍率",
+                        "zh-CN": "尖刺墙击退",
                         "zh-TW": "鋸齒牆擊退距離"
                     },
                     "ability2Health%": {
