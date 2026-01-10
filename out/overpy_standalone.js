@@ -151771,7 +151771,7 @@ var customGameSettingsSchema = (
               "ru-RU": "\u0414\u043B\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0441\u0442\u044C \u0437\u0430\u043A\u0430\u043F\u044B\u0432\u0430\u043D\u0438\u044F",
               "th-TH": "\u0E1B\u0E23\u0E31\u0E1A\u0E23\u0E30\u0E22\u0E30\u0E40\u0E27\u0E25\u0E32\u0E40\u0E1A\u0E2D\u0E23\u0E4C\u0E42\u0E23\u0E27\u0E4C",
               "tr-TR": "Batt\u0131\xE7\u0131kt\u0131 S\xFCresi Skaleri",
-              "zh-CN": "\u94BB\u5730\u6301\u7EED\u65F6\u95F4",
+              "zh-CN": "\u94BB\u5730\u6301\u7EED\u65F6\u95F4\u500D\u7387",
               "zh-TW": "\u947D\u5730\u6301\u7E8C\u6642\u9593"
             }
           }
