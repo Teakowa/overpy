@@ -5058,7 +5058,8 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                     "include": [
                         "brigitte",
                         "hanzo",
-                        "wreckingBall"
+                        "wreckingBall",
+                        "vendetta"
                     ],
                     "en-US": "%1$s",
                     "de-DE": "%1$s",

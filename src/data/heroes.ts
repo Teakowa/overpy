@@ -3683,6 +3683,11 @@ export const heroKw: Record<Overwatch2Heroes, HeroData> =
             "zh-CN": "飞空斩击",
             "zh-TW": "飛躍斬"
         },
+        "ability3": {
+            "en-US": "Projected Edge",
+            "zh-CN": "锋锐剑气",
+            "zh-TW": "劍波"
+        },
         "ultimate": {
             "en-US": "Sundering Blade",
             "zh-CN": "斩地巨剑",

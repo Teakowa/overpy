@@ -149418,7 +149418,8 @@ var customGameSettingsSchema = (
             "include": [
               "brigitte",
               "hanzo",
-              "wreckingBall"
+              "wreckingBall",
+              "vendetta"
             ],
             "en-US": "%1$s",
             "de-DE": "%1$s",
@@ -173158,6 +173159,11 @@ var heroKw = (
         "en-US": "Soaring Slice",
         "zh-CN": "\u98DE\u7A7A\u65A9\u51FB",
         "zh-TW": "\u98DB\u8E8D\u65AC"
+      },
+      "ability3": {
+        "en-US": "Projected Edge",
+        "zh-CN": "\u950B\u9510\u5251\u6C14",
+        "zh-TW": "\u528D\u6CE2"
       },
       "ultimate": {
         "en-US": "Sundering Blade",
