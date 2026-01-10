@@ -151845,7 +151845,7 @@ var customGameSettingsSchema = (
               "ru-RU": "\u0417\u0443\u0431\u0447\u0430\u0442\u0430\u044F \u0441\u0442\u0435\u043D\u0430: \u043C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u043F\u0440\u043E\u0447\u043D\u043E\u0441\u0442\u0438",
               "th-TH": "\u0E1B\u0E23\u0E31\u0E1A\u0E1E\u0E25\u0E31\u0E07\u0E0A\u0E35\u0E27\u0E34\u0E15\u0E02\u0E2D\u0E07\u0E41\u0E08\u0E47\u0E01\u0E14\u0E4C\u0E27\u0E2D\u0E25\u0E25\u0E4C",
               "tr-TR": "Di\u015Fli Duvar Can Skaleri",
-              "zh-CN": "\u5C16\u523A\u5899\u751F\u547D\u503C\u500D\u7387",
+              "zh-CN": "\u5C16\u523A\u5899\u751F\u547D\u503C",
               "zh-TW": "\u92F8\u9F52\u7246\u751F\u547D\u503C"
             },
             "secondaryFireMovementSpeedPenalty%": {
@@ -151853,7 +151853,8 @@ var customGameSettingsSchema = (
               "min": 0,
               "max": 150,
               "default": 100,
-              "en-US": "Spike Guard Movement Speed Penalty"
+              "en-US": "Spike Guard Movement Speed Penalty",
+              "zh-CN": "\u5C16\u523A\u62A4\u4F53\u79FB\u52A8\u901F\u5EA6\u60E9\u7F5A"
             },
             "secondaryFireCost%": {
               "values": "__percent__",
@@ -151874,7 +151875,7 @@ var customGameSettingsSchema = (
               "ru-RU": "\u0428\u0438\u043F\u0430\u0441\u0442\u0430\u044F \u043E\u0431\u043E\u0440\u043E\u043D\u0430: \u043C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u0437\u0430\u0442\u0440\u0430\u0442 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432",
               "th-TH": "\u0E1B\u0E23\u0E31\u0E1A\u0E04\u0E48\u0E32\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E02\u0E2D\u0E07\u0E2A\u0E44\u0E1B\u0E04\u0E4C\u0E01\u0E32\u0E23\u0E4C\u0E14",
               "tr-TR": "Emniyet Dikeni Kaynak Maliyeti Skaleri",
-              "zh-CN": "\u5C16\u523A\u62A4\u4F53\u8D44\u6E90\u6D88\u8017\u500D\u7387",
+              "zh-CN": "\u5C16\u523A\u62A4\u4F53\u8D44\u6E90\u6D88\u8017",
               "zh-TW": "\u5C16\u523A\u9632\u79A6\u8CC7\u6E90\u6D88\u8017\u91CF"
             },
             "secondaryFireRegen%": {
@@ -151896,7 +151897,7 @@ var customGameSettingsSchema = (
               "ru-RU": "\u0428\u0438\u043F\u0430\u0441\u0442\u0430\u044F \u043E\u0431\u043E\u0440\u043E\u043D\u0430: \u043C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u0440\u0435\u0433\u0435\u043D\u0435\u0440\u0430\u0446\u0438\u0438 \u0440\u0435\u0441\u0443\u0440\u0441\u043E\u0432",
               "th-TH": "\u0E1B\u0E23\u0E31\u0E1A\u0E01\u0E32\u0E23\u0E1F\u0E37\u0E49\u0E19\u0E1F\u0E39\u0E17\u0E23\u0E31\u0E1E\u0E22\u0E32\u0E01\u0E23\u0E02\u0E2D\u0E07\u0E2A\u0E44\u0E1B\u0E04\u0E4C\u0E01\u0E32\u0E23\u0E4C\u0E14",
               "tr-TR": "Emniyet Dikeni Kaynak Yenileme Skaleri",
-              "zh-CN": "\u5C16\u523A\u62A4\u4F53\u8D44\u6E90\u6062\u590D\u500D\u7387",
+              "zh-CN": "\u5C16\u523A\u62A4\u4F53\u8D44\u6E90\u6062\u590D",
               "zh-TW": "\u5C16\u523A\u9632\u79A6\u8CC7\u6E90\u6062\u5FA9\u91CF"
             },
             "ability1Distance%": {
@@ -151918,7 +151919,7 @@ var customGameSettingsSchema = (
               "ru-RU": "\u0416\u0435\u0441\u0442\u043E\u043A\u0438\u0439 \u043D\u0430\u0441\u043A\u043E\u043A: \u043C\u043D\u043E\u0436\u0438\u0442\u0435\u043B\u044C \u0434\u0438\u0441\u0442\u0430\u043D\u0446\u0438\u0438",
               "th-TH": "\u0E1B\u0E23\u0E31\u0E1A\u0E23\u0E30\u0E22\u0E30\u0E44\u0E27\u0E42\u0E2D\u0E40\u0E25\u0E19\u0E17\u0E4C\u0E25\u0E35\u0E1E",
               "tr-TR": "Ha\u015Fin Atlay\u0131\u015F Mesafe Skaleri",
-              "zh-CN": "\u72C2\u8DC3\u8DDD\u79BB\u500D\u7387",
+              "zh-CN": "\u72C2\u8DC3\u8DDD\u79BB",
               "zh-TW": "\u731B\u8E8D\u8DDD\u96E2"
             }
           }

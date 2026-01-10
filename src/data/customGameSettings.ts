@@ -7485,7 +7485,7 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "ru-RU": "Зубчатая стена: множитель прочности",
                         "th-TH": "ปรับพลังชีวิตของแจ็กด์วอลล์",
                         "tr-TR": "Dişli Duvar Can Skaleri",
-                        "zh-CN": "尖刺墙生命值倍率",
+                        "zh-CN": "尖刺墙生命值",
                         "zh-TW": "鋸齒牆生命值"
                     },
                     "secondaryFireMovementSpeedPenalty%": {
@@ -7494,6 +7494,7 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "max": 150,
                         "default": 100,
                         "en-US": "Spike Guard Movement Speed Penalty",
+                        "zh-CN": "尖刺护体移动速度惩罚"
                     },
                     "secondaryFireCost%": {
                         "values": "__percent__",
@@ -7514,7 +7515,7 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "ru-RU": "Шипастая оборона: множитель затрат ресурсов",
                         "th-TH": "ปรับค่าทรัพยากรของสไปค์การ์ด",
                         "tr-TR": "Emniyet Dikeni Kaynak Maliyeti Skaleri",
-                        "zh-CN": "尖刺护体资源消耗倍率",
+                        "zh-CN": "尖刺护体资源消耗",
                         "zh-TW": "尖刺防禦資源消耗量"
                     },
                     "secondaryFireRegen%": {
@@ -7536,7 +7537,7 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "ru-RU": "Шипастая оборона: множитель регенерации ресурсов",
                         "th-TH": "ปรับการฟื้นฟูทรัพยากรของสไปค์การ์ด",
                         "tr-TR": "Emniyet Dikeni Kaynak Yenileme Skaleri",
-                        "zh-CN": "尖刺护体资源恢复倍率",
+                        "zh-CN": "尖刺护体资源恢复",
                         "zh-TW": "尖刺防禦資源恢復量"
                     },
                     "ability1Distance%": {
@@ -7558,7 +7559,7 @@ export const customGameSettingsSchema: CustomGameSettingSchema =
                         "ru-RU": "Жестокий наскок: множитель дистанции",
                         "th-TH": "ปรับระยะไวโอเลนท์ลีพ",
                         "tr-TR": "Haşin Atlayış Mesafe Skaleri",
-                        "zh-CN": "狂跃距离倍率",
+                        "zh-CN": "狂跃距离",
                         "zh-TW": "猛躍距離"
                     }
                 }
