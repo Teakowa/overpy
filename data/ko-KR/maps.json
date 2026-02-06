@@ -1,0 +1,4290 @@
+{
+  "00000000005B.09F": {
+    "GUID": "00000000005B.09F",
+    "Name": "아누비스 신전",
+    "Description": "헬릭스 시큐리티 인터내셔널이 보호하는 고대 아누비스 신전은 지역 안보를 좌지우지할 엄청난 비밀을 간직하고 있습니다.",
+    "Description2": "헬릭스 시큐리티 인터내셔널이 보호하는 고대 아누비스 신전은 지역 안보를 좌지우지할 엄청난 비밀을 간직하고 있습니다.",
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "00000000005B.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1D.004",
+    "Image": "0000000018EF.004",
+    "FlagImage": "000000001CFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000000D4.09F": {
+    "GUID": "0000000000D4.09F",
+    "Name": "왕의 길",
+    "Description": "부유한 주민들이 화려한 삶을 누리고 있는 왕의 길에서, 옴닉은 인간과 평등하게 살아갈 미래를 꿈꾸고 있습니다.",
+    "Description2": "부유한 주민들이 화려한 삶을 누리고 있는 왕의 길에서, 옴닉은 인간과 평등하게 살아갈 미래를 꿈꾸고 있습니다.",
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000000D4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003720C.004",
+    "Image": "00000003720B.004",
+    "FlagImage": "000000001CFC.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000006B1.09F",
+          "Name": "왕의 길",
+          "VariantName": "왕의 길 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A062.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000165.09F": {
+    "GUID": "000000000165.09F",
+    "Name": "하나무라",
+    "Description": "하나무라는 식도락과 쇼핑, 그리고 절정의 벚꽃을 즐길 수 있기로 유명한 관광지입니다. 하지만 평화로워 보이는 이 마을은 선택된 소수만 알고 있는 어두운 비밀을 품고 있습니다.",
+    "Description2": "수세기 전에 결성된 시마다 닌자 일족은 하나무라라는 고요한 마을에 정착했고, 그 오래된 장벽 안에서 무기 거래와 밀수, 암살을 통해 힘을 키웠습니다.",
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000000165.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D20.004",
+    "Image": "000000000F22.004",
+    "FlagImage": "000000001CFB.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000006B5.09F",
+          "Name": "하나무라",
+          "VariantName": "하나무라 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000184.09F": {
+    "GUID": "000000000184.09F",
+    "Name": "감시 기지: 지브롤터",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000000184.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003720D.004",
+    "Image": "00000003720E.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "0000000001D4.09F": {
+    "GUID": "0000000001D4.09F",
+    "Name": "눔바니",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000001D4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D23.004",
+    "Image": "000000004766.004",
+    "FlagImage": "000000004750.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "0000000026E3.01C",
+        "Name": "0000000026E3.01C",
+        "MapInfo": null
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "0000000001DB.09F": {
+    "GUID": "0000000001DB.09F",
+    "Name": "볼스카야 인더스트리",
+    "Description": null,
+    "Description2": null,
+    "Subline": "강물의 차가운 손길",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000001DB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D24.004",
+    "Image": "000000004734.004",
+    "FlagImage": "000000004729.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000002AF.09F": {
+    "GUID": "0000000002AF.09F",
+    "Name": "할리우드",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000002AF.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1F.004",
+    "Image": "0000000056A7.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000212E.01C",
+        "Name": "Halloween",
+        "MapInfo": {
+          "GUID": "0000000006AB.09F",
+          "Name": "할리우드",
+          "VariantName": "할리우드 (할로윈)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000002C3.09F": {
+    "GUID": "0000000002C3.09F",
+    "Name": "도라도",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000002C3.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000321E4.004",
+    "Image": "0000000321E3.004",
+    "FlagImage": "000000004775.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000004B7.09F": {
+    "GUID": "0000000004B7.09F",
+    "Name": "네팔",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "0000000004B7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000005D2A.004",
+    "Image": "0000000070EC.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000005BB.09F": {
+    "GUID": "0000000005BB.09F",
+    "Name": "66번 국도",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000005BB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003722D.004",
+    "Image": "00000003722C.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A062.01C",
+        "Name": "흐림"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000661.09F": {
+    "GUID": "000000000661.09F",
+    "Name": "튜토리얼",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "영웅을 선택하십시오",
+    "StateB": "영웅을 선택하십시오",
+    "VariantName": null,
+    "MapGUID": "000000000661.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1C.004",
+    "Image": "000000004F2B.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000662.09F": {
+    "GUID": "000000000662.09F",
+    "Name": "리장 타워",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000662.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000037211.004",
+    "Image": "000000037212.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "0000000006B7.09F",
+          "Name": "리장 타워",
+          "VariantName": "리장 타워 (설날)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": "새벽"
+      }
+    ]
+  },
+  "00000000066D.09F": {
+    "GUID": "00000000066D.09F",
+    "Name": "일리오스",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000066D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000037214.004",
+    "Image": "000000037213.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000688.09F": {
+    "GUID": "000000000688.09F",
+    "Name": "훈련장",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "영웅을 선택하십시오",
+    "StateB": "영웅을 선택하십시오",
+    "VariantName": null,
+    "MapGUID": "000000000688.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000007417.004",
+    "Image": "00000000740F.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000068D.09F": {
+    "GUID": "00000000068D.09F",
+    "Name": "아이헨발데",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "00000000068D.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000037221.004",
+    "Image": "000000037222.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000212E.01C",
+        "Name": "Halloween",
+        "MapInfo": {
+          "GUID": "0000000007F4.09F",
+          "Name": "아들러스브룬",
+          "VariantName": "아이헨발데 (할로윈)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000010654.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "000000010B54.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000069E.09F": {
+    "GUID": "00000000069E.09F",
+    "Name": "오아시스",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000069E.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "0000000006AB.09F": {
+    "GUID": "0000000006AB.09F",
+    "Name": "할리우드",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": "할리우드 (할로윈)",
+    "MapGUID": "0000000006AB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000AB40.004",
+    "Image": "00000000AB3F.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000006B1.09F": {
+    "GUID": "0000000006B1.09F",
+    "Name": "왕의 길",
+    "Description": "부유한 주민들이 화려한 삶을 누리고 있는 왕의 길에서, 옴닉은 인간과 평등하게 살아갈 미래를 꿈꾸고 있습니다.",
+    "Description2": "부유한 주민들이 화려한 삶을 누리고 있는 왕의 길에서, 옴닉은 인간과 평등하게 살아갈 미래를 꿈꾸고 있습니다.",
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": "왕의 길 (겨울)",
+    "MapGUID": "0000000006B1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000BC03.004",
+    "Image": "00000000BC02.004",
+    "FlagImage": "000000001CFC.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000006B3.09F": {
+    "GUID": "0000000006B3.09F",
+    "Name": "이스타지우 다스 하스",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "루시우볼 플레이",
+    "StateB": "루시우볼 플레이",
+    "VariantName": null,
+    "MapGUID": "0000000006B3.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000009BE3.004",
+    "Image": "000000009BE2.004",
+    "FlagImage": "000000009DFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000006B5.09F": {
+    "GUID": "0000000006B5.09F",
+    "Name": "하나무라",
+    "Description": "하나무라는 식도락과 쇼핑, 그리고 절정의 벚꽃을 즐길 수 있기로 유명한 관광지입니다. 하지만 평화로워 보이는 이 마을은 선택된 소수만 알고 있는 어두운 비밀을 품고 있습니다.",
+    "Description2": "수 세기 전에 결성된 시마다 닌자 일족은 하나무라라는 고요한 마을에 정착했고, 이 오래된 장벽 안에서 무기 거래, 무기 밀수, 암살을 통해 힘을 키웠습니다.",
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": "하나무라 (겨울)",
+    "MapGUID": "0000000006B5.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000BC05.004",
+    "Image": "00000000BC04.004",
+    "FlagImage": "000000001CFB.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000006B7.09F": {
+    "GUID": "0000000006B7.09F",
+    "Name": "리장 타워",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "리장 타워 (설날)",
+    "MapGUID": "0000000006B7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8F7.004",
+    "Image": "00000000C39A.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000006C7.09F": {
+    "GUID": "0000000006C7.09F",
+    "Name": "VPP Green Room",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000006C7.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000006C9.09F": {
+    "GUID": "0000000006C9.09F",
+    "Name": "정켄슈타인의 복수",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000006C9.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "00000000AB29.004",
+    "Image": "00000000A4D3.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000006D1.09F": {
+    "GUID": "0000000006D1.09F",
+    "Name": "탐사 기지: 남극",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "0000000006D1.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000B4FF.004",
+    "Image": "00000000A758.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "00000000070D.09F",
+          "Name": "탐사 기지: 남극",
+          "VariantName": "탐사 기지: 남극 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000006D3.09F": {
+    "GUID": "0000000006D3.09F",
+    "Name": "호라이즌 달 기지",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "0000000006D3.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000EEB6.004",
+    "Image": "00000000B259.004",
+    "FlagImage": "00000000EEB5.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000705.09F": {
+    "GUID": "000000000705.09F",
+    "Name": "네크로폴리스",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000705.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D321.004",
+    "Image": "00000000D320.004",
+    "FlagImage": "000000001CFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000070C.09F": {
+    "GUID": "00000000070C.09F",
+    "Name": "검은 숲",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000070C.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D922.004",
+    "Image": "00000000D920.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000007F7.09F",
+          "Name": "검은 숲",
+          "VariantName": "검은 숲 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000070D.09F": {
+    "GUID": "00000000070D.09F",
+    "Name": "탐사 기지: 남극",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "탐사 기지: 남극 (겨울)",
+    "MapGUID": "00000000070D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000BBB0.004",
+    "Image": "00000000BBAF.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000710.09F": {
+    "GUID": "000000000710.09F",
+    "Name": "Menu/Busan (Lunar)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000710.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000711.09F": {
+    "GUID": "000000000711.09F",
+    "Name": "리장 정원",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "리장 정원 (설날)",
+    "MapGUID": "000000000711.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8F8.004",
+    "Image": "00000000C39B.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000712.09F": {
+    "GUID": "000000000712.09F",
+    "Name": "리장 야시장",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "리장 야시장 (설날)",
+    "MapGUID": "000000000712.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8F6.004",
+    "Image": "00000000C39C.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000717.09F": {
+    "GUID": "000000000717.09F",
+    "Name": "네팔 성소",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000717.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D658.004",
+    "Image": "00000000D657.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000071A.09F": {
+    "GUID": "00000000071A.09F",
+    "Name": "리장 관제 센터",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "리장 관제 센터 (설날)",
+    "MapGUID": "00000000071A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8FA.004",
+    "Image": "00000000C8F9.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000071C.09F": {
+    "GUID": "00000000071C.09F",
+    "Name": "카스티요",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000071C.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000EEB7.004",
+    "Image": "00000000EEB8.004",
+    "FlagImage": "000000004775.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000736.09F": {
+    "GUID": "000000000736.09F",
+    "Name": "네팔 마을",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000736.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D604.004",
+    "Image": "00000000D603.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000738.09F": {
+    "GUID": "000000000738.09F",
+    "Name": "네팔 제단",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000738.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D655.004",
+    "Image": "00000000D656.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000073A.09F": {
+    "GUID": "00000000073A.09F",
+    "Name": "일리오스 우물",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000073A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D6C5.004",
+    "Image": "00000000D6C6.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000073D.09F": {
+    "GUID": "00000000073D.09F",
+    "Name": "일리오스 등대",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000073D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D6A2.004",
+    "Image": "00000000D6A1.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000073E.09F": {
+    "GUID": "00000000073E.09F",
+    "Name": "일리오스 폐허",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000073E.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D6D8.004",
+    "Image": "00000000D6D7.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000744.09F": {
+    "GUID": "000000000744.09F",
+    "Name": "리장 관제 센터",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000744.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D5BD.004",
+    "Image": "00000000D5BE.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "00000000071A.09F",
+          "Name": "리장 관제 센터",
+          "VariantName": "리장 관제 센터 (설날)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000745.09F": {
+    "GUID": "000000000745.09F",
+    "Name": "리장 정원",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000745.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D5AD.004",
+    "Image": "00000000D5AC.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "000000000711.09F",
+          "Name": "리장 정원",
+          "VariantName": "리장 정원 (설날)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000746.09F": {
+    "GUID": "000000000746.09F",
+    "Name": "리장 야시장",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000000746.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D575.004",
+    "Image": "00000000D574.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "000000000712.09F",
+          "Name": "리장 야시장",
+          "VariantName": "리장 야시장 (설날)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000074A.09F": {
+    "GUID": "00000000074A.09F",
+    "Name": "오아시스 도심",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000074A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000CFE0.004",
+    "Image": "00000000CFE1.004",
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000074C.09F": {
+    "GUID": "00000000074C.09F",
+    "Name": "오아시스 정원",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000074C.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000CFE2.004",
+    "Image": "00000000CFE3.004",
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000074D.09F": {
+    "GUID": "00000000074D.09F",
+    "Name": "오아시스 대학",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000074D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000CFE4.004",
+    "Image": "00000000CFE5.004",
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000756.09F": {
+    "GUID": "000000000756.09F",
+    "Name": "쓰레기촌",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000000756.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000F302.004",
+    "Image": "00000000F300.004",
+    "FlagImage": "00000000EEB0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000075E.09F": {
+    "GUID": "00000000075E.09F",
+    "Name": "블리자드 월드",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "00000000075E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "000000000A5B.09F",
+          "Name": "블리자드 월드",
+          "VariantName": "블리자드 월드 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A062.01C",
+        "Name": "흐림"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000C52B.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000C52C.01C",
+        "Name": "흐림"
+      }
+    ]
+  },
+  "0000000007A1.09F": {
+    "GUID": "0000000007A1.09F",
+    "Name": "아유타야",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "0000000007A1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000014501.004",
+    "Image": "000000014500.004",
+    "FlagImage": "0000000144FF.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000007A4.09F": {
+    "GUID": "0000000007A4.09F",
+    "Name": "샤토 기야르",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000007A4.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000FF6B.004",
+    "Image": "00000000FF6A.004",
+    "FlagImage": "00000000FF66.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000212E.01C",
+        "Name": "Halloween",
+        "MapInfo": {
+          "GUID": "000000000836.09F",
+          "Name": "샤토 기야르",
+          "VariantName": "샤토 기야르 (할로윈)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000007E2.09F": {
+    "GUID": "0000000007E2.09F",
+    "Name": "부산",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000007E2.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000039094.004",
+    "Image": "000000039093.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A062.01C",
+        "Name": "흐림"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "0000000007F4.09F": {
+    "GUID": "0000000007F4.09F",
+    "Name": "아들러스브룬",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": "아이헨발데 (할로윈)",
+    "MapGUID": "0000000007F4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000012790.004",
+    "Image": "00000001279E.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000AD91.01C",
+        "Name": "성 - 아이헨발데 (할로윈) 정켄슈타인 2"
+      }
+    ]
+  },
+  "0000000007F7.09F": {
+    "GUID": "0000000007F7.09F",
+    "Name": "검은 숲",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": "검은 숲 (겨울)",
+    "MapGUID": "0000000007F7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000013652.004",
+    "Image": "000000013651.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "0000000007FD.09F": {
+    "GUID": "0000000007FD.09F",
+    "Name": "네팔 마을 (겨울)",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "교회를 수비하십시오",
+    "VariantName": null,
+    "MapGUID": "0000000007FD.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000013532.004",
+    "Image": "000000013340.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000807.09F": {
+    "GUID": "000000000807.09F",
+    "Name": "Menu/BattlePass",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000807.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000827.09F": {
+    "GUID": "000000000827.09F",
+    "Name": "서킷 로얄",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000827.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FBE6.004",
+    "Image": "00000002FBE4.004",
+    "FlagImage": "00000002FBD6.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000000836.09F": {
+    "GUID": "000000000836.09F",
+    "Name": "샤토 기야르",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": "샤토 기야르 (할로윈)",
+    "MapGUID": "000000000836.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000001BEAA.004",
+    "Image": "00000001BEA9.004",
+    "FlagImage": "00000000FF66.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000862.09F": {
+    "GUID": "000000000862.09F",
+    "Name": "Menu/OWL",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000862.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000864.09F": {
+    "GUID": "000000000864.09F",
+    "Name": "Menu/OWL",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000864.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000871.09F": {
+    "GUID": "000000000871.09F",
+    "Name": "리알토",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000000871.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000013EC2.004",
+    "Image": "000000013EC3.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000890.09F": {
+    "GUID": "000000000890.09F",
+    "Name": "페트라",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000890.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000017325.004",
+    "Image": "000000017324.004",
+    "FlagImage": "000000017329.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000891.09F": {
+    "GUID": "000000000891.09F",
+    "Name": "파리",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000891.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000191C5.004",
+    "Image": "0000000191C4.004",
+    "FlagImage": "00000000FF66.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "00000000092D.09F": {
+    "GUID": "00000000092D.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000092D.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000938.09F": {
+    "GUID": "000000000938.09F",
+    "Name": "파라이수",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000000938.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000204EA.004",
+    "Image": "0000000204E9.004",
+    "FlagImage": "000000009DFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "000000010B54.01C",
+        "Name": "S19 - Evening"
+      },
+      {
+        "GUID": "000000010B53.01C",
+        "Name": "S19 - Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000A44.09F": {
+    "GUID": "000000000A44.09F",
+    "Name": "하바나",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000A44.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000001ED2B.004",
+    "Image": "00000001ED2C.004",
+    "FlagImage": "00000001F827.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000000A5B.09F": {
+    "GUID": "000000000A5B.09F",
+    "Name": "블리자드 월드",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": "블리자드 월드 (겨울)",
+    "MapGUID": "000000000A5B.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000001CB60.004",
+    "Image": "00000001CB5F.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000A7A.09F": {
+    "GUID": "000000000A7A.09F",
+    "Name": "부산 사찰",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "부산 사찰 (설날)",
+    "MapGUID": "000000000A7A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000001C93C.004",
+    "Image": "00000001C93B.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000A86.09F": {
+    "GUID": "000000000A86.09F",
+    "Name": "부산 시내",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": "부산 시내 (설날)",
+    "MapGUID": "000000000A86.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000001CA76.004",
+    "Image": "00000001CA77.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000AEB.09F": {
+    "GUID": "000000000AEB.09F",
+    "Name": "뉴 퀸 스트리트",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000AEB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FBE7.004",
+    "Image": "000000027B05.004",
+    "FlagImage": "00000001B266.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": "새벽"
+      }
+    ]
+  },
+  "000000000AFC.09F": {
+    "GUID": "000000000AFC.09F",
+    "Name": "리우데자네이루",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000000AFC.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "00000003F7A7.004",
+    "Image": "00000003F7A6.004",
+    "FlagImage": "000000009DFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000B34.09F": {
+    "GUID": "000000000B34.09F",
+    "Name": "콜로세오",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000B34.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FDE8.004",
+    "Image": "00000002FDE9.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000B4C.09F": {
+    "GUID": "000000000B4C.09F",
+    "Name": "미드타운",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000B4C.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002E167.004",
+    "Image": "00000002E168.004",
+    "FlagImage": "00000001B27A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000B6B.09F": {
+    "GUID": "000000000B6B.09F",
+    "Name": "Menu/Cupid Hanzo",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000B6B.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000BC0.09F": {
+    "GUID": "000000000BC0.09F",
+    "Name": "토론토",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000BC0.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000043D09.004",
+    "Image": "000000043D08.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000BCE.09F": {
+    "GUID": "000000000BCE.09F",
+    "Name": "Menu/Summer Games Beach",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000BCE.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000BD6.09F": {
+    "GUID": "000000000BD6.09F",
+    "Name": "예테보리",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000BD6.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000043D07.004",
+    "Image": "000000043D06.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000C40.09F": {
+    "GUID": "000000000C40.09F",
+    "Name": "워크샵 섬",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C40.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000029D31.004",
+    "Image": "000000029D29.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000C44.09F": {
+    "GUID": "000000000C44.09F",
+    "Name": "워크샵 개활지",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C44.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000029D35.004",
+    "Image": "000000029D34.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000C48.09F": {
+    "GUID": "000000000C48.09F",
+    "Name": "워크샵 방",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C48.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000029D33.004",
+    "Image": "000000029D32.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000C4A.09F": {
+    "GUID": "000000000C4A.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C4A.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C1.01C",
+        "Name": null
+      },
+      {
+        "GUID": "000000009EB1.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C3.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000BE55.01C",
+        "Name": null
+      },
+      {
+        "GUID": "000000009EB2.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000C85.09F": {
+    "GUID": "000000000C85.09F",
+    "Name": "샴발리 수도원",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C85.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003275F.004",
+    "Image": "00000003275E.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD0.09F": {
+    "GUID": "000000000CD0.09F",
+    "Name": "워크샵 개활지 (밤)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002B294.004",
+    "Image": "00000002B295.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD1.09F": {
+    "GUID": "000000000CD1.09F",
+    "Name": "워크샵 섬 (밤)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002B292.004",
+    "Image": "00000002B293.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009243.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD3.09F": {
+    "GUID": "000000000CD3.09F",
+    "Name": "카네자카",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD3.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000002CF9D.004",
+    "Image": "00000002CF9C.004",
+    "FlagImage": "000000001CFB.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD7.09F": {
+    "GUID": "000000000CD7.09F",
+    "Name": "말레벤토",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000003134D.004",
+    "Image": "00000003134E.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000CDC.09F": {
+    "GUID": "000000000CDC.09F",
+    "Name": "부산 스타디움",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "루시우볼 플레이",
+    "StateB": "루시우볼 플레이",
+    "VariantName": null,
+    "MapGUID": "000000000CDC.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000002C05B.004",
+    "Image": "00000002C05C.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000CEB.09F": {
+    "GUID": "000000000CEB.09F",
+    "Name": "시드니 하버 아레나",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "루시우볼 플레이",
+    "StateB": "루시우볼 플레이",
+    "VariantName": null,
+    "MapGUID": "000000000CEB.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000002C059.004",
+    "Image": "00000002C058.004",
+    "FlagImage": "00000000EEB0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000CF2.09F": {
+    "GUID": "000000000CF2.09F",
+    "Name": "남극 반도",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CF2.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000010A62.01C",
+        "Name": "S19 - Night"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "000000010A63.01C",
+        "Name": "S19 - Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000D3E.09F": {
+    "GUID": "000000000D3E.09F",
+    "Name": "수라바사",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D3E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003269E.004",
+    "Image": "00000003269D.004",
+    "FlagImage": "000000022067.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000000D4C.09F": {
+    "GUID": "000000000D4C.09F",
+    "Name": "워크샵 그린 스크린",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D4C.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002D297.004",
+    "Image": "00000002D296.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009244.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000D53.09F": {
+    "GUID": "000000000D53.09F",
+    "Name": "이스페란사",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D53.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003870C.004",
+    "Image": "00000003870B.004",
+    "FlagImage": "000000022070.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000000D77.09F": {
+    "GUID": "000000000D77.09F",
+    "Name": "Menu/Kings Row (Winter) (2020)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D77.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000DAD.09F": {
+    "GUID": "000000000DAD.09F",
+    "Name": "Menu/Lijang (Lunar) (2023)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000DAD.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000E13.09F": {
+    "GUID": "000000000E13.09F",
+    "Name": "뉴 정크 시티",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000E13.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000000E77.09F": {
+    "GUID": "000000000E77.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000E77.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000EB2.09F": {
+    "GUID": "000000000EB2.09F",
+    "Name": "루나사피",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000EB2.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000EC0.09F": {
+    "GUID": "000000000EC0.09F",
+    "Name": "사모아",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000EC0.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000EF0.09F": {
+    "GUID": "000000000EF0.09F",
+    "Name": "Menu/Hero Gallery",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "영웅을 선택하십시오",
+    "StateB": "영웅을 선택하십시오",
+    "VariantName": null,
+    "MapGUID": "000000000EF0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1C.004",
+    "Image": "000000004F2B.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000000EFB.09F": {
+    "GUID": "000000000EFB.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000EFB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": "Scripts"
+      }
+    ]
+  },
+  "000000000F35.09F": {
+    "GUID": "000000000F35.09F",
+    "Name": "아틀리스",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000F35.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FE2.09F": {
+    "GUID": "000000000FE2.09F",
+    "Name": "영웅 연마: 소전",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FE2.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FF6.09F": {
+    "GUID": "000000000FF6.09F",
+    "Name": "영웅 연마: 라인하르트",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FF6.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FF7.09F": {
+    "GUID": "000000000FF7.09F",
+    "Name": "영웅 연마",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FF7.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FFB.09F": {
+    "GUID": "000000000FFB.09F",
+    "Name": "영웅 연마: 트레이서",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FFB.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001001.09F": {
+    "GUID": "000000001001.09F",
+    "Name": "영웅 연마: 솔저: 76",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001001.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001018.09F": {
+    "GUID": "000000001018.09F",
+    "Name": "Underworld",
+    "Description": "부유한 주민들이 화려한 삶을 누리고 있는 왕의 길에서, 옴닉은 인간과 평등하게 살아갈 미래를 꿈꾸고 있습니다.",
+    "Description2": "부유한 주민들이 화려한 삶을 누리고 있는 왕의 길에서, 옴닉은 인간과 평등하게 살아갈 미래를 꿈꾸고 있습니다.",
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000001018.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000420DC.004",
+    "Image": "0000000420DB.004",
+    "FlagImage": "000000001CFC.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000006B1.09F",
+          "Name": "왕의 길",
+          "VariantName": "왕의 길 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A1FB.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001046.09F": {
+    "GUID": "000000001046.09F",
+    "Name": "영웅 연마: 겐지",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001046.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000104E.09F": {
+    "GUID": "00000000104E.09F",
+    "Name": "영웅 연마: 윈스턴",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000104E.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001052.09F": {
+    "GUID": "000000001052.09F",
+    "Name": "영웅 연마: 메르시",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001052.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000105F.09F": {
+    "GUID": "00000000105F.09F",
+    "Name": "영웅 연마: 자리야",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000105F.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001063.09F": {
+    "GUID": "000000001063.09F",
+    "Name": "영웅 연마: 파라",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001063.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001066.09F": {
+    "GUID": "000000001066.09F",
+    "Name": "영웅 연마: 에코",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001066.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001087.09F": {
+    "GUID": "000000001087.09F",
+    "Name": "영웅 연마: 건틀릿",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001087.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000048E3C.004",
+    "Image": "000000048E3D.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000010BA.09F": {
+    "GUID": "0000000010BA.09F",
+    "Name": "영웅 연마: 메이",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000010BA.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000010D6.09F": {
+    "GUID": "0000000010D6.09F",
+    "Name": "남극 반도",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000010D6.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000010D7.09F": {
+    "GUID": "0000000010D7.09F",
+    "Name": "영웅 연마: 키리코",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000010D7.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001119.09F": {
+    "GUID": "000000001119.09F",
+    "Name": "영웅 연마: D.va",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001119.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001128.09F": {
+    "GUID": "000000001128.09F",
+    "Name": "성역",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": null,
+    "MapGUID": "000000001128.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "000000000A5B.09F",
+          "Name": "블리자드 월드",
+          "VariantName": "블리자드 월드 (겨울)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001157.09F": {
+    "GUID": "000000001157.09F",
+    "Name": "하나오카",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001157.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000001160.09F": {
+    "GUID": "000000001160.09F",
+    "Name": "아누비스의 왕좌",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001160.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000001182.09F": {
+    "GUID": "000000001182.09F",
+    "Name": "영웅 연마: 브리기테",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001182.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001198.09F": {
+    "GUID": "000000001198.09F",
+    "Name": "영웅 연마: 애쉬",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001198.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000011AD.09F": {
+    "GUID": "0000000011AD.09F",
+    "Name": "Menu/Winter Wonderland (Blizzard World Art)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000011AD.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001201.09F": {
+    "GUID": "000000001201.09F",
+    "Name": "영웅 연마: 캐서디",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001201.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001202.09F": {
+    "GUID": "000000001202.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001202.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001207.09F": {
+    "GUID": "000000001207.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001207.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000120E.09F": {
+    "GUID": "00000000120E.09F",
+    "Name": "감시 기지: 지브롤터",
+    "Description": null,
+    "Description2": null,
+    "Subline": "추락",
+    "StateA": "공격",
+    "StateB": "수비",
+    "VariantName": "감시 기지: 지브롤터 (탈론)",
+    "MapGUID": "00000000120E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003720D.004",
+    "Image": "00000003720E.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001216.09F": {
+    "GUID": "000000001216.09F",
+    "Name": "Menu/Mythic Shop",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001216.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001257.09F": {
+    "GUID": "000000001257.09F",
+    "Name": "템스 지구",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000001257.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "00000000125A.09F": {
+    "GUID": "00000000125A.09F",
+    "Name": "고가도로",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000125A.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "00000000125E.09F": {
+    "GUID": "00000000125E.09F",
+    "Name": "십자 광장",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000125E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "해질녘"
+      }
+    ]
+  },
+  "000000001260.09F": {
+    "GUID": "000000001260.09F",
+    "Name": "레드우드 제방",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001260.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "해질녘"
+      }
+    ]
+  },
+  "000000001271.09F": {
+    "GUID": "000000001271.09F",
+    "Name": "화약통 광산",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "000000001271.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": "스크립트"
+      }
+    ]
+  },
+  "00000000127B.09F": {
+    "GUID": "00000000127B.09F",
+    "Name": "일리오스 - 폐허",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000127B.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000037214.004",
+    "Image": "000000037213.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "00000000127F.09F": {
+    "GUID": "00000000127F.09F",
+    "Name": "오아시스 - 정원",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "00000000127F.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "저녁"
+      }
+    ]
+  },
+  "000000001289.09F": {
+    "GUID": "000000001289.09F",
+    "Name": "Menu/Ana Midnight Sun Mythic Weapon",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001289.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012AA.09F": {
+    "GUID": "0000000012AA.09F",
+    "Name": "승리의 투기장",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012AA.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "해질녘"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012B0.09F": {
+    "GUID": "0000000012B0.09F",
+    "Name": "이스페란사",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "000000022070.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012B5.09F": {
+    "GUID": "0000000012B5.09F",
+    "Name": "아누비스의 왕좌",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B5.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "0000000012B6.09F": {
+    "GUID": "0000000012B6.09F",
+    "Name": "하나오카",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B6.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "해질녘"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "0000000012B7.09F": {
+    "GUID": "0000000012B7.09F",
+    "Name": "콜로세오",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B7.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FDE8.004",
+    "Image": "00000002FDE9.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "해질녘"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012F1.09F": {
+    "GUID": "0000000012F1.09F",
+    "Name": "네팔 - 제단",
+    "Description": null,
+    "Description2": null,
+    "Subline": "무감각의 공허",
+    "StateA": "공격",
+    "StateB": "공격",
+    "VariantName": null,
+    "MapGUID": "0000000012F1.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000005D2A.004",
+    "Image": "0000000070EC.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "해질녘"
+      }
+    ]
+  },
+  "000000001318.09F": {
+    "GUID": "000000001318.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001318.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001355.09F": {
+    "GUID": "000000001355.09F",
+    "Name": "사모아",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001355.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      }
+    ]
+  },
+  "000000001375.09F": {
+    "GUID": "000000001375.09F",
+    "Name": "오행 대학 - 물 학부",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001375.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000001378.09F": {
+    "GUID": "000000001378.09F",
+    "Name": "Menu/S17 Mythics Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001378.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001379.09F": {
+    "GUID": "000000001379.09F",
+    "Name": "Menu/GI Joe Collab Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001379.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001388.09F": {
+    "GUID": "000000001388.09F",
+    "Name": "부산 - 사찰",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001388.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "아침 - 여름"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "아침 - 가을 "
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "밤"
+      }
+    ]
+  },
+  "000000001389.09F": {
+    "GUID": "000000001389.09F",
+    "Name": "Menu/Nerf Collab Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001389.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000138A.09F": {
+    "GUID": "00000000138A.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000138A.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000139D.09F": {
+    "GUID": "00000000139D.09F",
+    "Name": "Menu/Wuyang Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000139D.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000139F.09F": {
+    "GUID": "00000000139F.09F",
+    "Name": "Menu/S18 Mythics 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000139F.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013A2.09F": {
+    "GUID": "0000000013A2.09F",
+    "Name": "Menu/S18 Mythics Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013A2.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013AA.09F": {
+    "GUID": "0000000013AA.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013AA.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013AC.09F": {
+    "GUID": "0000000013AC.09F",
+    "Name": "Menu/Persona Collab Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013AC.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013AD.09F": {
+    "GUID": "0000000013AD.09F",
+    "Name": "Menu/Anniversary Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013AD.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013B3.09F": {
+    "GUID": "0000000013B3.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013B3.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013B7.09F": {
+    "GUID": "0000000013B7.09F",
+    "Name": "Menu/S19 Mythics 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013B7.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013C2.09F": {
+    "GUID": "0000000013C2.09F",
+    "Name": "Menu/S19 One Punch Man Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013C2.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013C4.09F": {
+    "GUID": "0000000013C4.09F",
+    "Name": "Menu/S19 Stadium Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013C4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013C5.09F": {
+    "GUID": "0000000013C5.09F",
+    "Name": "Menu/S19 Halloween Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013C5.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013CA.09F": {
+    "GUID": "0000000013CA.09F",
+    "Name": "Menu/S19 OWCS Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013CA.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013DC.09F": {
+    "GUID": "0000000013DC.09F",
+    "Name": "Menu/Junkrat Mythic 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013DC.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013E9.09F": {
+    "GUID": "0000000013E9.09F",
+    "Name": "Menu/Vendetta 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013E9.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FDE8.004",
+    "Image": "00000002FDE9.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013F0.09F": {
+    "GUID": "0000000013F0.09F",
+    "Name": "Menu/S20 Christmas Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013F0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013F1.09F": {
+    "GUID": "0000000013F1.09F",
+    "Name": "Menu/S20 Mythics 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013F1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001407.09F": {
+    "GUID": "000000001407.09F",
+    "Name": "Menu/Doomfist Mythic 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001407.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  }
+}

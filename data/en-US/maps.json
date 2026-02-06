@@ -1,0 +1,4290 @@
+{
+  "00000000005B.09F": {
+    "GUID": "00000000005B.09F",
+    "Name": "Temple of Anubis",
+    "Description": "The ancient Temple of Anubis houses a secret vital to the security of the region, protected by Helix Security Systems.",
+    "Description2": "The ancient Temple of Anubis houses a secret vital to the security of the region, protected by Helix Security Systems.",
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "00000000005B.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1D.004",
+    "Image": "0000000018EF.004",
+    "FlagImage": "000000001CFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000000D4.09F": {
+    "GUID": "0000000000D4.09F",
+    "Name": "King's Row",
+    "Description": "Beneath the glamour of the ritzy King's Row neighborhood, omnics dream of a day they will have the same rights as humans.",
+    "Description2": "Beneath the glamour of the ritzy King's Row neighborhood, omnics dream of a day they will have the same rights as humans.",
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000000D4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003720C.004",
+    "Image": "00000003720B.004",
+    "FlagImage": "000000001CFC.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000006B1.09F",
+          "Name": "King's Row",
+          "VariantName": "King's Row (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A062.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000165.09F": {
+    "GUID": "000000000165.09F",
+    "Name": "Hanamura",
+    "Description": "With its restaurants, shops, and prime cherry blossom viewing, Hanamura is a popular tourist destination, but the sleepy town hides a dark secret known only to a select few.",
+    "Description2": "Since its founding generations ago, the Shimada ninja clan has made their home in the quiet village of Hanamura. From behind its ancient walls, the family's power grows through weapons trading, smuggling, and assassination.",
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000000165.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D20.004",
+    "Image": "000000000F22.004",
+    "FlagImage": "000000001CFB.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000006B5.09F",
+          "Name": "Hanamura",
+          "VariantName": "Hanamura (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000184.09F": {
+    "GUID": "000000000184.09F",
+    "Name": "Watchpoint: Gibraltar",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000000184.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003720D.004",
+    "Image": "00000003720E.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "0000000001D4.09F": {
+    "GUID": "0000000001D4.09F",
+    "Name": "Numbani",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000001D4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D23.004",
+    "Image": "000000004766.004",
+    "FlagImage": "000000004750.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "0000000026E3.01C",
+        "Name": "0000000026E3.01C",
+        "MapInfo": null
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "0000000001DB.09F": {
+    "GUID": "0000000001DB.09F",
+    "Name": "Volskaya Industries",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE ICY EMBRACE OF THE RIVER",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000001DB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D24.004",
+    "Image": "000000004734.004",
+    "FlagImage": "000000004729.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000002AF.09F": {
+    "GUID": "0000000002AF.09F",
+    "Name": "Hollywood",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000002AF.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1F.004",
+    "Image": "0000000056A7.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000212E.01C",
+        "Name": "Halloween",
+        "MapInfo": {
+          "GUID": "0000000006AB.09F",
+          "Name": "Hollywood",
+          "VariantName": "Hollywood (Halloween)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000002C3.09F": {
+    "GUID": "0000000002C3.09F",
+    "Name": "Dorado",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000002C3.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000321E4.004",
+    "Image": "0000000321E3.004",
+    "FlagImage": "000000004775.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000004B7.09F": {
+    "GUID": "0000000004B7.09F",
+    "Name": "Nepal",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "0000000004B7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000005D2A.004",
+    "Image": "0000000070EC.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000005BB.09F": {
+    "GUID": "0000000005BB.09F",
+    "Name": "Route 66",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000005BB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003722D.004",
+    "Image": "00000003722C.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A062.01C",
+        "Name": "Overcast"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000661.09F": {
+    "GUID": "000000000661.09F",
+    "Name": "Tutorial",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "SELECT A HERO",
+    "StateB": "SELECT A HERO",
+    "VariantName": null,
+    "MapGUID": "000000000661.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1C.004",
+    "Image": "000000004F2B.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000662.09F": {
+    "GUID": "000000000662.09F",
+    "Name": "Lijiang Tower",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000662.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000037211.004",
+    "Image": "000000037212.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "0000000006B7.09F",
+          "Name": "Lijiang Tower",
+          "VariantName": "Lijiang Tower (Lunar New Year)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": "Dawn"
+      }
+    ]
+  },
+  "00000000066D.09F": {
+    "GUID": "00000000066D.09F",
+    "Name": "Ilios",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unfeeling Void",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000066D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000037214.004",
+    "Image": "000000037213.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000688.09F": {
+    "GUID": "000000000688.09F",
+    "Name": "Practice Range",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "SELECT A HERO",
+    "StateB": "SELECT A HERO",
+    "VariantName": null,
+    "MapGUID": "000000000688.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000007417.004",
+    "Image": "00000000740F.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000068D.09F": {
+    "GUID": "00000000068D.09F",
+    "Name": "Eichenwalde",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "00000000068D.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000037221.004",
+    "Image": "000000037222.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000212E.01C",
+        "Name": "Halloween",
+        "MapInfo": {
+          "GUID": "0000000007F4.09F",
+          "Name": "Adlersbrunn",
+          "VariantName": "Eichenwalde (Halloween)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000010654.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "000000010B54.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000069E.09F": {
+    "GUID": "00000000069E.09F",
+    "Name": "Oasis",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000069E.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "0000000006AB.09F": {
+    "GUID": "0000000006AB.09F",
+    "Name": "Hollywood",
+    "Description": null,
+    "Description2": null,
+    "Subline": "falling",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": "Hollywood (Halloween)",
+    "MapGUID": "0000000006AB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000AB40.004",
+    "Image": "00000000AB3F.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000006B1.09F": {
+    "GUID": "0000000006B1.09F",
+    "Name": "King's Row",
+    "Description": "Beneath the glamour of the ritzy King's Row neighborhood, omnics dream of a day they will have the same rights as humans.",
+    "Description2": "Beneath the glamour of the ritzy King's Row neighborhood, omnics dream of a day they will have the same rights as humans.",
+    "Subline": "falling",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": "King's Row (Winter)",
+    "MapGUID": "0000000006B1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000BC03.004",
+    "Image": "00000000BC02.004",
+    "FlagImage": "000000001CFC.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000006B3.09F": {
+    "GUID": "0000000006B3.09F",
+    "Name": "Estádio das Rãs",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Play Lúcioball",
+    "StateB": "Play Lúcioball",
+    "VariantName": null,
+    "MapGUID": "0000000006B3.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000009BE3.004",
+    "Image": "000000009BE2.004",
+    "FlagImage": "000000009DFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000006B5.09F": {
+    "GUID": "0000000006B5.09F",
+    "Name": "Hanamura",
+    "Description": "With its restaurants, shops, and prime cherry blossom viewing, Hanamura is a popular tourist destination, but the sleepy town hides a dark secret known only to a select few.",
+    "Description2": "Since its founding generations ago, the Shimada ninja clan has made their home in the quiet village of Hanamura. From behind its ancient walls, the family's power grows through weapons trading, smuggling, and assassination.",
+    "Subline": "falling",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": "Hanamura (Winter)",
+    "MapGUID": "0000000006B5.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000BC05.004",
+    "Image": "00000000BC04.004",
+    "FlagImage": "000000001CFB.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000006B7.09F": {
+    "GUID": "0000000006B7.09F",
+    "Name": "Lijiang Tower",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": "Lijiang Tower (Lunar New Year)",
+    "MapGUID": "0000000006B7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8F7.004",
+    "Image": "00000000C39A.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000006C7.09F": {
+    "GUID": "0000000006C7.09F",
+    "Name": "VPP Green Room",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000006C7.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000006C9.09F": {
+    "GUID": "0000000006C9.09F",
+    "Name": "Junkenstein's Revenge",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "0000000006C9.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "00000000AB29.004",
+    "Image": "00000000A4D3.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000006D1.09F": {
+    "GUID": "0000000006D1.09F",
+    "Name": "Ecopoint: Antarctica",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Attack",
+    "StateB": "Attack",
+    "VariantName": null,
+    "MapGUID": "0000000006D1.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000B4FF.004",
+    "Image": "00000000A758.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "00000000070D.09F",
+          "Name": "Ecopoint: Antarctica",
+          "VariantName": "Ecopoint: Antarctica (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000006D3.09F": {
+    "GUID": "0000000006D3.09F",
+    "Name": "Horizon Lunar Colony",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Attack",
+    "StateB": "Defend",
+    "VariantName": null,
+    "MapGUID": "0000000006D3.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000EEB6.004",
+    "Image": "00000000B259.004",
+    "FlagImage": "00000000EEB5.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000705.09F": {
+    "GUID": "000000000705.09F",
+    "Name": "Necropolis",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000705.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D321.004",
+    "Image": "00000000D320.004",
+    "FlagImage": "000000001CFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000070C.09F": {
+    "GUID": "00000000070C.09F",
+    "Name": "Black Forest",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000070C.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D922.004",
+    "Image": "00000000D920.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000007F7.09F",
+          "Name": "Black Forest",
+          "VariantName": "Black Forest (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000070D.09F": {
+    "GUID": "00000000070D.09F",
+    "Name": "Ecopoint: Antarctica",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Attack",
+    "StateB": "Attack",
+    "VariantName": "Ecopoint: Antarctica (Winter)",
+    "MapGUID": "00000000070D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000BBB0.004",
+    "Image": "00000000BBAF.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000710.09F": {
+    "GUID": "000000000710.09F",
+    "Name": "Menu/Busan (Lunar)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000710.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000711.09F": {
+    "GUID": "000000000711.09F",
+    "Name": "Lijiang Garden",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": "Lijiang Garden (Lunar New Year)",
+    "MapGUID": "000000000711.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8F8.004",
+    "Image": "00000000C39B.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000712.09F": {
+    "GUID": "000000000712.09F",
+    "Name": "Lijiang Night Market",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": "Lijiang Night Market (Lunar New Year)",
+    "MapGUID": "000000000712.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8F6.004",
+    "Image": "00000000C39C.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000717.09F": {
+    "GUID": "000000000717.09F",
+    "Name": "Nepal Sanctum",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000717.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D658.004",
+    "Image": "00000000D657.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000071A.09F": {
+    "GUID": "00000000071A.09F",
+    "Name": "Lijiang Control Center",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": "Lijiang Control Center (Lunar New Year)",
+    "MapGUID": "00000000071A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000C8FA.004",
+    "Image": "00000000C8F9.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000071C.09F": {
+    "GUID": "00000000071C.09F",
+    "Name": "Castillo",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000071C.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000EEB7.004",
+    "Image": "00000000EEB8.004",
+    "FlagImage": "000000004775.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000736.09F": {
+    "GUID": "000000000736.09F",
+    "Name": "Nepal Village",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000736.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D604.004",
+    "Image": "00000000D603.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000738.09F": {
+    "GUID": "000000000738.09F",
+    "Name": "Nepal Shrine",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000738.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D655.004",
+    "Image": "00000000D656.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000073A.09F": {
+    "GUID": "00000000073A.09F",
+    "Name": "Ilios Well",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unfeeling Void",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000073A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D6C5.004",
+    "Image": "00000000D6C6.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000073D.09F": {
+    "GUID": "00000000073D.09F",
+    "Name": "Ilios Lighthouse",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unfeeling Void",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000073D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D6A2.004",
+    "Image": "00000000D6A1.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000073E.09F": {
+    "GUID": "00000000073E.09F",
+    "Name": "Ilios Ruins",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unfeeling Void",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000073E.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D6D8.004",
+    "Image": "00000000D6D7.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000744.09F": {
+    "GUID": "000000000744.09F",
+    "Name": "Lijiang Control Center",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000744.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D5BD.004",
+    "Image": "00000000D5BE.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "00000000071A.09F",
+          "Name": "Lijiang Control Center",
+          "VariantName": "Lijiang Control Center (Lunar New Year)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000745.09F": {
+    "GUID": "000000000745.09F",
+    "Name": "Lijiang Garden",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000745.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D5AD.004",
+    "Image": "00000000D5AC.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "000000000711.09F",
+          "Name": "Lijiang Garden",
+          "VariantName": "Lijiang Garden (Lunar New Year)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000746.09F": {
+    "GUID": "000000000746.09F",
+    "Name": "Lijiang Night Market",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000000746.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000D575.004",
+    "Image": "00000000D574.004",
+    "FlagImage": "00000000728A.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000237C.01C",
+        "Name": "LunarNewYear",
+        "MapInfo": {
+          "GUID": "000000000712.09F",
+          "Name": "Lijiang Night Market",
+          "VariantName": "Lijiang Night Market (Lunar New Year)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000074A.09F": {
+    "GUID": "00000000074A.09F",
+    "Name": "Oasis City Center",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000074A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000CFE0.004",
+    "Image": "00000000CFE1.004",
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000074C.09F": {
+    "GUID": "00000000074C.09F",
+    "Name": "Oasis Gardens",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000074C.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000CFE2.004",
+    "Image": "00000000CFE3.004",
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000074D.09F": {
+    "GUID": "00000000074D.09F",
+    "Name": "Oasis University",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000074D.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000CFE4.004",
+    "Image": "00000000CFE5.004",
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000756.09F": {
+    "GUID": "000000000756.09F",
+    "Name": "Junkertown",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000000756.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000000F302.004",
+    "Image": "00000000F300.004",
+    "FlagImage": "00000000EEB0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000075E.09F": {
+    "GUID": "00000000075E.09F",
+    "Name": "Blizzard World",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "00000000075E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "000000000A5B.09F",
+          "Name": "Blizzard World",
+          "VariantName": "Blizzard World (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A062.01C",
+        "Name": "Overcast"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000C52B.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000C52C.01C",
+        "Name": "Overcast"
+      }
+    ]
+  },
+  "0000000007A1.09F": {
+    "GUID": "0000000007A1.09F",
+    "Name": "Ayutthaya",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Attack",
+    "StateB": "Attack",
+    "VariantName": null,
+    "MapGUID": "0000000007A1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000014501.004",
+    "Image": "000000014500.004",
+    "FlagImage": "0000000144FF.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000007A4.09F": {
+    "GUID": "0000000007A4.09F",
+    "Name": "Château Guillard",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000007A4.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000000FF6B.004",
+    "Image": "00000000FF6A.004",
+    "FlagImage": "00000000FF66.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "00000000212E.01C",
+        "Name": "Halloween",
+        "MapInfo": {
+          "GUID": "000000000836.09F",
+          "Name": "Château Guillard",
+          "VariantName": "Château Guillard (Halloween)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000007E2.09F": {
+    "GUID": "0000000007E2.09F",
+    "Name": "Busan",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000007E2.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000039094.004",
+    "Image": "000000039093.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A062.01C",
+        "Name": "Overcast"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "0000000007F4.09F": {
+    "GUID": "0000000007F4.09F",
+    "Name": "Adlersbrunn",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": "Eichenwalde (Halloween)",
+    "MapGUID": "0000000007F4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000012790.004",
+    "Image": "00000001279E.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000AD91.01C",
+        "Name": "Castle - Eichenwalde (Halloween) Junkenstein 2"
+      }
+    ]
+  },
+  "0000000007F7.09F": {
+    "GUID": "0000000007F7.09F",
+    "Name": "Black Forest",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": "Black Forest (Winter)",
+    "MapGUID": "0000000007F7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000013652.004",
+    "Image": "000000013651.004",
+    "FlagImage": "00000000A216.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "0000000007FD.09F": {
+    "GUID": "0000000007FD.09F",
+    "Name": "Nepal Village (Winter)",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "Defend the Church",
+    "VariantName": null,
+    "MapGUID": "0000000007FD.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000013532.004",
+    "Image": "000000013340.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000807.09F": {
+    "GUID": "000000000807.09F",
+    "Name": "Menu/BattlePass",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000807.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000827.09F": {
+    "GUID": "000000000827.09F",
+    "Name": "Circuit royal",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000827.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FBE6.004",
+    "Image": "00000002FBE4.004",
+    "FlagImage": "00000002FBD6.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000000836.09F": {
+    "GUID": "000000000836.09F",
+    "Name": "Château Guillard",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": "Château Guillard (Halloween)",
+    "MapGUID": "000000000836.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000001BEAA.004",
+    "Image": "00000001BEA9.004",
+    "FlagImage": "00000000FF66.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000862.09F": {
+    "GUID": "000000000862.09F",
+    "Name": "Menu/OWL",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000862.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000864.09F": {
+    "GUID": "000000000864.09F",
+    "Name": "Menu/OWL",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000864.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000871.09F": {
+    "GUID": "000000000871.09F",
+    "Name": "Rialto",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000000871.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000013EC2.004",
+    "Image": "000000013EC3.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000890.09F": {
+    "GUID": "000000000890.09F",
+    "Name": "Petra",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000890.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000017325.004",
+    "Image": "000000017324.004",
+    "FlagImage": "000000017329.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000891.09F": {
+    "GUID": "000000000891.09F",
+    "Name": "Paris",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000891.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000191C5.004",
+    "Image": "0000000191C4.004",
+    "FlagImage": "00000000FF66.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "00000000092D.09F": {
+    "GUID": "00000000092D.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000092D.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000938.09F": {
+    "GUID": "000000000938.09F",
+    "Name": "Paraíso",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000000938.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000204EA.004",
+    "Image": "0000000204E9.004",
+    "FlagImage": "000000009DFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "000000010B54.01C",
+        "Name": "S19 - Evening"
+      },
+      {
+        "GUID": "000000010B53.01C",
+        "Name": "S19 - Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000A44.09F": {
+    "GUID": "000000000A44.09F",
+    "Name": "Havana",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000A44.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000001ED2B.004",
+    "Image": "00000001ED2C.004",
+    "FlagImage": "00000001F827.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000000A5B.09F": {
+    "GUID": "000000000A5B.09F",
+    "Name": "Blizzard World",
+    "Description": null,
+    "Description2": null,
+    "Subline": "falling",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": "Blizzard World (Winter)",
+    "MapGUID": "000000000A5B.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000001CB60.004",
+    "Image": "00000001CB5F.004",
+    "FlagImage": "000000004777.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000A7A.09F": {
+    "GUID": "000000000A7A.09F",
+    "Name": "Busan Sanctuary",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": "Busan Sanctuary (Lunar New Year)",
+    "MapGUID": "000000000A7A.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000001C93C.004",
+    "Image": "00000001C93B.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000A86.09F": {
+    "GUID": "000000000A86.09F",
+    "Name": "Busan Downtown",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": "Busan Downtown (Lunar New Year)",
+    "MapGUID": "000000000A86.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000001CA76.004",
+    "Image": "00000001CA77.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000AEB.09F": {
+    "GUID": "000000000AEB.09F",
+    "Name": "New Queen Street",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000AEB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FBE7.004",
+    "Image": "000000027B05.004",
+    "FlagImage": "00000001B266.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": "Dawn"
+      }
+    ]
+  },
+  "000000000AFC.09F": {
+    "GUID": "000000000AFC.09F",
+    "Name": "Rio De Janeiro",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000000AFC.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "00000003F7A7.004",
+    "Image": "00000003F7A6.004",
+    "FlagImage": "000000009DFA.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000B34.09F": {
+    "GUID": "000000000B34.09F",
+    "Name": "Colosseo",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000B34.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FDE8.004",
+    "Image": "00000002FDE9.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000B4C.09F": {
+    "GUID": "000000000B4C.09F",
+    "Name": "Midtown",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000B4C.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002E167.004",
+    "Image": "00000002E168.004",
+    "FlagImage": "00000001B27A.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000B6B.09F": {
+    "GUID": "000000000B6B.09F",
+    "Name": "Menu/Cupid Hanzo",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000B6B.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000BC0.09F": {
+    "GUID": "000000000BC0.09F",
+    "Name": "Toronto",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000BC0.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000043D09.004",
+    "Image": "000000043D08.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000BCE.09F": {
+    "GUID": "000000000BCE.09F",
+    "Name": "Menu/Summer Games Beach",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000BCE.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000BD6.09F": {
+    "GUID": "000000000BD6.09F",
+    "Name": "Gothenburg",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000BD6.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000043D07.004",
+    "Image": "000000043D06.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000C40.09F": {
+    "GUID": "000000000C40.09F",
+    "Name": "Workshop Island",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C40.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000029D31.004",
+    "Image": "000000029D29.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000C44.09F": {
+    "GUID": "000000000C44.09F",
+    "Name": "Workshop Expanse",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C44.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000029D35.004",
+    "Image": "000000029D34.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000C48.09F": {
+    "GUID": "000000000C48.09F",
+    "Name": "Workshop Chamber",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C48.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000029D33.004",
+    "Image": "000000029D32.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000C4A.09F": {
+    "GUID": "000000000C4A.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C4A.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C1.01C",
+        "Name": null
+      },
+      {
+        "GUID": "000000009EB1.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C3.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000BE55.01C",
+        "Name": null
+      },
+      {
+        "GUID": "000000009EB2.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000C85.09F": {
+    "GUID": "000000000C85.09F",
+    "Name": "Shambali Monastery",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000C85.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003275F.004",
+    "Image": "00000003275E.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD0.09F": {
+    "GUID": "000000000CD0.09F",
+    "Name": "Workshop Expanse (Night)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002B294.004",
+    "Image": "00000002B295.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD1.09F": {
+    "GUID": "000000000CD1.09F",
+    "Name": "Workshop Island (Night)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002B292.004",
+    "Image": "00000002B293.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009243.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD3.09F": {
+    "GUID": "000000000CD3.09F",
+    "Name": "Kanezaka",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD3.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000002CF9D.004",
+    "Image": "00000002CF9C.004",
+    "FlagImage": "000000001CFB.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000CD7.09F": {
+    "GUID": "000000000CD7.09F",
+    "Name": "Malevento",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CD7.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000003134D.004",
+    "Image": "00000003134E.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000CDC.09F": {
+    "GUID": "000000000CDC.09F",
+    "Name": "Busan Stadium",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Play Lúcioball",
+    "StateB": "Play Lúcioball",
+    "VariantName": null,
+    "MapGUID": "000000000CDC.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000002C05B.004",
+    "Image": "00000002C05C.004",
+    "FlagImage": "00000001762B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000CEB.09F": {
+    "GUID": "000000000CEB.09F",
+    "Name": "Sydney Harbour Arena",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "Play Lúcioball",
+    "StateB": "Play Lúcioball",
+    "VariantName": null,
+    "MapGUID": "000000000CEB.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "00000002C059.004",
+    "Image": "00000002C058.004",
+    "FlagImage": "00000000EEB0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      },
+      {
+        "GUID": "000000009241.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000CF2.09F": {
+    "GUID": "000000000CF2.09F",
+    "Name": "Antarctic Peninsula",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000CF2.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000010A62.01C",
+        "Name": "S19 - Night"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "000000010A63.01C",
+        "Name": "S19 - Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000D3E.09F": {
+    "GUID": "000000000D3E.09F",
+    "Name": "Suravasa",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D3E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003269E.004",
+    "Image": "00000003269D.004",
+    "FlagImage": "000000022067.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000000D4C.09F": {
+    "GUID": "000000000D4C.09F",
+    "Name": "Workshop Green Screen",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D4C.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002D297.004",
+    "Image": "00000002D296.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009244.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000D53.09F": {
+    "GUID": "000000000D53.09F",
+    "Name": "Esperança",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D53.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003870C.004",
+    "Image": "00000003870B.004",
+    "FlagImage": "000000022070.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000000D77.09F": {
+    "GUID": "000000000D77.09F",
+    "Name": "Menu/Kings Row (Winter) (2020)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000D77.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000DAD.09F": {
+    "GUID": "000000000DAD.09F",
+    "Name": "Menu/Lijang (Lunar) (2023)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000DAD.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000E13.09F": {
+    "GUID": "000000000E13.09F",
+    "Name": "New Junk City",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000E13.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000000E77.09F": {
+    "GUID": "000000000E77.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000E77.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000EB2.09F": {
+    "GUID": "000000000EB2.09F",
+    "Name": "Runasapi",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000EB2.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000EC0.09F": {
+    "GUID": "000000000EC0.09F",
+    "Name": "Samoa",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000EC0.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000EF0.09F": {
+    "GUID": "000000000EF0.09F",
+    "Name": "Menu/Hero Gallery",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "SELECT A HERO",
+    "StateB": "SELECT A HERO",
+    "VariantName": null,
+    "MapGUID": "000000000EF0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "000000005D1C.004",
+    "Image": "000000004F2B.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000000EFB.09F": {
+    "GUID": "000000000EFB.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000EFB.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": "Scripts"
+      }
+    ]
+  },
+  "000000000F35.09F": {
+    "GUID": "000000000F35.09F",
+    "Name": "Aatlis",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000F35.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FE2.09F": {
+    "GUID": "000000000FE2.09F",
+    "Name": "Hero Mastery: Sojourn",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FE2.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FF6.09F": {
+    "GUID": "000000000FF6.09F",
+    "Name": "Hero Mastery: Reinhardt",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FF6.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FF7.09F": {
+    "GUID": "000000000FF7.09F",
+    "Name": "Hero Mastery",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FF7.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000000FFB.09F": {
+    "GUID": "000000000FFB.09F",
+    "Name": "Hero Mastery: Tracer",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000000FFB.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001001.09F": {
+    "GUID": "000000001001.09F",
+    "Name": "Hero Mastery: Soldier: 76",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001001.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001018.09F": {
+    "GUID": "000000001018.09F",
+    "Name": "Underworld",
+    "Description": "Beneath the glamour of the ritzy King's Row neighborhood, omnics dream of a day they will have the same rights as humans.",
+    "Description2": "Beneath the glamour of the ritzy King's Row neighborhood, omnics dream of a day they will have the same rights as humans.",
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000001018.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "0000000420DC.004",
+    "Image": "0000000420DB.004",
+    "FlagImage": "000000001CFC.004",
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "0000000006B1.09F",
+          "Name": "King's Row",
+          "VariantName": "King's Row (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A1FB.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001046.09F": {
+    "GUID": "000000001046.09F",
+    "Name": "Hero Mastery: Genji",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001046.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000104E.09F": {
+    "GUID": "00000000104E.09F",
+    "Name": "Hero Mastery: Winston",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000104E.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001052.09F": {
+    "GUID": "000000001052.09F",
+    "Name": "Hero Mastery: Mercy",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001052.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000105F.09F": {
+    "GUID": "00000000105F.09F",
+    "Name": "Hero Mastery: Zarya",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000105F.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001063.09F": {
+    "GUID": "000000001063.09F",
+    "Name": "Hero Mastery: Pharah",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001063.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001066.09F": {
+    "GUID": "000000001066.09F",
+    "Name": "Hero Mastery: Echo",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001066.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001087.09F": {
+    "GUID": "000000001087.09F",
+    "Name": "Hero Mastery: Gauntlet",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001087.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000048E3C.004",
+    "Image": "000000048E3D.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000010BA.09F": {
+    "GUID": "0000000010BA.09F",
+    "Name": "Hero Mastery: Mei",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000010BA.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000010D6.09F": {
+    "GUID": "0000000010D6.09F",
+    "Name": "Antarctic Peninsula",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000010D6.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000010D7.09F": {
+    "GUID": "0000000010D7.09F",
+    "Name": "Hero Mastery: Kiriko",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000010D7.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001119.09F": {
+    "GUID": "000000001119.09F",
+    "Name": "Hero Mastery: Dva",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001119.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001128.09F": {
+    "GUID": "000000001128.09F",
+    "Name": "Sanctuary",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": null,
+    "MapGUID": "000000001128.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": [
+      {
+        "GUID": "000000002168.01C",
+        "Name": "Winter",
+        "MapInfo": {
+          "GUID": "000000000A5B.09F",
+          "Name": "Blizzard World",
+          "VariantName": "Blizzard World (Winter)"
+        }
+      }
+    ],
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001157.09F": {
+    "GUID": "000000001157.09F",
+    "Name": "Hanaoka",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001157.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000001160.09F": {
+    "GUID": "000000001160.09F",
+    "Name": "Throne of Anubis",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001160.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000001182.09F": {
+    "GUID": "000000001182.09F",
+    "Name": "Hero Mastery: Brigitte",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001182.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001198.09F": {
+    "GUID": "000000001198.09F",
+    "Name": "Hero Mastery: Ashe",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001198.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000011AD.09F": {
+    "GUID": "0000000011AD.09F",
+    "Name": "Menu/Winter Wonderland (Blizzard World Art)",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000011AD.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001201.09F": {
+    "GUID": "000000001201.09F",
+    "Name": "Hero Mastery: Cassidy",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001201.002",
+    "GameModes": null,
+    "MapType": "PVE",
+    "Thumbnail": "000000044690.004",
+    "Image": "00000004468F.004",
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001202.09F": {
+    "GUID": "000000001202.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001202.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001207.09F": {
+    "GUID": "000000001207.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001207.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000120E.09F": {
+    "GUID": "00000000120E.09F",
+    "Name": "Watchpoint: Gibraltar",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unrelenting Rapids",
+    "StateA": "ATTACK",
+    "StateB": "DEFEND",
+    "VariantName": "Watchpoint: Gibraltar (Talon)",
+    "MapGUID": "00000000120E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000003720D.004",
+    "Image": "00000003720E.004",
+    "FlagImage": "0000000029E0.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001216.09F": {
+    "GUID": "000000001216.09F",
+    "Name": "Menu/Mythic Shop",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001216.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001257.09F": {
+    "GUID": "000000001257.09F",
+    "Name": "Thames District",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000001257.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "00000000125A.09F": {
+    "GUID": "00000000125A.09F",
+    "Name": "Gogadoro",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000125A.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "00000000125E.09F": {
+    "GUID": "00000000125E.09F",
+    "Name": "Place Lacroix",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000125E.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Sunset"
+      }
+    ]
+  },
+  "000000001260.09F": {
+    "GUID": "000000001260.09F",
+    "Name": "Redwood Dam",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001260.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Sunset"
+      }
+    ]
+  },
+  "000000001271.09F": {
+    "GUID": "000000001271.09F",
+    "Name": "Powder Keg Mine",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "000000001271.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": "Scripts"
+      }
+    ]
+  },
+  "00000000127B.09F": {
+    "GUID": "00000000127B.09F",
+    "Name": "Ilios - Ruins",
+    "Description": null,
+    "Description2": null,
+    "Subline": "The Unfeeling Void",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000127B.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000037214.004",
+    "Image": "000000037213.004",
+    "FlagImage": "000000007A40.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "00000000127F.09F": {
+    "GUID": "00000000127F.09F",
+    "Name": "Oasis - Gardens",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "00000000127F.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "00000000C326.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Evening"
+      }
+    ]
+  },
+  "000000001289.09F": {
+    "GUID": "000000001289.09F",
+    "Name": "Menu/Ana Midnight Sun Mythic Weapon",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001289.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012AA.09F": {
+    "GUID": "0000000012AA.09F",
+    "Name": "Arena Victoriae",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012AA.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Sunset"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      },
+      {
+        "GUID": "00000000A065.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012B0.09F": {
+    "GUID": "0000000012B0.09F",
+    "Name": "Esperança",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": "000000022070.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012B5.09F": {
+    "GUID": "0000000012B5.09F",
+    "Name": "Throne of Anubis",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B5.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "0000000012B6.09F": {
+    "GUID": "0000000012B6.09F",
+    "Name": "Hanaoka",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B6.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Sunset"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "0000000012B7.09F": {
+    "GUID": "0000000012B7.09F",
+    "Name": "Colosseo",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000012B7.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FDE8.004",
+    "Image": "00000002FDE9.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Sunset"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000012F1.09F": {
+    "GUID": "0000000012F1.09F",
+    "Name": "Nepal - Shrine",
+    "Description": null,
+    "Description2": null,
+    "Subline": "THE UNFEELING VOID",
+    "StateA": "ATTACK",
+    "StateB": "ATTACK",
+    "VariantName": null,
+    "MapGUID": "0000000012F1.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": "000000005D2A.004",
+    "Image": "0000000070EC.004",
+    "FlagImage": "00000000728B.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": "Sunset"
+      }
+    ]
+  },
+  "000000001318.09F": {
+    "GUID": "000000001318.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001318.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001355.09F": {
+    "GUID": "000000001355.09F",
+    "Name": "Samoa",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001355.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      }
+    ]
+  },
+  "000000001375.09F": {
+    "GUID": "000000001375.09F",
+    "Name": "Wuxing University - Water College",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001375.002",
+    "GameModes": null,
+    "MapType": "MirroredMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning"
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000001378.09F": {
+    "GUID": "000000001378.09F",
+    "Name": "Menu/S17 Mythics Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001378.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001379.09F": {
+    "GUID": "000000001379.09F",
+    "Name": "Menu/GI Joe Collab Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001379.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001388.09F": {
+    "GUID": "000000001388.09F",
+    "Name": "Busan - Sanctuary",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001388.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": "Morning - Summer"
+      },
+      {
+        "GUID": "00000000A03A.01C",
+        "Name": "Morning - Autumn "
+      },
+      {
+        "GUID": "00000000A039.01C",
+        "Name": "Night"
+      }
+    ]
+  },
+  "000000001389.09F": {
+    "GUID": "000000001389.09F",
+    "Name": "Menu/Nerf Collab Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001389.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000138A.09F": {
+    "GUID": "00000000138A.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000138A.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000139D.09F": {
+    "GUID": "00000000139D.09F",
+    "Name": "Menu/Wuyang Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000139D.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "00000000139F.09F": {
+    "GUID": "00000000139F.09F",
+    "Name": "Menu/S18 Mythics 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "00000000139F.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013A2.09F": {
+    "GUID": "0000000013A2.09F",
+    "Name": "Menu/S18 Mythics Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013A2.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013AA.09F": {
+    "GUID": "0000000013AA.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013AA.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013AC.09F": {
+    "GUID": "0000000013AC.09F",
+    "Name": "Menu/Persona Collab Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013AC.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013AD.09F": {
+    "GUID": "0000000013AD.09F",
+    "Name": "Menu/Anniversary Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013AD.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013B3.09F": {
+    "GUID": "0000000013B3.09F",
+    "Name": null,
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013B3.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013B7.09F": {
+    "GUID": "0000000013B7.09F",
+    "Name": "Menu/S19 Mythics 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013B7.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013C2.09F": {
+    "GUID": "0000000013C2.09F",
+    "Name": "Menu/S19 One Punch Man Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013C2.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013C4.09F": {
+    "GUID": "0000000013C4.09F",
+    "Name": "Menu/S19 Stadium Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013C4.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013C5.09F": {
+    "GUID": "0000000013C5.09F",
+    "Name": "Menu/S19 Halloween Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013C5.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013CA.09F": {
+    "GUID": "0000000013CA.09F",
+    "Name": "Menu/S19 OWCS Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013CA.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013DC.09F": {
+    "GUID": "0000000013DC.09F",
+    "Name": "Menu/Junkrat Mythic 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013DC.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000009241.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013E9.09F": {
+    "GUID": "0000000013E9.09F",
+    "Name": "Menu/Vendetta 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013E9.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": "00000002FDE8.004",
+    "Image": "00000002FDE9.004",
+    "FlagImage": "000000013ED3.004",
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "00000000A0C4.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013F0.09F": {
+    "GUID": "0000000013F0.09F",
+    "Name": "Menu/S20 Christmas Art",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013F0.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  },
+  "0000000013F1.09F": {
+    "GUID": "0000000013F1.09F",
+    "Name": "Menu/S20 Mythics 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "0000000013F1.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000008F9D.01C",
+        "Name": null
+      }
+    ]
+  },
+  "000000001407.09F": {
+    "GUID": "000000001407.09F",
+    "Name": "Menu/Doomfist Mythic 3D",
+    "Description": null,
+    "Description2": null,
+    "Subline": null,
+    "StateA": null,
+    "StateB": null,
+    "VariantName": null,
+    "MapGUID": "000000001407.002",
+    "GameModes": null,
+    "MapType": "OffenseDefenseMap",
+    "Thumbnail": null,
+    "Image": null,
+    "FlagImage": null,
+    "CelebrationVariants": null,
+    "Variations": [
+      {
+        "GUID": "000000007060.01C",
+        "Name": null
+      }
+    ]
+  }
+}
