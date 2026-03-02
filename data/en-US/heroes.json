@@ -58,18 +58,18 @@
         "TextureGUID": "000000001308.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "Subrole: Flanker",
+        "Description": "Health packs restore more health.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBC.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -190,30 +190,30 @@
         "TextureGUID": "00000000133C.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "Subrole: Flanker",
+        "Description": "Health packs restore more health.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D96.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000BF3.09E",
-        "Name": "Blink Packs",
-        "Description": "Health Packs restore 1 Blink charge.",
+        "GUID": "000000000E55.09E",
+        "Name": "Chronal Dash",
+        "Description": "Blink distance is increased by 20%%.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4FE.004"
+        "TextureGUID": "000000070EA9.004"
       },
       {
         "GUID": "000000000CE7.09E",
@@ -224,12 +224,12 @@
         "TextureGUID": "000000067434.004"
       },
       {
-        "GUID": "000000000BBE.09E",
-        "Name": "Flashback",
-        "Description": "Recall increases Blink recovery rate by 150%% for 3 seconds.",
+        "GUID": "000000000BF3.09E",
+        "Name": "Blink Packs",
+        "Description": "Health Packs restore 1 Blink charge.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4FF.004"
+        "TextureGUID": "00000005E4FE.004"
       },
       {
         "GUID": "000000000C0B.09E",
@@ -342,12 +342,12 @@
         "TextureGUID": "0000000012F6.004"
       },
       {
-        "GUID": "0000000003A4.09E",
-        "Name": "Sympathetic Recovery",
-        "Description": "Healing allies with the Caduceus Staff heals you.",
+        "GUID": "000000000E72.09E",
+        "Name": "Swift Recovery",
+        "Description": "Begin regenerating health more quickly.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
-        "TextureGUID": "00000004E119.004"
+        "TextureGUID": "000000004123.004"
       },
       {
         "GUID": "000000000167.09E",
@@ -358,18 +358,18 @@
         "TextureGUID": "000000011E07.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "Subrole: Medic",
+        "Description": "Healing allies with your weapon also heals you.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBD.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -510,18 +510,18 @@
         "TextureGUID": "000000014F0C.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "Subrole: Sharpshooter",
+        "Description": "Critical hits reduce your movement ability cooldowns.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCB.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -536,17 +536,17 @@
         "TextureGUID": "00000005E475.004"
       },
       {
-        "GUID": "000000000D43.09E",
-        "Name": "Swift Lunge",
-        "Description": "Arrow hits reduce the cooldown of Lunge by up to 1 second, based on charge.",
+        "GUID": "000000000E34.09E",
+        "Name": "Frost Arrow",
+        "Description": "Press %1$s to ready an explosive frost arrow, slowing enemies hit by 35%% for 2 seconds.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067428.004"
+        "TextureGUID": "000000070E9D.004"
       },
       {
         "GUID": "000000000C29.09E",
         "Name": "Dragon Fury",
-        "Description": "After hitting an enemy with Primary Fire, gain 25%% attack speed for 2 seconds.",
+        "Description": "After hitting an enemy with Primary Fire, gain 20%% attack speed for 1.5 seconds.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E473.004"
@@ -643,11 +643,11 @@
       },
       {
         "GUID": "00000000001E.09E",
-        "Name": "Rivet Gun - Alt Fire",
+        "Name": "Secondary Fire",
         "Description": "Inaccurate but powerful short-range weapon.",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "000000001336.004"
+        "TextureGUID": "000000070898.004"
       },
       {
         "GUID": "000000000229.09E",
@@ -658,18 +658,18 @@
         "TextureGUID": "000000001335.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DC8.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -684,12 +684,12 @@
         "TextureGUID": "000000067433.004"
       },
       {
-        "GUID": "000000000B94.09E",
-        "Name": "Fully Loaded",
-        "Description": "Activating Overload fully refills Rivet Gun's ammo.",
+        "GUID": "000000000E59.09E",
+        "Name": "Pre-Heated",
+        "Description": "Molten Core activates Overload.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4A8.004"
+        "TextureGUID": "000000070EA8.004"
       },
       {
         "GUID": "000000000B53.09E",
@@ -800,7 +800,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -809,7 +809,15 @@
         "GUID": "000000000DC3.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "Subrole: Stalwart",
+        "Description": "Gain knockback and slow resistance.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -824,12 +832,12 @@
         "TextureGUID": "000000061C92.004"
       },
       {
-        "GUID": "000000000D02.09E",
-        "Name": "Barrier Re-Charge",
-        "Description": "Distance travelled while using Charge regenerates your Barrier Field by 200 per second.",
+        "GUID": "000000000B95.09E",
+        "Name": "Crusader's Resolve",
+        "Description": "While using Barrier Field, your passive health regeneration triggers 75%% sooner. ",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006741A.004"
+        "TextureGUID": "00000005E4AF.004"
       },
       {
         "GUID": "000000000B10.09E",
@@ -938,12 +946,12 @@
         "TextureGUID": "00000004E118.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "Subrole: Recon",
+        "Description": "Damaging enemies below half health reveals them.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000445.09E",
@@ -957,7 +965,7 @@
         "GUID": "000000000D9E.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -988,12 +996,12 @@
         "TextureGUID": "00000005A282.004"
       },
       {
-        "GUID": "000000000D1B.09E",
-        "Name": "Sky Spy",
-        "Description": "Concussive Blast reveals targets to Pharah for 3 seconds. During this, the next direct Rocket Launcher hit per target deals 30%% extra damage.",
+        "GUID": "000000000E66.09E",
+        "Name": "Rocket Salvo",
+        "Description": "After using a movement ability, your next primary fire also shoots two spiraling mini-rockets, each exploding for 40 damage.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006742C.004"
+        "TextureGUID": "0000000721B1.004"
       }
     ],
     "Images": [
@@ -1087,16 +1095,16 @@
       },
       {
         "GUID": "000000000305.09E",
-        "Name": "Tesla Cannon",
+        "Name": "Secondary Fire",
         "Description": "Hold to charge, release to fire focused electricity.",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "00000000133A.004"
+        "TextureGUID": "000000070893.004"
       },
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -1105,19 +1113,27 @@
         "GUID": "000000000DA1.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "Subrole: Initiator",
+        "Description": "Gain a heal over time by staying airborne.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000D2C.09E",
-        "Name": "Barrier Toss",
-        "Description": "Winston now throws his Barrier Projector forward when used.",
+        "GUID": "000000000E54.09E",
+        "Name": "Electric Charge",
+        "Description": "Winston gains 10%% movement speed for each enemy he is damaging with Tesla Cannon's primary fire, up to 30%%.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006740C.004"
+        "TextureGUID": "000000070EAB.004"
       },
       {
         "GUID": "000000000B7C.09E",
@@ -1234,18 +1250,18 @@
         "TextureGUID": "0000000679A5.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "Subrole: Sharpshooter",
+        "Description": "Critical hits reduce your movement ability cooldowns.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCF.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1276,12 +1292,12 @@
         "TextureGUID": "000000067436.004"
       },
       {
-        "GUID": "000000000B69.09E",
-        "Name": "Escape Plan",
-        "Description": "Scoped shot hits reduce Grappling Hook’s cooldown by up to 4 seconds.",
+        "GUID": "000000000E39.09E",
+        "Name": "Widow's Bite",
+        "Description": "Scoped shots can charge up to 125%%, piercing enemies when fully charged.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E502.004"
+        "TextureGUID": "000000070EAF.004"
       }
     ],
     "Images": [
@@ -1370,18 +1386,18 @@
         "TextureGUID": "00000004E11A.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DC6.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1502,18 +1518,18 @@
         "TextureGUID": "00000000130F.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCD.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1603,11 +1619,11 @@
       },
       {
         "GUID": "000000000033.09E",
-        "Name": "Orb of Destruction",
+        "Name": "Secondary Fire",
         "Description": "Charge to release more projectiles.",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "000000001334.004"
+        "TextureGUID": "000000070897.004"
       },
       {
         "GUID": "000000000032.09E",
@@ -1634,14 +1650,6 @@
         "TextureGUID": "0000000012FC.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
-        "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
-      },
-      {
         "GUID": "00000000034D.09E",
         "Name": "Snap Kick",
         "Description": "Quick melee damage increased by 50%%, and its knockback is significantly increased.",
@@ -1650,22 +1658,30 @@
         "TextureGUID": "00000004813D.004"
       },
       {
+        "GUID": "000000000DA8.09E",
+        "Name": "Subrole: Tactician",
+        "Description": "Store excess ultimate charge.",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
         "GUID": "000000000DB1.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000CC9.09E",
-        "Name": "Transcendent Condemnation",
-        "Description": "While using Transcendence, apply Discord Orb to all enemies within range.",
+        "GUID": "000000000E44.09E",
+        "Name": "Discordant Repair",
+        "Description": "Zenyatta gains 10%% lifesteal against enemies with Discord Orb.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "0000000673FA.004"
+        "TextureGUID": "000000070E93.004"
       },
       {
         "GUID": "000000000C1B.09E",
@@ -1775,11 +1791,11 @@
       },
       {
         "GUID": "0000000000DC.09E",
-        "Name": "Fan of Blades",
+        "Name": "Secondary Fire",
         "Description": "Throw a fan of 3 projectiles in an arc.",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "000000004E83.004"
+        "TextureGUID": "000000070896.004"
       },
       {
         "GUID": "0000000000DD.09E",
@@ -1790,18 +1806,18 @@
         "TextureGUID": "000000042B12.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "Subrole: Flanker",
+        "Description": "Health packs restore more health.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB4.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1936,7 +1952,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -1945,7 +1961,15 @@
         "GUID": "000000000DC2.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "Subrole: Bruiser",
+        "Description": "Gain resistance to critical hits. Move faster while at critical health.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1978,7 +2002,7 @@
       {
         "GUID": "000000000D59.09E",
         "Name": "Pulled Pork",
-        "Description": "Gain overhealth based on how far you pull enemies with Chain Hook, up to 250.",
+        "Description": "Gain overhealth based on how far you pull enemies with Chain Hook, up to 300.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "000000067ACB.004"
@@ -2062,18 +2086,18 @@
         "TextureGUID": "0000000695E5.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "Subrole: Sharpshooter",
+        "Description": "Critical hits reduce your movement ability cooldowns.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB3.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2096,12 +2120,12 @@
         "TextureGUID": "000000061C95.004"
       },
       {
-        "GUID": "000000000B41.09E",
-        "Name": "Gun Slingin'",
-        "Description": "Critical hits with Primary Fire reduce the cooldown of Combat Roll by 3 seconds.",
+        "GUID": "000000000E31.09E",
+        "Name": "Rollin' Round-Up",
+        "Description": "Combat Roll also heals 15 health for each bullet reloaded.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E478.004"
+        "TextureGUID": "000000070E96.004"
       },
       {
         "GUID": "000000000D2B.09E",
@@ -2206,18 +2230,18 @@
         "TextureGUID": "000000004E54.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBA.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2360,7 +2384,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -2369,19 +2393,27 @@
         "GUID": "000000000DC5.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "Subrole: Bruiser",
+        "Description": "Gain resistance to critical hits. Move faster while at critical health.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000CBB.09E",
-        "Name": "Energy Converter",
-        "Description": "Hits with Particle Cannon's secondary fire generate 2 energy.",
+        "GUID": "000000000E65.09E",
+        "Name": "Extra Oomph",
+        "Description": "While a Barrier is active, dealing damage with Particle Cannon's beam generates energy.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067418.004"
+        "TextureGUID": "000000070EAD.004"
       },
       {
         "GUID": "000000000B14.09E",
@@ -2394,7 +2426,7 @@
       {
         "GUID": "000000000B15.09E",
         "Name": "Energy Lance",
-        "Description": "Particle Cannon's beam pierces enemies while over 50 energy.",
+        "Description": "Particle Cannon's beam pierces enemies.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4C7.004"
@@ -2402,7 +2434,7 @@
       {
         "GUID": "000000000B16.09E",
         "Name": "Spotter",
-        "Description": "Projected Barrier activates ally health regeneration and increases their movement speed by 25%%.",
+        "Description": "Projected Barrier activates ally health regeneration and increases their movement speed by 20%%.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4CA.004"
@@ -2502,35 +2534,35 @@
         "TextureGUID": "00000000356C.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D62.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000BA2.09E",
-        "Name": "Recycled Pulse Munitions",
-        "Description": "Helix Rockets reload 15 ammo if they damage an enemy.",
+        "GUID": "000000000E2C.09E",
+        "Name": "Helix Propulsion",
+        "Description": "Helix Rockets' projectile speed is increased by 50%%.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4F4.004"
+        "TextureGUID": "000000070EAE.004"
       },
       {
         "GUID": "000000000CA6.09E",
         "Name": "Tactical Salvo",
-        "Description": "Helix Rockets cooldown is reduced by 80%% during Tactical Visor.",
+        "Description": "During Tactical Visor, Helix Rockets' cooldown is reduced by 80%% and no longer interrupts firing Heavy Pulse Rifle.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "000000067431.004"
@@ -2654,18 +2686,18 @@
         "TextureGUID": "00000004E11B.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA8.09E",
+        "Name": "Subrole: Tactician",
+        "Description": "Store excess ultimate charge.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DAF.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2824,7 +2856,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -2833,7 +2865,15 @@
         "GUID": "000000000DB0.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "Subrole: Initiator",
+        "Description": "Gain a heal over time by staying airborne.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2962,18 +3002,18 @@
         "TextureGUID": "0000000695E7.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DA3.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3104,24 +3144,24 @@
       {
         "GUID": "0000000000F4.09E",
         "Name": "Opportunist",
-        "Description": "You detect enemies below half health through walls, and deal more damage to hacked enemies.",
+        "Description": "You can see when enemy heroes have their ultimate ability, and deal more damage to hacked enemies.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "00000000AFBF.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "Subrole: Recon",
+        "Description": "Damaging enemies below half health reveals them.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCC.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3144,12 +3184,12 @@
         "TextureGUID": "00000005E49E.004"
       },
       {
-        "GUID": "000000000D44.09E",
-        "Name": "Healthy Hacker",
-        "Description": "Hacked health packs provide up to 75 overhealth to Sombra.",
+        "GUID": "000000000E4D.09E",
+        "Name": "High-Speed Bandwidth",
+        "Description": "Hacked health packs provide allies with 25%% increased movement speed and 50 overhealth for 4 seconds.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067432.004"
+        "TextureGUID": "000000070EA7.004"
       },
       {
         "GUID": "000000000C7C.09E",
@@ -3182,7 +3222,7 @@
   "00000000012F.075": {
     "GUID": "00000000012F.075",
     "Name": "Doomfist",
-    "Description": "One of the leaders of Talon, Doomfist is determined to plunge the world into a new conflict that he believes will make humanity stronger.",
+    "Description": null,
     "Class": "Tank",
     "Gender": "Male",
     "Size": "Normal",
@@ -3248,7 +3288,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -3257,7 +3297,15 @@
         "GUID": "000000000DBE.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "Subrole: Initiator",
+        "Description": "Gain a heal over time by staying airborne.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3390,18 +3438,18 @@
         "TextureGUID": "0000000695D7.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA8.09E",
+        "Name": "Subrole: Tactician",
+        "Description": "Store excess ultimate charge.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBB.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3532,7 +3580,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -3541,7 +3589,15 @@
         "GUID": "000000000DAE.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "Subrole: Bruiser",
+        "Description": "Gain resistance to critical hits. Move faster while at critical health.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4061,18 +4117,18 @@
         "TextureGUID": "000000003339.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "Subrole: Survivor",
+        "Description": "Movement abilities start passive health regeneration.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCA.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4201,18 +4257,18 @@
         "TextureGUID": "000000011D87.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "Subrole: Medic",
+        "Description": "Healing allies with your weapon also heals you.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB7.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4229,7 +4285,7 @@
       {
         "GUID": "000000000CA5.09E",
         "Name": "Destruction's Divide",
-        "Description": "Coalescence can be toggled between pure healing or pure damage, with 25%% greater effect.",
+        "Description": "Coalescence can be toggled between pure healing or pure damage, with 30%% greater effect.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "0000000673F8.004"
@@ -4351,7 +4407,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -4360,7 +4416,15 @@
         "GUID": "000000000DC4.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "Subrole: Initiator",
+        "Description": "Gain a heal over time by staying airborne.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4375,12 +4439,12 @@
         "TextureGUID": "00000005E464.004"
       },
       {
-        "GUID": "000000000C3C.09E",
-        "Name": "Pack Rat",
-        "Description": "Health Packs heal an additional 100 health.",
+        "GUID": "000000000E2E.09E",
+        "Name": "Multi-Ball",
+        "Description": "Press %1$s within 5 seconds after using Minefield to deploy 7 additional mines.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E463.004"
+        "TextureGUID": "000000070EAC.004"
       },
       {
         "GUID": "000000000C2D.09E",
@@ -4481,18 +4545,18 @@
         "TextureGUID": "000000029CE7.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "Subrole: Sharpshooter",
+        "Description": "Critical hits reduce your movement ability cooldowns.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D9F.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4621,18 +4685,18 @@
         "TextureGUID": "0000000695D6.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "Subrole: Sharpshooter",
+        "Description": "Critical hits reduce your movement ability cooldowns.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB2.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4647,12 +4711,12 @@
         "TextureGUID": "000000067438.004"
       },
       {
-        "GUID": "000000000B88.09E",
-        "Name": "Sidewinder",
-        "Description": "Coach Gun knocks back Ashe and enemies 12%% farther.",
+        "GUID": "000000000E4F.09E",
+        "Name": "Double-Barreled",
+        "Description": "Knocking an enemy back with Coach Gun briefly allows you to use it one more time with 25%% less knockback.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E471.004"
+        "TextureGUID": "000000070E94.004"
       },
       {
         "GUID": "000000000B3E.09E",
@@ -4769,18 +4833,18 @@
         "TextureGUID": "00000002ABE2.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "Subrole: Recon",
+        "Description": "Damaging enemies below half health reveals them.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DC9.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4789,7 +4853,7 @@
       {
         "GUID": "000000000CFE.09E",
         "Name": "Focused Rush",
-        "Description": "Focusing Beam's range is increased by 4 meters and movement speed is increased by 10%% when active.",
+        "Description": "Focusing Beam's range is increased by 4 meters and movement speed is increased by 20%% when active.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "000000067420.004"
@@ -4957,46 +5021,46 @@
         "TextureGUID": "00000001E304.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA8.09E",
+        "Name": "Subrole: Tactician",
+        "Description": "Store excess ultimate charge.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DD0.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000D52.09E",
-        "Name": "Biotic Reloader",
-        "Description": "Hitting an entire three-round burst reloads a healing projectile. Healing projectile direct hits reload 3 primary fire ammo.",
+        "GUID": "000000000E45.09E",
+        "Name": "Expanded Field",
+        "Description": "Immortality Field's radius is 30%% bigger.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067ACA.004"
-      },
-      {
-        "GUID": "000000000B57.09E",
-        "Name": "Automated Healing",
-        "Description": "Using any ability triggers Baptiste's Shoulder Turret, periodically firing up to 3 shots at allies, each restoring 25 health.",
-        "Category": "Perk",
-        "MovieGUID": null,
-        "TextureGUID": "0000000673E5.004"
+        "TextureGUID": "000000070E95.004"
       },
       {
         "GUID": "000000000B56.09E",
         "Name": "Assault Burst",
-        "Description": "Regenerative Burst now provides Baptiste with 25%% increased attack speed for 4 seconds. ",
+        "Description": "Regenerative Burst now provides Baptiste with 20%% increased attack speed for 3 seconds. ",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E496.004"
+      },
+      {
+        "GUID": "000000000B57.09E",
+        "Name": "Automated Healing",
+        "Description": "Using any ability triggers Baptiste's Shoulder Turret, periodically firing up to 3 shots at allies, each restoring 40 health.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000673E5.004"
       },
       {
         "GUID": "000000000B91.09E",
@@ -5093,18 +5157,18 @@
         "TextureGUID": "000000032723.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "Subrole: Medic",
+        "Description": "Healing allies with your weapon also heals you.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DA4.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5137,7 +5201,7 @@
       {
         "GUID": "000000000B97.09E",
         "Name": "Foxtrot",
-        "Description": "Protection Suzu grants allies 100%% increased cooldown recovery and 30%% increased movement speed for 2 seconds.",
+        "Description": "Protection Suzu grants allies 30%% increased movement speed for 4 seconds.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4A3.004"
@@ -5243,7 +5307,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -5252,7 +5316,15 @@
         "GUID": "000000000DB9.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "Subrole: Stalwart",
+        "Description": "Gain knockback and slow resistance.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5383,7 +5455,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -5392,7 +5464,15 @@
         "GUID": "000000000DA0.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "Subrole: Stalwart",
+        "Description": "Gain knockback and slow resistance.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5409,7 +5489,7 @@
       {
         "GUID": "000000000CE8.09E",
         "Name": "Hyper Regeneration",
-        "Description": "50%% of Hyperspheres' damage restores Experimental Barrier's health.",
+        "Description": "40%% of Hyperspheres' damage restores Experimental Barrier's health.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000006741B.004"
@@ -5716,7 +5796,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -5725,7 +5805,15 @@
         "GUID": "000000000DC1.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "Subrole: Stalwart",
+        "Description": "Gain knockback and slow resistance.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5871,46 +5959,46 @@
         "TextureGUID": "00000003C736.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "Subrole: Medic",
+        "Description": "Healing allies with your weapon also heals you.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DD2.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000C14.09E",
-        "Name": "Cleansing Grasp",
-        "Description": "Life Grip cleanses negative effects. Cleansing a negative effect reduces Life Grip cooldown by 4 seconds.",
+        "GUID": "000000000E53.09E",
+        "Name": "Petal Protection",
+        "Description": "Allies heal 20 health per second while standing on Petal Platform.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4B3.004"
+        "TextureGUID": "000000070EA3.004"
       },
       {
-        "GUID": "000000000C13.09E",
-        "Name": "Lifeweaving",
-        "Description": "Rejuvenating Dash adds 30 healing to your next Healing Blossom within 3 seconds.",
+        "GUID": "000000000E3A.09E",
+        "Name": "Dashing Escape",
+        "Description": "Rejuvenating Dash's distance is increased by 30%%.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4B5.004"
+        "TextureGUID": "000000070EA2.004"
       },
       {
-        "GUID": "000000000CD3.09E",
-        "Name": "Petal Power",
-        "Description": "Allies gain 30%% attack speed while standing on a raised Petal Platform.",
+        "GUID": "000000000E3E.09E",
+        "Name": "Sow the Seed",
+        "Description": "Quick Melee with Healing Blossom equipped to toss a seed forward. Another ally can pick it up for 75 overhealth and 25%% speed boost for 5 seconds.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "0000000673F1.004"
+        "TextureGUID": "000000070EA4.004"
       },
       {
         "GUID": "000000000C15.09E",
@@ -6391,7 +6479,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -6400,7 +6488,15 @@
         "GUID": "000000000DC0.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "Subrole: Bruiser",
+        "Description": "Gain resistance to critical hits. Move faster while at critical health.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -6409,7 +6505,7 @@
       {
         "GUID": "000000000B38.09E",
         "Name": "Kinetic Bandolier",
-        "Description": "Overrun reloads up to 150 ammo while charging.",
+        "Description": "Overrun reloads up to 150 ammo during the first second of charging.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4FB.004"
@@ -6595,18 +6691,18 @@
         "TextureGUID": "0000000695E6.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "Subrole: Survivor",
+        "Description": "Movement abilities start passive health regeneration.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DD1.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -6631,7 +6727,7 @@
       {
         "GUID": "000000000D16.09E",
         "Name": "Solar Flare",
-        "Description": "Press %1$s while using Solar Rifle's healing beam to consume 50%% of energy, healing allies in front of Illari for 100 healing.",
+        "Description": "Press %1$s while using Solar Rifle's healing beam to heal all allies in front of Illari for 100 healing.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "0000000673EC.004"
@@ -6731,30 +6827,30 @@
         "TextureGUID": "00000005F9BC.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "Subrole: Recon",
+        "Description": "Damaging enemies below half health reveals them.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D9A.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000C48.09E",
-        "Name": "Hunters Instinct",
-        "Description": "Direct hits with Take Aim reveal enemies to Freja for 3 seconds.",
+        "GUID": "000000000C46.09E",
+        "Name": "Relentless Barrage",
+        "Description": "Direct hits with Take Aim refund 8 automatic bolt ammo.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067423.004"
+        "TextureGUID": "000000060748.004"
       },
       {
         "GUID": "000000000CCA.09E",
@@ -6773,12 +6869,12 @@
         "TextureGUID": "000000067422.004"
       },
       {
-        "GUID": "000000000C46.09E",
-        "Name": "Relentless Barrage",
-        "Description": "Direct hits with Take Aim refund 8 automatic bolt ammo.",
+        "GUID": "000000000E2A.09E",
+        "Name": "Rising Winds",
+        "Description": "Updraft gains an additional charge but has 20%% decreased height.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000060748.004"
+        "TextureGUID": "000000070E9C.004"
       }
     ],
     "Images": [
@@ -6879,18 +6975,18 @@
         "TextureGUID": "00000004A03B.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "Subrole: Flanker",
+        "Description": "Health packs restore more health.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCE.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -7387,7 +7483,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -7396,7 +7492,15 @@
         "GUID": "000000000DA2.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "Subrole: Stalwart",
+        "Description": "Gain knockback and slow resistance.",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -7567,18 +7671,18 @@
         "TextureGUID": "00000004E37B.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "Subrole: Survivor",
+        "Description": "Movement abilities start passive health regeneration.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB5.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -7893,7 +7997,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -8226,7 +8330,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "Role: Tank",
-        "Description": "Reduces knockbacks and critical damage received.\r\nLess ultimate generated by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -8757,12 +8861,12 @@
         "TextureGUID": "000000065FBE.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "Role: Support",
-        "Description": "Begin regenerating health more quickly.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "Subrole: Survivor",
+        "Description": "Movement abilities start passive health regeneration.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "00000000085E.09E",
@@ -8776,7 +8880,7 @@
         "GUID": "000000000DD3.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -8921,18 +9025,18 @@
         "TextureGUID": "00000006AC3D.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "Role: Damage",
-        "Description": "Damaging an enemy temporarily reduces their healing received.",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "Subrole: Flanker",
+        "Description": "Health packs restore more health.",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DF5.09E",
         "Name": "Hero Stats",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -8941,7 +9045,7 @@
       {
         "GUID": "000000000C77.09E",
         "Name": "Siphoning Strike",
-        "Description": "Overhead strikes gain 40%% Lifesteal.",
+        "Description": "Overhead strikes gain 30%% Lifesteal.",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000006BB46.004"
@@ -8955,12 +9059,12 @@
         "TextureGUID": "00000006BB47.004"
       },
       {
-        "GUID": "000000000C78.09E",
-        "Name": "Swift Vengeance",
-        "Description": "Last player to land a killing blow on you becomes a target. Eliminate the target to gain 150 overhealth and reset cooldowns.",
+        "GUID": "000000000E6D.09E",
+        "Name": "Extra Edge",
+        "Description": "Projected Edge costs 25%% less energy.",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006AF2F.004"
+        "TextureGUID": "0000000724BA.004"
       },
       {
         "GUID": "000000000CD8.09E",
@@ -8987,6 +9091,610 @@
       {
         "Id": "0000000040CA.01C",
         "TextureGUID": "000000068F87.004"
+      },
+      {
+        "Id": "000000010297.01C",
+        "TextureGUID": "00000006EC12.004"
+      },
+      {
+        "Id": "000000010298.01C",
+        "TextureGUID": "00000006EC10.004"
+      },
+      {
+        "Id": "0000000106EC.01C",
+        "TextureGUID": "00000006EC11.004"
+      }
+    ]
+  },
+  "0000000004C4.075": {
+    "GUID": "0000000004C4.075",
+    "Name": "Domina",
+    "Description": "As Vishkar Corporation’s most prized negotiator, Domina uses her masterful command of hard-light to take control of every situation.",
+    "Class": "Tank",
+    "Gender": "Female",
+    "Size": "Normal",
+    "Color": "#69DEEFFF",
+    "sRGBColor": "#ACF0F8FF",
+    "GalleryColor": {
+      "R": 0.41176474,
+      "G": 0.8705883,
+      "B": 0.93725497,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000DE7.09E",
+        "Name": "Hero Stats",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000C53.09E",
+        "Name": "Photon Magnum",
+        "Description": "Medium-range beam that culminates in a high impact shot. ",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006F1CF.004"
+      },
+      {
+        "GUID": "000000000C6D.09E",
+        "Name": "Barrier Array",
+        "Description": "Construct a segmented barrier. ",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000068B6F.004"
+      },
+      {
+        "GUID": "000000000C90.09E",
+        "Name": "Sonic Repulsors",
+        "Description": "Push enemies back, stunning them if they hit a wall. ",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000068C29.004"
+      },
+      {
+        "GUID": "000000000CAB.09E",
+        "Name": "Crystal Charge",
+        "Description": "Project an explosive crystal and reactivate to detonate it.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000068BEC.004"
+      },
+      {
+        "GUID": "000000000C91.09E",
+        "Name": "Panopticon",
+        "Description": "Fire a hard-light barrier that imprisons enemies and detonates on expiration.",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "000000068B89.004"
+      },
+      {
+        "GUID": "000000000CA2.09E",
+        "Name": "Reconstruction",
+        "Description": "Dealing damage with abilities restores shields.",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721D6.004"
+      },
+      {
+        "GUID": "000000000347.09E",
+        "Name": "Role: Tank",
+        "Description": "Less ultimate given by healing and damage received.\r\nIncreases base health in Role Queue game modes.",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "000000004120.004"
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "Subrole: Stalwart",
+        "Description": "Gain knockback and slow resistance.",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000CE2.09E",
+        "Name": "Efficient Design",
+        "Description": "After using Barrier Array, restore 50 shields and activate passive health regeneration.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721CC.004"
+      },
+      {
+        "GUID": "000000000CE3.09E",
+        "Name": "Disruptive Detonation",
+        "Description": "Enemies hit by Crystal Charge's explosion are slowed by 30%% for 2 seconds. ",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721D3.004"
+      },
+      {
+        "GUID": "000000000CE4.09E",
+        "Name": "Power Move",
+        "Description": "Barrier Array can be used as a wall to stun enemies with Sonic Repulsors with a 100%% damage increase. ",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721D5.004"
+      },
+      {
+        "GUID": "000000000CE5.09E",
+        "Name": "Extended Power",
+        "Description": "Increase the range of Photon Magnum by 20%%.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721CA.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "00000006EAF9.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "00000006EAFA.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000006EAFB.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000006EAFC.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": null
+      }
+    ]
+  },
+  "0000000004D8.075": {
+    "GUID": "0000000004D8.075",
+    "Name": "Emre",
+    "Description": "Emre disappeared after a lauded tenure on the Overwatch strike team. He has resurfaced years later, his body and mind manipulated by something unknown.",
+    "Class": "Damage",
+    "Gender": "Male",
+    "Size": "Normal",
+    "Color": "#C70C0CFF",
+    "sRGBColor": "#E53D3DFF",
+    "GalleryColor": {
+      "R": 0.7803922,
+      "G": 0.04705883,
+      "B": 0.04705883,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000C62.09E",
+        "Name": "Synthetic Burst Rifle",
+        "Description": "Three-round burst weapon.",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006F210.004"
+      },
+      {
+        "GUID": "000000000C73.09E",
+        "Name": "Take Aim",
+        "Description": "Hold to zoom in, tightening accuracy and increasing fall off range.",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006F236.004"
+      },
+      {
+        "GUID": "000000000C64.09E",
+        "Name": "Siphon Blaster",
+        "Description": "Temporarily wield a semi-automatic pistol with lifestealing explosive rounds. Move faster and jump higher while wielded.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006DFB5.004"
+      },
+      {
+        "GUID": "000000000C63.09E",
+        "Name": "Cyber Frag",
+        "Description": "Throw a grenade that detonates shortly after bouncing.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006DFB0.004"
+      },
+      {
+        "GUID": "000000000C7A.09E",
+        "Name": "Override Protocol",
+        "Description": "An override initiates, transforming you into a living weapon.",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000680CD.004"
+      },
+      {
+        "GUID": "000000000E1C.09E",
+        "Name": "Altered Vitals",
+        "Description": "Passive health regeneration activates sooner and instantly restores 30 health when activated.",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000720DA.004"
+      },
+      {
+        "GUID": "000000000DAC.09E",
+        "Name": "Subrole: Specialist",
+        "Description": "Eliminating an enemy briefly increases reload speed.",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000E5C.09E",
+        "Name": "Hero Stats",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000E1E.09E",
+        "Name": "Suppressive Security",
+        "Description": "Override Protocol’s light rounds slow enemies by 30%% for 1 second.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9A.004"
+      },
+      {
+        "GUID": "000000000E46.09E",
+        "Name": "Enhanced Agility",
+        "Description": "Siphon Blaster’s movement speed bonus is increased by 20%% while not firing.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E98.004"
+      },
+      {
+        "GUID": "000000000E14.09E",
+        "Name": "Heat Sink",
+        "Description": "Direct hits with Siphon Blaster refund heat and increase its duration by 0.1 seconds.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E99.004"
+      },
+      {
+        "GUID": "000000000DF1.09E",
+        "Name": "Cyber Adhesion",
+        "Description": "Cyber Frag now sticks on contact, dealing 40 extra damage to stuck enemies.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9B.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "00000006ECD5.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "00000006ECD6.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000006AC6E.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000006AC6F.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": "000000015C09.004"
+      },
+      {
+        "Id": "000000010297.01C",
+        "TextureGUID": "000000015C09.004"
+      },
+      {
+        "Id": "000000010298.01C",
+        "TextureGUID": "000000015C09.004"
+      }
+    ]
+  },
+  "0000000004DD.075": {
+    "GUID": "0000000004DD.075",
+    "Name": "Anran",
+    "Description": "The star graduate of Wuxing University’s Fire College, Anran is always burning to push her limits.",
+    "Class": "Damage",
+    "Gender": "Female",
+    "Size": "Small",
+    "Color": "#E81A05FF",
+    "sRGBColor": "#F55A26FF",
+    "GalleryColor": {
+      "R": 0.909804,
+      "G": 0.10196079,
+      "B": 0.019607844,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000C88.09E",
+        "Name": "Zhuque Fans",
+        "Description": "Hand fans that shoot fiery projectiles.",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E738.004"
+      },
+      {
+        "GUID": "000000000C89.09E",
+        "Name": "Fan the Flames",
+        "Description": "Hot wind blast that amplifies burning damage.",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E736.004"
+      },
+      {
+        "GUID": "000000000CB1.09E",
+        "Name": "Inferno Rush",
+        "Description": "Propel yourself forward and damage enemies you impact.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E737.004"
+      },
+      {
+        "GUID": "000000000CC1.09E",
+        "Name": "Dancing Blaze",
+        "Description": "Strike nearby enemies while dodging all damage.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E735.004"
+      },
+      {
+        "GUID": "000000000D06.09E",
+        "Name": "Vermillion Ascent",
+        "Description": "Charge forward, exploding on impact and instantly igniting enemies.",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E734.004"
+      },
+      {
+        "GUID": "000000000E0E.09E",
+        "Name": "Vermillion Revival",
+        "Description": "When dead, revive yourself in a fiery explosion.",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E73A.004"
+      },
+      {
+        "GUID": "000000000C8A.09E",
+        "Name": "Ignition",
+        "Description": "Hit enemies with fire attacks to burn them.",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBD8.004"
+      },
+      {
+        "GUID": "000000000E29.09E",
+        "Name": "Hero Stats",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDC.09E",
+        "Name": "Subrole: Flanker",
+        "Description": "Health packs restore more health.",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000DEE.09E",
+        "Name": "Smoulder",
+        "Description": "Ignited enemies burn 1.5 seconds longer.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBDB.004"
+      },
+      {
+        "GUID": "000000000E3D.09E",
+        "Name": "Heat Shield",
+        "Description": "Gain 50 overhealth when you use your Ultimate and for each enemy ignited by it.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBDA.004"
+      },
+      {
+        "GUID": "000000000E3F.09E",
+        "Name": "Short Fuse",
+        "Description": "Impacting an enemy with Inferno Rush reduces its cooldown by 1.5 seconds.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBD9.004"
+      },
+      {
+        "GUID": "000000000D71.09E",
+        "Name": "Hungering Blaze",
+        "Description": "Heal 50 health for each enemy hit by Dancing Blaze.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E73D.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "00000006E592.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "00000006E593.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000006E594.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000006E595.004"
+      },
+      {
+        "Id": "000000010297.01C",
+        "TextureGUID": null
+      },
+      {
+        "Id": "000000010298.01C",
+        "TextureGUID": null
+      },
+      {
+        "Id": "0000000106EC.01C",
+        "TextureGUID": null
+      }
+    ]
+  },
+  "0000000004E3.075": {
+    "GUID": "0000000004E3.075",
+    "Name": "Mizuki",
+    "Description": "Born under a shadow of misfortune, Mizuki will do anything it takes to break free of his curse and decide his own fate.",
+    "Class": "Support",
+    "Gender": "Male",
+    "Size": "Normal",
+    "Color": "#9AFFC7FF",
+    "sRGBColor": "#CCFFE5FF",
+    "GalleryColor": {
+      "R": 0.6039216,
+      "G": 1.0,
+      "B": 0.7803922,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000D73.09E",
+        "Name": "Spirit Glaive",
+        "Description": "Throw a spinning blade that impacts enemies and rapidly deals damage.",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECBC.004"
+      },
+      {
+        "GUID": "000000000D3E.09E",
+        "Name": "Healing Kasa",
+        "Description": "Throw your hat to heal an ally, bouncing to nearby allies and healing you when it returns.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECD8.004"
+      },
+      {
+        "GUID": "000000000CDC.09E",
+        "Name": "Binding Chain",
+        "Description": "Launch a tethering chain that hinders the first enemy hit.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECDA.004"
+      },
+      {
+        "GUID": "000000000D98.09E",
+        "Name": "Katashiro Return",
+        "Description": "Leap forward, leaving behind a paper doll. Reactivate to return and gain increased movement speed while active.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECC0.004"
+      },
+      {
+        "GUID": "000000000DED.09E",
+        "Name": "Kekkai Sanctuary",
+        "Description": "Create a sanctuary that heals allies and absorbs enemy projectiles from outside the area. ",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECD9.004"
+      },
+      {
+        "GUID": "000000000DF3.09E",
+        "Name": "Remedy Aura",
+        "Description": "Heals nearby allies. Healing scales with resource generated by dealing damage and healing.",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECDF.004"
+      },
+      {
+        "GUID": "000000000DA9.09E",
+        "Name": "Subrole: Survivor",
+        "Description": "Movement abilities start passive health regeneration.",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000E5D.09E",
+        "Name": "Hero Stats",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000E36.09E",
+        "Name": "Wellspring",
+        "Description": "Remedy Aura resource generation is increased by 25%%.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EE1A.004"
+      },
+      {
+        "GUID": "000000000E05.09E",
+        "Name": "Resonant Return",
+        "Description": "Healing Kasa bounces one additional time. Each bounce increases its healing by 10.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EE1C.004"
+      },
+      {
+        "GUID": "000000000E1A.09E",
+        "Name": "Exposed Soul",
+        "Description": "Hitting an enemy with Binding Chain increases your damage dealt to them by 30%% for 2 seconds.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EE1B.004"
+      },
+      {
+        "GUID": "000000000E37.09E",
+        "Name": "Quickstep",
+        "Description": "While Katashiro Return is active, allies within Remedy Aura gain 25%% increased movement speed.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECDB.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "0000000721A4.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "0000000721A3.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000007210C.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000007210D.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": null
       }
     ]
   },
@@ -9021,6 +9729,146 @@
       {
         "Id": "0000000040C9.01C",
         "TextureGUID": "000000043E0F.004"
+      }
+    ]
+  },
+  "000000000516.075": {
+    "GUID": "000000000516.075",
+    "Name": "Jetpack Cat",
+    "Description": "A fearless feline pilot equipped with Brigitte’s latest jet-propulsion invention, Jetpack Cat brings adorable aerial support to the battlefield.",
+    "Class": "Support",
+    "Gender": "Female",
+    "Size": "Normal",
+    "Color": "#C9CDD1FF",
+    "sRGBColor": "#E6E8EAFF",
+    "GalleryColor": {
+      "R": 0.78823537,
+      "G": 0.80392164,
+      "B": 0.8196079,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000D77.09E",
+        "Name": "Biotic Pawjectiles",
+        "Description": "Mid-range projectile spread that heals allies and damages enemies.",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000007008B.004"
+      },
+      {
+        "GUID": "000000000D5E.09E",
+        "Name": "Frenetic Flight",
+        "Description": "Accelerate in your movement direction. Fuel recovery is slower while carrying another player.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000070147.004"
+      },
+      {
+        "GUID": "000000000D5F.09E",
+        "Name": "Lifeline",
+        "Description": "Toggle into transport mode, allowing an ally to be towed. Increases movement speed and heals your ally.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E381.004"
+      },
+      {
+        "GUID": "000000000D60.09E",
+        "Name": "Purr",
+        "Description": "Pulsing area heal that increases in frequency over time. Knockback nearby enemies when activated.",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E3E7.004"
+      },
+      {
+        "GUID": "000000000DEB.09E",
+        "Name": "Catnapper",
+        "Description": "Dive towards a ground location, knocking down enemies and tethering the nearest one to you.",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E3C4.004"
+      },
+      {
+        "GUID": "000000000D61.09E",
+        "Name": "Jetpack",
+        "Description": "Permanent flight.",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721CB.004"
+      },
+      {
+        "GUID": "000000000DA8.09E",
+        "Name": "Subrole: Tactician",
+        "Description": "Store excess ultimate charge.",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000E60.09E",
+        "Name": "Hero Stats",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000E49.09E",
+        "Name": "Claws Out",
+        "Description": "Quick melee becomes empowered every 6 seconds, wounding enemies for 40 damage and slowing them by 30%% for 1 second.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070EA0.004"
+      },
+      {
+        "GUID": "000000000DF8.09E",
+        "Name": "Transport Shielding",
+        "Description": "Gain up to 75 extra shield health while carrying another hero.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9E.004"
+      },
+      {
+        "GUID": "000000000DF9.09E",
+        "Name": "Headbutt",
+        "Description": "Frenetic Flight can knockback an enemy on impact when flying fast enough.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9F.004"
+      },
+      {
+        "GUID": "000000000DFA.09E",
+        "Name": "Territorial",
+        "Description": "Purr now also damages nearby enemies for 50%% of the healing amount. Knockback is removed.",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070EA1.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "0000000720CA.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "0000000720CB.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "0000000720CC.004"
+      },
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "0000000720CD.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": null
       }
     ]
   },

@@ -58,18 +58,18 @@
         "TextureGUID": "000000001308.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "副职责：奇袭",
+        "Description": "提高急救包恢复的生命值",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBC.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -190,30 +190,30 @@
         "TextureGUID": "00000000133C.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "副职责：奇袭",
+        "Description": "提高急救包恢复的生命值",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D96.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000BF3.09E",
-        "Name": "闪现急救包",
-        "Description": "急救包会为闪现恢复1次充能",
+        "GUID": "000000000E55.09E",
+        "Name": "时空疾冲",
+        "Description": "闪现距离扩大20%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4FE.004"
+        "TextureGUID": "000000070EA9.004"
       },
       {
         "GUID": "000000000CE7.09E",
@@ -224,12 +224,12 @@
         "TextureGUID": "000000067434.004"
       },
       {
-        "GUID": "000000000BBE.09E",
-        "Name": "飞速闪回",
-        "Description": "闪回会使闪现的恢复速度加快150%%，持续3秒",
+        "GUID": "000000000BF3.09E",
+        "Name": "闪现急救包",
+        "Description": "急救包会为闪现恢复1次充能",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4FF.004"
+        "TextureGUID": "00000005E4FE.004"
       },
       {
         "GUID": "000000000C0B.09E",
@@ -342,12 +342,12 @@
         "TextureGUID": "0000000012F6.004"
       },
       {
-        "GUID": "0000000003A4.09E",
-        "Name": "同情愈疗",
-        "Description": "使用天使之杖治疗盟友也会治疗自己",
+        "GUID": "000000000E72.09E",
+        "Name": "迅捷恢复",
+        "Description": "快速激活生命恢复效果",
         "Category": "PassiveAbility",
         "MovieGUID": null,
-        "TextureGUID": "00000004E119.004"
+        "TextureGUID": "000000004123.004"
       },
       {
         "GUID": "000000000167.09E",
@@ -358,18 +358,18 @@
         "TextureGUID": "000000011E07.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "副职责：医疗",
+        "Description": "使用武器治疗盟友也会治疗自己",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBD.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -510,18 +510,18 @@
         "TextureGUID": "000000014F0C.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "副职责：神准",
+        "Description": "造成暴击会缩短位移技能的冷却时间",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCB.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -536,17 +536,17 @@
         "TextureGUID": "00000005E475.004"
       },
       {
-        "GUID": "000000000D43.09E",
-        "Name": "迅捷之跃",
-        "Description": "箭矢蓄力时间越长，命中时会使“跃”的冷却时间缩短量越长，最多缩短1秒",
+        "GUID": "000000000E34.09E",
+        "Name": "霜冻之箭",
+        "Description": "按下 %1$s 换上一支霜冻爆炸箭，使被命中的敌人减速35%%，持续2秒",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067428.004"
+        "TextureGUID": "000000070E9D.004"
       },
       {
         "GUID": "000000000C29.09E",
         "Name": "神竜之怒",
-        "Description": "主要攻击模式命中敌人后，获得25%%攻击速度，持续2秒",
+        "Description": "主要攻击模式命中敌人后，获得20%%攻击速度，持续1.5秒",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E473.004"
@@ -643,11 +643,11 @@
       },
       {
         "GUID": "00000000001E.09E",
-        "Name": "铆钉枪 - 辅助模式",
+        "Name": "辅助攻击模式",
         "Description": "火力强大但命中率不佳的近距离武器",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "000000001336.004"
+        "TextureGUID": "000000070898.004"
       },
       {
         "GUID": "000000000229.09E",
@@ -658,18 +658,18 @@
         "TextureGUID": "000000001335.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DC8.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -684,12 +684,12 @@
         "TextureGUID": "000000067433.004"
       },
       {
-        "GUID": "000000000B94.09E",
-        "Name": "热力满载",
-        "Description": "激活热力过载会完全装填铆钉枪的弹药",
+        "GUID": "000000000E59.09E",
+        "Name": "核心预热",
+        "Description": "熔火核心会激活热力过载",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4A8.004"
+        "TextureGUID": "000000070EA8.004"
       },
       {
         "GUID": "000000000B53.09E",
@@ -800,7 +800,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -809,7 +809,15 @@
         "GUID": "000000000DC3.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "副职责：铁壁",
+        "Description": "获得击退和减速抗性",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -824,12 +832,12 @@
         "TextureGUID": "000000061C92.004"
       },
       {
-        "GUID": "000000000D02.09E",
-        "Name": "屏障冲能",
-        "Description": "使用冲锋行进会为屏障力场每秒恢复200点生命值",
+        "GUID": "000000000B95.09E",
+        "Name": "十字军的决心",
+        "Description": "使用屏障力场时，你的被动生命值恢复触发速度加快75%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006741A.004"
+        "TextureGUID": "00000005E4AF.004"
       },
       {
         "GUID": "000000000B10.09E",
@@ -938,12 +946,12 @@
         "TextureGUID": "00000004E118.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "副职责：侦察",
+        "Description": "对生命值低于一半的敌人造成伤害会显示其位置",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000445.09E",
@@ -957,7 +965,7 @@
         "GUID": "000000000D9E.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -988,12 +996,12 @@
         "TextureGUID": "00000005A282.004"
       },
       {
-        "GUID": "000000000D1B.09E",
-        "Name": "空天鹰眼",
-        "Description": "震荡冲击会使目标对“法老之鹰”显示位置，持续3秒。在此期间，火箭发射器对每个目标的下一次直接命中均会造成30%%额外伤害",
+        "GUID": "000000000E66.09E",
+        "Name": "火箭齐射",
+        "Description": "使用位移技能后，下一次主要攻击模式还会发射两发螺旋迷你火箭，每发造成40点爆炸伤害",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006742C.004"
+        "TextureGUID": "0000000721B1.004"
       }
     ],
     "Images": [
@@ -1087,16 +1095,16 @@
       },
       {
         "GUID": "000000000305.09E",
-        "Name": "特斯拉炮",
+        "Name": "辅助攻击模式",
         "Description": "长按充能，松开后射出集束电击",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "00000000133A.004"
+        "TextureGUID": "000000070893.004"
       },
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -1105,19 +1113,27 @@
         "GUID": "000000000DA1.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "副职责：先锋",
+        "Description": "在空中时获得持续治疗",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000D2C.09E",
-        "Name": "屏障投掷",
-        "Description": "温斯顿使用屏障发射器时会将其向前扔出",
+        "GUID": "000000000E54.09E",
+        "Name": "电能快充",
+        "Description": "特斯拉炮主要攻击模式每对一名敌人造成伤害，自身移动速度加快10%%，最多30%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006740C.004"
+        "TextureGUID": "000000070EAB.004"
       },
       {
         "GUID": "000000000B7C.09E",
@@ -1234,18 +1250,18 @@
         "TextureGUID": "0000000679A5.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "副职责：神准",
+        "Description": "造成暴击会缩短位移技能的冷却时间",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCF.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1276,12 +1292,12 @@
         "TextureGUID": "000000067436.004"
       },
       {
-        "GUID": "000000000B69.09E",
-        "Name": "撤离计划",
-        "Description": "开镜射击命中会使抓钩的冷却时间缩短最多4秒",
+        "GUID": "000000000E39.09E",
+        "Name": "黑百合之噬",
+        "Description": "开镜射击充能上限提升至125%%，完全充能时可贯穿敌人",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E502.004"
+        "TextureGUID": "000000070EAF.004"
       }
     ],
     "Images": [
@@ -1370,18 +1386,18 @@
         "TextureGUID": "00000004E11A.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DC6.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1502,18 +1518,18 @@
         "TextureGUID": "00000000130F.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCD.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1603,11 +1619,11 @@
       },
       {
         "GUID": "000000000033.09E",
-        "Name": "灭",
+        "Name": "辅助攻击模式",
         "Description": "蓄力后可以射出一连串法球",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "000000001334.004"
+        "TextureGUID": "000000070897.004"
       },
       {
         "GUID": "000000000032.09E",
@@ -1634,14 +1650,6 @@
         "TextureGUID": "0000000012FC.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
-        "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
-      },
-      {
         "GUID": "00000000034D.09E",
         "Name": "蹬",
         "Description": "快速近身攻击伤害提高50%%\n击退效果大幅提高",
@@ -1650,22 +1658,30 @@
         "TextureGUID": "00000004813D.004"
       },
       {
+        "GUID": "000000000DA8.09E",
+        "Name": "副职责：战术",
+        "Description": "可过量储存终极技能充能",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
         "GUID": "000000000DB1.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000CC9.09E",
-        "Name": "以圣罚乱",
-        "Description": "使用“圣”时，对范围内的所有敌人施加“乱”",
+        "GUID": "000000000E44.09E",
+        "Name": "乱中求存",
+        "Description": "攻击带有“乱”法球的敌人时，自身获得10%%生命汲取",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "0000000673FA.004"
+        "TextureGUID": "000000070E93.004"
       },
       {
         "GUID": "000000000C1B.09E",
@@ -1775,11 +1791,11 @@
       },
       {
         "GUID": "0000000000DC.09E",
-        "Name": "霰",
+        "Name": "辅助攻击模式",
         "Description": "向前方弧形范围扔出3发手里剑",
         "Category": "Weapon",
         "MovieGUID": null,
-        "TextureGUID": "000000004E83.004"
+        "TextureGUID": "000000070896.004"
       },
       {
         "GUID": "0000000000DD.09E",
@@ -1790,18 +1806,18 @@
         "TextureGUID": "000000042B12.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "副职责：奇袭",
+        "Description": "提高急救包恢复的生命值",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB4.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1936,7 +1952,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -1945,7 +1961,15 @@
         "GUID": "000000000DC2.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "副职责：斗士",
+        "Description": "获得暴击伤害抗性。濒死时移动速度加快",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -1978,7 +2002,7 @@
       {
         "GUID": "000000000D59.09E",
         "Name": "来口猪肉",
-        "Description": "使用链钩会获得过量生命值，拖拽敌人的距离越长，获得的过量生命值越多，最多250点",
+        "Description": "使用链钩会获得过量生命值，拖拽敌人的距离越长，获得的过量生命值越多，最多300点",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "000000067ACB.004"
@@ -2062,18 +2086,18 @@
         "TextureGUID": "0000000695E5.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "副职责：神准",
+        "Description": "造成暴击会缩短位移技能的冷却时间",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB3.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2096,12 +2120,12 @@
         "TextureGUID": "000000061C95.004"
       },
       {
-        "GUID": "000000000B41.09E",
-        "Name": "灵动神枪",
-        "Description": "主要攻击模式造成暴击会使战术翻滚的冷却时间缩短3秒",
+        "GUID": "000000000E31.09E",
+        "Name": "翻身愈合",
+        "Description": "每用战术翻滚装填一颗子弹，还会治疗15点生命值",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E478.004"
+        "TextureGUID": "000000070E96.004"
       },
       {
         "GUID": "000000000D2B.09E",
@@ -2206,18 +2230,18 @@
         "TextureGUID": "000000004E54.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBA.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2360,7 +2384,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -2369,19 +2393,27 @@
         "GUID": "000000000DC5.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "副职责：斗士",
+        "Description": "获得暴击伤害抗性。濒死时移动速度加快",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000CBB.09E",
-        "Name": "能量转换器",
-        "Description": "粒子炮的辅助攻击模式命中会产生2点能量",
+        "GUID": "000000000E65.09E",
+        "Name": "能量加码",
+        "Description": "屏障激活时，使用粒子炮的光束造成伤害会产生能量",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067418.004"
+        "TextureGUID": "000000070EAD.004"
       },
       {
         "GUID": "000000000B14.09E",
@@ -2394,7 +2426,7 @@
       {
         "GUID": "000000000B15.09E",
         "Name": "能量长枪",
-        "Description": "能量高于50点时，粒子炮的光束会贯穿敌人",
+        "Description": "粒子炮的光束会贯穿敌人",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4C7.004"
@@ -2402,7 +2434,7 @@
       {
         "GUID": "000000000B16.09E",
         "Name": "前线哨兵",
-        "Description": "投射屏障会激活盟友的生命值自动恢复效果，并使其移动速度提高25%%",
+        "Description": "投射屏障会激活盟友的生命值自动恢复效果，并使其移动速度提高20%%",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4CA.004"
@@ -2502,35 +2534,35 @@
         "TextureGUID": "00000000356C.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D62.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000BA2.09E",
-        "Name": "循环脉冲弹",
-        "Description": "螺旋飞弹对敌人造成伤害会装填15发弹药",
+        "GUID": "000000000E2C.09E",
+        "Name": "螺旋推进",
+        "Description": "螺旋飞弹的弹道速度加快50%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4F4.004"
+        "TextureGUID": "000000070EAE.004"
       },
       {
         "GUID": "000000000CA6.09E",
         "Name": "战术齐射",
-        "Description": "战术目镜持续期间，螺旋飞弹的冷却时间缩短80%%",
+        "Description": "战术目镜持续期间，螺旋飞弹的冷却时间缩短80%%且不会打断重型脉冲步枪射击",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "000000067431.004"
@@ -2654,18 +2686,18 @@
         "TextureGUID": "00000004E11B.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA8.09E",
+        "Name": "副职责：战术",
+        "Description": "可过量储存终极技能充能",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DAF.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2824,7 +2856,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -2833,7 +2865,15 @@
         "GUID": "000000000DB0.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "副职责：先锋",
+        "Description": "在空中时获得持续治疗",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -2962,18 +3002,18 @@
         "TextureGUID": "0000000695E7.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DA3.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3104,24 +3144,24 @@
       {
         "GUID": "0000000000F4.09E",
         "Name": "相时而动",
-        "Description": "你可以透过墙体侦测到生命值低于一半的敌人，且对被侵入敌人造成更高伤害",
+        "Description": "你可以看出敌方英雄的终极技能是否就绪，且对被侵入敌人造成更高伤害",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "00000000AFBF.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "副职责：侦察",
+        "Description": "对生命值低于一半的敌人造成伤害会显示其位置",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCC.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3144,12 +3184,12 @@
         "TextureGUID": "00000005E49E.004"
       },
       {
-        "GUID": "000000000D44.09E",
-        "Name": "急救黑客",
-        "Description": "被侵入的急救包为“黑影”提供最多75点过量生命值",
+        "GUID": "000000000E4D.09E",
+        "Name": "高速带宽",
+        "Description": "被侵入的急救包能使盟友的移动速度加快25%%，并获得50点过量生命值，持续4秒",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067432.004"
+        "TextureGUID": "000000070EA7.004"
       },
       {
         "GUID": "000000000C7C.09E",
@@ -3182,7 +3222,7 @@
   "00000000012F.075": {
     "GUID": "00000000012F.075",
     "Name": "末日铁拳",
-    "Description": "“末日铁拳”是“黑爪”的领导者之一，他坚信只有将世界带向一场新的战争才能让人类变得更加强大",
+    "Description": null,
     "Class": "Tank",
     "Gender": "Male",
     "Size": "Normal",
@@ -3248,7 +3288,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -3257,7 +3297,15 @@
         "GUID": "000000000DBE.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "副职责：先锋",
+        "Description": "在空中时获得持续治疗",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3390,18 +3438,18 @@
         "TextureGUID": "0000000695D7.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA8.09E",
+        "Name": "副职责：战术",
+        "Description": "可过量储存终极技能充能",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DBB.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -3532,7 +3580,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -3541,7 +3589,15 @@
         "GUID": "000000000DAE.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "副职责：斗士",
+        "Description": "获得暴击伤害抗性。濒死时移动速度加快",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4061,18 +4117,18 @@
         "TextureGUID": "000000003339.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "副职责：生存",
+        "Description": "位移技能会激活被动生命值恢复",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCA.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4201,18 +4257,18 @@
         "TextureGUID": "000000011D87.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "副职责：医疗",
+        "Description": "使用武器治疗盟友也会治疗自己",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB7.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4229,7 +4285,7 @@
       {
         "GUID": "000000000CA5.09E",
         "Name": "毁灭分界",
-        "Description": "聚合射线可以完全造成治疗或伤害，此时效果提高25%%",
+        "Description": "聚合射线可以完全造成治疗或伤害，此时效果提高30%%",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "0000000673F8.004"
@@ -4351,7 +4407,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -4360,7 +4416,15 @@
         "GUID": "000000000DC4.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA7.09E",
+        "Name": "副职责：先锋",
+        "Description": "在空中时获得持续治疗",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4375,12 +4439,12 @@
         "TextureGUID": "00000005E464.004"
       },
       {
-        "GUID": "000000000C3C.09E",
-        "Name": "爱包之鼠",
-        "Description": "从急救包中获得的治疗量提高100点",
+        "GUID": "000000000E2E.09E",
+        "Name": "多重地雷",
+        "Description": "使用地雷禁区后的5秒内按下 %1$s 可额外部署7颗地雷",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E463.004"
+        "TextureGUID": "000000070EAC.004"
       },
       {
         "GUID": "000000000C2D.09E",
@@ -4481,18 +4545,18 @@
         "TextureGUID": "000000029CE7.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "副职责：神准",
+        "Description": "造成暴击会缩短位移技能的冷却时间",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D9F.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4621,18 +4685,18 @@
         "TextureGUID": "0000000695D6.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDD.09E",
+        "Name": "副职责：神准",
+        "Description": "造成暴击会缩短位移技能的冷却时间",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB2.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4647,12 +4711,12 @@
         "TextureGUID": "000000067438.004"
       },
       {
-        "GUID": "000000000B88.09E",
-        "Name": "响尾蛇行",
-        "Description": "短筒猎枪对艾什和敌人的击退距离扩大12%%",
+        "GUID": "000000000E4F.09E",
+        "Name": "双筒猎枪",
+        "Description": "用短筒猎枪击退敌人后的一小段时间内，可再次使用该技能，此时击退效果降低25%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E471.004"
+        "TextureGUID": "000000070E94.004"
       },
       {
         "GUID": "000000000B3E.09E",
@@ -4769,18 +4833,18 @@
         "TextureGUID": "00000002ABE2.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "副职责：侦察",
+        "Description": "对生命值低于一半的敌人造成伤害会显示其位置",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DC9.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -4789,7 +4853,7 @@
       {
         "GUID": "000000000CFE.09E",
         "Name": "聚焦机动",
-        "Description": "聚焦光线的射程扩大4米，且使用时移动速度加快10%%",
+        "Description": "聚焦光线的射程扩大4米，且使用时移动速度加快20%%",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "000000067420.004"
@@ -4957,46 +5021,46 @@
         "TextureGUID": "00000001E304.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA8.09E",
+        "Name": "副职责：战术",
+        "Description": "可过量储存终极技能充能",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DD0.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000D52.09E",
-        "Name": "生化装填器",
-        "Description": "主要攻击模式的三连发全部命中会装填一发治疗榴弹。治疗榴弹直接命中会装填3发主要攻击模式弹药",
+        "GUID": "000000000E45.09E",
+        "Name": "广域力场",
+        "Description": "维生力场半径扩大30%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067ACA.004"
-      },
-      {
-        "GUID": "000000000B57.09E",
-        "Name": "自动治疗",
-        "Description": "使用任意技能会触发巴蒂斯特的肩负炮台，周期性对盟友发射最多3发治疗弹，每发恢复25点生命值",
-        "Category": "Perk",
-        "MovieGUID": null,
-        "TextureGUID": "0000000673E5.004"
+        "TextureGUID": "000000070E95.004"
       },
       {
         "GUID": "000000000B56.09E",
         "Name": "强攻冲击",
-        "Description": "愈合冲击会使巴蒂斯特的攻击速度加快25%%，持续4秒",
+        "Description": "愈合冲击会使巴蒂斯特的攻击速度加快20%%，持续3秒",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E496.004"
+      },
+      {
+        "GUID": "000000000B57.09E",
+        "Name": "自动治疗",
+        "Description": "使用任意技能会触发巴蒂斯特的肩负炮台，周期性对盟友发射最多3发治疗弹，每发恢复40点生命值",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000673E5.004"
       },
       {
         "GUID": "000000000B91.09E",
@@ -5093,18 +5157,18 @@
         "TextureGUID": "000000032723.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "副职责：医疗",
+        "Description": "使用武器治疗盟友也会治疗自己",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DA4.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5137,7 +5201,7 @@
       {
         "GUID": "000000000B97.09E",
         "Name": "狐步漫舞",
-        "Description": "“铃”会使盟友的冷却时间恢复速度加快100%%，移动速度加快30%%，持续2秒",
+        "Description": "“铃”会使盟友的移动速度加快30%%，持续4秒",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4A3.004"
@@ -5243,7 +5307,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -5252,7 +5316,15 @@
         "GUID": "000000000DB9.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "副职责：铁壁",
+        "Description": "获得击退和减速抗性",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5383,7 +5455,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -5392,7 +5464,15 @@
         "GUID": "000000000DA0.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "副职责：铁壁",
+        "Description": "获得击退和减速抗性",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5409,7 +5489,7 @@
       {
         "GUID": "000000000CE8.09E",
         "Name": "超能恢复",
-        "Description": "超能之球会为实验屏障恢复生命值，数值为超能之球伤害量的50%%",
+        "Description": "超能之球会为实验屏障恢复生命值，数值为超能之球伤害量的40%%",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000006741B.004"
@@ -5716,7 +5796,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -5725,7 +5805,15 @@
         "GUID": "000000000DC1.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "副职责：铁壁",
+        "Description": "获得击退和减速抗性",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -5871,46 +5959,46 @@
         "TextureGUID": "00000003C736.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAA.09E",
+        "Name": "副职责：医疗",
+        "Description": "使用武器治疗盟友也会治疗自己",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DD2.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000C14.09E",
-        "Name": "净化之握",
-        "Description": "生命之握会净化负面效果。净化一项负面效果使生命之握的冷却时间缩短4秒",
+        "GUID": "000000000E53.09E",
+        "Name": "守护花瓣",
+        "Description": "盟友站在花瓣平台上时每秒治疗20点生命值",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4B3.004"
+        "TextureGUID": "000000070EA3.004"
       },
       {
-        "GUID": "000000000C13.09E",
-        "Name": "梭织生命",
-        "Description": "回春疾行会在3秒内使下一朵愈疗灵花的治疗量提高30点",
+        "GUID": "000000000E3A.09E",
+        "Name": "疾行脱身",
+        "Description": "回春疾行距离扩大30%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000005E4B5.004"
+        "TextureGUID": "000000070EA2.004"
       },
       {
-        "GUID": "000000000CD3.09E",
-        "Name": "花瓣之力",
-        "Description": "盟友站在升起的花瓣平台上时攻击速度加快30%%",
+        "GUID": "000000000E3E.09E",
+        "Name": "愈疗播种",
+        "Description": "在愈疗灵花状态下使用快速近身攻击会向前扔出一颗种子。其他盟友拾取种子会获得75点过量生命值和25%%速度加成，持续5秒",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "0000000673F1.004"
+        "TextureGUID": "000000070EA4.004"
       },
       {
         "GUID": "000000000C15.09E",
@@ -6391,7 +6479,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -6400,7 +6488,15 @@
         "GUID": "000000000DC0.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDE.09E",
+        "Name": "副职责：斗士",
+        "Description": "获得暴击伤害抗性。濒死时移动速度加快",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -6409,7 +6505,7 @@
       {
         "GUID": "000000000B38.09E",
         "Name": "动力弹带",
-        "Description": "蛮力冲撞冲锋期间会装填最多150发弹药",
+        "Description": "蛮力冲撞会在冲锋的第一秒内装填最多150发弹药",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "00000005E4FB.004"
@@ -6595,18 +6691,18 @@
         "TextureGUID": "0000000695E6.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "副职责：生存",
+        "Description": "位移技能会激活被动生命值恢复",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DD1.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -6631,7 +6727,7 @@
       {
         "GUID": "000000000D16.09E",
         "Name": "太阳耀斑",
-        "Description": "使用阳焰步枪的治疗光束时，按下 %1$s 会消耗50%%能量，并为伊拉锐面前的盟友治疗100点生命值",
+        "Description": "使用阳焰步枪的治疗光束时，按下 %1$s 会为伊拉锐面前的盟友治疗100点生命值",
         "Category": "Perk",
         "MovieGUID": null,
         "TextureGUID": "0000000673EC.004"
@@ -6731,30 +6827,30 @@
         "TextureGUID": "00000005F9BC.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DAD.09E",
+        "Name": "副职责：侦察",
+        "Description": "对生命值低于一半的敌人造成伤害会显示其位置",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000D9A.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
     ],
     "Perks": [
       {
-        "GUID": "000000000C48.09E",
-        "Name": "猎手直觉",
-        "Description": "瞄准射击直接命中会将敌人的位置显示给弗蕾娅，持续3秒",
+        "GUID": "000000000C46.09E",
+        "Name": "无情弹幕",
+        "Description": "瞄准射击直接命中返还8发自动弩箭弹药",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000067423.004"
+        "TextureGUID": "000000060748.004"
       },
       {
         "GUID": "000000000CCA.09E",
@@ -6773,12 +6869,12 @@
         "TextureGUID": "000000067422.004"
       },
       {
-        "GUID": "000000000C46.09E",
-        "Name": "无情弹幕",
-        "Description": "瞄准射击直接命中返还8发自动弩箭弹药",
+        "GUID": "000000000E2A.09E",
+        "Name": "劲风再起",
+        "Description": "上升气流获得一次额外充能，但高度降低20%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "000000060748.004"
+        "TextureGUID": "000000070E9C.004"
       }
     ],
     "Images": [
@@ -6879,18 +6975,18 @@
         "TextureGUID": "00000004A03B.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "副职责：奇袭",
+        "Description": "提高急救包恢复的生命值",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DCE.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -7387,7 +7483,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -7396,7 +7492,15 @@
         "GUID": "000000000DA2.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "副职责：铁壁",
+        "Description": "获得击退和减速抗性",
+        "Category": "Subrole",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -7567,18 +7671,18 @@
         "TextureGUID": "00000004E37B.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "副职责：生存",
+        "Description": "位移技能会激活被动生命值恢复",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DB5.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -7893,7 +7997,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -8226,7 +8330,7 @@
       {
         "GUID": "000000000347.09E",
         "Name": "职责：重装",
-        "Description": "降低受到的击退效果和暴击伤害\n降低受到治疗和伤害时产生的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
         "Category": "PassiveAbility",
         "MovieGUID": null,
         "TextureGUID": "000000004120.004"
@@ -8757,12 +8861,12 @@
         "TextureGUID": "000000065FBE.004"
       },
       {
-        "GUID": "000000000345.09E",
-        "Name": "职责：支援",
-        "Description": "快速激活生命恢复效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DA9.09E",
+        "Name": "副职责：生存",
+        "Description": "位移技能会激活被动生命值恢复",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004123.004"
+        "TextureGUID": null
       },
       {
         "GUID": "00000000085E.09E",
@@ -8776,7 +8880,7 @@
         "GUID": "000000000DD3.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -8921,18 +9025,18 @@
         "TextureGUID": "00000006AC3D.004"
       },
       {
-        "GUID": "000000000346.09E",
-        "Name": "职责：输出",
-        "Description": "对敌人造成伤害，会暂时降低其受到的治疗效果",
-        "Category": "PassiveAbility",
+        "GUID": "000000000DDC.09E",
+        "Name": "副职责：奇袭",
+        "Description": "提高急救包恢复的生命值",
+        "Category": "Subrole",
         "MovieGUID": null,
-        "TextureGUID": "000000004122.004"
+        "TextureGUID": null
       },
       {
         "GUID": "000000000DF5.09E",
         "Name": "英雄属性",
         "Description": null,
-        "Category": "xEB644997",
+        "Category": "HeroStats",
         "MovieGUID": null,
         "TextureGUID": null
       }
@@ -8955,12 +9059,12 @@
         "TextureGUID": "00000006BB47.004"
       },
       {
-        "GUID": "000000000C78.09E",
-        "Name": "快意恩仇",
-        "Description": "将上一位对你造成最后一击的敌人作为目标。消灭目标会获得150点过量生命值并重置各项技能的冷却时间",
+        "GUID": "000000000E6D.09E",
+        "Name": "充盈剑气",
+        "Description": "锋锐剑气的能量消耗降低25%%",
         "Category": "Perk",
         "MovieGUID": null,
-        "TextureGUID": "00000006AF2F.004"
+        "TextureGUID": "0000000724BA.004"
       },
       {
         "GUID": "000000000CD8.09E",
@@ -8987,6 +9091,610 @@
       {
         "Id": "0000000040CA.01C",
         "TextureGUID": "000000068F87.004"
+      },
+      {
+        "Id": "000000010297.01C",
+        "TextureGUID": "00000006EC12.004"
+      },
+      {
+        "Id": "000000010298.01C",
+        "TextureGUID": "00000006EC10.004"
+      },
+      {
+        "Id": "0000000106EC.01C",
+        "TextureGUID": "00000006EC11.004"
+      }
+    ]
+  },
+  "0000000004C4.075": {
+    "GUID": "0000000004C4.075",
+    "Name": "金驭",
+    "Description": "“金驭”是费斯卡集团一言千金的谈判专家，对高强度光束的驾驭炉火纯青，世上没有她掌控不了的局面",
+    "Class": "Tank",
+    "Gender": "Female",
+    "Size": "Normal",
+    "Color": "#69DEEFFF",
+    "sRGBColor": "#ACF0F8FF",
+    "GalleryColor": {
+      "R": 0.41176474,
+      "G": 0.8705883,
+      "B": 0.93725497,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000DE7.09E",
+        "Name": "英雄属性",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000C53.09E",
+        "Name": "光子马格南",
+        "Description": "能汇聚为强力一击的中距离光束",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006F1CF.004"
+      },
+      {
+        "GUID": "000000000C6D.09E",
+        "Name": "屏障阵列",
+        "Description": "构造一道分段式屏障",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000068B6F.004"
+      },
+      {
+        "GUID": "000000000C90.09E",
+        "Name": "音速斥力场",
+        "Description": "击退敌人，若击退至墙面还可将其击晕",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000068C29.004"
+      },
+      {
+        "GUID": "000000000CAB.09E",
+        "Name": "爆能水晶",
+        "Description": "投出一枚爆能水晶，再次激活即可引爆",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000068BEC.004"
+      },
+      {
+        "GUID": "000000000C91.09E",
+        "Name": "全景牢笼",
+        "Description": "发射一道高强度光束屏障囚禁敌人，消失时会引爆",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "000000068B89.004"
+      },
+      {
+        "GUID": "000000000CA2.09E",
+        "Name": "护盾重构",
+        "Description": "技能造成伤害会恢复护盾",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721D6.004"
+      },
+      {
+        "GUID": "000000000347.09E",
+        "Name": "职责：重装",
+        "Description": "降低受到治疗和伤害时给予的\n终极技能充能\n提高预设职责模式下的基础生命值",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "000000004120.004"
+      },
+      {
+        "GUID": "000000000DA5.09E",
+        "Name": "副职责：铁壁",
+        "Description": "获得击退和减速抗性",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000CE2.09E",
+        "Name": "高效设计",
+        "Description": "使用屏障阵列后，恢复50点护盾并激活被动生命值恢复",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721CC.004"
+      },
+      {
+        "GUID": "000000000CE3.09E",
+        "Name": "扰动爆破",
+        "Description": "被爆能水晶爆炸命中的敌人会被减速30%%，持续2秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721D3.004"
+      },
+      {
+        "GUID": "000000000CE4.09E",
+        "Name": "强权压制",
+        "Description": "屏障阵列可作为音速斥力场击晕敌人所需的墙壁，此时伤害提升100%%",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721D5.004"
+      },
+      {
+        "GUID": "000000000CE5.09E",
+        "Name": "权力扩张",
+        "Description": "光子马格南的射程扩大20%%",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721CA.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "00000006EAF9.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "00000006EAFA.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000006EAFB.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000006EAFC.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": null
+      }
+    ]
+  },
+  "0000000004D8.075": {
+    "GUID": "0000000004D8.075",
+    "Name": "埃姆雷",
+    "Description": "埃姆雷在守望先锋突击小队效力期间广受赞誉，后来竟突然人间蒸发。多年后，他再度现身，躯体和心智却已受到某种未知存在的操控",
+    "Class": "Damage",
+    "Gender": "Male",
+    "Size": "Normal",
+    "Color": "#C70C0CFF",
+    "sRGBColor": "#E53D3DFF",
+    "GalleryColor": {
+      "R": 0.7803922,
+      "G": 0.04705883,
+      "B": 0.04705883,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000C62.09E",
+        "Name": "合成连发步枪",
+        "Description": "三连发武器",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006F210.004"
+      },
+      {
+        "GUID": "000000000C73.09E",
+        "Name": "瞄准射击",
+        "Description": "长按可以开镜瞄准，提高射击精度，扩大衰减射程",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006F236.004"
+      },
+      {
+        "GUID": "000000000C64.09E",
+        "Name": "虹吸冲击枪",
+        "Description": "临时使用装配生命汲取爆炸子弹的半自动手枪\n使用时提高移动速度和跳跃高度",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006DFB5.004"
+      },
+      {
+        "GUID": "000000000C63.09E",
+        "Name": "赛博手雷",
+        "Description": "扔出一枚手雷，弹跳后会在短时间内引爆",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006DFB0.004"
+      },
+      {
+        "GUID": "000000000C7A.09E",
+        "Name": "覆盖协议",
+        "Description": "启动覆盖程序，将你变为人形兵器",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000680CD.004"
+      },
+      {
+        "GUID": "000000000E1C.09E",
+        "Name": "机变体征",
+        "Description": "被动生命值恢复激活速度加快，并在激活时立即恢复30点生命值",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000720DA.004"
+      },
+      {
+        "GUID": "000000000DAC.09E",
+        "Name": "副职责：专业",
+        "Description": "消灭敌人后在短时间内加快装弹速度",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000E5C.09E",
+        "Name": "英雄属性",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000E1E.09E",
+        "Name": "压制安防",
+        "Description": "覆盖协议的轻型弹药会使敌人减速30%%，持续1秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9A.004"
+      },
+      {
+        "GUID": "000000000E46.09E",
+        "Name": "敏捷强化",
+        "Description": "虹吸冲击枪的移动速度加成在不开火时提高20%%",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E98.004"
+      },
+      {
+        "GUID": "000000000E14.09E",
+        "Name": "散热装置",
+        "Description": "虹吸冲击枪直接命中会返还热量并使其持续时间延长0.1秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E99.004"
+      },
+      {
+        "GUID": "000000000DF1.09E",
+        "Name": "赛博黏附",
+        "Description": "赛博手雷接触时会附着，对被附着的敌人额外造成40点伤害",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9B.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "00000006ECD5.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "00000006ECD6.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000006AC6E.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000006AC6F.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": "000000015C09.004"
+      },
+      {
+        "Id": "000000010297.01C",
+        "TextureGUID": "000000015C09.004"
+      },
+      {
+        "Id": "000000010298.01C",
+        "TextureGUID": "000000015C09.004"
+      }
+    ]
+  },
+  "0000000004DD.075": {
+    "GUID": "0000000004DD.075",
+    "Name": "安燃",
+    "Description": "安燃是五行大学火学院的毕业生之星，心中燃着熊熊烈火的她永远渴望着突破自身的极限",
+    "Class": "Damage",
+    "Gender": "Female",
+    "Size": "Small",
+    "Color": "#E81A05FF",
+    "sRGBColor": "#F55A26FF",
+    "GalleryColor": {
+      "R": 0.909804,
+      "G": 0.10196079,
+      "B": 0.019607844,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000C88.09E",
+        "Name": "朱雀扇",
+        "Description": "能扇出炽烈火焰的折扇",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E738.004"
+      },
+      {
+        "GUID": "000000000C89.09E",
+        "Name": "煽火风",
+        "Description": "能强化燃烧伤害的灼热狂风",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E736.004"
+      },
+      {
+        "GUID": "000000000CB1.09E",
+        "Name": "怒炎冲",
+        "Description": "向前疾行，对击中的敌人造成伤害",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E737.004"
+      },
+      {
+        "GUID": "000000000CC1.09E",
+        "Name": "熠闪舞",
+        "Description": "闪避所有伤害并攻击周围敌人",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E735.004"
+      },
+      {
+        "GUID": "000000000D06.09E",
+        "Name": "朱羽焚",
+        "Description": "向前猛冲，击中时爆炸并立即点燃敌人",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E734.004"
+      },
+      {
+        "GUID": "000000000E0E.09E",
+        "Name": "朱魂返",
+        "Description": "阵亡时，在炽烈的爆炸中复生",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E73A.004"
+      },
+      {
+        "GUID": "000000000C8A.09E",
+        "Name": "焚身焰",
+        "Description": "用火焰攻击命中敌人可将其点燃",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBD8.004"
+      },
+      {
+        "GUID": "000000000E29.09E",
+        "Name": "英雄属性",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000DDC.09E",
+        "Name": "副职责：奇袭",
+        "Description": "提高急救包恢复的生命值",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000DEE.09E",
+        "Name": "长燃之焰",
+        "Description": "敌人被点燃后，燃烧持续时间延长1.5秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBDB.004"
+      },
+      {
+        "GUID": "000000000E3D.09E",
+        "Name": "烈火护体",
+        "Description": "使用终极技能时获得50点过量生命值，用终极技能每点燃一名敌人，也会获得50点过量生命值",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBDA.004"
+      },
+      {
+        "GUID": "000000000E3F.09E",
+        "Name": "易燃易爆",
+        "Description": "使用怒炎冲每击中一名敌人会使其冷却时间缩短1.5秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EBD9.004"
+      },
+      {
+        "GUID": "000000000D71.09E",
+        "Name": "噬心狂炎",
+        "Description": "使用熠闪舞每命中一名敌人治疗50点生命值",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E73D.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "00000006E592.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "00000006E593.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000006E594.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000006E595.004"
+      },
+      {
+        "Id": "000000010297.01C",
+        "TextureGUID": null
+      },
+      {
+        "Id": "000000010298.01C",
+        "TextureGUID": null
+      },
+      {
+        "Id": "0000000106EC.01C",
+        "TextureGUID": null
+      }
+    ]
+  },
+  "0000000004E3.075": {
+    "GUID": "0000000004E3.075",
+    "Name": "瑞稀",
+    "Description": "瑞稀从出生起便被厄运笼罩，为了打破诅咒、做自己命运的主宰，他甘愿付出任何代价",
+    "Class": "Support",
+    "Gender": "Male",
+    "Size": "Normal",
+    "Color": "#9AFFC7FF",
+    "sRGBColor": "#CCFFE5FF",
+    "GalleryColor": {
+      "R": 0.6039216,
+      "G": 1.0,
+      "B": 0.7803922,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000D73.09E",
+        "Name": "御魂镰刃",
+        "Description": "扔出飞旋镰刃，击中敌人会快速造成伤害",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECBC.004"
+      },
+      {
+        "GUID": "000000000D3E.09E",
+        "Name": "疗魂斗笠",
+        "Description": "扔出斗笠治疗一名盟友，会弹跳至周围盟友并在返回时治疗自身",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECD8.004"
+      },
+      {
+        "GUID": "000000000CDC.09E",
+        "Name": "缚魂锁链",
+        "Description": "扔出一道束缚锁链，限制命中的第一个敌人",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECDA.004"
+      },
+      {
+        "GUID": "000000000D98.09E",
+        "Name": "替魂纸人",
+        "Description": "向前一跃，并在原地留下一个纸人。再次激活会返回原地，且在激活期间加快移动速度",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECC0.004"
+      },
+      {
+        "GUID": "000000000DED.09E",
+        "Name": "护魂结界",
+        "Description": "生成一道结界，能治疗盟友并吸收结界外发射的敌方射弹",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECD9.004"
+      },
+      {
+        "GUID": "000000000DF3.09E",
+        "Name": "安魂灵气",
+        "Description": "治疗周围盟友。造成伤害或治疗会产生资源，资源越多，治疗量越高",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECDF.004"
+      },
+      {
+        "GUID": "000000000DA9.09E",
+        "Name": "副职责：生存",
+        "Description": "位移技能会激活被动生命值恢复",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000E5D.09E",
+        "Name": "英雄属性",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000E36.09E",
+        "Name": "灵气奔涌",
+        "Description": "安魂灵气资源获取量提高25%%",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EE1A.004"
+      },
+      {
+        "GUID": "000000000E05.09E",
+        "Name": "共鸣飞返",
+        "Description": "疗魂斗笠额外弹跳一次。每弹跳一次，治疗量提高10点",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EE1C.004"
+      },
+      {
+        "GUID": "000000000E1A.09E",
+        "Name": "魂中破绽",
+        "Description": "用缚魂锁链命中敌人会使你对其造成的伤害提高30%%，持续2秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006EE1B.004"
+      },
+      {
+        "GUID": "000000000E37.09E",
+        "Name": "飞魂迅步",
+        "Description": "替魂纸人激活时，安魂灵气范围内的盟友移动速度加快25%%",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "00000006ECDB.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "0000000721A4.004"
+      },
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "0000000721A3.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "00000007210C.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "00000007210D.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": null
       }
     ]
   },
@@ -9024,9 +9732,149 @@
       }
     ]
   },
+  "000000000516.075": {
+    "GUID": "000000000516.075",
+    "Name": "飞天猫",
+    "Description": "“飞天猫”是一名英勇无畏的猫咪飞行员，她身穿布丽吉塔最新发明的喷气推进装置，把可爱的空域支援带到战场的每一个角落",
+    "Class": "Support",
+    "Gender": "Female",
+    "Size": "Normal",
+    "Color": "#C9CDD1FF",
+    "sRGBColor": "#E6E8EAFF",
+    "GalleryColor": {
+      "R": 0.78823537,
+      "G": 0.80392164,
+      "B": 0.8196079,
+      "A": 1.0
+    },
+    "IsHero": true,
+    "SupportsAi": false,
+    "Loadouts": [
+      {
+        "GUID": "000000000D77.09E",
+        "Name": "生物猫爪弹",
+        "Description": "可治疗盟友并对敌人造成伤害的中距离扩散子弹",
+        "Category": "Weapon",
+        "MovieGUID": null,
+        "TextureGUID": "00000007008B.004"
+      },
+      {
+        "GUID": "000000000D5E.09E",
+        "Name": "咻咻飞",
+        "Description": "沿移动方向加速。运输其他玩家时减缓燃料恢复速度",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "000000070147.004"
+      },
+      {
+        "GUID": "000000000D5F.09E",
+        "Name": "救生索",
+        "Description": "切换为运输模式，盟友可抓住救生索任你拖拽。加快移动速度并治疗被拖拽的盟友",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E381.004"
+      },
+      {
+        "GUID": "000000000D60.09E",
+        "Name": "呼噜噜",
+        "Description": "脉冲式范围治疗，频率随时间提高。激活时击退周围敌人",
+        "Category": "Ability",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E3E7.004"
+      },
+      {
+        "GUID": "000000000DEB.09E",
+        "Name": "猫猫劫",
+        "Description": "冲向地面位置，击倒敌人并拴锁离你最近的敌人",
+        "Category": "UltimateAbility",
+        "MovieGUID": null,
+        "TextureGUID": "00000006E3C4.004"
+      },
+      {
+        "GUID": "000000000D61.09E",
+        "Name": "喷气背包",
+        "Description": "永久飞行",
+        "Category": "PassiveAbility",
+        "MovieGUID": null,
+        "TextureGUID": "0000000721CB.004"
+      },
+      {
+        "GUID": "000000000DA8.09E",
+        "Name": "副职责：战术",
+        "Description": "可过量储存终极技能充能",
+        "Category": "Subrole",
+        "MovieGUID": null,
+        "TextureGUID": null
+      },
+      {
+        "GUID": "000000000E60.09E",
+        "Name": "英雄属性",
+        "Description": null,
+        "Category": "HeroStats",
+        "MovieGUID": null,
+        "TextureGUID": null
+      }
+    ],
+    "Perks": [
+      {
+        "GUID": "000000000E49.09E",
+        "Name": "嗷呜一爪",
+        "Description": "快速近身攻击每6秒获得一次强化，能创伤敌人，造成40点伤害，并使其减速30%%，持续1秒",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070EA0.004"
+      },
+      {
+        "GUID": "000000000DF8.09E",
+        "Name": "带盾运输",
+        "Description": "运输其他英雄时获得最多75点额外护盾生命值",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9E.004"
+      },
+      {
+        "GUID": "000000000DF9.09E",
+        "Name": "火箭头槌",
+        "Description": "咻咻飞达到足够速度时，击中敌人会将其击退",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070E9F.004"
+      },
+      {
+        "GUID": "000000000DFA.09E",
+        "Name": "领地意识",
+        "Description": "呼噜噜还会对周围敌人造成伤害，数值为治疗量的50%%。移除击退效果",
+        "Category": "Perk",
+        "MovieGUID": null,
+        "TextureGUID": "000000070EA1.004"
+      }
+    ],
+    "Images": [
+      {
+        "Id": "0000000040C8.01C",
+        "TextureGUID": "0000000720CA.004"
+      },
+      {
+        "Id": "0000000040C9.01C",
+        "TextureGUID": "0000000720CB.004"
+      },
+      {
+        "Id": "0000000040CA.01C",
+        "TextureGUID": "0000000720CC.004"
+      },
+      {
+        "Id": "0000000040C7.01C",
+        "TextureGUID": "0000000720CD.004"
+      },
+      {
+        "Id": "0000000040D2.01C",
+        "TextureGUID": null
+      }
+    ]
+  },
   "000000000529.075": {
     "GUID": "000000000529.075",
-    "Name": "生成防御炮台",
+    "Name": "重生室防御炮台",
     "Description": null,
     "Class": null,
     "Gender": "Generic",
