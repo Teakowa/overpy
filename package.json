@@ -187,7 +187,7 @@
     "dependencies": {
         "@jitl/quickjs-ng-wasmfile-release-sync": "^0.31.0",
         "pofile": "^1.1.4",
-        "quickjs-emscripten-core": "^0.31.0",
+        "quickjs-emscripten-core": "^0.32.0",
         "vscode-uri": "^3.1.0"
     },
     "devDependencies": {
